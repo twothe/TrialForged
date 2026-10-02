@@ -1,0 +1,82 @@
+	[else.etheriumMachete]
+		# Default: 50
+		# Range: 20 ~ 200
+		cooldown = 50
+
+	[else.curseCrystalKnife]
+		# Default: 75
+		# Range: 0 ~ 100
+		probability = 75
+		# Default: 100
+		# Range: 20 ~ 200
+		cooldown = 100
+		# Default: 25
+		# Range: 0 ~ 100
+		healingModifier = 25
+		# Default: 24
+		# Range: 0 ~ 100
+		recoveryRate = 24
+
+	[else.curseBlade]
+		# Default: 4
+		# Range: 0 ~ 4
+		amplifier = 4
+		# Default: 600
+		# Range: 2400 ~ 3600
+		duration = 2400
+		# Default: 3
+		# Range: 0 ~ 10
+		healthCurseAmplifier = 3
+
+	[else.fadingScroll]
+		# Default: 60
+		# Range: 10 ~ 120
+		cooldown = 60
+
+	[else.fading]
+		# Default: 80
+		# Range: 0 ~ 200
+		specialDamageBoost = 80
+
+	[else.weaponCharm]
+		# Default: 8
+		# Range: 0 ~ 20
+		damageModifier = 8
+
+	[else.glisteningCharm]
+		# Default: 75
+		# Range: 0 ~ 100
+		threshold = 75
+
+	[else.theGlistening]
+		# Default: 100
+		# Range: 0 ~ 200
+		threshold = 100
+
+	[abyssItems.abyssalStew]
+		# Default: 180
+		# Range: 10 ~ 1200
+		duration = 180
+		# Default: 0
+		# Range: 30 ~ 100
+		specialDamageBoost = 30
+		# Default: 0
+		# Range: 25 ~ 100
+		specialDamageResistance = 25
+		# Default: 0
+		# Range: 5 ~ 100
+		abyssBoostRate = 5
+
+	[cursedItems.gluttonyCharm]
+		# Default: 0.4
+		# Range: 0.0 ~ 10.0
+		attackDamage = 0.4
+		# Default: 1.25
+		# Range: 0.0 ~ 10.0
+		critModifier = 1.25
+		# Default: 0.25
+		# Range: 0.0 ~ 10.0
+		movementSpeed = 0.25
+		# Default: 0.5
+		# Range: 0.0 ~ 1.0
+		damageResistance = 0.5

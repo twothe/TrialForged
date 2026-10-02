@@ -1,0 +1,20 @@
+{
+  "attributes": {
+    "minecraft:generic.movement_speed": 0.001,
+    "minecraft:generic.flying_speed": 0.001,
+    "minecraft:generic.attack_damage": 0.1,
+    "minecraft:generic.armor": 0.1,
+    "minecraft:generic.max_health": 0.1,
+    "autoleveling:monster.projectile_damage_bonus": 0.1,
+    "autoleveling:monster.explosion_damage_bonus": 0.1
+  },
+  "mobs": {
+    "blacklist": [
+      "minecraft:wither",
+      "minecraft:ender_dragon",
+      "minecraft:warden"
+    ],
+    "whitelist": [],
+    "hidden_levels": []
+  }
+}

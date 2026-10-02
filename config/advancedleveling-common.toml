@@ -1,0 +1,27 @@
+[Mobs]
+	"Always show mobs levels" = false
+	"Only show levels when you look at the mob" = true
+	"Bonus experience per level" = 0.1
+
+[Leveling]
+	# Default: 1
+	# Range: 0 ~ 100000
+	starting_level = 1
+	# Default: 0
+	# Range: -100000 ~ 100000
+	level_bonus = 0
+	enable_additional_loot = true
+
+["Default levelling settings"]
+	#If this is equal to 0, there will be no maximum level
+	"Maximum level" = 0
+	"Level increase per one block distance from spawn" = 0.01
+	"Level increase per one block deepness below sea level" = 0.0
+	#If this is higher than 0, the level of monsters will be randomly increased by value between 0 and this value
+	"Random level bonus" = 0
+	#If this is higher than 0, mobs level will increase every day by specified amount
+	"Level bonus per day" = 0.0
+	#Exponential level increase with distance
+	level_power_per_distance = 0.0
+	#Exponential level increase with deepness
+	level_power_per_deepness = 0.0

@@ -1,0 +1,1000 @@
+Trialforged und Ciscos Modified: Modbestand am 02.10.2026
+Snapshot: 2026-10-02T14:39:10.0556390+02:00
+
+Quelle: installierte Top-Level-JARs, interne Metadaten und CurseForge-Instanzdaten.
+JAR-Anzahl umfasst Bibliotheken; eingebettete Abhaengigkeiten sind nicht einzeln aufgelistet.
+Der Trialforged-Bestand wurde waehrend der Analyse von 192 auf 200 JARs erweitert.
+Gemeinsam bedeutet gleiche Projekt-ID oder Mod-ID, nicht garantierte Funktionsgleichheit oder Lauffaehigkeit.
+Zwischenbefund: Eine Forge-1.20.1-Origins-JAR wurde waehrend der Analyse hinzugefuegt und vor dem finalen Snapshot wieder entfernt.
+Finaler Snapshot: NeoOrigins 2.2.29 fuer NeoForge 1.21.1 ist installiert; die zwei zuvor beobachteten Origins-JARs fehlen wieder.
+
+Trialforged | Minecraft 1.21.1 | neoforge-21.1.252 | 200 JARs
+ChoiceTheorem's Overhauled Village | [Neoforge]ctov-3.6.3.jar | IDs: ctov
+Advancement Plaques [Neo/Forge] | AdvancementPlaques-1.21.1-neoforge-1.6.8.jar | IDs: advancementplaques
+Almost Unified | almostunified-neoforge-1.21.1-1.4.2.jar | IDs: almostunified
+AmbientSounds 6 | AmbientSounds_NEOFORGE_v6.3.8_mc1.21.1.jar | IDs: ambientsounds
+Apotheosis | Apotheosis-1.21.1-8.9.0.jar | IDs: apotheosis
+Apothic Category Compat | apothic_compat-2.0.2.jar | IDs: apothic_compat
+Apothic Compats | apothic_compats-0.2.5.5.jar | IDs: apothic_compats
+Apothic Attributes | ApothicAttributes-1.21.1-2.11.0.jar | IDs: apothic_attributes
+Better Combat x Apotheosis Compat | apothiccombat-1.2.1.jar | IDs: apothiccombat
+Apothic Enchanting | ApothicEnchanting-1.21.1-1.6.2.jar | IDs: apothic_enchanting
+Apothic Spawners | ApothicSpawners-1.21.1-1.4.0.jar | IDs: apothic_spawners
+AppleSkin | appleskin-neoforge-mc1.21-3.0.9.jar | IDs: appleskin
+Architectury API | architectury-13.0.11-neoforge.jar | IDs: architectury
+Ars Additions | ars_additions-1.21.1-21.3.0.jar | IDs: ars_additions
+Ars Nouveau: Chapters | ars_chapters-1.0.4.jar | IDs: ars_chapters
+Ars Elemental | ars_elemental-1.21.1-0.7.10.3.jar | IDs: ars_elemental
+Ars Nouveau: Crafting Terminal Improvements | ars_nouveau_crafting_terminal-1.4.0.jar | IDs: ars_nouveau_crafting_terminal
+Ars Nouveau | ars_nouveau-1.21.1-5.13.2.jar | IDs: ars_nouveau
+Ars Polymorphia | ars_polymorphia-1.0.3.jar | IDs: ars_polymorphia
+Ars Nouveau's Flavors & Delight | arsdelight-2.2.2.jar | IDs: arsdelight
+Sophisticated Backpacks: Ars Compat   |   Sophisticated Backpacks Ars-Nouveau Compatibility | arssophisticatedcompat-0.3.0.jar | IDs: arssophisticatedcompat
+Sophisticated Storage: Ars Compat | Sophisticated Storage Ars-Nouveau Compatibility | arssophisticatedstoragecompat-0.3.0.jar | IDs: arssophisticatedstoragecompat
+BaguetteLib | baguettelib-1.21.1-NeoForge-2.0.7.jar | IDs: baguettelib
+Balm | balm-neoforge-1.21.1-21.0.66.jar | IDs: balm
+Better Advanced Tooltips | better-advanced-tooltips-2101.1.0-build.5.jar | IDs: betteradvancedtooltips
+Better Advancements | BetterAdvancements-NeoForge-1.21.1-0.4.3.21.jar | IDs: betteradvancements
+Better Combat [Fabric & Forge] | bettercombat-neoforge-2.4.0+1.21.1.jar | IDs: bettercombat
+Bookshelf | bookshelf-neoforge-1.21.1-21.1.81.jar | IDs: bookshelf
+Concurrent Chunk Management Engine | c2me-neoforge-mc1.21.1-0.4.0-alpha.0.122.jar | IDs: c2me
+Caelus API | caelus-neoforge-7.0.1+1.21.1.jar | IDs: caelus
+Cataclysm & BetterCombat - Compatibility | cataclysm_compat_1.21.1-1.0.2.jar | IDs: 
+CB Multipart | CBMultipart-1.21.1-3.5.0.155.jar | IDs: cb_multipart, cb_microblock, cb_multipart_minecraft
+Clean Tooltips | clean_tooltips-1.1-neoforge-1.21.1.jar | IDs: clean_tooltips
+Clean Swing Through Grass | cleanswing-1.10-1.21.jar | IDs: cleanswing
+CleanView | cleanview-1.21.1-v1-neoforge.jar | IDs: cleanview
+Cloth Config API (Fabric/Forge/NeoForge) | cloth-config-15.0.140-neoforge.jar | IDs: cloth_config
+Clumps | Clumps-neoforge-1.21.1-19.0.0.1.jar | IDs: clumps
+CodeChicken Lib 1.8.+ | CodeChickenLib-1.21.1-4.6.1.529.jar | IDs: codechickenlib
+Collective | collective-1.21.1-8.41.jar | IDs: collective
+Comforts | comforts-neoforge-9.0.5+1.21.1.jar | IDs: comforts
+Connected Glass | connectedglass-1.1.14-neoforge-mc1.21.jar | IDs: connectedglass
+Connectivity | connectivity-1.21.1-7.7.jar | IDs: connectivity
+Controlling | Controlling-neoforge-1.21.1-19.0.5.jar | IDs: controlling
+Cosmetic Armor Reworked | cosmeticarmorreworked-1.21.1-v1-neoforge.jar | IDs: cosmeticarmorreworked
+Crafting on a stick | crafting_on_a_stick-1.21.0.6.jar | IDs: crafting_on_a_stick
+Crafting Station: J/EMI Edition Updated | craftingstationjei-1.21.1-NeoForge-2.2.0.jar | IDs: craftingstation
+CreativeCore | CreativeCore_NEOFORGE_v2.13.50_mc1.21.1.jar | IDs: creativecore
+Cupboard | cupboard-1.21.1-4.2.jar | IDs: cupboard
+Curios API | curios-neoforge-9.5.1+1.21.1.jar | IDs: curios
+DnT Ancient City Overhaul | DnT-ancient-city-overhaul-v2 [NeoForge].jar | IDs: 
+DnT Desert Temple Overhaul | DnT-desert-temple-replacement-v1.2 [NeoForge].jar | IDs: 
+DnT Jungle Temple Overhaul | DnT-jungle-temple-replacement-v1.2 [NeoForge].jar | IDs: 
+DnT Nether Fortress Overhaul | DnT-nether-fortress-overhaul-2.5.1 [NeoForge].jar | IDs: 
+DnT Ocean Monument Overhaul | DnT-ocean-monument-replacement-v1.2 [NeoForge].jar | IDs: 
+DnT Pillager Outpost Overhaul | DnT-pillager-outpost-overhaul-v2.2 [NeoForge].jar | IDs: 
+DnT Stronghold Overhaul | DnT-stronghold-overhaul-v2.1.f [NeoForge].jar | IDs: 
+DnT Swamp Hut Overhaul | DnT-swamp-hut-overhaul-v2 [NeoForge].jar | IDs: 
+DnT Woodland Mansion Overhaul | DnT-woodland-mansion-replacement-v1.2 [NeoForge].jar | IDs: 
+Double Doors | doubledoors-1.21.1-7.3.jar | IDs: doubledoors
+MmmMmmMmmMmm (Target Dummy) | dummmmmmy-1.21-2.1.2-neoforge.jar | IDs: dummmmmmy
+Dungeon Crawl | DungeonCrawl-NeoForge-1.21-2.3.17.jar | IDs: dungeoncrawl
+Dungeons and Taverns | dungeons-and-taverns-v4.4.4 [NeoForge].jar | IDs: 
+Easy Piglins | easy-piglins-neoforge-1.21.1-1.0.14.jar | IDs: easy_piglins
+Easy Villagers | easy-villagers-neoforge-1.21.1-1.1.42.jar | IDs: easy_villagers
+Elsebase | elsebase-1.1.0.jar | IDs: elsebase
+Enchanted! - More Enchants | enchanted-0.0.2.jar | IDs: enchanted
+Enchantment Descriptions | enchdesc-neoforge-1.21.1-21.1.11.jar | IDs: enchdesc
+Enigmatic Delicacy | enigmaticdelicacy-1.21.1-1.0.0b.jar | IDs: enigmaticdelicacy
+Enigmatic Legacy Plus | enigmaticlegacyplus-1.21.1-1.1.1.jar | IDs: enigmaticlegacyplus
+Extreme sound muffler - (Neo)Forge | ExtremeSoundMuffler-3.56_NeoForge-1.21.jar | IDs: extremesoundmuffler
+FallingTree | FallingTree-1.21.1-1.21.1.11.jar | IDs: fallingtree
+Farmer's Delight | FarmersDelight-1.21.1-1.3.4.jar | IDs: farmersdelight
+FastFurnace | FastFurnace-1.21.1-9.0.1.jar | IDs: fastfurnace
+Fast Leaf Decay | fastleafdecay-35.jar | IDs: fastleafdecay
+FastSuite | FastSuite-1.21.1-6.0.7.jar | IDs: fastsuite
+FastWorkbench | FastWorkbench-1.21.1-9.1.3.jar | IDs: fastbench
+FerriteCore ((Neo)Forge) | ferritecore-7.0.3-neoforge.jar | IDs: ferritecore
+Fire Spread Tweaks | firespreadtweaks-1.21.1-2.9.jar | IDs: firespreadtweaks
+FlickerFix | flickerfix-1.21.1-6.1.0.jar | IDs: flickerfix
+Framework | framework-neoforge-1.21.1-0.13.11.jar | IDs: framework
+FTB Chunks (NeoForge) | ftb-chunks-neoforge-2101.1.22.jar | IDs: ftbchunks
+FTB Essentials (Forge & Fabric) | ftb-essentials-neoforge-2101.1.10.jar | IDs: ftbessentials
+FTB Library (NeoForge) | ftb-library-neoforge-2101.1.37.jar | IDs: ftblibrary
+FTB Quests (NeoForge) | ftb-quests-neoforge-2101.1.36.jar | IDs: ftbquests
+FTB Teams (NeoForge) | ftb-teams-neoforge-2101.1.11.jar | IDs: ftbteams
+FTB Ultimine (NeoForge) | ftb-ultimine-neoforge-2101.1.15.jar | IDs: ftbultimine
+FTB XMod Compat | ftb-xmod-compat-neoforge-21.1.12.jar | IDs: ftbxmodcompat
+Fuel Goes Here | fuelgoeshere-1.21.1-1.2.0.jar | IDs: fuelgoeshere
+Fusion (Connected Textures) | fusion-1.3.15b-neoforge-mc1.21.1.jar | IDs: fusion
+Gateways to Eternity | GatewaysToEternity-1.21.1-5.1.0.jar | IDs: gateways
+GeckoLib | geckolib-neoforge-1.21.1-4.9.3.jar | IDs: geckolib
+Get It Together, Drops! | getittogetherdrops-neoforge-1.21.5-1.4.jar | IDs: getittogetherdrops
+GLib | goo_lib-0.0.9.jar | IDs: goo_lib
+Granular Mob Griefing | granularmobgriefing-1.0.0.jar | IDs: granularmobgriefing
+GraveStone Mod | gravestone-neoforge-1.21.1-1.0.40.jar | IDs: gravestone
+Gravestone x Curios API Compat | gravestonecurioscompat-1.21.1-NeoForge-3.0.1.jar | IDs: gravestonecurioscompat
+Handcrafted | handcrafted-neoforge-1.21.1-4.0.3.jar | IDs: handcrafted
+Healing Campfire | healingcampfire-1.21.1-6.4.jar | IDs: healingcampfire
+Hey Berry! SHUT UP | heyberryshutup-1.21.0-2.0.4.jar | IDs: heyberryshutup
+Iceberg [Neo/Forge] | Iceberg-1.21.1-neoforge-1.3.2.jar | IDs: iceberg
+Inventory HUD+ | inventoryhud.neoforged.1.21.1-3.4.28.jar | IDs: inventoryhud
+Inventory Sorter | inventorysorter-1.21.1-24.0.24.jar | IDs: inventorysorter
+Iron's Apothic Invaders | irons_apothic_invaders_1.0.0.jar | IDs: irons_apothic_invaders
+Apotheosis x Iron's Spellbooks Compat | irons_apothic-2.2.6.jar | IDs: irons_apothic
+Iron's Lib | irons_lib-1.21.1-2.2.0.jar | IDs: irons_lib
+Iron's Spells 'n Spellbooks | irons_spellbooks-1.21.1-3.16.3.jar | IDs: irons_spellbooks
+JamLib | jamlib-neoforge-1.3.6+1.21.1.jar | IDs: jamlib
+Just Enough Archaeology | jearchaeology-1.21.1-1.2.0.jar | IDs: jearchaeology
+Just Enough Effect Descriptions (JEED) | jeed-1.21-2.3.4-neoforge.jar | IDs: jeed
+Just Enough Items (JEI) | jei-1.21.1-neoforge-19.57.0.450.jar | IDs: jei
+Jupiter | jupiter-2.3.7-1.21.1-neoforge.jar | IDs: jupiter
+Just Enough Professions (JEP) | JustEnoughProfessions-neoforge-1.21.1-4.0.5.jar | IDs: justenoughprofessions
+Just Enough Resources (JER) | JustEnoughResources-NeoForge-1.21.1-1.6.0.17.jar | IDs: jeresources
+Kaelo's Gems — Apotheosis Addon | kaelos_gems-1.21.1-1.2.0.jar | IDs: kaelos_gems
+Kotlin for Forge | kotlinforforge-5.12.0-all.jar | IDs: 
+KubeJS | kubejs-neoforge-2101.7.2-build.377.jar | IDs: kubejs
+KubeJS Ars Nouveau | kubejsarsnouveau-1.3.2.jar | IDs: kubejsarsnouveau
+L_Ender 's Cataclysm | L_Ender's Cataclysm 1.21.1-3.33.jar | IDs: cataclysm
+Legendary Tooltips [Neo/Forge] | LegendaryTooltips-1.21.1-neoforge-1.5.5.jar | IDs: legendarytooltips
+Light Overlay (Rift/Forge/Fabric) | light-overlay-12.0.0-neoforge.jar | IDs: lightoverlay
+Lionfish API | lionfishapi-3.1.jar | IDs: lionfishapi
+Lithostitched | lithostitched-1.8.0-neoforge-21.1.jar | IDs: lithostitched
+Loot Integrations: Dungeons and Taverns | lootintegrations_dnt-2.7.jar | IDs: lootintegrations_dnt
+Loot Integrations: Dungeon Crawl | lootintegrations_dungeoncrawl-1.3.jar | IDs: lootintegrations_dungeoncrawl
+Loot Integrations: Moog's Voyager, Soaring, End & Nether Structures | lootintegrations_moog-2.2.jar | IDs: lootintegrations_moog
+Loot Integrations | lootintegrations-1.21.1-4.7.jar | IDs: lootintegrations
+LootJS: KubeJS Addon | lootjs-neoforge-1.21.1-3.7.0.jar | IDs: lootjs
+Lootr (Forge & NeoForge) | lootr-neoforge-1.21.1-1.11.38.127.jar | IDs: lootr
+Max Health Fix | maxhealthfix-neoforge-1.21.1-21.1.4.jar | IDs: maxhealthfix
+Macaw's Bridges | mcw-bridges-3.1.2-mc1.21.1neoforge.jar | IDs: mcwbridges
+Macaw's Doors | mcw-doors-1.1.5-mc1.21.1neoforge.jar | IDs: mcwdoors
+Macaw's Furniture | mcw-furniture-3.4.1-mc1.21.1neoforge.jar | IDs: mcwfurnitures
+Macaw's Lights and Lamps | mcw-lights-1.1.5-mc1.21.1neoforge.jar | IDs: mcwlights
+Macaw's Fences and Walls | mcw-mcwfences-1.2.1-mc1.21.1neoforge.jar | IDs: mcwfences
+Macaw's Paths and Pavings | mcw-mcwpaths-1.1.1-mc1.21.1neoforge.jar | IDs: mcwpaths
+Macaw's Stairs | mcw-mcwstairs-1.0.2-mc1.21.1neoforge.jar | IDs: mcwstairs
+Macaw's Windows | mcw-mcwwindows-2.4.2-mc1.21.1neoforge.jar | IDs: mcwwindows
+Macaw's Paintings | mcw-paintings-1.1.0-mc1.21.1neoforge.jar | IDs: mcwpaintings
+Macaw's Roofs | mcw-roofs-2.3.2-mc1.21.1neoforge.jar | IDs: mcwroofs
+Macaw's Trapdoors | mcw-trapdoors-1.1.5-mc1.21.1neoforge.jar | IDs: mcwtrpdoors
+MezzConfig | mezz_config-1.21.1-neoforge-0.6.6-standalone.jar | IDs: 
+Mighty Mail | mighty_mail-neoforge-1.21.1-1.1.4.jar | IDs: mighty_mail
+MES - Moog's End Structures | MoogsEndStructures-universal-1.21-2.1.1.jar | IDs: 
+MNS - Moog's Nether Structures | MoogsNetherStructures-universal-1.21-3.1.1.jar | IDs: 
+Moog's Structure Lib (moogs_structures) | MoogsStructureLib-neoforge-1.21.1-3.4.1.jar | IDs: moogs_structures
+MVS - Moog's Voyager Structures | MoogsVoyagerStructures-universal-1.21-5.1.3.jar | IDs: 
+Moonlight Lib | moonlight-1.21.1-3.7.0-neoforge.jar | IDs: moonlight
+Mouse Tweaks | MouseTweaks-neoforge-mc1.21-2.26.1.jar | IDs: mousetweaks
+Neat | Neat-1.21-47-NEOFORGE.jar | IDs: neat
+NeoOrigins | neoorigins-2.2.29+1.21.1.jar | IDs: neoorigins
+New Dawn | newdawn-1.0.0.jar | IDs: newdawn
+No Apotheosis Names | noapotheosisnames-1.0.1.jar | IDs: noapotheosisnames
+No Chat Reports | NoChatReports-NEOFORGE-1.21.1-v2.9.1.jar | IDs: nochatreports
+NoFireOverlay | nofireoverlay-neoforge-1.21.1-1.2.0.jar | IDs: nofireoverlay
+Not Enough Glyphs | not_enough_glyphs-1.21.1-4.6.2.jar | IDs: not_enough_glyphs
+No Farmland Trample | notrample-1.21.1-1.0.1.jar | IDs: notrample
+Overflowing Bars | OverflowingBars-v21.1.1-1.21.1-NeoForge.jar | IDs: overflowingbars
+Passive Shield | passiveshield-1.21.1-4.0.jar | IDs: passiveshield
+Patchouli | Patchouli-1.21.1-93-NEOFORGE.jar | IDs: patchouli
+Placebo | Placebo-1.21.1-9.9.2.jar | IDs: placebo
+playerAnimator | player-animation-lib-forge-2.0.4+1.21.1.jar | IDs: playeranimator
+PlayerRevive | PlayerRevive_NEOFORGE_v2.1.2_mc1.21.1.jar | IDs: playerrevive
+Polymorph | polymorph-neoforge-1.1.0+1.21.1.jar | IDs: polymorph
+Pretty Rain | Pretty Rain-1.21.1-NeoForge-1.1.4.jar | IDs: particlerain
+Prickle | prickle-neoforge-1.21.1-21.1.11.jar | IDs: prickle
+Prism [Neo/Forge] | Prism-1.21.1-neoforge-1.0.11.jar | IDs: prism
+Project Red - Core | ProjectRed-1.21.1-4.22.0-core.jar | IDs: projectred_core
+Project Red - Integration | ProjectRed-1.21.1-4.22.0-integration.jar | IDs: projectred_integration
+Project Red - Transmission | ProjectRed-1.21.1-4.22.0-transmission.jar | IDs: projectred_transmission
+Puzzles Lib | puzzleslib-v21.1.62-mc1.21.1+neoforge.jar | IDs: puzzleslib
+Rebind Narrator | rebind_narrator-1.21.1-neoforge-2026.08.31.jar | IDs: rebind_narrator
+Reese's Sodium Options | reeses-sodium-options-neoforge-2.2.4+mc1.21.1.jar | IDs: reeses_sodium_options
+Resourceful Lib | resourcefullib-neoforge-1.21-3.0.12.jar | IDs: resourcefullib
+Rhino | rhino-2101.2.7-build.85.jar | IDs: rhino
+RightClickHarvest | rightclickharvest-neoforge-4.6.1+1.21.1.jar | IDs: rightclickharvest
+Scriptor Magicae | scriptor-neoforge-2.0.14-1.21.1-sgd.jar | IDs: scriptor
+Searchables | Searchables-neoforge-1.21.1-1.0.2.jar | IDs: searchables
+Smarter Farmers (farmers replant) | smarterfarmers-1.21-2.2.4-neoforge.jar | IDs: smarterfarmers
+Sodium Extra | sodium-extra-neoforge-0.9.4+mc1.21.1.jar | IDs: sodium_extra
+Sodium | sodium-neoforge-0.8.13+mc1.21.1.jar | IDs: sodium
+Sodium/Embeddium Extras | sodiumextras-neoforge-1.0.8-1.21.1.jar | IDs: sodiumextras
+Sophisticated Backpacks | sophisticatedbackpacks-1.21.1-3.26.7.2182.jar | IDs: sophisticatedbackpacks
+Sophisticated Core | sophisticatedcore-1.21.1-1.5.4.2356.jar | IDs: sophisticatedcore
+Sophisticated Storage | sophisticatedstorage-1.21.1-1.6.1.2147.jar | IDs: sophisticatedstorage
+spark | spark-1.10.124-neoforge.jar | IDs: spark
+Spell Codex: Iron's Spells 'n Spellbooks Addon | specs_irons_spellbooks-1.6.10-neoforge-1.21.1.jar | IDs: specs_irons_spellbooks
+SpellActionbar | spell_actionbar-1.1.7-neoforge-1.21.1.jar | IDs: spell_actionbar
+StackablePotions [Forge] | Stackable Potions-neoforge-1.21.1-1.0.0.jar | IDs: stackablepotions
+SuperMartijn642's Config Lib | supermartijn642configlib-1.1.8-neoforge-mc1.21.jar | IDs: supermartijn642configlib
+SuperMartijn642's Core Lib | supermartijn642corelib-1.1.24a-neoforge-mc1.21.jar | IDs: supermartijn642corelib
+The One Probe | theoneprobe-1.21_neo-12.0.8.jar | IDs: theoneprobe
+Tidal Towns | tidal-towns-2.0.jar | IDs: 
+Toast Control | ToastControl-1.21.1-9.0.1.jar | IDs: toastcontrol
+Trade Cycling | trade-cycling-neoforge-1.21.1-1.0.22.jar | IDs: trade_cycling
+Trash Cans | trashcans-1.1.1-neoforge-mc1.21.jar | IDs: trashcans
+TrashSlot | trashslot-neoforge-1.21.1-21.1.11.jar | IDs: trashslot
+Underground Villages | UndergroundVillages-neoforge-1.21.1-4.0.3.jar | IDs: underground_villages
+Unfocused | unfocused-neoforge-0.3.9-1.21.1-sgd.jar | IDs: unfocused
+Villages&Pillages | villagesandpillages-neoforge-2.0.0+mc1.21.1.jar | IDs: villagesandpillages
+Yeetus Experimentus | yeetusexperimentus-neoforge-87.0.0.jar | IDs: yeetusexperimentus
+
+Ciscos Modified | Minecraft 1.19.2 | forge-43.5.2 | 290 JARs
+Advancement Plaques [Neo/Forge] | AdvancementPlaques-1.19.2-1.4.7.jar | IDs: advancementplaques
+AeroBlender | aeroblender-1.19.2-1.0.1.jar | IDs: aeroblender
+The Aether | aether-1.19.2-1.5.1-forge.jar | IDs: aether
+AI Improvements: Performance Tuning | AI-Improvements-1.19.2-0.5.2.jar | IDs: aiimprovements
+Alex's Delight | alexsdelight-1.4.1.jar | IDs: alexsdelight
+Alex's Mobs | alexsmobs-1.21.1.jar | IDs: alexsmobs
+Apotheosis | Apotheosis-1.19.2-6.5.2.jar | IDs: apotheosis
+Apotheotic Additions | apotheotic_additions1.0.4.jar | IDs: apotheotic_additions
+Apothic Curios | ApothicCurios-1.19.2-1.0.3c.jar | IDs: apothiccurios
+ApothSB | apothsb-1.0.3.jar | IDs: apothsb
+AppleSkin | appleskin-forge-mc1.19-2.4.2.jar | IDs: appleskin
+Aquamirae [Neo/Forge Edition] | aquamirae-6.API15.jar | IDs: aquamirae
+Architectury API | architectury-6.6.92-forge.jar | IDs: architectury
+Armor Damage Limit | ArmorDamageLimit-1.19.2-1.0.0.jar | IDs: armordamagelimit
+Ars Additions | ars_additions-1.19.2-1.4.0.jar | IDs: ars_additions
+Ars Elemental | ars_elemental-1.19.2-0.5.9.4.1.jar | IDs: ars_elemental
+Ars Nouveau | ars_nouveau-1.19.2-3.23.0.jar | IDs: ars_nouveau
+Atmospheric | atmospheric-1.19.2-5.1.2.jar | IDs: atmospheric
+AttributeFix | AttributeFix-Forge-1.19.2-17.2.8.jar | IDs: attributefix
+Auto Leveling | AutoLeveling-1.19.2-1.19b.jar | IDs: autoleveling
+AutoRegLib | AutoRegLib-1.8.2-55.jar | IDs: autoreglib
+Awesome Dungeon The End edition - Forge | awesomedungeonend-forge-1.19.2-3.1.1.jar | IDs: awesomedungeonend
+Awesome Dungeon Nether edition - Forge | awesomedungeonnether-forge-1.19.2-3.1.1.jar | IDs: awesomedungeonnether
+AzureLib | azurelib-forge-1.19.2-3.2.14.jar | IDs: azurelib
+Bad Mobs | BadMobs-1.19.2-16.1.3.jar | IDs: badmobs
+BadOptimizations | BadOptimizations-2.1.4-1.19.1-19.2.jar | IDs: badoptimizations
+Balm | balm-forge-1.19.2-4.6.0.jar | IDs: balm
+Better Advancements | BetterAdvancements-1.19.2-0.2.2.142.jar | IDs: betteradvancements
+Better Combat [Fabric & Forge] | bettercombat-forge-1.7.1+1.19.jar | IDs: bettercombat
+Better Fps - Render Distance | betterfpsdist-1.19.2-4.1.jar | IDs: betterfpsdist
+Better Third Person | BetterThirdPerson-Forge-1.19-1.9.0.jar | IDs: betterthirdperson
+Biome Music | biomemusic-1.19.2-2.2.jar | IDs: biomemusic
+BlockUI | blockui-1.19.2-1.0.140-BETA.jar | IDs: blockui
+Blue Skies | blue_skies-1.19.2-1.3.20.jar | IDs: blue_skies
+Blueprint | blueprint-1.19.2-6.2.0.jar | IDs: blueprint
+Bocchium | bocchium-1.19.2-0.0.3.jar | IDs: bocchium
+Bosses of Mass Destruction [Forge | NeoForge] | BOMD-Forge-1.19.2-1.0.6.jar | IDs: bosses_of_mass_destruction
+Bookshelf | Bookshelf-Forge-1.19.2-16.3.20.jar | IDs: bookshelf
+Brewin' And Chewin' | BrewinAndChewin-1.19-2.0.jar | IDs: brewinandchewin
+Brutal Bosses - Custom Bosses | brutalbosses-1.19.2-6.8.jar | IDs: brutalbosses
+Bygone Nether | bygonenether-1.3.2-1.19.2.jar | IDs: bygonenether
+Caelus API | caelus-forge-1.19.2-3.0.0.6.jar | IDs: caelus
+Canary | canary-mc1.19.2-0.3.3.jar | IDs: canary
+Carry On | carryon-forge-1.19.2-2.1.2.23.jar | IDs: carryon
+Celestisynth: Wishes and Hells | celestisynth-1.19.2-1.1.5.jar | IDs: celestisynth
+Celestweaks | celestweaks-beta-0.9.7-1.19.2.jar | IDs: celestweaks
+Chunk Sending | chunksending-1.19.2-2.8.jar | IDs: chunksending
+Cisco's Content | cisco_mod_9.6.jar | IDs: cisco_mod
+Cisco's Content [Unbound] | ciscounbound-1.2.jar | IDs: ciscounbound
+Citadel | citadel-2.1.4-1.19.jar | IDs: citadel
+Clayworks | clayworks-1.19.2-2.1.0.jar | IDs: clayworks
+Cloth Config API (Fabric/Forge/NeoForge) | cloth-config-8.3.134-forge.jar | IDs: cloth_config
+Clumps | Clumps-forge-1.19.2-9.0.0+14.jar | IDs: clumps
+Cobweb | cobweb-forge-1.19.2-1.0.1.jar | IDs: cobweb
+Collection of Singiro | collection-of-singiro-1.19.x-1.1.4.jar | IDs: collectionofsingiro
+Combat Roll [Fabric & Forge] | combatroll-forge-1.1.5+1.19.jar | IDs: combatroll
+Comforts | comforts-forge-6.0.7+1.19.2.jar | IDs: comforts
+Connectivity | connectivity-1.19.2-4.6.jar | IDs: connectivity
+Construction Wand | constructionwand-1.19.2-2.10.jar | IDs: constructionwand
+Controlling | Controlling-forge-1.19.2-10.0+7.jar | IDs: controlling
+CorgiLib | CorgiLib-forge-1.19.2-1.0.0.34.jar | IDs: corgilib
+Corpse | corpse-forge-1.19.2-1.0.17.jar | IDs: corpse
+Corpse x Curios API Compat | corpsecurioscompat-1.18.x-1.20.x-Forge-2.2.2.jar | IDs: corpsecurioscompat
+Crafting Station: J/EMI Edition Updated | craftingstationjei-1.19.2-Forge-2.2.0.jar | IDs: craftingstationjei
+CraftTweaker | CraftTweaker-forge-1.19.2-10.1.56.jar | IDs: crafttweaker
+CraterLib | CraterLib-Forge-1.19.2-3.1.3.jar | IDs: craterlib
+ChoiceTheorem's Overhauled Village | ctov-3.2.6c.jar | IDs: ctov
+CullLessLeaves Reforged (Unofficial) | CullLessLeaves-Reforged-1.0.5.jar | IDs: culllessleaves
+Cupboard | cupboard-1.19.2-2.6.jar | IDs: cupboard
+Curios API | curios-forge-1.19.2-5.1.6.4.jar | IDs: curios
+Darker Depths | DarkerDepths-1.19.2-1.0.0.jar | IDs: darkerdepths
+Decorative Blocks | Decorative Blocks-forge-1.19.2-3.0.0.jar | IDs: decorative_blocks
+Deep Aether | deep_aether-1.19.2-1.0.4.jar | IDs: deep_aether
+Deeper and Darker | deeperdarker-forge-1.19.2-1.2.2.jar | IDs: deeperdarker
+Default Options | defaultoptions-forge-1.19-15.0.2.jar | IDs: defaultoptions
+Delightful | Delightful-1.19.2-3.4.1.jar | IDs: delightful
+DoesPotatoTick? | doespotatotick-1.19.2-5.6.3.jar | IDs: doespotatotick
+Domum Ornamentum | domum_ornamentum-1.19-1.0.146-BETA-universal.jar | IDs: domum_ornamentum
+Dragon Enchants | dragon_enchants-1.0.4-1.19.2.jar | IDs: dragonenchants
+Dramatic Doors | DramaticDoors-QuiFabrge-1.19.2-3.2.7.jar | IDs: dramaticdoors
+Dreadsteel | dreadsteel-1.19.2-1.1.6.jar | IDs: dreadsteel
+MmmMmmMmmMmm (Target Dummy) | dummmmmmy-1.19.2-1.7.1.jar | IDs: dummmmmmy
+Dungeon Crawl | DungeonCrawl-1.19-2.3.12.jar | IDs: dungeoncrawl
+Dungeons Enhanced | dungeons_enhanced-1.19.2-4.1.jar | IDs: dungeons_enhanced
+Dungeons Plus | dungeons_plus-1.19.2-1.3.1.jar | IDs: dungeons_plus
+Dungeons and Taverns | dungeons-and-taverns-2.0.2 forge.jar | IDs: 
+When Dungeons Arise - Forge! | DungeonsArise-1.19.2-2.1.54-release.jar | IDs: dungeons_arise
+When Dungeons Arise - Seven Seas | DungeonsAriseSevenSeas-1.19.2-1.0.2-forge.jar | IDs: dungeons_arise_seven_seas
+Duplicationless | duplicationless-1.19.2-1.1.4.jar | IDs: duplicationless
+Durability Tooltip | durabilitytooltip-1.2.0-forge-mc1.19.jar | IDs: durabilitytooltip
+Easy Villagers | easy-villagers-forge-1.19.2-1.1.23.jar | IDs: easy_villagers
+Eccentric Tome | eccentrictome-1.19.2-1.10.2.jar | IDs: eccentrictome
+Ecologics | ecologics-forge-1.19.2-2.1.11.jar | IDs: ecologics
+OpenBlocks Elevator | elevatorid-1.19.2-1.8.10.jar | IDs: elevatorid
+Elytra Slot | elytraslot-forge-6.1.2+1.19.2.jar | IDs: elytraslot
+Enchantment Descriptions | EnchantmentDescriptions-Forge-1.19.2-13.0.14.jar | IDs: enchdesc
+End's Phantasm | End's Phantasm - BETAv1.2.10.5 - 1.19.2.jar | IDs: phantasm
+Endless Biomes | EndlessBiomes 1.4s - 1.19.2 (Server-friendly).jar | IDs: endlessbiomes
+End Remastered [NeoForge/Fabric] | endrem_forge-5.2.1-R-1.19.X.jar | IDs: endrem
+Enemy Expansion | enemyexpansion-2.4.0-forge-1.19.2.jar | IDs: enemyexpansion
+Enigmatic Addons | enigmaticaddons-1.19.2-1.2.2.jar | IDs: enigmaticaddons
+Enigmatic Legacy | EnigmaticLegacy-2.26.5.jar | IDs: enigmaticlegacy
+Entity Collision FPS Fix | Entity_Collision_FPS_Fix-forge-1.19-2.0.0.0.jar | IDs: entitycollisionfpsfix
+Entity Culling Fabric/Forge | entityculling-forge-1.6.1-mc1.19.2.jar | IDs: entityculling
+Explorer's Compass | ExplorersCompass-1.19.2-1.3.0-forge.jar | IDs: explorerscompass
+Explorify – Dungeons & Structures | Explorify v1.6.3 f10-88.mod.jar | IDs: explorify
+FancyMenu | fancymenu_forge_3.9.14_MC_1.19.2.jar | IDs: fancymenu
+Fantasy's Furniture | fantasyfurniture-1.19.2-6.7.0.jar | IDs: fantasyfurniture
+Farmer's Delight | FarmersDelight-1.19.2-1.2.4.jar | IDs: farmersdelight
+Farmer's Respite | FarmersRespite-1.19-2.0.jar | IDs: farmersrespite
+Fast Async World Save[Forge/Neo/Fabric] | fastasyncworldsave-1.19.2-2.0.jar | IDs: fastasyncworldsave
+Fast Paintings | fastpaintings-1.19-1.1.3.jar | IDs: fastpaintings
+FerriteCore ((Neo)Forge) | ferritecore-5.0.3-forge.jar | IDs: ferritecore
+Forbidden and Arcanus | forbidden_arcanus-1.19.2-2.1.5.jar | IDs: forbidden_arcanus
+FTB Chunks (NeoForge) | ftb-chunks-forge-1902.4.7-build.420.jar | IDs: ftbchunks
+FTB Library (NeoForge) | ftb-library-forge-1902.4.2-build.701.jar | IDs: ftblibrary
+FTB Quests (NeoForge) | ftb-quests-forge-1902.5.10-build.497.jar | IDs: ftbquests
+FTB Teams (NeoForge) | ftb-teams-forge-1902.2.14-build.123.jar | IDs: ftbteams
+FTB Ultimine (NeoForge) | ftb-ultimine-forge-1902.4.2-build.14.jar | IDs: ftbultimine
+FTB XMod Compat | ftb-xmod-compat-forge-1.2.4.jar | IDs: ftbxmodcompat
+Galosphere | Galosphere-1.19.2-1.3.0-Forge.jar | IDs: galosphere
+Game Stages | GameStages-Forge-1.19.2-11.1.4.jar | IDs: gamestages
+Gateways to Eternity | GatewaysToEternity-1.19.2-3.2.3.jar | IDs: gateways
+GeckoLib | geckolib-forge-1.19-3.1.40.jar | IDs: geckolib3
+Geophilic – Vanilla Biome Overhauls | geophilic-1.19-2.0.0c.jar | IDs: 
+Get It Together, Drops! | getittogetherdrops-forge-1.19.2-1.3.jar | IDs: getittogetherdrops
+Goblin Traders | goblintraders-1.8.0-1.19.2.jar | IDs: goblintraders
+fix GPU memory leak | gpumemleakfix-1.19.2-1.6.jar | IDs: gpumemleakfix
+Harvest with ease | harvest-with-ease-forge-1.19.2-9.4.0.jar | IDs: harvest_with_ease
+Hopo Better Ruined Portals | HopoBetterRuinedPortals-[1.19-1.19.3]-1.3.3b.jar | IDs: hoporp
+Human Companions | humancompanions-1.19.2-1.7.4.jar | IDs: humancompanions
+Iceberg [Neo/Forge] | Iceberg-1.19.2-forge-1.1.4.jar | IDs: iceberg
+ImmediatelyFast | ImmediatelyFast-Forge-1.4.0+1.19.2.jar | IDs: immediatelyfast
+Immersive Armors | immersive_armors-1.5.6+1.19.2-forge.jar | IDs: immersive_armors
+Immersive Paintings | immersive_paintings-0.6.7+1.19.2-forge.jar | IDs: immersive_paintings
+Incendium | Incendium_1.19.3_v5.1.6.jar | IDs: incendium
+AtomicStryker's Infernal Mobs | infernalmobs-1.19.2.4.jar | IDs: infernalmobs
+InsaneLib | InsaneLib-1.7.5-mc1.19.2.jar | IDs: insanelib
+Inventory HUD+ | inventoryhud.forge.1.19.2-3.4.26.jar | IDs: inventoryhud
+Inventory Sorter | inventorysorter-1.19.2-21.0.4.jar | IDs: inventorysorter
+Iron Chests | ironchest-1.19.2-14.2.7.jar | IDs: ironchest
+Iron Furnaces | ironfurnaces-1.19.2-3.6.5.jar | IDs: ironfurnaces
+Iron's Spells 'n Spellbooks | irons_spellbooks-1.19.2-3.4.0.jar | IDs: irons_spellbooks
+Item Filters | item-filters-forge-1902.2.9-build.51.jar | IDs: itemfilters
+Item Obliterator (Modpack Utils Series) | Item-Obliterator-Forge-1.19.2-2.2.1.jar | IDs: item_obliterator
+Item Production Lib | ItemProductionLib-1.19.2-1.0.2a-all.jar | IDs: itemproductionlib
+Item Stages | ItemStages-Forge-1.19.2-5.1.4.jar | IDs: itemstages
+Iter RPG | iterpg-0.5.0-1.19.2.jar | IDs: iter_rpg
+Jade 🔍 | Jade-1.19.1-forge-8.9.2.jar | IDs: jade
+Just Enough Items (JEI) | jei-1.19.2-forge-11.65.0.1081.jar | IDs: jei
+JEI Backpack Fix | jei-backpack-fix-1.19.2-1.0.0.jar | IDs: jei_backpack_fix
+Just Enough Professions (JEP) | JustEnoughProfessions-forge-1.19.2-2.0.2.jar | IDs: justenoughprofessions
+Just Enough Resources (JER) | JustEnoughResources-1.19.2-1.2.3.243.jar | IDs: jeresources
+Knight Lib | knightlib-forge-1.19.2-1.2.0.jar | IDs: knightlib
+Knight Quest [Reforged] | knightquest-1.8.5.jar | IDs: knightquest
+Konkrete | konkrete_forge_1.8.0_MC_1.19-1.19.2.jar | IDs: konkrete
+KubeJS | kubejs-forge-1902.6.2-build.73.jar | IDs: kubejs
+L_Ender 's Cataclysm | L_Enders_Cataclysm-2.46-1.19.2.jar | IDs: cataclysm
+Lazy DataFixerUpper(LazyDFU) [FORGE] | lazydfu-1.19-1.0.2.jar | IDs: lazydfu
+Leaves Be Gone | LeavesBeGone-v4.0.1-1.19.2-Forge.jar | IDs: leavesbegone
+Legendary Tooltips [Neo/Forge] | LegendaryTooltips-1.19.2-forge-1.4.0.jar | IDs: legendarytooltips
+Let Me Despawn | letmedespawn-forge-1.3.2b.jar | IDs: letmedespawn
+Library Ferret - Forge | libraryferret-forge-1.19.2-4.0.0.jar | IDs: libraryferret
+Lionfish API | lionfishapi-1.8.jar | IDs: lionfishapi
+Long NBT Killer | LongNbtKiller-Forge-1.19.2-1.0.0.jar | IDs: longnbtkiller
+Loot Integrations | lootintegrations-1.19.2-4.7.jar | IDs: lootintegrations
+Lootr (Forge & NeoForge) | lootr-forge-1.19-0.4.29.76.jar | IDs: lootr
+Majrusz Library | majrusz-library-forge-1.19.2-7.0.5-backport.1.jar | IDs: majruszlibrary
+Majrusz's Accessories | majruszs-accessories-forge-1.19.2-1.5.2-backport.2.jar | IDs: majruszsaccessories
+Majrusz's Progressive Difficulty | majruszs-difficulty-forge-1.19.2-1.9.9-backport.1.jar | IDs: majruszsdifficulty
+Majrusz's Enchantments | majruszs-enchantments-forge-1.19.2-1.10.7-backport.1.jar | IDs: majruszsenchantments
+Max Health Fix | MaxHealthFix-Forge-1.19.2-8.0.2.jar | IDs: maxhealthfix
+MC Story Mode Armors [Forge / Fabric] | mcsa-forge-3.1.4+1.19.jar | IDs: mcsa
+Medieval Paintings | medieval_paintings-1.19.2-7.0.jar | IDs: medieval_paintings
+Meet Your Fight | meetyourfight-1.19.2-1.3.4.jar | IDs: meetyourfight
+Melody | melody_forge_1.0.1_MC_1.19.2.jar | IDs: melody
+MemoryLeakFix | memoryleakfix-forge-1.17+-1.0.0.jar | IDs: memoryleakfix
+Memory Settings | memorysettings-1.19.2-5.4.jar | IDs: memorysettings
+MezzConfig | mezz_config-1.19.2-forge-0.6.6.jar | IDs: mezz_config
+ModernFix | modernfix-forge-5.18.1+mc1.19.2.jar | IDs: modernfix
+Moonlight Lib | moonlight-1.19.2-2.3.7-forge.jar | IDs: moonlight
+More Villagers | morevillagers-forge-1.19-4.0.3.jar | IDs: morevillagers
+Mouse Tweaks | MouseTweaks-forge-mc1.19-2.23.jar | IDs: mousetweaks
+Mowzie's Mobs | mowziesmobs-1.6.3.jar | IDs: mowziesmobs
+Multi-Piston | multipiston-1.19.2-1.2.25-ALPHA.jar | IDs: multipiston
+Mutant Monsters | MutantMonsters-v4.0.6-1.19.2-Forge.jar | IDs: mutantmonsters
+My Server Is Compatible | MyServerIsCompatible-1.19-1.0.jar | IDs: myserveriscompatible
+Mythic Mounts (Forge) | mythicmounts-19.2-7.2.1-forge.jar | IDs: mythicmounts
+Nature's Compass | NaturesCompass-1.19.2-1.10.0-forge.jar | IDs: naturescompass
+Necronomicon API | Necronomicon-Forge-1.4.2.jar | IDs: necronomicon
+Not Enough Recipe Book [NERB] | nerb-1.19.2-0.3-FORGE.jar | IDs: nerb
+NetherPortalFix | netherportalfix-forge-1.19-10.0.1.jar | IDs: netherportalfix
+Nether's Delight | NethersDelight-1.19-3.1.jar | IDs: nethersdelight
+Night Config Fixes [Archived] | NightConfigFixes-v4.0.7-1.19.2-Forge.jar | IDs: nightconfigfixes
+Noisium (Unofficial port) | noisium-1.0.2.jar | IDs: noisium
+Obscure API [Forge Edition] | obscure_api-15.jar | IDs: obscure_api
+ShatterLib | OctoLib | octolib-1.19.2-0.3.jar | IDs: octolib
+Oculus | oculus-mc1.19.2-1.6.9a.jar | IDs: oculus
+Origins: Accessibilities | origins-accessbilities-1.19.2-1.1.1.jar | IDs: oriacs
+Origins: Classes (Forge) | origins-classes-forge-1.2.1.jar | IDs: origins_classes
+Origins (Forge) | origins-forge-1.19.2-1.7.1.7-all.jar | IDs: origins
+Overflowing Bars | OverflowingBars-v4.0.1-1.19.2-Forge.jar | IDs: overflowingbars
+Packet Fixer | packetfixer-3.3.2-1.18-1.20.4-merged.jar | IDs: packetfixer
+Passive Skill Trees | PassiveSkillTree-1.19.2-BETA-0.6.14b-all.jar | IDs: skilltree
+Patchouli | Patchouli-1.19.2-77.jar | IDs: patchouli
+Paxi (Forge/NeoForge) | Paxi-1.19.2-Forge-3.0.1.jar | IDs: paxi
+Pehkui | Pehkui-3.8.2+1.19.2-forge.jar | IDs: pehkui
+Placebo | Placebo-1.19.2-7.4.1.jar | IDs: placebo
+playerAnimator | player-animation-lib-forge-1.0.2.jar | IDs: playeranimator
+Pluto | pluto-mc1.19.2-0.0.9.jar | IDs: pluto
+Polymorph | polymorph-forge-0.46.7+1.19.2.jar | IDs: polymorph
+PotFix Cataclysm Patch | potfix-cataclysm-addon-1.0.6.jar | IDs: mixample
+Pretty Rain | Pretty Rain-1.19.2-Forge-1.1.1.jar | IDs: particlerain
+Prism [Neo/Forge] | Prism-1.19.1-1.0.2.jar | IDs: prism
+Progressive Bosses | ProgressiveBosses-3.7.6-mc1.19.2.jar | IDs: progressivebosses
+Puzzles Lib | PuzzlesLib-v4.4.3-1.19.2-Forge.jar | IDs: puzzleslib
+Raided | Raided-1.19.2-0.1.6.jar | IDs: raided
+Recipe Essentials | recipeessentials-1.19.2-3.5.jar | IDs: recipeessentials
+Redirector [Modern] | redirector-5.0.0.jar | IDs: redirector
+Relics | relics-1.19.2-0.6.2.5.jar | IDs: relics
+Repurposed Structures (Neoforge/Forge) | repurposed_structures_forge-6.3.29+1.19.2.jar | IDs: repurposed_structures
+Rhino | rhino-forge-1902.2.3-build.284.jar | IDs: rhino
+Rings of Ascension (Forge/NeoForge) | RingsOfAscension-1.19-1.0.1.jar | IDs: ringsofascension
+Royal Variations | royal_variations_[Forge]_1.19.2_1.0.jar | IDs: royalvariations
+Sodium/Embeddium Extras | rubidium_extras-1.19.2_v1.4.3.jar | IDs: rubidium_extras
+Rubidium | rubidium-mc1.19.2-0.6.2c.jar | IDs: rubidium
+Saturn | saturn-mc1.19.2-0.1.4.jar | IDs: saturn
+Savage & Ravage | savage_and_ravage-1.19.2-5.0.5.jar | IDs: savage_and_ravage
+ServerCore | servercore-forge-1.3.6+1.19.2.jar | IDs: servercore
+ShadowizardLib | shadowizardlib-1.19.2-1.0.8.jar | IDs: shadowizardlib
+Simply Swords [Fabric & Forge] | simplyswords-forge-1.47.0-1.19.2.jar | IDs: simplyswords
+Sky Villages [Forge] | SkyVillages-1.0.3-1.19.2-1.20.x-forge-release.jar | IDs: skyvillages
+Small Ships [Fabric & Forge] | smallships-forge-1.19.2-2.0.0-b1.3.1.jar | IDs: smallships
+Smooth Boot (Reloaded) | smoothboot(reloaded)-mc1.19.2-0.0.4.jar | IDs: smoothboot
+Spice of Life: Apple Pie Edition | solapplepie-1.19.2-2.2.0.jar | IDs: solapplepie
+Sons Of Sins | sons-of-sins-1.19.2-2.1.6.jar | IDs: sons_of_sins
+Sophisticated Backpacks | sophisticatedbackpacks-1.19.2-3.20.2.1035.jar | IDs: sophisticatedbackpacks
+Sophisticated Core | sophisticatedcore-1.19.2-0.6.4.730.jar | IDs: sophisticatedcore
+Stalwart Dungeons | stalwart-dungeons-1.19.2-1.2.8.jar | IDs: stalwart_dungeons
+Starlight (Forge) | starlight-1.1.1+forge.cf5b10b.jar | IDs: starlight
+Storage Drawers | StorageDrawers-1.19.2-11.4.1.jar | IDs: storagedrawers
+Strictly Origins [FORGE] | strictly_origins_v9.2.1_1.19.2.jar | IDs: strictly_origins
+Structory | Structory_1.19.3_v1.3.1a.jar | IDs: structory
+Structory: Towers | Structory_Towers_1.19.3_v1.0.2.jar | IDs: structorytowers
+Structure Gel API | structure_gel-1.19.2-2.7.3.jar | IDs: structure_gel
+Structure Essentials | structureessentials-1.19.2-3.2.jar | IDs: structureessentials
+Structurize | structurize-1.19.2-1.0.689-RELEASE.jar | IDs: structurize
+SuperMartijn642's Config Lib | supermartijn642configlib-1.1.8-forge-mc1.19.jar | IDs: supermartijn642configlib
+SuperMartijn642's Core Lib | supermartijn642corelib-1.1.24b-forge-mc1.19.2.jar | IDs: supermartijn642corelib
+Supplementaries | supplementaries-1.19.2-2.4.20.jar | IDs: supplementaries
+It Takes a Pillage | takesapillage-1.0.3-1.19.2.jar | IDs: takesapillage
+Tectonic | tectonic-forge-1.19-2.3.5a.jar | IDs: tectonic
+TerraBlender (Forge) | TerraBlender-forge-1.19.2-2.0.1.166.jar | IDs: terrablender
+TexTrue's Rubidium Options | TextruesRubidiumOptions-1.0.7-mc1.19.2.jar | IDs: reeses_sodium_options
+The Lost Castle [NeoForge/Fabric] | tlc_forge-1.0.2-R-1.19.2.jar | IDs: tlc
+Tom's Simple Storage Mod | toms_storage-1.19-1.5.11.jar | IDs: toms_storage
+Too Fast | toofast-1.19-0.2.2.4.jar | IDs: toofast
+Too Many Glyphs | toomanyglyphs-1.19.2-2.2.376.1564.jar | IDs: toomanyglyphs
+Towers of the Wild Modded | totw_modded-forge-1.19.2-1.0.5.jar | IDs: totw_modded
+Towns and Towers | Towns-and-Towers-v.1.10-_FORGE-1.19.2_.jar | IDs: t_and_t
+TownTalk | towntalk-1.19.2-1.0.1.jar | IDs: towntalk
+Transmog | transmog-forge-1.2.2+1.19.2.jar | IDs: transmog
+Trash Cans | trashcans-1.1.1-forge-mc1.19.2.jar | IDs: trashcans
+TrashSlot | trashslot-forge-1.19.2-12.1.0.jar | IDs: trashslot
+Traveler's Titles (Forge/NeoForge) | TravelersTitles-1.19.2-Forge-3.1.2.jar | IDs: travelerstitles
+Twigs | twigs-forge-1.19.2-3.0.1.jar | IDs: twigs
+The Twilight Forest | twilightforest-1.19.2-4.2.1518-universal.jar | IDs: twilightforest
+Undead Unleashed - Continued | UndeadUnleashed-1.1.1-1.19.2.jar | IDs: undead_unleashed
+Unusual End | UnusualEnd1.19.2_V1.4.3.jar | IDs: unusualend
+Upgraded Core | upgradedcore-1.19.2-4.1.0.1-release.jar | IDs: upgradedcore
+Upgraded Netherite : Items | upgradednetherite_items-1.19.2-4.1.0.2-release.jar | IDs: upgradednetherite_items
+Upgraded Netherite : Ultimerite | upgradednetherite_ultimate-1.19.2-4.1.0.4-release.jar | IDs: upgradednetherite_ultimate
+Upgraded Netherite | upgradednetherite-1.19.2-5.1.0.9-release.jar | IDs: upgradednetherite
+Valhelsia Core | valhelsia_core-forge-1.19.2-0.5.0.jar | IDs: valhelsia_core
+Wabi-Sabi Structures (Forge) | Wabi-Sabi-Structures-1.2.0-1.19-Forge.jar | IDs: wabi_sabi_structures
+Waystones | waystones-forge-1.19.2-11.4.2.jar | IDs: waystones
+Whisperwoods | whisperwoods-1.19-2.1.1-forge.jar | IDs: whisperwoods
+Woodworks | woodworks-1.19.2-2.2.2.jar | IDs: woodworks
+XP Tome | xptome-1.19-2.1.7.jar | IDs: xpbook
+Yeetus Experimentus | yeetusexperimentus-1.0.1-build.2+mc1.19.1.jar | IDs: yeetusexperimentus
+YUNG's API (Forge/NeoForge) | YungsApi-1.19.2-Forge-3.8.10.jar | IDs: yungsapi
+YUNG's Better Desert Temples (Forge/NeoForge) | YungsBetterDesertTemples-1.19.2-Forge-2.2.2.jar | IDs: betterdeserttemples
+YUNG's Better Dungeons (Forge/NeoForge) | YungsBetterDungeons-1.19.2-Forge-3.2.2.jar | IDs: betterdungeons
+YUNG's Better End Island (Forge/NeoForge) | YungsBetterEndIsland-1.19.2-Forge-1.0.jar | IDs: betterendisland
+YUNG's Better Jungle Temples (Forge/NeoForge) | YungsBetterJungleTemples-1.19.2-Forge-1.0.1.jar | IDs: betterjungletemples
+YUNG's Better Mineshafts (Forge/NeoForge) | YungsBetterMineshafts-1.19.2-Forge-3.2.1.jar | IDs: bettermineshafts
+YUNG's Better Nether Fortresses (Forge/NeoForge) | YungsBetterNetherFortresses-1.19.2-Forge-1.0.6.jar | IDs: betterfortresses
+YUNG's Better Ocean Monuments (Forge/NeoForge) | YungsBetterOceanMonuments-1.19.2-Forge-2.1.1.jar | IDs: betteroceanmonuments
+YUNG's Better Strongholds (Forge/NeoForge) | YungsBetterStrongholds-1.19.2-Forge-3.2.0.jar | IDs: betterstrongholds
+Medieval Music | zmedievalmusic-1.19.2-2.0.jar | IDs: medievalmusic
+
+GEMEINSAM: 72 Cisco-JARs mit Entsprechung
+Advancement Plaques [Neo/Forge] -> Advancement Plaques [Neo/Forge]
+Apotheosis -> Apotheosis
+AppleSkin -> AppleSkin
+Architectury API -> Architectury API
+Ars Additions -> Ars Additions
+Ars Elemental -> Ars Elemental
+Ars Nouveau -> Ars Nouveau
+Balm -> Balm
+Better Advancements -> Better Advancements
+Better Combat [Fabric & Forge] -> Better Combat [Fabric & Forge]
+Bookshelf -> Bookshelf
+Caelus API -> Caelus API
+Cloth Config API (Fabric/Forge/NeoForge) -> Cloth Config API (Fabric/Forge/NeoForge)
+Clumps -> Clumps
+Comforts -> Comforts
+Connectivity -> Connectivity
+Controlling -> Controlling
+Crafting Station: J/EMI Edition Updated -> Crafting Station: J/EMI Edition Updated
+ChoiceTheorem's Overhauled Village -> ChoiceTheorem's Overhauled Village
+Cupboard -> Cupboard
+Curios API -> Curios API
+MmmMmmMmmMmm (Target Dummy) -> MmmMmmMmmMmm (Target Dummy)
+Dungeon Crawl -> Dungeon Crawl
+Dungeons and Taverns -> Dungeons and Taverns
+Easy Villagers -> Easy Villagers
+Enchantment Descriptions -> Enchantment Descriptions
+Farmer's Delight -> Farmer's Delight
+FerriteCore ((Neo)Forge) -> FerriteCore ((Neo)Forge)
+FTB Chunks (NeoForge) -> FTB Chunks (NeoForge)
+FTB Library (NeoForge) -> FTB Library (NeoForge)
+FTB Quests (NeoForge) -> FTB Quests (NeoForge)
+FTB Teams (NeoForge) -> FTB Teams (NeoForge)
+FTB Ultimine (NeoForge) -> FTB Ultimine (NeoForge)
+FTB XMod Compat -> FTB XMod Compat
+Gateways to Eternity -> Gateways to Eternity
+GeckoLib -> GeckoLib
+Get It Together, Drops! -> Get It Together, Drops!
+Iceberg [Neo/Forge] -> Iceberg [Neo/Forge]
+Inventory HUD+ -> Inventory HUD+
+Inventory Sorter -> Inventory Sorter
+Iron's Spells 'n Spellbooks -> Iron's Spells 'n Spellbooks
+Just Enough Items (JEI) -> Just Enough Items (JEI)
+Just Enough Professions (JEP) -> Just Enough Professions (JEP)
+Just Enough Resources (JER) -> Just Enough Resources (JER)
+KubeJS -> KubeJS
+L_Ender 's Cataclysm -> L_Ender 's Cataclysm
+Legendary Tooltips [Neo/Forge] -> Legendary Tooltips [Neo/Forge]
+Lionfish API -> Lionfish API
+Loot Integrations -> Loot Integrations
+Lootr (Forge & NeoForge) -> Lootr (Forge & NeoForge)
+Max Health Fix -> Max Health Fix
+MezzConfig -> MezzConfig
+Moonlight Lib -> Moonlight Lib
+Mouse Tweaks -> Mouse Tweaks
+Overflowing Bars -> Overflowing Bars
+Patchouli -> Patchouli
+Placebo -> Placebo
+playerAnimator -> playerAnimator
+Polymorph -> Polymorph
+Pretty Rain -> Pretty Rain
+Prism [Neo/Forge] -> Prism [Neo/Forge]
+Puzzles Lib -> Puzzles Lib
+Rhino -> Rhino
+Sodium/Embeddium Extras -> Sodium/Embeddium Extras
+Sophisticated Backpacks -> Sophisticated Backpacks
+Sophisticated Core -> Sophisticated Core
+SuperMartijn642's Config Lib -> SuperMartijn642's Config Lib
+SuperMartijn642's Core Lib -> SuperMartijn642's Core Lib
+TexTrue's Rubidium Options -> Reese's Sodium Options
+Trash Cans -> Trash Cans
+TrashSlot -> TrashSlot
+Yeetus Experimentus -> Yeetus Experimentus
+
+NUR IN CISCO: 218 JARs
+AeroBlender | aeroblender-1.19.2-1.0.1.jar
+The Aether | aether-1.19.2-1.5.1-forge.jar
+AI Improvements: Performance Tuning | AI-Improvements-1.19.2-0.5.2.jar
+Alex's Delight | alexsdelight-1.4.1.jar
+Alex's Mobs | alexsmobs-1.21.1.jar
+Apotheotic Additions | apotheotic_additions1.0.4.jar
+Apothic Curios | ApothicCurios-1.19.2-1.0.3c.jar
+ApothSB | apothsb-1.0.3.jar
+Aquamirae [Neo/Forge Edition] | aquamirae-6.API15.jar
+Armor Damage Limit | ArmorDamageLimit-1.19.2-1.0.0.jar
+Atmospheric | atmospheric-1.19.2-5.1.2.jar
+AttributeFix | AttributeFix-Forge-1.19.2-17.2.8.jar
+Auto Leveling | AutoLeveling-1.19.2-1.19b.jar
+AutoRegLib | AutoRegLib-1.8.2-55.jar
+Awesome Dungeon The End edition - Forge | awesomedungeonend-forge-1.19.2-3.1.1.jar
+Awesome Dungeon Nether edition - Forge | awesomedungeonnether-forge-1.19.2-3.1.1.jar
+AzureLib | azurelib-forge-1.19.2-3.2.14.jar
+Bad Mobs | BadMobs-1.19.2-16.1.3.jar
+BadOptimizations | BadOptimizations-2.1.4-1.19.1-19.2.jar
+Better Fps - Render Distance | betterfpsdist-1.19.2-4.1.jar
+Better Third Person | BetterThirdPerson-Forge-1.19-1.9.0.jar
+Biome Music | biomemusic-1.19.2-2.2.jar
+BlockUI | blockui-1.19.2-1.0.140-BETA.jar
+Blue Skies | blue_skies-1.19.2-1.3.20.jar
+Blueprint | blueprint-1.19.2-6.2.0.jar
+Bocchium | bocchium-1.19.2-0.0.3.jar
+Bosses of Mass Destruction [Forge | NeoForge] | BOMD-Forge-1.19.2-1.0.6.jar
+Brewin' And Chewin' | BrewinAndChewin-1.19-2.0.jar
+Brutal Bosses - Custom Bosses | brutalbosses-1.19.2-6.8.jar
+Bygone Nether | bygonenether-1.3.2-1.19.2.jar
+Canary | canary-mc1.19.2-0.3.3.jar
+Carry On | carryon-forge-1.19.2-2.1.2.23.jar
+Celestisynth: Wishes and Hells | celestisynth-1.19.2-1.1.5.jar
+Celestweaks | celestweaks-beta-0.9.7-1.19.2.jar
+Chunk Sending | chunksending-1.19.2-2.8.jar
+Cisco's Content | cisco_mod_9.6.jar
+Cisco's Content [Unbound] | ciscounbound-1.2.jar
+Citadel | citadel-2.1.4-1.19.jar
+Clayworks | clayworks-1.19.2-2.1.0.jar
+Cobweb | cobweb-forge-1.19.2-1.0.1.jar
+Collection of Singiro | collection-of-singiro-1.19.x-1.1.4.jar
+Combat Roll [Fabric & Forge] | combatroll-forge-1.1.5+1.19.jar
+Construction Wand | constructionwand-1.19.2-2.10.jar
+CorgiLib | CorgiLib-forge-1.19.2-1.0.0.34.jar
+Corpse | corpse-forge-1.19.2-1.0.17.jar
+Corpse x Curios API Compat | corpsecurioscompat-1.18.x-1.20.x-Forge-2.2.2.jar
+CraftTweaker | CraftTweaker-forge-1.19.2-10.1.56.jar
+CraterLib | CraterLib-Forge-1.19.2-3.1.3.jar
+CullLessLeaves Reforged (Unofficial) | CullLessLeaves-Reforged-1.0.5.jar
+Darker Depths | DarkerDepths-1.19.2-1.0.0.jar
+Decorative Blocks | Decorative Blocks-forge-1.19.2-3.0.0.jar
+Deep Aether | deep_aether-1.19.2-1.0.4.jar
+Deeper and Darker | deeperdarker-forge-1.19.2-1.2.2.jar
+Default Options | defaultoptions-forge-1.19-15.0.2.jar
+Delightful | Delightful-1.19.2-3.4.1.jar
+DoesPotatoTick? | doespotatotick-1.19.2-5.6.3.jar
+Domum Ornamentum | domum_ornamentum-1.19-1.0.146-BETA-universal.jar
+Dragon Enchants | dragon_enchants-1.0.4-1.19.2.jar
+Dramatic Doors | DramaticDoors-QuiFabrge-1.19.2-3.2.7.jar
+Dreadsteel | dreadsteel-1.19.2-1.1.6.jar
+Dungeons Enhanced | dungeons_enhanced-1.19.2-4.1.jar
+Dungeons Plus | dungeons_plus-1.19.2-1.3.1.jar
+When Dungeons Arise - Forge! | DungeonsArise-1.19.2-2.1.54-release.jar
+When Dungeons Arise - Seven Seas | DungeonsAriseSevenSeas-1.19.2-1.0.2-forge.jar
+Duplicationless | duplicationless-1.19.2-1.1.4.jar
+Durability Tooltip | durabilitytooltip-1.2.0-forge-mc1.19.jar
+Eccentric Tome | eccentrictome-1.19.2-1.10.2.jar
+Ecologics | ecologics-forge-1.19.2-2.1.11.jar
+OpenBlocks Elevator | elevatorid-1.19.2-1.8.10.jar
+Elytra Slot | elytraslot-forge-6.1.2+1.19.2.jar
+End's Phantasm | End's Phantasm - BETAv1.2.10.5 - 1.19.2.jar
+Endless Biomes | EndlessBiomes 1.4s - 1.19.2 (Server-friendly).jar
+End Remastered [NeoForge/Fabric] | endrem_forge-5.2.1-R-1.19.X.jar
+Enemy Expansion | enemyexpansion-2.4.0-forge-1.19.2.jar
+Enigmatic Addons | enigmaticaddons-1.19.2-1.2.2.jar
+Enigmatic Legacy | EnigmaticLegacy-2.26.5.jar
+Entity Collision FPS Fix | Entity_Collision_FPS_Fix-forge-1.19-2.0.0.0.jar
+Entity Culling Fabric/Forge | entityculling-forge-1.6.1-mc1.19.2.jar
+Explorer's Compass | ExplorersCompass-1.19.2-1.3.0-forge.jar
+Explorify – Dungeons & Structures | Explorify v1.6.3 f10-88.mod.jar
+FancyMenu | fancymenu_forge_3.9.14_MC_1.19.2.jar
+Fantasy's Furniture | fantasyfurniture-1.19.2-6.7.0.jar
+Farmer's Respite | FarmersRespite-1.19-2.0.jar
+Fast Async World Save[Forge/Neo/Fabric] | fastasyncworldsave-1.19.2-2.0.jar
+Fast Paintings | fastpaintings-1.19-1.1.3.jar
+Forbidden and Arcanus | forbidden_arcanus-1.19.2-2.1.5.jar
+Galosphere | Galosphere-1.19.2-1.3.0-Forge.jar
+Game Stages | GameStages-Forge-1.19.2-11.1.4.jar
+Geophilic – Vanilla Biome Overhauls | geophilic-1.19-2.0.0c.jar
+Goblin Traders | goblintraders-1.8.0-1.19.2.jar
+fix GPU memory leak | gpumemleakfix-1.19.2-1.6.jar
+Harvest with ease | harvest-with-ease-forge-1.19.2-9.4.0.jar
+Hopo Better Ruined Portals | HopoBetterRuinedPortals-[1.19-1.19.3]-1.3.3b.jar
+Human Companions | humancompanions-1.19.2-1.7.4.jar
+ImmediatelyFast | ImmediatelyFast-Forge-1.4.0+1.19.2.jar
+Immersive Armors | immersive_armors-1.5.6+1.19.2-forge.jar
+Immersive Paintings | immersive_paintings-0.6.7+1.19.2-forge.jar
+Incendium | Incendium_1.19.3_v5.1.6.jar
+AtomicStryker's Infernal Mobs | infernalmobs-1.19.2.4.jar
+InsaneLib | InsaneLib-1.7.5-mc1.19.2.jar
+Iron Chests | ironchest-1.19.2-14.2.7.jar
+Iron Furnaces | ironfurnaces-1.19.2-3.6.5.jar
+Item Filters | item-filters-forge-1902.2.9-build.51.jar
+Item Obliterator (Modpack Utils Series) | Item-Obliterator-Forge-1.19.2-2.2.1.jar
+Item Production Lib | ItemProductionLib-1.19.2-1.0.2a-all.jar
+Item Stages | ItemStages-Forge-1.19.2-5.1.4.jar
+Iter RPG | iterpg-0.5.0-1.19.2.jar
+Jade 🔍 | Jade-1.19.1-forge-8.9.2.jar
+JEI Backpack Fix | jei-backpack-fix-1.19.2-1.0.0.jar
+Knight Lib | knightlib-forge-1.19.2-1.2.0.jar
+Knight Quest [Reforged] | knightquest-1.8.5.jar
+Konkrete | konkrete_forge_1.8.0_MC_1.19-1.19.2.jar
+Lazy DataFixerUpper(LazyDFU) [FORGE] | lazydfu-1.19-1.0.2.jar
+Leaves Be Gone | LeavesBeGone-v4.0.1-1.19.2-Forge.jar
+Let Me Despawn | letmedespawn-forge-1.3.2b.jar
+Library Ferret - Forge | libraryferret-forge-1.19.2-4.0.0.jar
+Long NBT Killer | LongNbtKiller-Forge-1.19.2-1.0.0.jar
+Majrusz Library | majrusz-library-forge-1.19.2-7.0.5-backport.1.jar
+Majrusz's Accessories | majruszs-accessories-forge-1.19.2-1.5.2-backport.2.jar
+Majrusz's Progressive Difficulty | majruszs-difficulty-forge-1.19.2-1.9.9-backport.1.jar
+Majrusz's Enchantments | majruszs-enchantments-forge-1.19.2-1.10.7-backport.1.jar
+MC Story Mode Armors [Forge / Fabric] | mcsa-forge-3.1.4+1.19.jar
+Medieval Paintings | medieval_paintings-1.19.2-7.0.jar
+Meet Your Fight | meetyourfight-1.19.2-1.3.4.jar
+Melody | melody_forge_1.0.1_MC_1.19.2.jar
+MemoryLeakFix | memoryleakfix-forge-1.17+-1.0.0.jar
+Memory Settings | memorysettings-1.19.2-5.4.jar
+ModernFix | modernfix-forge-5.18.1+mc1.19.2.jar
+More Villagers | morevillagers-forge-1.19-4.0.3.jar
+Mowzie's Mobs | mowziesmobs-1.6.3.jar
+Multi-Piston | multipiston-1.19.2-1.2.25-ALPHA.jar
+Mutant Monsters | MutantMonsters-v4.0.6-1.19.2-Forge.jar
+My Server Is Compatible | MyServerIsCompatible-1.19-1.0.jar
+Mythic Mounts (Forge) | mythicmounts-19.2-7.2.1-forge.jar
+Nature's Compass | NaturesCompass-1.19.2-1.10.0-forge.jar
+Necronomicon API | Necronomicon-Forge-1.4.2.jar
+Not Enough Recipe Book [NERB] | nerb-1.19.2-0.3-FORGE.jar
+NetherPortalFix | netherportalfix-forge-1.19-10.0.1.jar
+Nether's Delight | NethersDelight-1.19-3.1.jar
+Night Config Fixes [Archived] | NightConfigFixes-v4.0.7-1.19.2-Forge.jar
+Noisium (Unofficial port) | noisium-1.0.2.jar
+Obscure API [Forge Edition] | obscure_api-15.jar
+ShatterLib | OctoLib | octolib-1.19.2-0.3.jar
+Oculus | oculus-mc1.19.2-1.6.9a.jar
+Origins: Accessibilities | origins-accessbilities-1.19.2-1.1.1.jar
+Origins: Classes (Forge) | origins-classes-forge-1.2.1.jar
+Origins (Forge) | origins-forge-1.19.2-1.7.1.7-all.jar
+Packet Fixer | packetfixer-3.3.2-1.18-1.20.4-merged.jar
+Passive Skill Trees | PassiveSkillTree-1.19.2-BETA-0.6.14b-all.jar
+Paxi (Forge/NeoForge) | Paxi-1.19.2-Forge-3.0.1.jar
+Pehkui | Pehkui-3.8.2+1.19.2-forge.jar
+Pluto | pluto-mc1.19.2-0.0.9.jar
+PotFix Cataclysm Patch | potfix-cataclysm-addon-1.0.6.jar
+Progressive Bosses | ProgressiveBosses-3.7.6-mc1.19.2.jar
+Raided | Raided-1.19.2-0.1.6.jar
+Recipe Essentials | recipeessentials-1.19.2-3.5.jar
+Redirector [Modern] | redirector-5.0.0.jar
+Relics | relics-1.19.2-0.6.2.5.jar
+Repurposed Structures (Neoforge/Forge) | repurposed_structures_forge-6.3.29+1.19.2.jar
+Rings of Ascension (Forge/NeoForge) | RingsOfAscension-1.19-1.0.1.jar
+Royal Variations | royal_variations_[Forge]_1.19.2_1.0.jar
+Rubidium | rubidium-mc1.19.2-0.6.2c.jar
+Saturn | saturn-mc1.19.2-0.1.4.jar
+Savage & Ravage | savage_and_ravage-1.19.2-5.0.5.jar
+ServerCore | servercore-forge-1.3.6+1.19.2.jar
+ShadowizardLib | shadowizardlib-1.19.2-1.0.8.jar
+Simply Swords [Fabric & Forge] | simplyswords-forge-1.47.0-1.19.2.jar
+Sky Villages [Forge] | SkyVillages-1.0.3-1.19.2-1.20.x-forge-release.jar
+Small Ships [Fabric & Forge] | smallships-forge-1.19.2-2.0.0-b1.3.1.jar
+Smooth Boot (Reloaded) | smoothboot(reloaded)-mc1.19.2-0.0.4.jar
+Spice of Life: Apple Pie Edition | solapplepie-1.19.2-2.2.0.jar
+Sons Of Sins | sons-of-sins-1.19.2-2.1.6.jar
+Stalwart Dungeons | stalwart-dungeons-1.19.2-1.2.8.jar
+Starlight (Forge) | starlight-1.1.1+forge.cf5b10b.jar
+Storage Drawers | StorageDrawers-1.19.2-11.4.1.jar
+Strictly Origins [FORGE] | strictly_origins_v9.2.1_1.19.2.jar
+Structory | Structory_1.19.3_v1.3.1a.jar
+Structory: Towers | Structory_Towers_1.19.3_v1.0.2.jar
+Structure Gel API | structure_gel-1.19.2-2.7.3.jar
+Structure Essentials | structureessentials-1.19.2-3.2.jar
+Structurize | structurize-1.19.2-1.0.689-RELEASE.jar
+Supplementaries | supplementaries-1.19.2-2.4.20.jar
+It Takes a Pillage | takesapillage-1.0.3-1.19.2.jar
+Tectonic | tectonic-forge-1.19-2.3.5a.jar
+TerraBlender (Forge) | TerraBlender-forge-1.19.2-2.0.1.166.jar
+The Lost Castle [NeoForge/Fabric] | tlc_forge-1.0.2-R-1.19.2.jar
+Tom's Simple Storage Mod | toms_storage-1.19-1.5.11.jar
+Too Fast | toofast-1.19-0.2.2.4.jar
+Too Many Glyphs | toomanyglyphs-1.19.2-2.2.376.1564.jar
+Towers of the Wild Modded | totw_modded-forge-1.19.2-1.0.5.jar
+Towns and Towers | Towns-and-Towers-v.1.10-_FORGE-1.19.2_.jar
+TownTalk | towntalk-1.19.2-1.0.1.jar
+Transmog | transmog-forge-1.2.2+1.19.2.jar
+Traveler's Titles (Forge/NeoForge) | TravelersTitles-1.19.2-Forge-3.1.2.jar
+Twigs | twigs-forge-1.19.2-3.0.1.jar
+The Twilight Forest | twilightforest-1.19.2-4.2.1518-universal.jar
+Undead Unleashed - Continued | UndeadUnleashed-1.1.1-1.19.2.jar
+Unusual End | UnusualEnd1.19.2_V1.4.3.jar
+Upgraded Core | upgradedcore-1.19.2-4.1.0.1-release.jar
+Upgraded Netherite : Items | upgradednetherite_items-1.19.2-4.1.0.2-release.jar
+Upgraded Netherite : Ultimerite | upgradednetherite_ultimate-1.19.2-4.1.0.4-release.jar
+Upgraded Netherite | upgradednetherite-1.19.2-5.1.0.9-release.jar
+Valhelsia Core | valhelsia_core-forge-1.19.2-0.5.0.jar
+Wabi-Sabi Structures (Forge) | Wabi-Sabi-Structures-1.2.0-1.19-Forge.jar
+Waystones | waystones-forge-1.19.2-11.4.2.jar
+Whisperwoods | whisperwoods-1.19-2.1.1-forge.jar
+Woodworks | woodworks-1.19.2-2.2.2.jar
+XP Tome | xptome-1.19-2.1.7.jar
+YUNG's API (Forge/NeoForge) | YungsApi-1.19.2-Forge-3.8.10.jar
+YUNG's Better Desert Temples (Forge/NeoForge) | YungsBetterDesertTemples-1.19.2-Forge-2.2.2.jar
+YUNG's Better Dungeons (Forge/NeoForge) | YungsBetterDungeons-1.19.2-Forge-3.2.2.jar
+YUNG's Better End Island (Forge/NeoForge) | YungsBetterEndIsland-1.19.2-Forge-1.0.jar
+YUNG's Better Jungle Temples (Forge/NeoForge) | YungsBetterJungleTemples-1.19.2-Forge-1.0.1.jar
+YUNG's Better Mineshafts (Forge/NeoForge) | YungsBetterMineshafts-1.19.2-Forge-3.2.1.jar
+YUNG's Better Nether Fortresses (Forge/NeoForge) | YungsBetterNetherFortresses-1.19.2-Forge-1.0.6.jar
+YUNG's Better Ocean Monuments (Forge/NeoForge) | YungsBetterOceanMonuments-1.19.2-Forge-2.1.1.jar
+YUNG's Better Strongholds (Forge/NeoForge) | YungsBetterStrongholds-1.19.2-Forge-3.2.0.jar
+Medieval Music | zmedievalmusic-1.19.2-2.0.jar
+
+NUR IN TRIALFORGED: 128 JARs
+Almost Unified | almostunified-neoforge-1.21.1-1.4.2.jar
+AmbientSounds 6 | AmbientSounds_NEOFORGE_v6.3.8_mc1.21.1.jar
+Apothic Category Compat | apothic_compat-2.0.2.jar
+Apothic Compats | apothic_compats-0.2.5.5.jar
+Apothic Attributes | ApothicAttributes-1.21.1-2.11.0.jar
+Better Combat x Apotheosis Compat | apothiccombat-1.2.1.jar
+Apothic Enchanting | ApothicEnchanting-1.21.1-1.6.2.jar
+Apothic Spawners | ApothicSpawners-1.21.1-1.4.0.jar
+Ars Nouveau: Chapters | ars_chapters-1.0.4.jar
+Ars Nouveau: Crafting Terminal Improvements | ars_nouveau_crafting_terminal-1.4.0.jar
+Ars Polymorphia | ars_polymorphia-1.0.3.jar
+Ars Nouveau's Flavors & Delight | arsdelight-2.2.2.jar
+Sophisticated Backpacks: Ars Compat   |   Sophisticated Backpacks Ars-Nouveau Compatibility | arssophisticatedcompat-0.3.0.jar
+Sophisticated Storage: Ars Compat | Sophisticated Storage Ars-Nouveau Compatibility | arssophisticatedstoragecompat-0.3.0.jar
+BaguetteLib | baguettelib-1.21.1-NeoForge-2.0.7.jar
+Better Advanced Tooltips | better-advanced-tooltips-2101.1.0-build.5.jar
+Concurrent Chunk Management Engine | c2me-neoforge-mc1.21.1-0.4.0-alpha.0.122.jar
+Cataclysm & BetterCombat - Compatibility | cataclysm_compat_1.21.1-1.0.2.jar
+CB Multipart | CBMultipart-1.21.1-3.5.0.155.jar
+Clean Tooltips | clean_tooltips-1.1-neoforge-1.21.1.jar
+Clean Swing Through Grass | cleanswing-1.10-1.21.jar
+CleanView | cleanview-1.21.1-v1-neoforge.jar
+CodeChicken Lib 1.8.+ | CodeChickenLib-1.21.1-4.6.1.529.jar
+Collective | collective-1.21.1-8.41.jar
+Connected Glass | connectedglass-1.1.14-neoforge-mc1.21.jar
+Cosmetic Armor Reworked | cosmeticarmorreworked-1.21.1-v1-neoforge.jar
+Crafting on a stick | crafting_on_a_stick-1.21.0.6.jar
+CreativeCore | CreativeCore_NEOFORGE_v2.13.50_mc1.21.1.jar
+DnT Ancient City Overhaul | DnT-ancient-city-overhaul-v2 [NeoForge].jar
+DnT Desert Temple Overhaul | DnT-desert-temple-replacement-v1.2 [NeoForge].jar
+DnT Jungle Temple Overhaul | DnT-jungle-temple-replacement-v1.2 [NeoForge].jar
+DnT Nether Fortress Overhaul | DnT-nether-fortress-overhaul-2.5.1 [NeoForge].jar
+DnT Ocean Monument Overhaul | DnT-ocean-monument-replacement-v1.2 [NeoForge].jar
+DnT Pillager Outpost Overhaul | DnT-pillager-outpost-overhaul-v2.2 [NeoForge].jar
+DnT Stronghold Overhaul | DnT-stronghold-overhaul-v2.1.f [NeoForge].jar
+DnT Swamp Hut Overhaul | DnT-swamp-hut-overhaul-v2 [NeoForge].jar
+DnT Woodland Mansion Overhaul | DnT-woodland-mansion-replacement-v1.2 [NeoForge].jar
+Double Doors | doubledoors-1.21.1-7.3.jar
+Easy Piglins | easy-piglins-neoforge-1.21.1-1.0.14.jar
+Elsebase | elsebase-1.1.0.jar
+Enchanted! - More Enchants | enchanted-0.0.2.jar
+Enigmatic Delicacy | enigmaticdelicacy-1.21.1-1.0.0b.jar
+Enigmatic Legacy Plus | enigmaticlegacyplus-1.21.1-1.1.1.jar
+Extreme sound muffler - (Neo)Forge | ExtremeSoundMuffler-3.56_NeoForge-1.21.jar
+FallingTree | FallingTree-1.21.1-1.21.1.11.jar
+FastFurnace | FastFurnace-1.21.1-9.0.1.jar
+Fast Leaf Decay | fastleafdecay-35.jar
+FastSuite | FastSuite-1.21.1-6.0.7.jar
+FastWorkbench | FastWorkbench-1.21.1-9.1.3.jar
+Fire Spread Tweaks | firespreadtweaks-1.21.1-2.9.jar
+FlickerFix | flickerfix-1.21.1-6.1.0.jar
+Framework | framework-neoforge-1.21.1-0.13.11.jar
+FTB Essentials (Forge & Fabric) | ftb-essentials-neoforge-2101.1.10.jar
+Fuel Goes Here | fuelgoeshere-1.21.1-1.2.0.jar
+Fusion (Connected Textures) | fusion-1.3.15b-neoforge-mc1.21.1.jar
+GLib | goo_lib-0.0.9.jar
+Granular Mob Griefing | granularmobgriefing-1.0.0.jar
+GraveStone Mod | gravestone-neoforge-1.21.1-1.0.40.jar
+Gravestone x Curios API Compat | gravestonecurioscompat-1.21.1-NeoForge-3.0.1.jar
+Handcrafted | handcrafted-neoforge-1.21.1-4.0.3.jar
+Healing Campfire | healingcampfire-1.21.1-6.4.jar
+Hey Berry! SHUT UP | heyberryshutup-1.21.0-2.0.4.jar
+Iron's Apothic Invaders | irons_apothic_invaders_1.0.0.jar
+Apotheosis x Iron's Spellbooks Compat | irons_apothic-2.2.6.jar
+Iron's Lib | irons_lib-1.21.1-2.2.0.jar
+JamLib | jamlib-neoforge-1.3.6+1.21.1.jar
+Just Enough Archaeology | jearchaeology-1.21.1-1.2.0.jar
+Just Enough Effect Descriptions (JEED) | jeed-1.21-2.3.4-neoforge.jar
+Kaelo's Gems — Apotheosis Addon | kaelos_gems-1.21.1-1.2.0.jar
+Kotlin for Forge | kotlinforforge-5.12.0-all.jar
+KubeJS Ars Nouveau | kubejsarsnouveau-1.3.2.jar
+Light Overlay (Rift/Forge/Fabric) | light-overlay-12.0.0-neoforge.jar
+Lithostitched | lithostitched-1.8.0-neoforge-21.1.jar
+Loot Integrations: Dungeons and Taverns | lootintegrations_dnt-2.7.jar
+Loot Integrations: Dungeon Crawl | lootintegrations_dungeoncrawl-1.3.jar
+Loot Integrations: Moog's Voyager, Soaring, End & Nether Structures | lootintegrations_moog-2.2.jar
+LootJS: KubeJS Addon | lootjs-neoforge-1.21.1-3.7.0.jar
+Macaw's Bridges | mcw-bridges-3.1.2-mc1.21.1neoforge.jar
+Macaw's Doors | mcw-doors-1.1.5-mc1.21.1neoforge.jar
+Macaw's Furniture | mcw-furniture-3.4.1-mc1.21.1neoforge.jar
+Macaw's Lights and Lamps | mcw-lights-1.1.5-mc1.21.1neoforge.jar
+Macaw's Fences and Walls | mcw-mcwfences-1.2.1-mc1.21.1neoforge.jar
+Macaw's Paths and Pavings | mcw-mcwpaths-1.1.1-mc1.21.1neoforge.jar
+Macaw's Stairs | mcw-mcwstairs-1.0.2-mc1.21.1neoforge.jar
+Macaw's Windows | mcw-mcwwindows-2.4.2-mc1.21.1neoforge.jar
+Macaw's Paintings | mcw-paintings-1.1.0-mc1.21.1neoforge.jar
+Macaw's Roofs | mcw-roofs-2.3.2-mc1.21.1neoforge.jar
+Macaw's Trapdoors | mcw-trapdoors-1.1.5-mc1.21.1neoforge.jar
+Mighty Mail | mighty_mail-neoforge-1.21.1-1.1.4.jar
+MES - Moog's End Structures | MoogsEndStructures-universal-1.21-2.1.1.jar
+MNS - Moog's Nether Structures | MoogsNetherStructures-universal-1.21-3.1.1.jar
+Moog's Structure Lib (moogs_structures) | MoogsStructureLib-neoforge-1.21.1-3.4.1.jar
+MVS - Moog's Voyager Structures | MoogsVoyagerStructures-universal-1.21-5.1.3.jar
+Neat | Neat-1.21-47-NEOFORGE.jar
+New Dawn | newdawn-1.0.0.jar
+No Apotheosis Names | noapotheosisnames-1.0.1.jar
+No Chat Reports | NoChatReports-NEOFORGE-1.21.1-v2.9.1.jar
+NoFireOverlay | nofireoverlay-neoforge-1.21.1-1.2.0.jar
+Not Enough Glyphs | not_enough_glyphs-1.21.1-4.6.2.jar
+No Farmland Trample | notrample-1.21.1-1.0.1.jar
+Passive Shield | passiveshield-1.21.1-4.0.jar
+PlayerRevive | PlayerRevive_NEOFORGE_v2.1.2_mc1.21.1.jar
+Prickle | prickle-neoforge-1.21.1-21.1.11.jar
+Project Red - Core | ProjectRed-1.21.1-4.22.0-core.jar
+Project Red - Integration | ProjectRed-1.21.1-4.22.0-integration.jar
+Project Red - Transmission | ProjectRed-1.21.1-4.22.0-transmission.jar
+Rebind Narrator | rebind_narrator-1.21.1-neoforge-2026.08.31.jar
+Resourceful Lib | resourcefullib-neoforge-1.21-3.0.12.jar
+RightClickHarvest | rightclickharvest-neoforge-4.6.1+1.21.1.jar
+Scriptor Magicae | scriptor-neoforge-2.0.14-1.21.1-sgd.jar
+Searchables | Searchables-neoforge-1.21.1-1.0.2.jar
+Smarter Farmers (farmers replant) | smarterfarmers-1.21-2.2.4-neoforge.jar
+Sodium Extra | sodium-extra-neoforge-0.9.4+mc1.21.1.jar
+Sodium | sodium-neoforge-0.8.13+mc1.21.1.jar
+Sophisticated Storage | sophisticatedstorage-1.21.1-1.6.1.2147.jar
+spark | spark-1.10.124-neoforge.jar
+Spell Codex: Iron's Spells 'n Spellbooks Addon | specs_irons_spellbooks-1.6.10-neoforge-1.21.1.jar
+SpellActionbar | spell_actionbar-1.1.7-neoforge-1.21.1.jar
+StackablePotions [Forge] | Stackable Potions-neoforge-1.21.1-1.0.0.jar
+The One Probe | theoneprobe-1.21_neo-12.0.8.jar
+Tidal Towns | tidal-towns-2.0.jar
+Toast Control | ToastControl-1.21.1-9.0.1.jar
+Trade Cycling | trade-cycling-neoforge-1.21.1-1.0.22.jar
+Underground Villages | UndergroundVillages-neoforge-1.21.1-4.0.3.jar
+Unfocused | unfocused-neoforge-0.3.9-1.21.1-sgd.jar
+Villages&Pillages | villagesandpillages-neoforge-2.0.0+mc1.21.1.jar
+Jupiter | jupiter-2.3.7-1.21.1-neoforge.jar
+NeoOrigins | neoorigins-2.2.29+1.21.1.jar
+
+
+BEWERTUNG DER RPG- UND PROGRESSIONSBAUSTEINE
+
+Bereits vorhanden:
+- Ausruestung: Apotheosis 8.9.0, Apothic Attributes/Enchanting/Spawners, zahlreiche Kompatibilitaetsmods und Kaelo's Gems.
+- Magie: Iron's Spells 'n Spellbooks, Ars Nouveau mit Erweiterungen, Scriptor Magicae und Enchanted!.
+- Kampf: Better Combat und Apothic Combat; Cataclysm mit Better-Combat-Kompatibilitaet ist im finalen Snapshot vorhanden.
+- Erkundung: Dungeon Crawl, Dungeons and Taverns mit Struktur-Ueberarbeitungen, Moog's Structures und verschiedene Dorfmods.
+- Infrastruktur: FTB Quests, KubeJS, LootJS, Loot Integrations mit Struktur-Addons, Lootr und Curios.
+- Neu hinzugekommen: Enigmatic Legacy Plus und NeoOrigins. Funktionale Gleichwertigkeit mit den alten Cisco-Systemen ist nicht bewiesen.
+- Eigene Richtung: New Dawn fuer Terrain und Elsebase fuer persoenliche Raeume/Portale. Diese sind keine generischen Gegner-Levelsysteme.
+
+Prioritaet 1: Charakterentwicklung
+Cisco hat Passive Skill Trees. Dieser Originalmod weist auf der offiziellen Projektseite nur Forge 1.19.2/1.20.1 aus.
+Empfehlung: Pufferfish's Skills fuer einen eigenen Skillbaum. Es ist ein Framework und benoetigt Baumdaten; gegebenenfalls Pufferfish's Attributes fuer weitere Attribute.
+https://modrinth.com/mod/skills
+https://puffish.net/skillsmod/docs/players/tutorials/default-skill-trees
+https://www.curseforge.com/minecraft/mc-mods/passive-skill-tree
+
+Prioritaet 1: Schwierigkeit und Belohnungen verbinden
+Auto Leveling fehlt; der Originalmod bietet offiziell keine 1.21.1-Version. Apotheosis 8 besitzt bereits fuenf World Tiers, Freischaltungen und tierabhaengige Seltenheiten.
+Zuerst entscheiden, ob Spieler-Tiers ausreichen oder ob geographische Mob-Level benoetigt werden. L2 Hostility ist ein verfuegbarer 1.21.1-NeoForge-Kandidat fuer Gegnerlevel und Traits, aber kein nachgewiesener 1:1-Ersatz fuer Ciscos Entfernungskurve.
+https://www.curseforge.com/minecraft/mc-mods/auto-leveling
+https://www.curseforge.com/minecraft/mc-mods/l2hostility
+
+Cisco hat lokal: AutoLeveling, zusätzliche Schwierigkeitssysteme, Nether-Einstieg 35, End-Einstieg 150 und eine eigene KubeJS-Levelbeuteintegration.
+Die dokumentierte Integration verwendet einen Basisbonuswurf, levelabhaengige Chance/Qualitaet, 45 Prozent Affixausruestung, 10 Prozent Reforge-Materialien und 45 Prozent kuratierte Schatzbeute. Bossbelohnungen und Schluessel sind aus dem normalen Bonus ausgeschlossen. Diese Werte sind Referenzdaten, keine Empfehlung fuer Trialforged.
+Trialforged hat derzeit nur KubeJS-Beispielskripte und keine entsprechende globale Server-Skriptintegration. LootJS und Loot Integrations ersetzen diese Logik nicht automatisch.
+
+Prioritaet 1: Eigenes Questbuch und Boss-/Rezeptfreischaltungen
+FTB Quests ist installiert, aber config/ftbquests fehlt. Cisco hat 14 globale Questkapitel. Weltlokale Quests wurden nicht untersucht.
+Eigene Kapitel, Ziele, Belohnungen und Freischaltungen entwickeln. Cisco verwendet zusätzlich CraftTweaker-Rezepte, ItemStages/GameStages und viele Ruestungsanpassungen. Diese Funktionen benoetigen ein eigenes Progressionsdesign; keine reine Modliste erzeugt es.
+
+Prioritaet 2: Nahkampf und Relikte
+Simply Swords fehlt und hat eine offizielle 1.21.1-NeoForge-Version: gute Ergaenzung fuer Waffenarten und besondere Nahkampfbeute.
+Relics von SSKirillSS fehlt und hat eine 1.21.1-NeoForge-Version, derzeit als Beta gelistet: ergaenzt aufwertbare Relikte, zufaellige Werte und aktive Faehigkeiten. Nicht mit Relics (RPG Series) verwechseln.
+https://www.curseforge.com/minecraft/mc-mods/simply-swords
+https://www.curseforge.com/minecraft/mc-mods/relics-mod
+
+Prioritaet 2: Erkundungs- und Dimensionsprogression
+Twilight Forest fehlt: strukturierte Boss-/Gebietsprogression, offizielle 1.21.1-NeoForge-Version.
+End Remastered fehlt: verknuepft End-Zugang mit Erkundung; offizielle 1.21.1-NeoForge-Version. Kompatibilitaet mit DnT Stronghold Overhaul muss vor einer Installation/Integration geprueft werden.
+The Aether fehlt: zusaetzliche Abenteuerdimension; eher Erweiterung nach Aufbau des Kernsystems.
+https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest
+https://www.curseforge.com/minecraft/mc-mods/endremastered
+https://www.curseforge.com/minecraft/mc-mods/aether
+
+Prioritaet 3: Mehr Grossdungeons und Komfort
+When Dungeons Arise fehlt und bietet eine offizielle 1.21.1-NeoForge-Version. Aufgrund vorhandener Strukturmods ist es keine erste Kernluecke; Strukturhaeufigkeit und Beutewerte zuerst abstimmen.
+Combat Roll und Waystones fehlen ebenfalls. Komfort und Reisegeschwindigkeit muessen zum Gebietsschwierigkeitskonzept und zu Elsebase passen.
+https://www.curseforge.com/minecraft/mc-mods/when-dungeons-arise
+
+Empfohlene Reihenfolge:
+1. Eigenen Skillbaum und Fortschrittsmeilensteine festlegen.
+2. Apotheosis World Tiers konfigurieren; bei Bedarf genau ein weiteres Skalierungssystem ergaenzen.
+3. Level-/tierabhaengige Beute, Bossbelohnungen und Rezepte zusammen abstimmen.
+4. Eigenes Questbuch schreiben.
+5. Simply Swords, Relics und eine strukturierte Abenteuerdimension ergaenzen.
+6. Weitere Dungeon- und Komfortmods nach Spieltests entscheiden.
+
+PRUEFUMFANG UND GRENZEN
+Alle Top-Level-JARs beider Instanzen wurden gelesen; Dateianzahlen und JSON-Snapshot wurden verifiziert. Ausgewaehlte Metadaten, Konfigurationen, lokale Skripte, Cisco-Levelbeutedokumentation und offizielle Modprojektseiten wurden ausgewertet.
+Keine Mods, Spielkonfigurationen oder Welten wurden durch diese Analyse veraendert. Es wurden nur Inventar-/Projektdokumente erstellt. Kein Ingame- oder neuer Starttest: gemeinsam installierte Mods sind nicht automatisch gemeinsam lauffaehig. Insbesondere die waehrend der Analyse ergaenzten Mods sind nicht durch den frueheren Trialforged-Startlog validiert.
+Cisco-spezifische Content-Mods, Assets und Questtexte wurden nicht uebernommen. Nutzungs-/Verteilungsbedingungen einzelner Drittmods sind bei einer spaeteren Packveroeffentlichung separat zu pruefen; diese technische Analyse ist keine rechtliche Freigabe.
+
+NACHTRAG NACH DEM 200-JAR-SNAPSHOT
+Der anschliessende Bestandscheck ergab 204 JARs. Neu hinzugekommen waren:
+- lootintegrations_cataclysm-1.2.jar
+- lootintegrations_integrated-1.6.jar
+- Origins-Backgrounds-1.21.1-NeoOrigins-1.0.4.jar
+- Origins-Fantasy-1.21.1-NeoOrigins-1.1.3.jar
+Diese vier Dateien sind im strukturierten 200-JAR-Snapshot noch nicht enthalten. Die zentralen fehlenden Skillbaum-/Skalierungs-/Questintegrationsbausteine bleiben davon unberuehrt.

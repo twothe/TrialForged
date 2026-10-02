@@ -1,0 +1,66 @@
+# CurseForge installs mod binaries from the exported manifest.json.
+# Keep manifest.json and modlist.html when exporting the pack.
+/mods/
+
+# Launcher-managed downloads, libraries, and instance metadata.
+/.curseclient
+/minecraftinstance.json
+/downloads/
+/libraries/
+/assets/
+/versions/
+/natives/
+/runtime/
+
+# Worlds, backups, screenshots, and personal multiplayer data.
+/saves/
+/backups/
+/screenshots/
+/servers.dat
+/servers.dat_old
+/usercache.json
+/usernamecache.json
+
+# Local client preferences and downloaded shaders.
+/options.txt
+/optionsof.txt
+/optionsshaders.txt
+/shaderpacks/
+/patchouli_data.json
+/TrashSlotSaveState.json
+
+# Generated logs, caches, maps, and per-instance mod state.
+/logs/
+/crash-reports/
+/.mixin.out/
+/cache/
+/dynamic-resource-pack-cache/
+/local/
+/moddata/
+/ESM/
+/journeymap/
+/XaeroWaypoints/
+/XaeroWorldMap/
+
+# Generated development and export output.
+/kubejs/exported/
+/kubejs/probe/
+/build/
+/dist/
+/exports/
+*.class
+*.log
+*.tmp
+*.bak
+
+# Operating system and editor temporary files.
+Thumbs.db
+Desktop.ini
+.DS_Store
+*~
+*.swp
+*.swo
+
+# Pack sources remain tracked: config, defaultconfigs, kubejs scripts/data/assets,
+# datapacks, moonlight-global-datapacks, resourcepacks, patchouli_books,
+# elsebase templates, docs, tests, and AGENTS.md.

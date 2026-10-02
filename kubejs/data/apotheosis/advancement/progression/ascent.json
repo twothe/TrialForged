@@ -1,0 +1,30 @@
+{
+  "parent": "apotheosis:progression/frontier",
+  "criteria": {
+    "milestone": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "background": "apotheosis:textures/advancements/bg/apoth.png",
+    "description": {
+      "text": "Besiege den Wither. Dein World Tier steigt automatisch und dauerhaft."
+    },
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "minecraft:blaze_powder"
+    },
+    "title": {
+      "translate": "advancements.apotheosis.progression.ascent.title"
+    },
+    "announce_to_chat": false,
+    "show_toast": false
+  },
+  "requirements": [
+    [
+      "milestone"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

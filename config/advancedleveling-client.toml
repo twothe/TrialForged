@@ -1,0 +1,6 @@
+[Visuals]
+	"Level text color" = "#1cff27"
+	#Allowed Values: LEFT, RIGHT, TOP, BOTTOM, TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT
+	"Level text position" = "LEFT"
+	"Level text shift x" = 0
+	"Level text shift y" = 0

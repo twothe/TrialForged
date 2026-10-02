@@ -1,0 +1,59 @@
+[portals]
+	#Disables new outside instant entrances; existing returns remain usable.
+	allowInstant = true
+	#Seconds after an incoming attack during which instant summon/recall is blocked. Fire/poison ticks do not renew it. Existing portal travel is unaffected. Zero disables the lock.
+	# Default: 3
+	# Range: 0 ~ 300
+	combatLockSeconds = 3
+	#Refuse instant summon inside the Backdoor when no outside destination is recorded. Known returns retain emergency recovery.
+	requireKnownReturn = false
+	#Set zero to disable new permanent pairs. Existing pairs remain usable.
+	# Default: 4
+	# Range: 0 ~ 64
+	maxPermanentPairsPerPlayer = 4
+	#Dimension IDs in which new entrances cannot be created. Existing returns remain usable.
+	excludedExternalDimensions = []
+
+[chunkloading]
+	#Maximum direct endpoint chunks held by Elsebase. Zero disables proactive loading; tickets may also affect neighboring chunks.
+	# Default: 256
+	# Range: 0 ~ 1024
+	maxMirroredEndpointChunks = 256
+
+[structure]
+	#Global changed-block budget per tick. Panels are committed atomically; minimum covers one ceiling.
+	# Default: 1024
+	# Range: 256 ~ 8192
+	maxChangedBlocksPerTick = 1024
+
+[allocation]
+	#Frozen on first allocation. Changing this for an existing save is rejected.
+	# Default: 131072
+	# Range: 1024 ~ 1000000
+	radius = 131072
+	#Frozen with radius; must be divisible by 16. New worlds recommended.
+	# Default: 8192
+	# Range: 256 ~ 1000000
+	minimumSpacing = 8192
+
+[world]
+	#New players start at their personal Backdoor anchor with a respawn point there. Existing players and subsequent logins retain their location.
+	startInBackdoor = false
+	#Allow natural mobs; spawners and machines retain normal rules.
+	allowNaturalMobSpawning = false
+	#Disable uniform visual brightness in the Backdoor. No generated light sources in either mode. Player lighting and natural spawn rules remain normal. Server controls multiplayer brightness.
+	darkness = false
+
+[preview]
+	#Read-only portal snapshot budget. Uses loaded chunks only; OFF retains portal travel. LOW/BALANCED/HIGH allow 8/16/32 viewers and at most 1/2/4 section copies per tick globally.
+	#Allowed Values: OFF, LOW, BALANCED, HIGH
+	budget = "BALANCED"
+
+[templates]
+	allowPlayerImports = true
+	allowPersonalDefaults = true
+	# Default: 64
+	# Range: 1 ~ 256
+	templatesPerPlayer = 64
+	#Built-in theme name or complete theme ID. Reload templates after changes.
+	defaultStyle = "verdant_cloister"

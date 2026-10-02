@@ -1,0 +1,33 @@
+{
+  "chanceDivisor": 1000,
+  "bosses": [
+    "minecraft:ender_dragon", "minecraft:wither", "minecraft:warden", "minecraft:elder_guardian",
+    "aether:slider", "aether:valkyrie_queen", "aether:sun_spirit",
+    "ars_nouveau:wilden_boss",
+    "cataclysm:ignis", "cataclysm:netherite_monstrosity", "cataclysm:ender_guardian",
+    "cataclysm:the_harbinger", "cataclysm:the_leviathan", "cataclysm:ancient_remnant",
+    "cataclysm:maledictus", "cataclysm:scylla",
+    "irons_spellbooks:dead_king", "irons_spellbooks:fire_boss",
+    "mowziesmobs:frostmaw", "mowziesmobs:ferrous_wroughtnaut", "mowziesmobs:umvuthi", "mowziesmobs:sculptor",
+    "twilightforest:naga", "twilightforest:lich", "twilightforest:minoshroom", "twilightforest:hydra",
+    "twilightforest:knight_phantom", "twilightforest:ur_ghast", "twilightforest:alpha_yeti",
+    "twilightforest:snow_queen", "twilightforest:plateau_boss",
+    "born_in_chaos_v1:lord_pumpkinhead", "born_in_chaos_v1:lord_pumpkinhead_withouta_horse",
+    "born_in_chaos_v1:lord_the_headless", "born_in_chaos_v1:lord_pumpkinhead_head",
+    "neovitae:daemonium_doloris"
+  ],
+  "lootSources": [
+    "minecraft:chests/simple_dungeon",
+    "minecraft:chests/abandoned_mineshaft",
+    "minecraft:chests/stronghold_corridor",
+    "dungeoncrawl:chests/stage_1",
+    "dungeoncrawl:chests/stage_3",
+    "dungeoncrawl:chests/stage_5",
+    "nova_structures:chests/dungeon_2",
+    "nova_structures:chests/dungeon_4",
+    "nova_structures:chests/dungeon_6",
+    "dungeons_arise:chests/bandit_towers/bandit_towers_normal",
+    "dungeons_arise:chests/illager_fort/illager_fort_normal",
+    "dungeons_arise:chests/foundry/foundry_normal"
+  ]
+}

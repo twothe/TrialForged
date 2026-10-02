@@ -1,0 +1,6 @@
+{
+  "respecRefundPercent": 25,
+  "includeCreativeSpells": false,
+  "allowImbuedWeaponCasting": true,
+  "defaultActionbarSlots": 3
+}

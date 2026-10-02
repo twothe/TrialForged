@@ -1,0 +1,6 @@
+[render]
+	#Bounded block previews. Active Iris/Oculus shader packs automatically use the animated fallback. All presets show at most one live portal; LOW/BALANCED/HIGH use up to 256x512, 512x1024, 768x1536 pixels.
+	#Allowed Values: OFF, LOW, BALANCED, HIGH
+	previewQuality = "BALANCED"
+	#Replace loading screens only for Elsebase doorway travel. Other dimension changes remain unchanged.
+	immersivePortalTransition = true

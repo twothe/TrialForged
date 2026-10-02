@@ -1,0 +1,91 @@
+#How the set behaves as a whole.
+[general]
+	#How often these gems turn up against the ones Apotheosis
+	#ships. RARE makes finding one an event; COMMON makes them
+	#ordinary.
+	#Allowed Values: RARE, NORMAL, COMMON
+	frequency = "NORMAL"
+	#The lowest tier at which these gems carry any bonus at all.
+	#Raising it means a low roll of one of these is worth nothing
+	#and only the good ones matter.
+	#COMMON, RARE and EPIC map to Apotheosis 8's cracked, flawed
+	#and normal purities.
+	#Allowed Values: COMMON, RARE, EPIC
+	minimum_rarity = "COMMON"
+	#Whether spellbooks can take sockets and arcane gems.
+	#Off, a book is a plain item to Apotheosis again: no sockets,
+	#and gems already in a book stop working but are NOT lost -
+	#turn it back on and they return. Takes effect after a
+	#restart.
+	spellbooks = true
+	#Whether matching gems resonate. Off, several of the same
+	#gem are worth exactly what one of them is, and the line
+	#disappears from their tooltips. Nothing is lost either way:
+	#resonance is a transient attribute modifier and was never
+	#written to anyone's save.
+	resonance = true
+	#How many of the same gem the first step of resonance needs.
+	# Default: 3
+	# Range: 2 ~ 12
+	resonance_first = 3
+	#And the second, larger step. A value below the first one is
+	#read as equal to it: the two steps never cross.
+	# Default: 5
+	# Range: 2 ~ 12
+	resonance_second = 5
+
+#Every gem in the set. One turned off here is not
+#registered at all: it will not roll, drop, or appear
+#in the cutting table.
+[gems]
+	emberheart = true
+	rimeheart = true
+	bloodstone = true
+	executioner = true
+	tempest = true
+	aegis = true
+	wardstone = true
+	lifewell = true
+	swiftstep = true
+	ghoststone = true
+	prospector = true
+	longsight = true
+	alchemists_vein = true
+	leechstone = true
+	nullstone = true
+	everstone = true
+	bloodfletch = true
+	huntmark = true
+	gale_needle = true
+
+#Gems that need Iron's Spellbooks. Without that mod
+#they do not load whatever is set here, because they
+#are built out of its attributes and would otherwise
+#name effects the game has never heard of.
+[arcane]
+	manaheart = true
+	archon_focus = true
+	runeward = true
+	pyre_sigil = true
+	rime_sigil = true
+	grave_sigil = true
+	dawn_sigil = true
+
+#Gems for other mods: Ars Nouveau, L_Ender's Cataclysm
+#and Twilight Forest. Each needs its own mod and does
+#not load without it. The Cataclysm stones drop only
+#from the boss they are named after; the Twilight ones
+#from their boss and inside the Twilight Forest.
+[modded]
+	source_heart = true
+	glyph_of_power = true
+	ward_seal = true
+	chimera_fang = true
+	ignis_ember = true
+	abyssal_pearl = true
+	remnant_hourglass = true
+	storm_eye = true
+	naga_scale = true
+	phylactery_shard = true
+	minotaur_horn = true
+	hydra_fang = true

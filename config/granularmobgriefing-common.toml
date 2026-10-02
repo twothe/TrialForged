@@ -1,0 +1,2 @@
+#Entites that are prevented from griefing
+entities = ["minecraft:creeper", "minecraft:enderman"]

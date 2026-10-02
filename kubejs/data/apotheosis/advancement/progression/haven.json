@@ -1,0 +1,29 @@
+{
+  "parent": "apotheosis:progression/root",
+  "criteria": {
+    "milestone": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "background": "apotheosis:textures/advancements/bg/apoth.png",
+    "description": {
+      "text": "Von Beginn an aktiv."
+    },
+    "icon": {
+      "count": 1,
+      "id": "minecraft:oak_sapling"
+    },
+    "title": {
+      "translate": "advancements.apotheosis.progression.haven.title"
+    },
+    "announce_to_chat": false,
+    "show_toast": false
+  },
+  "requirements": [
+    [
+      "milestone"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

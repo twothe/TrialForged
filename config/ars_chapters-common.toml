@@ -1,0 +1,35 @@
+[chapter_limits]
+	#Maximum total chapters in the Novice Spell Book.
+	# Default: 3
+	# Range: 1 ~ 8
+	noviceSpellBook = 3
+	#Maximum total chapters in the Apprentice Spell Book.
+	# Default: 5
+	# Range: 1 ~ 8
+	apprenticeSpellBook = 5
+	#Maximum total chapters in the Archmage Spell Book.
+	# Default: 8
+	# Range: 1 ~ 8
+	archmageSpellBook = 8
+	#Maximum total chapters in the Creative Spell Book.
+	# Default: 8
+	# Range: 1 ~ 8
+	creativeSpellBook = 8
+
+	[chapter_limits.all_the_arcanist_gear]
+		#Maximum total chapters in the Allthemodium Spell Book.
+		# Default: 8
+		# Range: 1 ~ 8
+		allthemodiumSpellBook = 8
+		#Maximum total chapters in the Vibranium Spell Book.
+		# Default: 8
+		# Range: 1 ~ 8
+		vibraniumSpellBook = 8
+		#Maximum total chapters in the Unobtainium Spell Book.
+		# Default: 8
+		# Range: 1 ~ 8
+		unobtainiumSpellBook = 8
+		#Maximum total chapters in the All The Arcanist Gear Creative Spell Book.
+		# Default: 8
+		# Range: 1 ~ 8
+		creativeSpellBook = 8

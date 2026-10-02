@@ -1,0 +1,27 @@
+#Horizontal offset for the spell action bar, in pixels. Positive values move right.
+# Default: 0
+# Range: -512 ~ 512
+hudOffsetX = 0
+#Vertical offset for the spell action bar, in pixels. Positive values move up.
+# Default: 0
+# Range: -512 ~ 512
+hudOffsetY = 0
+#Horizontal offset for the mana bar, in pixels. Positive values move right.
+# Default: 0
+# Range: -512 ~ 512
+manaOffsetX = 0
+#Vertical offset for the mana bar, in pixels. Positive values move up.
+# Default: 0
+# Range: -512 ~ 512
+manaOffsetY = 0
+#Scale for the spell action bar HUD (0.75–1.25).
+# Default: 1.0
+# Range: 0.75 ~ 1.25
+actionbarScale = 1.0
+#Scale for the mana bar HUD (0.75–1.25).
+# Default: 1.0
+# Range: 0.75 ~ 1.25
+manaScale = 1.0
+#When to show the mana bar: Always, Contextual (casting / not full / brief hold), or Never.
+#Allowed Values: Always, Contextual, Never
+manaDisplay = "Always"

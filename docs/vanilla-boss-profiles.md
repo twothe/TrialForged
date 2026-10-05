@@ -1,71 +1,44 @@
-# Feste Vanilla-Bossprofile
+# Vanilla-Bosse über Infernal Mobs
 
-Wither, Ender Dragon und Warden sind die drei höheren persönlichen Apotheosis-Meilensteine. Sie bekommen feste Infernal-Mobs-Profile und eine Schwierigkeit passend zum Tier vor ihrem jeweiligen Sieg.
+Stand: 05.10.2026. Wither, Ender Dragon und Warden werden über die native Infernal-Mobs-Konfiguration immer Infernal. Zufällige Effekte und die modinternen Gesundheitsregeln sind ausdrücklich gewünscht.
 
-| Boss | Echte maximale HP | Infernal-Effekte | Fester Apotheosis-Gegnertier | Verstärkte Angriffe |
-|---|---:|---|---|---|
-| Wither | 600 | Bulwark, Fiery | Frontier | Witherschädel und zugeordnete Explosionen: +20 % |
-| Ender Dragon | 1.000 | Bulwark | Ascent | Kontaktangriffe vom Schadenstyp `mob`: +25 % |
-| Warden | 1.024 | Bulwark, Gravity | Summit | Nahkampf: +15 %; Sonic Boom: +20 % |
+## Konfiguration
 
-Die Werte sind unabhängig von Spielerzahl, Entfernung zum Weltspawn und Tier benachbarter Spieler. Gemeinsames Spielen verursacht keine zusätzlichen HP, Schadensboni oder nachträgliche Anpassung der Bossstärke. Gewöhnliche Gegner und Witherskelette behalten ihre bisherigen Regeln.
+In `config/infernalmobs.cfg` stehen `WitherBoss`, `EnderDragon` und `Warden` jeweils in `permittedentities` und `entitiesalwaysinfernal` auf `true`. Beide Schalter sind erforderlich. Die vorhandenen globalen Einstellungen für Effekte, Seltenheitsstufen, Gesundheit und Beute bleiben erhalten.
 
-Bulwark halbiert größere eingehende Treffer; seine native Untergrenze beträgt einen Schadenspunkt. Fiery setzt Angreifer beziehungsweise geeignete direkt getroffene Ziele in Brand. Gravity zieht ein geeignetes nahes Ziel zum Gegner. Die Boss-KI und ihre ursprünglichen Phasen bleiben bestehen. Atem-/Flächenschaden des Drachen wird nicht durch den zusätzlichen Kontaktbonus verstärkt.
+Das Skript `kubejs/server_scripts/vanilla_boss_profiles.js` und seine spezifischen Tests wurden entfernt. Es gibt keine festen 600/1.000/1.024-HP-Profile, fest vorgeschriebenen Modifikatorketten, zusätzlichen Angriffsmultiplikatoren oder skriptseitigen Apotheosis-Gegnertiers mehr. Apotheosis verwendet wieder seine native Tierzuordnung. Keine zusätzliche Skalierung nach Spielerzahl wurde eingebaut.
 
-## Abweichungen vom ersten Entwurf
+Die persönliche [Apotheosis-Progression](apotheosis-progression.md) und die vorhandenen [Boss-Ausschlüsse für Dynamic Difficulty](dynamic-difficulty.md) bleiben bestehen. Ein Sieg über Wither, Drachen oder Warden gewährt weiterhin Ascent, Summit beziehungsweise Pinnacle.
 
-- Storm benötigt nach der installierten Infernal-Mobs-Implementierung sichtbaren Himmel. Das normale End hat kein Himmelslicht; dort ist der Effekt als verlässliche Bossmechanik ungeeignet. Der Drache bekommt deshalb ausschließlich Bulwark.
-- Die installierte Definition von `minecraft:generic.max_health` hat eine Obergrenze von 1.024. Der vorläufige Warden-Wert von 1.500 wäre ohne weitere Änderungen keine echte maximale Gesundheit. Das Profil verwendet deshalb 1.024 echte HP und hält den Infernal-Cache und die Anzeige dazu passend. Die Attributobergrenze wurde nicht global verändert.
+## Bereits gespeicherte Bosse
 
-Diese Werte sind eine erste Balanceeinstellung. Ihre tatsächliche Schwierigkeit mit den vorhandenen Nahkampf-, Fernkampf- und Magie-Builds ist noch im Spiel zu beurteilen.
+Die Umstellung verändert keine Weltdateien. Gespeicherte Infernal-Effekte, maximale HP und Apotheosis-Boni können an bestehenden Bossen erhalten bleiben. Ein Neustart setzt solche Daten nicht automatisch zurück. Die native Always-Infernal-Regel ist daher vor allem für neu erzeugte Bosse maßgeblich; es wurde bewusst kein weiteres Migrationsskript hinzugefügt.
 
-## Umsetzung
+## Prüfung
 
-`kubejs/server_scripts/vanilla_boss_profiles.js` registriert serverseitige native NeoForge-Ereignisse mit Priorität `LOWEST`:
+`node tests/check-pack-scripts.cjs` prüft die aktuelle Config und die bestehenden Progressions-/Levelbeuteskripte. Der isolierte Clientlauf `./tests/run-runtime-client.ps1` prüft neue Bosse auf native Infernal-Effekte, fehlende eigene Profilmarker, echten Kampf, Weltbeitritt und persönlichen Tieraufstieg. Variable HP und Effekte werden dabei nicht als feste Balancewerte vorausgesetzt. Laufzeitdetails stehen in [Minecraft-Laufzeittest](runtime-validation.md).
 
-1. Beim Betreten einer Welt/Dimension wird der Boss einen Tick später eingerichtet, nachdem die anderen Spawn-/Ladehandler gelaufen sind.
-2. Alte Modifikatoren von Advanced Leveling (`autoleveling:level`) werden ohne Abhängigkeit von dessen entferntem JAR bereinigt. Die [Dynamic-Integration](dynamic-difficulty.md) entfernt zusätzlich gespeicherte Dynamic-Levelboni und Levelanhänge bei ausgeschlossenen Bossen. Die vorherige Gesundheitsfraktion bleibt erhalten.
-3. Alle vorhandenen Apotheosis-World-Tier-Gegnerboni werden über deren öffentliche Schnittstelle entfernt. Anschließend werden die Boni des fest vorgegebenen Gegnertiers angewendet und Apotheosis' Ladekennzeichen `TIER_AUGMENTS_APPLIED` gesetzt. Damit bleibt auch ein ohne nahe Spieler eingerichteter Boss beim späteren Laden unabhängig von deren Tier. Das verändert keine Spielertiers.
-4. Infernal Mobs erhält die feste Modifikatorkette über `addEntityModifiersByString`. Abweichende alte Ketten werden ersetzt; passende Ketten bleiben erhalten.
-5. Echte maximale HP, das persistente `infernalMaxHealth` und Infernal Mobs' interner HP-Cache werden abgeglichen. Unerwartete zusätzliche HP-Modifikatoren verursachen einen sichtbaren Fehler statt falscher Erfolgs-/HP-Angaben.
-6. Die Zusatzschäden werden im `LivingIncomingDamageEvent` vor der normalen Schadensminderung angewendet. Nur passende Schadenstypen und eindeutig dem Boss zugeordnete Quellen erhalten den Bonus. Kein Berserk-Effekt und keine zusätzliche Schadensdeckelung werden eingeführt.
+## Entscheidung
 
-`config/dynamic_difficulty/sync.toml` schließt `minecraft:wither`, `minecraft:ender_dragon` und `minecraft:warden` sowie weitere Packbosse aus der normalen Levelvergabe aus. Advanced Mob Leveling wurde vom Nutzer entfernt. `config/infernalmobs.cfg` deaktiviert ausschließlich die zufällige/erzwungene Infernal-Auswahl der drei Vanilla-Bosse anhand der Klassen `WitherBoss`, `EnderDragon` und `Warden`. Die gezielte Skriptzuweisung funktioniert über eine andere öffentliche Mod-Schnittstelle; Bulwark, Fiery und Gravity bleiben aktiviert. Die sonstigen Infernal-Einstellungen bleiben erhalten.
+Native Modkonfiguration hat Vorrang. Tiefe KubeJS-Eingriffe benötigen nachgewiesene Notwendigkeit und einen ausdrücklichen Auftrag, nachdem Risiken und einfachere Alternativen erklärt wurden. Die frühere Profilimplementierung war für das gewünschte Ergebnis unnötig aufwendig.
 
-## Speicherung und bestehende Bosse
+## Historie der entfernten Profilimplementierung
 
-Die Einrichtung läuft auch für gespeicherte Bosse. Ihre vorherige HP-Fraktion bleibt erhalten: Ein Boss mit halber Gesundheit hat nach der Umstellung weiterhin halbe Gesundheit des neuen Profils. Das Laden oder wiederholte Betreten der Welt stellt keine verlorenen HP wieder her und multipliziert die Profile nicht erneut.
+Die folgenden Befunde dokumentieren die frühere Implementierung und ihre Fehlerursachen. Die dort beschriebenen Profil-Handler sind seit 05.10.2026 entfernt.
 
-Ein frisch beschworener Wither bekommt während seiner unangreifbaren Aufladephase die vollen Profil-HP. Ein von Disk geladener Wither bekommt diese Sonderbehandlung nicht. Entfernte/tote Gegner und ein Drache in seiner Todesphase werden nicht verändert. Der persistente KubeJS-Marker `trialforged_boss_profile_version` kennzeichnet die erfolgte Einrichtung.
+### KubeJS-Schnittstellenkorrektur vom 02.10.2026
 
-Die persönliche [Tierprogression](apotheosis-progression.md) bleibt bestehen. Die 5-%-Beteiligungsschwelle bezieht sich auf die neuen tatsächlichen maximalen HP; aufgezeichnet wird weiterhin tatsächlich verrechneter Schaden nach der Minderung. Bei exakt gleichen Schadensanteilen können auch 20 Spieler die bestehende Schwelle erreichen. Bloße Anwesenheit genügt weiterhin nicht.
+Beim Schaden an einem Royal Enderman scheiterte die Seitenprüfung des Schadenshandlers an `event.getEntity().level()`. Die gemeldete Zeile 44 war das erneute Werfen des Fehlers durch `tfBossGuard`. Der Handler läuft auch für gewöhnliche Gegner; der Royal Enderman benötigte deshalb keine Änderung.
 
-Weltdateien wurden für die Einrichtung nicht direkt bearbeitet. Mods wurden nicht installiert, aktualisiert oder entfernt.
+Die installierte KubeJS-Version `2101.7.2-build.377` blendet `Entity.level()` per `HideFromJS` aus. `EntityKJS.kjs$getLevel()` stellt stattdessen die Eigenschaft `entity.level` bereit. Sämtliche betroffenen Aufrufe in Bossprofilen und Progression verwenden jetzt diese Eigenschaft. Die Java-Annotationen und Getter wurden mit `javap` aus der installierten JAR geprüft.
 
-## Aktivierung und Prüfstand
+Zudem benennt KubeJS den nativen NeoForge-Zugriff `getPersistentData()` in `getForgePersistentData()` um. Infernal-Zustand und alte `LEVEL`-Marker werden deshalb ausdrücklich über `getForgePersistentData()` bearbeitet; der eigene Profilmarker bleibt in `entity.persistentData`. Die Tests unterscheiden diese beiden Speicherbereiche und prüfen, dass KubeJS-Daten bei der Bereinigung erhalten bleiben.
 
-Instanz beziehungsweise dedizierten Server vollständig neu starten. Bei einem externen Server müssen die beiden geänderten Konfigurationsdateien und das neue Serverskript in dessen Packstand übernommen werden.
+Die früheren Schnittstellenfakes hatten `level` irrtümlich als Funktion und native Daten unter dem falschen Getter angeboten. Mit korrigierten Fakes reproduzierte der neue Fall für gewöhnlichen sowie Umweltschaden am Modgegner den ursprünglichen Fehler. Nach der Korrektur bestehen 36 Bossprofil-Fälle in Node und in Rhino `2101.2.7-build.85`.
 
-Eine gemeinsame Prüfung der Packskripte ist im Instanzverzeichnis möglich:
+Beim folgenden Beitritt um 19:40 Uhr trat ein weiterer Java-/KubeJS-Namensunterschied auf: `DamageSource.getEntity()` ist laut installiertem `DamageSourceMixin` als `getActual()` verfügbar. Boss-Schadenshandler und persönliche Progression verwenden jetzt `getActual()`, auch die Schnittstellenfakes bieten nur diesen Namen an. Vor der Änderung reproduzierten beide Testsuiten den Fehler, danach bestanden sie in Node und Rhino.
 
-```powershell
-node tests/check-pack-scripts.cjs
-```
+Die scheinbar minutenlange Terrain-Ladezeit war eine Fehlerkette: Serverstart 19:40:32, Spielerbeitritt 19:40:43, Skriptfehler 19:40:50 und sofortiger Serverstopp. `ApothEnchEvents.stopped(ServerStoppedEvent)` leert dabei `ENCHANTMENT_INFO`. Der weiterlaufende Client startete JEIs Rezeptregistrierung; ab 19:40:52 scheiterten dessen Ambossberechnungen an den bereits geleerten Daten. Bis 19:43:50 waren 10.235 Ambossfehler und rund 135 MB Log entstanden. Die Speicherung dieser Daten und die Ausnahmebedingung wurden im Bytecode von Apothic Enchanting 1.6.2 geprüft. JEI-/Apothic-Modwechsel oder reine Logunterdrückung beheben diesen auslösenden Skriptfehler nicht.
 
-Der Prüfbefehl führt die echten Produktionshandler mit nachgebildeten Minecraft-/Mod-Schnittstellen aus: 35 Bossprofil-Fälle, die vorhandenen 28 Progressionsfälle und vier kombinierte Fälle mit gemeinsamen Bossentitäten. Die Bossprofil- und Progressionsfälle wurden außerdem mit der installierten Rhino-Version geprüft:
+Der anschließende [echte Clienttest](runtime-validation.md) bestätigte Weltbeitritt, alle drei maximalen Boss-HP, vorhandene Infernal-Profile, gewöhnlichen Schaden, einen Warden-Angriff und Pinnacle nach einem Warden-Kill. Dabei wurden außerdem die explizite `removeModifier(net.minecraft.resources.ResourceLocation)`-Überladung und der Vergleich von Drachenphasen über `getId()` erforderlich; die vorherigen Aufrufe scheiterten im tatsächlichen KubeJS-Kontext.
 
-```powershell
-$rhinoJar = (Get-ChildItem mods -Filter 'rhino-*.jar' | Select-Object -First 1).FullName
-& 'C:\Program Files\Java\jdk-21\bin\java.exe' '-Dtrialforged.test.entry=runBossProfileTests' --class-path $rhinoJar tests/RhinoProgressionCheck.java tests/vanilla-boss-profiles.spec.js kubejs/server_scripts/vanilla_boss_profiles.js
-```
-
-Die verwendeten APIs, Modifikatornamen, Eventtypen und das Aufräumen nativer Listener bei Skriptneuladungen wurden gegen die installierten JARs geprüft. Die Tests belegen die Skriptlogik; sie ersetzen keinen Minecraft-Laufzeit-, Balance- oder dedizierten Mehrspielertest.
-
-Noch im Spiel zu bestätigen:
-
-- Die drei Bosse zeigen die vorgesehenen HP und ausschließlich die festen Infernal-Modifikatoren.
-- HP, Schäden und Apotheosis-Boni bleiben bei unterschiedlichen Orten und Spielergruppen gleich.
-- Fiery und Gravity wirken mit der jeweiligen Boss-KI wie erwartet.
-- Ein beschädigter Boss behält seine HP nach Chunk-Neuladen und vollständigem Serverneustart.
-- Witherschädel, Explosionen, Drachenkontakt und Sonic Boom erhalten ihre vorgesehenen Boni; gewöhnliche Gegner und andere Schadenstypen bleiben unverändert.
-- Beteiligte Spieler erhalten nach dem Sieg Ascent, Summit beziehungsweise Pinnacle; Logs enthalten keine Profil-/Progressionsfehler.

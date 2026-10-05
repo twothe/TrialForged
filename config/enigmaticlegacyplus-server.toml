@@ -523,6 +523,9 @@
 		# Range: 0.0 ~ 1.0
 		specialDamageBoost = 0.15
 
+	[blessItems.forgerCrystal]
+		unbreakableRestriction = true
+
 [sevenCurses]
 	# Default: 200
 	# Range: 100 ~ 500
@@ -563,3 +566,4 @@
 	forTheWorthy = true
 	giveStarterGear = true
 	neutralWhiteList = ["minecraft:bee", "the_bumblezone:bee_queen"]
+	immediatelyCurseBoost = false

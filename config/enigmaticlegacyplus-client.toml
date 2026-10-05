@@ -4,6 +4,7 @@ quoteSubtitles = true
 deathQuoteChance = 60
 etheriumShieldRenderLayer = true
 etheriumShieldIcon = true
+specialVisualEffects = true
 
 [magnetButton]
 	# Default: 0

@@ -30,7 +30,7 @@ function LevelLootEntity(type, level) {
   this.allowed = true; this.leveled = true; this.removed = false; this.alive = true
   this.maximum = 300; this.health = 150
   this.modifiers = ['dynamic_difficulty:health', 'autoleveling:level', 'apotheosis:health']
-  this.persistentRemovals = []; this.dataRemovals = []; this.scheduled = []
+  this.persistentRemovals = []; this.kubejsRemovals = []; this.dataRemovals = []; this.scheduled = []
   var self = this
   this.server = { scheduleInTicks: function (ticks, callback) {
     if (ticks !== 1) throw new Error('Expected one-tick cleanup')
@@ -47,6 +47,10 @@ LevelLootEntity.prototype.setHealth = function (value) { this.health = value }
 LevelLootEntity.prototype.removeData = function (key) { this.dataRemovals.push(key) }
 LevelLootEntity.prototype.getPersistentData = function () {
   var self = this
+  return { remove: function (key) { self.kubejsRemovals.push(key) } }
+}
+LevelLootEntity.prototype.getForgePersistentData = function () {
+  var self = this
   return { remove: function (key) { self.persistentRemovals.push(key) } }
 }
 LevelLootEntity.prototype.getAttribute = function () {
@@ -57,7 +61,7 @@ LevelLootEntity.prototype.getAttribute = function () {
         return { id: function () { return new LevelLootId(id) } }
       }))
     } } },
-    removeModifier: function (id) {
+    'removeModifier(net.minecraft.resources.ResourceLocation)': function (id) {
       self.modifiers.splice(self.modifiers.indexOf(String(id)), 1)
       self.maximum -= 100
     }
@@ -91,7 +95,7 @@ var Java = { loadClass: function (name) {
       THIS_ENTITY: 'entity', ORIGIN: 'origin', LAST_DAMAGE_PLAYER: 'killer'
     },
     'net.minecraft.world.level.storage.loot.parameters.LootContextParamSets': { CHEST: 'chest' },
-    'com.almostreliable.lootjs.core.LootType': { CHEST: levelLootChestType },
+    'com.almostreliable.lootjs.core.LootType': { CHEST: levelLootChestType, ENTITY: 'entity' },
     'net.neoforged.bus.api.EventPriority': { LOWEST: 'lowest' },
     'net.neoforged.neoforge.event.entity.EntityJoinLevelEvent': 'join',
     'net.minecraft.world.entity.LivingEntity': LevelLootEntity
@@ -106,7 +110,10 @@ function levelLootRegister(missing, wrongType) {
   var event = {
     hasLootTable: function () { return !missing },
     getLootTable: function () { return { getLootType: function () { return wrongType ? { equals: function () { return false } } : levelLootChestType } } },
-    modifyEntityTables: function () { return { getTables: function () { return [{
+    modifyEntityTables: function () { throw new Error('Unknown loot table: minecraft:entities/area_effect_cloud') },
+    modifyLootTables: function (type) {
+      if (type !== 'entity') throw new Error('Expected existing entity loot tables only')
+      return { getTables: function () { return [{
       getLocation: function () { return 'minecraft:entities/zombie' },
       onDrop: function (callback) { result.drop = callback }
     }] } } }
@@ -185,6 +192,7 @@ function runLevelLootTests() {
   check(boss.modifiers.length === 1 && boss.modifiers[0] === 'apotheosis:health', 'Only leveling modifiers removed')
   check(boss.health === 50 && boss.maximum === 100, 'Half-health preserved')
   check(boss.dataRemovals[0] === 'dynamic-level' && boss.persistentRemovals[0] === 'LEVEL', 'Old level state removed')
+  check(boss.kubejsRemovals.length === 0, 'KubeJS persistent namespace preserved')
   check(levelLootLogs.length >= 4, 'Contract failures logged')
   return count
 }

@@ -54,7 +54,7 @@ function tfApplyTier(player, requestedTier, announce) {
   player.persistentData.putInt(TF_TIER_KEY, targetTier)
   if (announce && targetTier > oldTier) {
     player.tell(Text.of('Dein Apotheosis World Tier ist jetzt ' + TF_TIERS[targetTier].getSerializedName() + '. Der Aufstieg ist dauerhaft.').gold())
-    console.info('[Trialforged tiers] ' + player.getUUID() + ': ' + oldTier + ' -> ' + targetTier)
+    console.info('[Trialforged tiers] ' + player.getUuid() + ': ' + oldTier + ' -> ' + targetTier)
   }
 }
 
@@ -72,13 +72,13 @@ function tfRecordDamage(event) {
   const entity = event.entity
   const tier = TF_MILESTONES[String(entity.type)]
   if (tier == null || tier === 1 || event.damage <= 0) return
-  const player = event.source.getEntity()
+  const player = event.source.getActual()
   if (!tfRealPlayer(player)) return
   const data = entity.persistentData
   if (!data.contains(TF_PARTICIPANTS_KEY, 10)) data.put(TF_PARTICIPANTS_KEY, new TFCompoundTag())
   const participants = data.getCompound(TF_PARTICIPANTS_KEY)
-  const playerId = String(player.getUUID())
-  const now = entity.level().getGameTime()
+  const playerId = String(player.getUuid())
+  const now = entity.level.getTime()
   let contribution = participants.getCompound(playerId)
   if (now - contribution.getLong('last_hit') > TF_PARTICIPATION_TICKS) contribution = new TFCompoundTag()
   contribution.putDouble('damage', contribution.getDouble('damage') + Math.min(event.damage, entity.getMaxHealth()))
@@ -89,7 +89,7 @@ function tfRecordDamage(event) {
 /** The dragon restores 1 HP for its death animation after the death event. */
 function tfDefeated(entity) {
   return entity.isDeadOrDying() || (String(entity.type) === 'minecraft:ender_dragon'
-    && entity.getPhaseManager().getCurrentPhase().getPhase().equals(TFDragonPhase.DYING))
+    && entity.getPhaseManager().getCurrentPhase().getPhase().getId() === TFDragonPhase.DYING.getId())
 }
 
 function tfAwardKill(entity, killer, tier) {
@@ -98,14 +98,14 @@ function tfAwardKill(entity, killer, tier) {
     if (tfRealPlayer(killer)) tfApplyTier(killer, tier, true)
   } else {
     const participants = entity.persistentData.getCompound(TF_PARTICIPANTS_KEY)
-    const now = entity.level().getGameTime()
+    const now = entity.level.getTime()
     const players = entity.server.getPlayerList().getPlayers()
     for (let index = 0; index < players.size(); index++) {
       let player = players.get(index)
       if (!tfRealPlayer(player) || !player.isAlive()
-        || !player.level().dimension().equals(entity.level().dimension())
-        || player.distanceToSqr(entity) > TF_PARTICIPATION_RANGE_SQUARED) continue
-      let contribution = participants.getCompound(String(player.getUUID()))
+        || String(player.level.dimension) !== String(entity.level.dimension)
+        || player.distanceToEntitySqr(entity) > TF_PARTICIPATION_RANGE_SQUARED) continue
+      let contribution = participants.getCompound(String(player.getUuid()))
       if (contribution.getDouble('damage') >= entity.getMaxHealth() * TF_MINIMUM_DAMAGE_FRACTION
         && now - contribution.getLong('last_hit') <= TF_PARTICIPATION_TICKS) {
         tfApplyTier(player, tier, true)
@@ -129,7 +129,7 @@ EntityEvents.death(event => {
   const entity = event.entity
   const tier = TF_MILESTONES[String(entity.type)]
   if (tier == null) return
-  let killer = event.source.getEntity()
+  let killer = event.source.getActual()
   if (!tfRealPlayer(killer)) killer = entity.getKillCredit()
   // Death may precede the lethal hit's afterHurt event. Delay credit until both
   // have completed, and recheck death to avoid awarding a cancelled death.

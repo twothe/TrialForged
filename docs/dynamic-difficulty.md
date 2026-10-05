@@ -10,7 +10,7 @@ Die Liste umfasst die vier Vanilla-Gegner Wither, Ender Dragon, Warden und Elder
 
 Eine Blacklist verhindert neue Skalierung, entfernt aber nach der installierten Dynamic-Implementierung keine bereits gespeicherten Attributmodifikatoren. Deshalb entfernt `kubejs/server_scripts/dynamic_difficulty_integration.js` beim serverseitigen Welt-/Chunkbeitritt ausgeschlossener Bosse die Dynamic-Modifikatoren und den alten Advanced-Modifikator `autoleveling:level`. Der gespeicherte Dynamic-Level-Anhang und der alte `LEVEL`-Marker werden ebenfalls entfernt. Andere Modifikatoren bleiben erhalten. Die vorherige Gesundheitsfraktion bleibt erhalten; beschädigte Bosse werden nicht geheilt. Weltdateien werden nicht direkt bearbeitet.
 
-Die festen [Vanilla-Bossprofile](vanilla-boss-profiles.md) bleiben aktiv. Ihr bisheriger Klassenzugriff auf Advanced Leveling wurde durch die feste Resource-ID ersetzt, damit das Skript ohne den entfernten Mod lädt.
+Die drei höheren Vanilla-Meilensteine verwenden die native [Always-Infernal-Konfiguration](vanilla-boss-profiles.md). Die festen KubeJS-Bossprofile wurden am 05.10.2026 auf Nutzerwunsch entfernt. Boss-Ausschlüsse und die bestehende Levelbereinigung bleiben erhalten.
 
 ## Bonuschance und Itemmenge
 
@@ -66,7 +66,13 @@ $rhinoJar = (Get-ChildItem mods -Filter 'rhino-*.jar').FullName
 
 Die Tests führen die Produktionshandler mit Schnittstellenfakes aus und prüfen Chancegrenzen, Mengenbegrenzung, Komponenten, Quellenauflösung, Fehlerfälle, verschachtelte Tabellen, wiederholte Lootwürfe sowie Bossbereinigung. APIs, Modifikatorzustand, Scavenger-Pfad und Chest-Kontext wurden anhand der installierten JARs geprüft. Das ersetzt keinen Minecraft-Laufzeit- oder dedizierten Mehrspielertest.
 
-Im Spiel noch zu prüfen:
+Seit der KubeJS-Schnittstellenkorrektur vom 02.10.2026 entfernt die Bossbereinigung den alten nativen `LEVEL`-Marker über `getForgePersistentData()`. KubeJS benennt den Java-Getter um; `getPersistentData()` bezeichnet in Skripten den separaten KubeJS-Speicher. Die Tests unterscheiden beide Bereiche und bestätigen, dass eigene KubeJS-Daten erhalten bleiben. Alle 28 Integrationsprüfungen bestehen in Node und der installierten Rhino-Version.
+
+Die Loot-Registrierung verwendet `modifyLootTables(LootType.ENTITY)` und damit tatsächlich vorhandene Tabellen. `modifyEntityTables(/.*/)` iteriert in LootJS 3.7.0 dagegen alle Entitätstypen und löst deren Standardtabelle auf; bei `minecraft:area_effect_cloud` existiert diese nicht. Das führte beim ersten Ressourcenladen zu `Unknown loot table: minecraft:entities/area_effect_cloud`. Die Auswahl existierender Tabellen erhält die beabsichtigte Bonusintegration, ohne fehlende Tabellen zu erfinden oder Fehler zu unterdrücken.
+
+Im [echten Clienttest](runtime-validation.md) wurden alle zwölf Quellen registriert und ein gelevelter Level-1.000-Zombie über den nativen Schadens-/Todespfad getötet. Dabei trat kein Integrationsfehler auf. Eine statistische Prüfung der Beutemengen und Komponenten ist damit noch nicht abgedeckt.
+
+Über diesen Lauf hinaus im Spiel noch zu prüfen:
 
 1. `logs/kubejs/server.log` enthält die Meldung über zwölf Quellen und keine Integrationsfehler.
 2. Neue und bereits gespeicherte Bosse behalten ihre vorgesehenen Werte, beschädigte Bosse ihre Gesundheitsfraktion, auch nach erneutem Chunkladen und Serverneustart.

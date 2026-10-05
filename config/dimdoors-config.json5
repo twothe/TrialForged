@@ -4,7 +4,7 @@
     "riftBoundingBoxInCreative": false,
     "riftCloseSpeed": 0.1,
     "riftGrowthSpeed": 1.0,
-    "enableRiftDecay": true,
+    "enableRiftDecay": false,
     "depthSpreadFactor": 20,
     "endermanSpawnChance": 5.0E-5,
     "endermanAggressiveChance": 0.5,

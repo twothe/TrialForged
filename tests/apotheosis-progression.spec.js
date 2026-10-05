@@ -50,10 +50,11 @@ function TestPlayer(server, id, tier) {
   this.advancements = []
   server.players.push(this)
 }
-TestPlayer.prototype.getUUID = function () { return this.id }
-TestPlayer.prototype.level = function () { return testLevel(this.server, this.dimension) }
+TestPlayer.prototype.getUuid = function () { return this.id }
+// Match the KubeJS property while allowing dimension changes in participation tests.
+Object.defineProperty(TestPlayer.prototype, 'level', { get: function () { return testLevel(this.server, this.dimension) } })
 TestPlayer.prototype.isAlive = function () { return this.alive }
-TestPlayer.prototype.distanceToSqr = function () { return this.distanceSquared }
+TestPlayer.prototype.distanceToEntitySqr = function () { return this.distanceSquared }
 TestPlayer.prototype.tell = function (message) { this.messages.push(message) }
 TestPlayer.prototype.getAdvancements = function () {
   var player = this
@@ -65,7 +66,7 @@ TestPlayer.prototype.getAdvancements = function () {
 function TestFakePlayer(server, id) { TestPlayer.call(this, server, id) }
 TestFakePlayer.prototype = Object.create(TestPlayer.prototype)
 TestFakePlayer.prototype.constructor = TestFakePlayer
-var testDyingPhase = {}
+var testDyingPhase = { getId: function () { return 9 } }
 var Java = { loadClass: function (name) {
   var classes = {
     'dev.shadowsoffire.apotheosis.tiers.WorldTier': testWorldTier,
@@ -104,27 +105,26 @@ function testServer() {
   return server
 }
 function testLevel(server, dimension) {
-  return { getGameTime: function () { return server.time }, dimension: function () {
-    return { equals: function (other) { return other.id === dimension }, id: dimension }
-  } }
+  return { getTime: function () { return server.time },
+    dimension: { toString: function () { return dimension } } }
 }
 function testMob(server, type, health) {
   return {
     server: server, type: type, persistentData: new TestTag(), defeated: true, dying: false, killCredit: null,
     getMaxHealth: function () { return health == null ? 200 : health },
-    level: function () { return testLevel(server, 'overworld') },
+    level: testLevel(server, 'overworld'),
     isDeadOrDying: function () { return this.defeated },
     getKillCredit: function () { return this.killCredit },
     getPhaseManager: function () { var mob = this; return { getCurrentPhase: function () { return {
-      getPhase: function () { return { equals: function (phase) { return mob.dying && phase === testDyingPhase } } }
+      getPhase: function () { return { getId: function () { return mob.dying ? 9 : 0 } } }
     } } } }
   }
 }
 function testHit(mob, player, damage) {
-  testHandlers.afterHurt({ entity: mob, source: { getEntity: function () { return player } }, damage: damage })
+  testHandlers.afterHurt({ entity: mob, source: { getActual: function () { return player } }, damage: damage })
 }
 function testDeath(mob, player) {
-  testHandlers.death({ entity: mob, source: { getEntity: function () { return player } } })
+  testHandlers.death({ entity: mob, source: { getActual: function () { return player } } })
 }
 function runProgressionTests() {
   var passed = 0

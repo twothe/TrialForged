@@ -1,0 +1,18 @@
+{
+  "showInventoryButton": true,
+  "inventoryButtonX": 0,
+  "inventoryButtonY": 0,
+  "useRelativeInventoryButtonPosition": true,
+  "inventoryButtonPositionSet": false,
+  "attachedToInventory": true,
+  "inventoryAnchorSide": "RIGHT",
+  "inventoryAnchorOffset": 112,
+  "freeButtonX": 0,
+  "freeButtonY": 0,
+  "freeButtonPositionSet": false,
+  "showNewEntryNotification": true,
+  "playNewEntrySound": true,
+  "notificationDurationTicks": 80,
+  "notificationSound": "minecraft:item.book.page_turn",
+  "diaryListSortMode": "DATE_DESC"
+}

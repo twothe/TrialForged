@@ -88,13 +88,13 @@
 		# Allows users to access an Anvil GUI without needing an Anvil.
 		anvil: {
 			# Default: true
-			enabled: true
+			enabled: false
 		}
 		
 		# Allows users to access a Crafting Table GUI without needing a Crafting Table.
 		crafting: {
 			# Default: true
-			enabled: true
+			enabled: false
 		}
 		
 		# Allows users to access their ender chest, as well as admins to manage other players' ender chests.
@@ -124,7 +124,7 @@
 		# Allows users to list nearby players, sorted by distance
 		near: {
 			# Default: true
-			enabled: true
+			enabled: false
 		}
 		
 		# Allows users to change their display name, as well as admins to change nicknames for other users
@@ -136,19 +136,19 @@
 		# Allows users to announce their recording or streaming status to the server by using commands
 		rec: {
 			# Default: true
-			enabled: true
+			enabled: false
 		}
 		
 		# Allows users to access a Smithing Table GUI without needing a Smithing Table.
 		smithing: {
 			# Default: true
-			enabled: true
+			enabled: false
 		}
 		
 		# Allows users to access a Stonecutter GUI without needing a Stonecutter.
 		stonecutter: {
 			# Default: true
-			enabled: true
+			enabled: false
 		}
 		
 		# Enables usage of a trash can inventory, which can be used to void unneeded items
@@ -175,7 +175,7 @@
 			cooldown: 30
 			
 			# Default: true
-			enabled: true
+			enabled: false
 			
 			# Max size of the teleport history. This limits how many times you can use /back
 			# You can override this with FTB Ranks using ftbessentials.back.max
@@ -215,7 +215,7 @@
 			cooldown: 10
 			
 			# Default: true
-			enabled: true
+			enabled: false
 			
 			# The minimum Y value for homes, as set by the /sethome command
 			# Default: -2147483648
@@ -287,7 +287,7 @@
 			dimension_whitelist: [ ]
 			
 			# Default: true
-			enabled: true
+			enabled: false
 			
 			# /rtp max distance from spawn point
 			# Default: 25000
@@ -318,7 +318,7 @@
 			cooldown: 10
 			
 			# Default: true
-			enabled: true
+			enabled: false
 			
 			# Warm-up time before /spawn command executes (in seconds)
 			# You can override this with FTB Ranks using ftbessentials.spawn.warmup

@@ -4,7 +4,13 @@
   "debugModeEnabled": false,
   "loadedUserSongpack": "",
   "blacklistedDimensions": [],
-  "savedHomePositions": {},
+  "savedHomePositions": {
+    "saved": {
+      "x": -200.5,
+      "y": 74.5625,
+      "z": -12.5
+    }
+  },
   "soundsMuteMusic": [],
   "soundsMuteMusicIgnoreDistance": [],
   "hasForcedInitialVolume": true

@@ -75,12 +75,13 @@
         if (id.getNamespace() === 'dynamic_difficulty' || id.equals(legacyModifier)) removals.push(id)
       }
       for (let index = 0; index < removals.length; index++) {
-        instance.removeModifier(removals[index])
+        instance['removeModifier(net.minecraft.resources.ResourceLocation)'](removals[index])
         changed = true
       }
     }
     entity.removeData(LevelAttachment.LEVEL)
-    entity.getPersistentData().remove('LEVEL')
+    // Legacy mod state belongs to native NeoForge data, not the KubeJS subtag.
+    entity.getForgePersistentData().remove('LEVEL')
     if (changed) entity.setHealth(fraction * entity.getMaxHealth())
   }
 
@@ -101,7 +102,8 @@
       return ResourceKey.create(RegistryKeys.LOOT_TABLE, location)
     })
 
-    event.modifyEntityTables(/.*/).getTables().forEach(entityTable => {
+    // Enumerate existing tables; many entity types have no default loot table.
+    event.modifyLootTables(LootType.ENTITY).getTables().forEach(entityTable => {
       let tableId = String(entityTable.getLocation())
       // Runtime bonus failures must never discard the already generated normal loot.
       entityTable.onDrop((context, bucket) => guard('bonus loot in ' + tableId, () => {

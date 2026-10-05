@@ -3,7 +3,7 @@ silentCicadas = false
 #Makes Cicadas silent when one is on your head. If the above option is set to true, this won't have any effect.
 silentCicadasOnHead = false
 #Controls whether the screen shakes when a Magic Bean is in the process of growing.
-screenShakingEffect = true
+screenShakingEffect = false
 #Rotate Trophy heads on item model. Has no performance impact at all. For those who don't like fun.
 rotateTrophyHeadsGui = true
 #Disable the nag screen when OptiFine is installed.

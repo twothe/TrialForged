@@ -34,7 +34,7 @@
 	#Allowed Values: DEFAULT, MOSSY, SANDY, BLACKSTONE, RED_NETHER_BRICKS, DEEPSLATE, END_STONE, PURPUR, PRISMARINE, MUD_BRICKS, BIOME
 	wildWaystoneStyle = "BIOME"
 	#Approximate chunk distance between wild waystones being generated. Set to 0 to disable generation.
-	chunksBetweenWildWaystones = 25
+	chunksBetweenWildWaystones = 45
 	#List of dimensions that wild waystones are allowed to spawn in. If left empty, all dimensions except those in wildWaystonesDimensionDenyList will be able to spawn waystones, provided the biomes are in the `has_structure/waystone` tag.
 	wildWaystonesDimensionAllowList = ["minecraft:the_nether", "minecraft:the_end", "minecraft:overworld"]
 	#List of dimensions that wild waystones are not allowed to spawn in, even if the biome is in the `has_structure/waystone` tag. Only used if wildWaystonesDimensionAllowList is empty.
@@ -52,7 +52,7 @@
 
 [teleports]
 	#Set to false to simply disable all xp costs. See warpRequirements for more fine-grained control.
-	enableCosts = true
+	enableCosts = false
 	#Set to false to simply disable all cooldowns. See warpRequirements for more fine-grained control.
 	enableCooldowns = true
 	#Set to false to disable durability loss on warp stones.

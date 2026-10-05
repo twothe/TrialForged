@@ -11,7 +11,7 @@
 	#If true, disallows all blocks from connecting to backpacks
 	allBlockConnectionsDisallowed = false
 	#Maximum number of upgrades of type per backpack in format of "UpgradeRegistryName[or UpgradeGroup]|MaxNumber"
-	maxUpgradesPerStorage = ["furnace_upgrades|1", "stack_upgrades|3", "jukebox_upgrades|1"]
+	maxUpgradesPerStorage = ["furnace_upgrades|2", "stack_upgrades|3", "jukebox_upgrades|1"]
 	#Turns on/off item fluid handler of backpack in its item form. There are some dupe bugs caused by default fluid handling implementation that manifest when backpack is drained / filled in its item form in another mod's tank and the only way to prevent them is disallowing drain/fill in item form altogether
 	itemFluidHandlerEnabled = true
 	#Determines whether player can right click on backpack that another player is wearing to open it. If off will turn off that capability for everyone and remove related settings from backpack.
@@ -32,7 +32,7 @@
 		#Number of upgrade slots in the backpack
 		# Default: 1
 		# Range: 0 ~ 10
-		upgradeSlotCount = 1
+		upgradeSlotCount = 2
 
 	#Copper Backpack Settings
 	[server.copperBackpack]
@@ -43,7 +43,7 @@
 		#Number of upgrade slots in the backpack
 		# Default: 1
 		# Range: 0 ~ 10
-		upgradeSlotCount = 1
+		upgradeSlotCount = 2
 
 	#Iron Backpack Settings
 	[server.ironBackpack]
@@ -54,7 +54,7 @@
 		#Number of upgrade slots in the backpack
 		# Default: 2
 		# Range: 0 ~ 10
-		upgradeSlotCount = 2
+		upgradeSlotCount = 3
 
 	#Gold Backpack Settings
 	[server.goldBackpack]
@@ -65,7 +65,7 @@
 		#Number of upgrade slots in the backpack
 		# Default: 3
 		# Range: 0 ~ 10
-		upgradeSlotCount = 3
+		upgradeSlotCount = 4
 
 	#Diamond Backpack Settings
 	[server.diamondBackpack]
@@ -76,7 +76,7 @@
 		#Number of upgrade slots in the backpack
 		# Default: 5
 		# Range: 0 ~ 10
-		upgradeSlotCount = 5
+		upgradeSlotCount = 6
 
 	#Netherite Backpack Settings
 	[server.netheriteBackpack]
@@ -87,7 +87,7 @@
 		#Number of upgrade slots in the backpack
 		# Default: 7
 		# Range: 0 ~ 10
-		upgradeSlotCount = 7
+		upgradeSlotCount = 8
 
 	#Compacting Upgrade Settings
 	[server.compactingUpgrade]

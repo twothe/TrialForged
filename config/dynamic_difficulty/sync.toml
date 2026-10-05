@@ -19,7 +19,7 @@ expBonus = 0.1
 # How many levels to add per block from world spawn
 levelsPerDistance = 0.01
 # How many levels to add per block below sea level (default sea level is Y=64, can be overridden per dimension)
-levelsPerDeepness = 0.05
+levelsPerDeepness = 0.025
 # How many levels to add per block above sea level (default sea level is Y=64, can be overridden per dimension)
 levelsPerHeight = 0.0
 # How many levels to add per in-game day passed
@@ -37,7 +37,7 @@ playerLevelRadius = 128.0
 # Multiplier for player level bonuses applied to mobs
 # This scales the bonus that nearby players add to mob levels
 # 1.0 = 1 level per point (typically), 0.5 = half effect, 2.0 = double effect
-playerLevelMultiplier = 0
+playerLevelMultiplier = 0.0
 # Whether to factor in player levels when calculating mob levels
 applyPlayerBasedLeveling = false
 # Whether player level bonuses bypass the maximum level cap
@@ -66,7 +66,7 @@ enablePlaytimeScaling = false
 # How many levels to add per hour of nearby-player playtime
 # Playtime from all nearby players is averaged and converted to levels
 # Example: 2 players with 10 and 20 hours = 15 hours average = 15 * this_value levels
-levelsPerPlaytimeHour = 0.1
+levelsPerPlaytimeHour = 0.0
 # --- Puffish Skills Integration ---
 # List of Puffish Skills tree IDs that should be excluded from player level calculations
 # Trees in this list will not contribute their points to player-based mob level scaling

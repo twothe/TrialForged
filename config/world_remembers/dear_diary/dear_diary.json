@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "language": {
+    "defaultDiaryLanguage": "en_us"
+  },
+  "manualEntries": {
+    "maxTitleLength": 80,
+    "maxTextLength": 2000,
+    "maxSharedTextLength": 500,
+    "sharedMemoryTimeZone": "SERVER"
+  },
+  "automaticMemories": {
+    "enabled": true,
+    "createOriginEntry": true,
+    "minimumImportance": "MINOR",
+    "categories": {
+      "beginning": true,
+      "discovery": true,
+      "exploration": true,
+      "combat": true,
+      "death": true,
+      "building": true,
+      "resources": true,
+      "pets": true,
+      "bosses": true,
+      "rare": true,
+      "other": true
+    },
+    "disabledEvents": []
+  }
+}

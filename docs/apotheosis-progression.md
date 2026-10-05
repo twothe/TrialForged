@@ -12,7 +12,7 @@ Die World Tiers steigen automatisch und dauerhaft anhand persönlicher Kampferfo
 
 Ein höherer Meilenstein setzt unmittelbar mindestens dessen Tier. Ein Wither-Sieg kann deshalb auch einen Haven-Spieler direkt auf Ascent bringen. Frühere Meilensteine sind keine zusätzlichen Aufgaben. Schwächere Gegner, Tod, Respawn und erneutes Verbinden senken den erreichten Tier nicht.
 
-Witherskelette behalten ihre bisherigen Werte. Wither, Ender Dragon und Warden verwenden die gesondert beschriebenen [festen Bossprofile](vanilla-boss-profiles.md). Weitere Balanceänderungen brauchen eine eigene Entscheidung.
+Witherskelette behalten ihre bisherigen Werte. Wither, Ender Dragon und Warden verwenden die native [Always-Infernal-Konfiguration](vanilla-boss-profiles.md). Weitere Balanceänderungen brauchen eine eigene Entscheidung.
 
 ## Multiplayer
 
@@ -30,7 +30,7 @@ Schaden zählt, wenn die Damage Source einen echten Spieler als Verursacher ausw
 
 Die Verarbeitung wartet nach dem Todesereignis einen Tick, damit auch der tödliche Treffer berücksichtigt wird und abgebrochene Todesereignisse keinen Aufstieg auslösen. Die Todesanimation des Drachen wird gesondert erkannt.
 
-Unterschiedliche Spielertiers können weiterhin nebeneinander existieren. Apotheosis bestimmt die Stärke gewöhnlicher neu gespawnter Gegner anhand des nächststehenden Spielers; diese Integration macht Gebiete nicht unabhängig davon gleich schwierig. Die drei profilierten Vanilla-Bosse verwenden dagegen feste Gegnertiers.
+Unterschiedliche Spielertiers können weiterhin nebeneinander existieren. Apotheosis bestimmt die Stärke neu gespawnter Gegner anhand des nächststehenden Spielers; diese Integration macht Gebiete nicht unabhängig davon gleich schwierig. Seit der Umstellung auf native Infernal-Konfiguration gilt die native Tierzuordnung wieder auch für die drei Vanilla-Bosse.
 
 ## Umsetzung und Bestandsschutz
 
@@ -63,7 +63,13 @@ $rhinoJar = (Get-ChildItem mods -Filter 'rhino-*.jar' | Select-Object -First 1).
 
 Die benötigten Event- und API-Namen sowie Apotheosis' Speicherung, Todeskopie und Tier-Aktualisierung wurden gegen die installierten JARs geprüft. Das ist noch kein vollständiger Minecraft-Laufzeit- oder dedizierter Mehrspielertest.
 
-Im Spiel noch zu bestätigen:
+Am 02.10.2026 wurden im Zuge des [Bossprofil-Skriptfehlers](vanilla-boss-profiles.md#kubejs-schnittstellenkorrektur-vom-02102026) die tatsächlich für JavaScript sichtbaren KubeJS-Namen korrigiert: `entity.level` und `level.dimension` sind Eigenschaften, die Spieler-UUID wird mit `getUuid()` gelesen und die quadrierte Entfernung zu einer Entität mit `distanceToEntitySqr(entity)`. Die installierten KubeJS-Mixin-Annotationen belegen diese Abweichungen von den Java-Namen. Angepasste Schnittstellenfakes prüfen diese Namen ohne die bisherigen Java-Aliase; alle 28 Fälle bestehen in Node und der installierten Rhino-Version. Beteiligungsgrenzen, Tierregeln und gespeicherte UUID-Schlüssel bleiben unverändert.
+
+Nachtrag vom 02.10.2026: Bei Schadensquellen wird der Spieler über `event.source.getActual()` gelesen. KubeJS benennt die zugrunde liegende Java-Methode `DamageSource.getEntity()` ausdrücklich um; das gilt sowohl für Beteiligung als auch für die Todesereignisse.
+
+Der [echte Clienttest](runtime-validation.md) bestätigte Login, native Schadensereignisse, gespeicherte Beteiligung und den Aufstieg von Haven nach Pinnacle durch einen Warden-Kill. Ein vollständiger Clientneustart erhielt diesen Tier. Dabei wurde auch `level.getTime()` als tatsächlich sichtbarer Zeit-Getter verifiziert. Drachenphasen werden über ihre numerischen IDs verglichen, Dimensionen über ihre Kennungen als Zeichenketten. Die Vertragsprüfungen in Node und Rhino bestehen mit diesen Schnittstellen.
+
+Über diesen Lauf hinaus noch im Spiel zu bestätigen:
 
 1. Neuer Spieler startet mit aktivem Haven, identifizierten Affix-Gegenständen und gesperrter manueller Tierwahl.
 2. Die vier Gegner setzen die vereinbarten Tiers; bereits höhere Stufen bleiben erhalten.

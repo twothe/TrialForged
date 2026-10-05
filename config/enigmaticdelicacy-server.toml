@@ -53,6 +53,9 @@
 		# Range: 0 ~ 200
 		threshold = 100
 
+	[else.infinisoil]
+		convertList = ["minecraft:crimson_fungus->mynethersdelight:crimson_fungus_colony", "minecraft:warped_fungus->mynethersdelight:warped_fungus_colony", "twilightforest:mushgloom->twilightdelight:mushgloom_colony"]
+
 	[abyssItems.abyssalStew]
 		# Default: 180
 		# Range: 10 ~ 1200
@@ -80,3 +83,8 @@
 		# Default: 0.5
 		# Range: 0.0 ~ 1.0
 		damageResistance = 0.5
+
+	[fobiddenItems.forbiddenGrail]
+		# Default: 120
+		# Range: 10 ~ 1200
+		duration = 120

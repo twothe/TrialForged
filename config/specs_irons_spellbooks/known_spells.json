@@ -39,6 +39,8 @@
     "irons_spellbooks:teleport"
   ],
   "irons_spellbooks:evocation": [
+    "aces_spell_utils:example_advanced_spells",
+    "aces_spell_utils:example_advanced_tp",
     "irons_spellbooks:arrow_volley",
     "irons_spellbooks:chain_creeper",
     "irons_spellbooks:fang_strike",

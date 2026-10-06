@@ -1,6 +1,7 @@
 # Behaviour
 
 - Nutzerkommunikation und Projektdokumentation auf Deutsch; Code und technische Bezeichner auf Englisch.
+- Rezept-Balancing zentral in `kubejs/server_scripts/balancing-recipes.js` pflegen. Zum Einschränken von Blöcken ausschließlich Herstellungsrezepte entfernen; Blöcke und Items für eine Freigabe durch Admins registriert und nutzbar lassen.
 - Eigene Minecraft-Testläufe immer stumm und ohne Mausübernahme starten. Einstellungen nur in der isolierten Testinstanz ändern.
 - Mod-JARs, interne Metadaten, Konfigurationen und lokale Skripte prüfen. Launcherlisten allein sind kein Beleg für installierte oder erfolgreich geladene Mods.
 - Änderungen an Login-, Kampf- und Progressionsskripten vor einer erneuten Testaufforderung an den Nutzer in einem eigenen isolierten Minecraft-Clientlauf prüfen. Node-/Rhino-Tests mit Schnittstellenfakes genügen nicht als Laufzeitbeleg. Prüfskripte gehören unter `tests`, Testwelten und Laufzeitkopien unter `local`.
@@ -22,6 +23,8 @@ Trialforged ist eine lokale Minecraft-1.21.1-Instanz mit NeoForge. Ziel ist ein 
 
 # Documentation Index
 
+- [Rezept-Balancing](docs/recipe-balancing.md): zentrale Rezeptänderungen, entfernte Easy-Villagers-Rezepte und erhaltene Admin-Freigabe.
+- [Startabbruch und Desktop-Ausfall vom 06.10.2026](docs/startup-crash-2026-10-06.md): Unfocused-Initialisierungsfehler, neuer Windows-GPU-Timeout-Bericht und Grenzen der Ursachenbestimmung.
 - [Ars-Kistenloot](docs/ars-chest-loot.md): generische Kistenauswahl, unabhängige Codex-/Essenz-Bonuswürfe und ausdrücklich akzeptierte Abweichungen durch Loot Integrations.
 - [Startabbruch vom 05.10.2026](docs/startup-crash-2026-10-05.md): doppelter Curios-Ring-Schlüssel in Fallen Gems Affixes 1.0.0 und nachfolgende irreführende Sodium-Konfigurationsmeldung.
 - [Minecraft-Laufzeittest](docs/runtime-validation.md): eigener isolierter Clientlauf für Login, JEI, Bossereignisse und Fortschritt; Modinitialisierungs-Konfiguration und Grenzen der Prüfung.

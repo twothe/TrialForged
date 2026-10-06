@@ -22,6 +22,8 @@
 /usernamecache.json
 
 # Local client preferences and downloaded shaders.
+/config/jei/client/
+/config/jei/world/
 /options.txt
 /optionsof.txt
 /optionsshaders.txt
@@ -34,6 +36,8 @@
 /crash-reports/
 /.mixin.out/
 /cache/
+/config/ars_nouveau/search_index/
+/dynamic-data-pack-cache/
 /dynamic-resource-pack-cache/
 /local/
 /moddata/

@@ -182,4 +182,4 @@
 
 	[misc.redstone]
 		#If true, redstone-controlled Embers blocks run without a signal and turn off while powered. If false, they require a redstone signal like classic Embers.
-		inverted_controls = false
+		inverted_controls = true

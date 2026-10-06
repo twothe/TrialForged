@@ -1,6 +1,8 @@
 # Behaviour
 
+- Skill Studio unter `tools/skill-planner` besitzt eine englische Oberfläche und englische generierte Exporttexte. Benutzertexte und bestehende Browserpläne erhalten; Eingaben einschließlich unvollständiger Werte sofort im Browsercache speichern. Dateiexporte sind zusätzliche Sicherungen.
 - Nutzerkommunikation und Projektdokumentation auf Deutsch; Code und technische Bezeichner auf Englisch.
+- Starke Charakterprogression bis in absurde Wertebereiche ist gewollt. Balance nur grob auf einseitige Eskalation prüfen; kleine Ungleichheiten akzeptieren, technische Fehler weiterhin verhindern. Bei der geplanten Magievereinheitlichung vorhandene Ars-Prozentkurven übernehmen und den Grundschaden mit verstärken; keine Ersatzkurven zur exakten Gleichwertigkeit berechnen.
 - Rezept-Balancing zentral in `kubejs/server_scripts/balancing-recipes.js` pflegen. Zum Einschränken von Blöcken ausschließlich Herstellungsrezepte entfernen; Blöcke und Items für eine Freigabe durch Admins registriert und nutzbar lassen.
 - Eigene Minecraft-Testläufe immer stumm und ohne Mausübernahme starten. Einstellungen nur in der isolierten Testinstanz ändern.
 - Mod-JARs, interne Metadaten, Konfigurationen und lokale Skripte prüfen. Launcherlisten allein sind kein Beleg für installierte oder erfolgreich geladene Mods.
@@ -23,6 +25,8 @@ Trialforged ist eine lokale Minecraft-1.21.1-Instanz mit NeoForge. Ziel ist ein 
 
 # Documentation Index
 
+- [Gemeinsame Magieboni – Implementationsplan](docs/magic-attribute-unification-plan.md): geprüfte Pufferfish-Schadensformel, native Mana-Attributpaare, Wertumrechnung, kurze Apotheosis-Tooltips, Kaelos-Resonanz und Abnahmematrix; noch keine Spielumstellung.
+- [Lokales Skillatelier](docs/skill-planner.md): Offline-Hexeditor unter `tools/skill-planner`, native Attributboni, technische Freitextaufträge, verlustfreier Planexport und Prüfgrenzen.
 - [Majrusz-Rechtsklick-Ernte](docs/majrusz-accessories-compatibility.md): genaue installierte JAR, nativer Drop-Pfad, Prüfung mit leerer Hand und Unterscheidung zwischen Pflanzen und Kartoffel-Items.
 - [Rezept-Balancing](docs/recipe-balancing.md): zentrale Rezeptänderungen, Easy Villagers, Heart Canisters, Elsebase-Bore und Erzverdopplung im Embers-Melter.
 - [Startabbruch und Desktop-Ausfall vom 06.10.2026](docs/startup-crash-2026-10-06.md): Unfocused-Initialisierungsfehler, neuer Windows-GPU-Timeout-Bericht und Grenzen der Ursachenbestimmung.

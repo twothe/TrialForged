@@ -4,6 +4,7 @@ var levelLootLogs = []
 var console = { info: function () {}, error: function (message) { levelLootLogs.push(message) } }
 var levelLootConfig = {
   chanceDivisor: 1000,
+  excludedDimensions: ['elsebase:backdoor'],
   bosses: ['minecraft:wither'],
   lootSources: ['minecraft:chests/simple_dungeon', 'dungeoncrawl:chests/stage_1']
 }
@@ -28,6 +29,7 @@ function levelLootIterator(values) {
 function LevelLootEntity(type, level) {
   this.type = type || 'minecraft:zombie'; this.mobLevel = level == null ? 100 : level
   this.allowed = true; this.leveled = true; this.removed = false; this.alive = true
+  this.level = { dimension: 'minecraft:overworld' }
   this.maximum = 300; this.health = 150
   this.modifiers = ['dynamic_difficulty:health', 'autoleveling:level', 'apotheosis:health']
   this.persistentRemovals = []; this.kubejsRemovals = []; this.dataRemovals = []; this.scheduled = []
@@ -193,6 +195,11 @@ function runLevelLootTests() {
   check(boss.health === 50 && boss.maximum === 100, 'Half-health preserved')
   check(boss.dataRemovals[0] === 'dynamic-level' && boss.persistentRemovals[0] === 'LEVEL', 'Old level state removed')
   check(boss.kubejsRemovals.length === 0, 'KubeJS persistent namespace preserved')
+  var elsebaseMob = new LevelLootEntity('minecraft:zombie', 100000)
+  elsebaseMob.level.dimension = 'elsebase:backdoor'
+  check(levelLootRun(drop, elsebaseMob, 0, stacks).calls.length === 0, 'Elsebase has no level loot regardless of a stored level')
+  levelLootHandlers.join({ getLevel: function () { return { isClientSide: function () { return false } } }, getEntity: function () { return elsebaseMob } })
+  check(elsebaseMob.scheduled.length === 0, 'No Elsebase saved-state cleanup before pack launch')
   check(levelLootLogs.length >= 4, 'Contract failures logged')
   return count
 }

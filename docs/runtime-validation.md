@@ -12,9 +12,11 @@ Im Instanzverzeichnis, immer nur einen Lauf gleichzeitig:
 
 Der Befehl prüft zunächst die Skriptverträge und erstellt unter `local/runtime-validation` eine eigene Instanz mit dem installierten Modbestand, Konfigurationen und aktuellen Produktionsskripten. Er verwendet die vorhandenen Minecraft-/NeoForge-Bibliotheken und GraalVM unter `C:\Work\Java\GraalVM\jdk-21.0.6`. Es werden keine Downloads oder Modwechsel durchgeführt. Die Pfade und Versionsmetadaten im Vorbereitungsprogramm entsprechen dieser lokalen Installation.
 
+Die isolierte Instanz startet mit `soundCategory_master:0.0`. Ihr Clientprüfskript hält das Fenster für Minecraft inaktiv und gibt eine eventuell ergriffene Maus sofort frei; `pauseOnLostFocus:false` ermöglicht die Prüfung im Hintergrund. Normale Instanzeinstellungen bleiben erhalten. Bei einem fehlgeschlagenen Serverprüfschritt beendet sich der Testclient beim nächsten Prüfintervall.
+
 Der Offline-Spieler `RuntimeTester` betritt automatisch die separate Welt `Runtime Validation`. Bei deren erster Anlage werden `level.dat`, Datapacks und Serverkonfiguration aus `Run #1` übernommen, jedoch keine Chunks oder externen Spielerdateien. `level.dat` kann eingebettete Spielerdaten enthalten; der Test setzt ausschließlich den Fortschritt der isolierten Testidentität zurück. Die Originalwelt wird nicht beschrieben. Weitere Läufe verwenden die gespeicherte Testwelt.
 
-Die beiden Prüfskripte werden ausschließlich in die Testinstanz kopiert. Sie prüfen:
+Die drei Prüfskripte werden ausschließlich in die Testinstanz kopiert. Sie prüfen:
 
 - echten Spielerlogin und das Ende des Terrain-Ladebildschirms; die normale NeoOrigins-Herkunftsauswahl ist für den neuen Offline-Spieler zulässig;
 - vollständigen JEI-Start und mindestens 200 Clientticks nach Erreichen des normalen Bildschirms;
@@ -23,8 +25,13 @@ Die beiden Prüfskripte werden ausschließlich in die Testinstanz kopiert. Sie p
 - gespeicherte Kampfbeteiligung, den Lootpfad eines Level-1.000-Zombies und einen echten Warden-Kill mit Aufstieg von Haven nach Pinnacle;
 - bei Wiederholung nach erfolgreichem Lauf den gespeicherten Tier vor dem erneuten Zurücksetzen;
 - reguläres Beenden des Testclients. Der Runner verlangt Erfolgsmarker und lehnt Skriptfehler sowie unerwartete Serverausnahmen ab. Zwei bekannte Ressourcen-Tagfehler werden gesondert als Warnung ausgegeben, siehe unten.
+- [Ars-Kistenloot](ars-chest-loot.md): installierte Kistentabellen, 20.000 native Bonuswürfe, Mengen und Essenzverteilung, echte Modkisten, unveränderte Ars-Spezialkisten sowie Lootr-Inventare zweier serverseitiger Testidentitäten.
+- Elsebase: native Dimensionsregel, Gegenprobe der bisherigen globalen Distanzrechnung sowie frische Zombies, Skelette und Creeper bei weit entfernten Koordinaten ohne Levelwachstum oder Level-Attributboni. Keine Bereinigung gespeicherter Elsebase-Mobs.
+- Nether/End: native Dimensionsprofile mit Basislevel 30/80, erhaltenen Obergrenzen und Zufallsboni, Basisrechnung ohne Distanz-/Tiefenbonus sowie frische Zombies über den normalen Spawnpfad.
 
 Die Ergebnisdatei liegt unter `local/runtime-validation/runtime-result.json`, Details unter `logs/latest.log` und `launcher-output.log` derselben Testinstanz. Nach Änderungen am Modbestand dürfen in der wiederverwendeten Kopie keine alten JARs verbleiben; vor dem Lauf den Bestand mit dem Original abgleichen. Produktionsskripte während eines laufenden Tests nicht verändern.
+
+Die Ars-Prüfung schreibt zusätzlich `runtime-ars-chest-result.json`. Die zweite Lootr-Identität ist ein nativer NeoForge-FakePlayer im integrierten Server, kein zweiter verbundener Netzwerkclient. Diese Prüfung belegt den persönlichen Inventarpfad, keinen vollständigen dedizierten Mehrspielertest.
 
 ## Native Infernal-Bosse: Prüfung vom 05.10.2026
 

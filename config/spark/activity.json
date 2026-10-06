@@ -1,0 +1,28 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "TwoThe",
+      "uniqueId": "96ceb858-de2c-417c-99c8-412b0a8501fd"
+    },
+    "time": 1791235515469,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/0WBnVo25Rm"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "TwoThe",
+      "uniqueId": "96ceb858-de2c-417c-99c8-412b0a8501fd"
+    },
+    "time": 1791234406214,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/TM2Dqh2SUM"
+    }
+  }
+]

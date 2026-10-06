@@ -12,6 +12,8 @@ const resultPath = path.join(destination, 'runtime-result.json')
 const previousResult = fs.existsSync(resultPath) ? readJson(resultPath) : null
 fs.writeFileSync(path.join(destination, 'runtime-expected-tier.json'), JSON.stringify({ tier: previousResult?.status === 'passed' ? previousResult.tier : null }))
 if (fs.existsSync(resultPath)) fs.unlinkSync(resultPath)
+const arsResultPath = path.join(destination, 'runtime-ars-chest-result.json')
+if (fs.existsSync(arsResultPath)) fs.unlinkSync(arsResultPath)
 for (const directory of ['mods', 'config', 'defaultconfigs', 'kubejs', 'datapacks', 'moonlight-global-datapacks', 'resourcepacks', 'patchouli_books', 'elsebase']) {
   if (fs.existsSync(path.join(root, directory))) fs.cpSync(path.join(root, directory), path.join(destination, directory), { recursive: true })
 }
@@ -36,11 +38,13 @@ for (const directory of ['datapacks', 'serverconfig']) {
   if (fs.existsSync(source)) fs.cpSync(source, path.join(world, directory), { recursive: true })
 }
 fs.mkdirSync(path.join(destination, 'natives'), { recursive: true })
-for (const [source, target] of [['runtime-server-probe.js', 'server_scripts'], ['runtime-client-probe.js', 'client_scripts']]) {
+for (const [source, target] of [['runtime-server-probe.js', 'server_scripts'],
+  ['runtime-ars-chest-probe.js', 'server_scripts'], ['runtime-client-probe.js', 'client_scripts']]) {
   fs.copyFileSync(path.join(__dirname, source), path.join(destination, 'kubejs', target, source))
 }
 const options = fs.readFileSync(path.join(root, 'options.txt'), 'utf8')
   .replace(/^pauseOnLostFocus:.*$/m, 'pauseOnLostFocus:false').replace(/^fullscreen:.*$/m, 'fullscreen:false')
+  .replace(/^soundCategory_master:.*$/m, 'soundCategory_master:0.0')
 fs.writeFileSync(path.join(destination, 'options.txt'), options)
 function allowed(rules) {
   if (!rules) return true

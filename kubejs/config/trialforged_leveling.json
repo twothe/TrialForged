@@ -1,5 +1,6 @@
 {
   "chanceDivisor": 1000,
+  "excludedDimensions": ["elsebase:backdoor"],
   "bosses": [
     "minecraft:ender_dragon", "minecraft:wither", "minecraft:warden", "minecraft:elder_guardian",
     "aether:slider", "aether:valkyrie_queen", "aether:sun_spirit",

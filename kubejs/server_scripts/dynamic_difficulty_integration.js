@@ -51,6 +51,7 @@
     }
     return {
       chanceDivisor: config.chanceDivisor,
+      excludedDimensions: validateIds(config.excludedDimensions, 'excluded dimension'),
       bosses: validateIds(config.bosses, 'boss'),
       sources: validateIds(config.lootSources, 'loot source')
     }
@@ -110,7 +111,8 @@
         let entity = context.getParamOrNull(Params.THIS_ENTITY)
         if (!(entity instanceof LivingEntity) || !Leveling.canHaveLevel(entity) || !Leveling.hasLevel(entity)) return
         if (String(entity.getLootTable().location()) !== tableId) return
-        if (settings.bosses.indexOf(String(entity.type)) >= 0) return
+        if (settings.bosses.indexOf(String(entity.type)) >= 0
+          || settings.excludedDimensions.indexOf(String(entity.level.dimension)) >= 0) return
         let level = Leveling.getLevel(entity)
         if (!Number.isInteger(level) || level < 1) throw new Error('Invalid mob level: ' + level)
         let random = context.getRandom()

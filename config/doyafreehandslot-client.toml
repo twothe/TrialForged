@@ -1,0 +1,86 @@
+[general]
+	#Master switch for Doya Free Hand Slot.
+	#The key binding changes this same value and saves it to disk.
+	#When false, all hotbar slots behave exactly like vanilla.
+	enabled = false
+
+[slot1]
+	#Reserve Hotbar Slot 1 when the master switch is enabled.
+	#Disabled slots always behave like vanilla.
+	enabled = true
+	#Exact item IDs accepted by this reserved slot, in addition to an empty hand.
+	#Leave this list empty to reserve the slot exclusively for an empty hand.
+	#Example: ["minecraft:diamond_sword", "simplyswords:runic_longsword"]
+	allowedItems = ["silentgear:sword"]
+
+[slot2]
+	#Reserve Hotbar Slot 2 when the master switch is enabled.
+	#Disabled slots always behave like vanilla.
+	enabled = false
+	#Exact item IDs accepted by this reserved slot, in addition to an empty hand.
+	#Leave this list empty to reserve the slot exclusively for an empty hand.
+	#Example: ["minecraft:diamond_sword", "simplyswords:runic_longsword"]
+	allowedItems = ["silentgear:pickaxe"]
+
+[slot3]
+	#Reserve Hotbar Slot 3 when the master switch is enabled.
+	#Disabled slots always behave like vanilla.
+	enabled = false
+	#Exact item IDs accepted by this reserved slot, in addition to an empty hand.
+	#Leave this list empty to reserve the slot exclusively for an empty hand.
+	#Example: ["minecraft:diamond_sword", "simplyswords:runic_longsword"]
+	allowedItems = ["ars_nouveau:novice_spell_book"]
+
+[slot4]
+	#Reserve Hotbar Slot 4 when the master switch is enabled.
+	#Disabled slots always behave like vanilla.
+	enabled = false
+	#Exact item IDs accepted by this reserved slot, in addition to an empty hand.
+	#Leave this list empty to reserve the slot exclusively for an empty hand.
+	#Example: ["minecraft:diamond_sword", "simplyswords:runic_longsword"]
+	allowedItems = []
+
+[slot5]
+	#Reserve Hotbar Slot 5 when the master switch is enabled.
+	#Disabled slots always behave like vanilla.
+	enabled = false
+	#Exact item IDs accepted by this reserved slot, in addition to an empty hand.
+	#Leave this list empty to reserve the slot exclusively for an empty hand.
+	#Example: ["minecraft:diamond_sword", "simplyswords:runic_longsword"]
+	allowedItems = []
+
+[slot6]
+	#Reserve Hotbar Slot 6 when the master switch is enabled.
+	#Disabled slots always behave like vanilla.
+	enabled = false
+	#Exact item IDs accepted by this reserved slot, in addition to an empty hand.
+	#Leave this list empty to reserve the slot exclusively for an empty hand.
+	#Example: ["minecraft:diamond_sword", "simplyswords:runic_longsword"]
+	allowedItems = []
+
+[slot7]
+	#Reserve Hotbar Slot 7 when the master switch is enabled.
+	#Disabled slots always behave like vanilla.
+	enabled = false
+	#Exact item IDs accepted by this reserved slot, in addition to an empty hand.
+	#Leave this list empty to reserve the slot exclusively for an empty hand.
+	#Example: ["minecraft:diamond_sword", "simplyswords:runic_longsword"]
+	allowedItems = []
+
+[slot8]
+	#Reserve Hotbar Slot 8 when the master switch is enabled.
+	#Disabled slots always behave like vanilla.
+	enabled = false
+	#Exact item IDs accepted by this reserved slot, in addition to an empty hand.
+	#Leave this list empty to reserve the slot exclusively for an empty hand.
+	#Example: ["minecraft:diamond_sword", "simplyswords:runic_longsword"]
+	allowedItems = []
+
+[slot9]
+	#Reserve Hotbar Slot 9 when the master switch is enabled.
+	#Disabled slots always behave like vanilla.
+	enabled = false
+	#Exact item IDs accepted by this reserved slot, in addition to an empty hand.
+	#Leave this list empty to reserve the slot exclusively for an empty hand.
+	#Example: ["minecraft:diamond_sword", "simplyswords:runic_longsword"]
+	allowedItems = []

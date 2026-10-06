@@ -40,7 +40,7 @@ hiddenLevelEntities = [  ]
 # --- Structure Title Display ---
 # Display structure names and level bonuses when entering structures
 # Defaults to false if Structure Credits mod is loaded
-showStructureTitles = true
+showStructureTitles = false
 # Only display structure titles if the structure provides a level bonus
 # When false, structure titles always display when entering structures
 # When true (default), structure titles only display if structureBonus > 0
@@ -66,7 +66,7 @@ structureTitleYOffset = -82
 # --- Biome Title Display ---
 # Display biome names when entering biomes
 # Defaults to false if Traveler's Titles mod is loaded
-showBiomeTitles = true
+showBiomeTitles = false
 # Only display biome titles if the biome provides a level bonus
 # When false (default), biome titles always display when entering biomes
 # When true, biome titles only display if biomeBonus > 0

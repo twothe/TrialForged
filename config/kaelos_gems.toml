@@ -4,7 +4,7 @@
 	#ships. RARE makes finding one an event; COMMON makes them
 	#ordinary.
 	#Allowed Values: RARE, NORMAL, COMMON
-	frequency = "NORMAL"
+	frequency = "RARE"
 	#The lowest tier at which these gems carry any bonus at all.
 	#Raising it means a low roll of one of these is worth nothing
 	#and only the good ones matter.

@@ -1,11 +1,13 @@
 # Behaviour
 
 - Nutzerkommunikation und Projektdokumentation auf Deutsch; Code und technische Bezeichner auf Englisch.
+- Eigene Minecraft-Testläufe immer stumm und ohne Mausübernahme starten. Einstellungen nur in der isolierten Testinstanz ändern.
 - Mod-JARs, interne Metadaten, Konfigurationen und lokale Skripte prüfen. Launcherlisten allein sind kein Beleg für installierte oder erfolgreich geladene Mods.
 - Änderungen an Login-, Kampf- und Progressionsskripten vor einer erneuten Testaufforderung an den Nutzer in einem eigenen isolierten Minecraft-Clientlauf prüfen. Node-/Rhino-Tests mit Schnittstellenfakes genügen nicht als Laufzeitbeleg. Prüfskripte gehören unter `tests`, Testwelten und Laufzeitkopien unter `local`.
 - Der Nutzer kann während einer Analyse Mods installieren oder entfernen. Vor Empfehlungen den aktuellen Bestand erneut prüfen und Inventare als zeitgebundene Snapshots behandeln.
 - Cisco dient als Inspiration. Keine Cisco-spezifischen Assets, Questtexte, Skripte oder Content-Mods ohne ausdrücklichen Auftrag und geklärte Nutzungsgrundlage übernehmen.
 - Weltstände und fremde Änderungen erhalten. Eine Bestandsanalyse autorisiert keine Modinstallation oder Balanceänderung.
+- Das Pack ist noch nicht live. Neue Bereinigungen alter Spielstände nur für kritische Fehler vorsehen; normale Balanceänderungen auf neue Spawns beziehungsweise neue Ergebnisse beschränken.
 - Mods und Bibliotheken nicht eigenständig installieren, aktualisieren oder entfernen. Fehlende Abhängigkeiten und Alternativen zuerst benennen; der Nutzer entscheidet über die Aufnahme ins Pack, auch bei Crashbehebungen.
 - Spellbooks Of Twilight ist vom Nutzer als unerwünschter Bestandteil ausgeschlossen worden. Keine Abhängigkeiten installieren, um diesen Mod im Pack zu halten.
 - Apotheosis 8 besitzt bereits World Tiers. Zusätzliche Gegner-Skalierung und Lootprogression müssen mit diesen abgestimmt werden.
@@ -20,10 +22,11 @@ Trialforged ist eine lokale Minecraft-1.21.1-Instanz mit NeoForge. Ziel ist ein 
 
 # Documentation Index
 
+- [Ars-Kistenloot](docs/ars-chest-loot.md): generische Kistenauswahl, unabhängige Codex-/Essenz-Bonuswürfe und ausdrücklich akzeptierte Abweichungen durch Loot Integrations.
 - [Startabbruch vom 05.10.2026](docs/startup-crash-2026-10-05.md): doppelter Curios-Ring-Schlüssel in Fallen Gems Affixes 1.0.0 und nachfolgende irreführende Sodium-Konfigurationsmeldung.
 - [Minecraft-Laufzeittest](docs/runtime-validation.md): eigener isolierter Clientlauf für Login, JEI, Bossereignisse und Fortschritt; Modinitialisierungs-Konfiguration und Grenzen der Prüfung.
 - [Weltbeitrittsabbruch vom 02.10.2026](docs/world-entry-crash-2026-10-02.md): nachgewiesener Iris-1.8.12-/Sodium-0.8.13-Konflikt, vorgeschlagenes Iris-Update und Abhängigkeiten gegen einen isolierten Sodium-Downgrade.
-- [Dynamic Difficulty](docs/dynamic-difficulty.md): Boss-Blacklist, Bereinigung gespeicherter Levelboni, Bonuschance Level/1000, generische Kistenquellen und Scavenger-Integration.
+- [Dynamic Difficulty](docs/dynamic-difficulty.md): Dimensionsprofile für Nether, End und Elsebase, Boss-Blacklist, Bereinigung gespeicherter Levelboni, Bonuschance Level/1000, generische Kistenquellen und Scavenger-Integration.
 - [Vanilla-Bosse](docs/vanilla-boss-profiles.md): native Always-Infernal-Konfiguration; Ablösung der festen KubeJS-Profile und Umgang mit gespeicherten Bossen.
 - [Apotheosis-Progression](docs/apotheosis-progression.md): persönliche Meilensteine, Multiplayer-Beteiligung, Persistenz, Einrichtung und Stand der Prüfung.
 - [Startabbruch vom 02.10.2026](docs/startup-crash-2026-10-02.md): fehlende AzureLib für Spellbooks Of Twilight, FTB-Quests-Folgefehler und ausstehender Starttest.

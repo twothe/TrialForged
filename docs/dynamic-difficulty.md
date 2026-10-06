@@ -12,6 +12,26 @@ Eine Blacklist verhindert neue Skalierung, entfernt aber nach der installierten 
 
 Die drei höheren Vanilla-Meilensteine verwenden die native [Always-Infernal-Konfiguration](vanilla-boss-profiles.md). Die festen KubeJS-Bossprofile wurden am 05.10.2026 auf Nutzerwunsch entfernt. Boss-Ausschlüsse und die bestehende Levelbereinigung bleiben erhalten.
 
+## Elsebase ohne Gebietsskalierung
+
+Seit dem 06.10.2026 enthält `kubejs/data/elsebase/leveling_settings/dimensions/backdoor.json` eine native Dynamic-Difficulty-Regel für `elsebase:backdoor`. Zuvor fiel die Dimension auf die globalen Einstellungen zurück: 0,01 Level pro Block Entfernung ohne Levelobergrenze. Weit entfernte Elsebase-Räume konnten dadurch sehr hohe Gegnerlevel erhalten.
+
+Die Dimensionsregel setzt alle Umgebungs- und Spielerfaktoren auf null, schaltet Biom-/Struktur-/Spielerboni aus und verwendet keine Level-Attributboni. Dynamic Difficulty begrenzt reguläre berechnete Level intern auf mindestens 1; diese technische Basisstufe bleibt erhalten, ohne weitere Skalierung. Die zusätzliche Levelbeute ist für Elsebase über `excludedDimensions` in `kubejs/config/trialforged_leveling.json` ausgeschlossen.
+
+Auf ausdrücklichen Nutzerwunsch gibt es keine neue Altbestand-Bereinigung: Das Pack ist noch nicht live. Bereits gespeicherte Gegnerlevel werden nicht zurückgesetzt. Die vorhandene Bossbereinigung bleibt erhalten. Die Änderung gilt für neu erzeugte Mobs; zum Aktivieren neu starten. Für externe Server zusätzlich das neue Dimensionsprofil unter `kubejs/data` übernehmen.
+
+Der isolierte, stumme Clientlauf vom 06.10.2026 bestand: Zombie, Skelett und Creeper in Elsebase bei ungefähr X/Z=8.192 behielten Basislevel 1 ohne Dynamic-Difficulty-Attributboni. Die native Gegenprobe mit den alten globalen Einstellungen ergab an diesen Koordinaten einen Basislevel über 100. Die Ergebnisdatei `local/runtime-validation/runtime-result.json` enthält `elsebase: "passed"`; das Log enthält `ELSEBASE_TESTS_COMPLETE`. Die Mod erwartet `attribute_modifiers` als JSON-Liste (`[]` für keine Boni), obwohl der dekodierte Java-Wert eine Map ist. Ein eigener dedizierter Mehrspieler-Test wurde nicht durchgeführt.
+
+## Basislevel pro Dimension
+
+Dynamic Difficulty unterstützt native JSON-Einstellungen je Dimension. Der globale Startlevel steht in `config/dynamic_difficulty/sync.toml`; einzelne Dimensionen überschreiben ihn über `starting_level` in `kubejs/data/<namespace>/leveling_settings/dimensions/<name>.json`. Dafür ist kein eigener Laufzeit-Hook erforderlich.
+
+Seit dem 06.10.2026 verwendet `minecraft:the_nether` den Basislevel **30**, `minecraft:the_end` den Basislevel **80**. Die Dateien stehen unter `kubejs/data/minecraft/leveling_settings/dimensions/the_nether.json` und `the_end.json`. Sie übernehmen die übrigen Werte der installierten Standardprofile: Obergrenze 50 im Nether, Obergrenze 100 und Zufallsbonus 0–5 im End. Ein Override ersetzt die gleichnamige Standarddatei vollständig; deshalb sind diese bisherigen Werte ausdrücklich enthalten. Weitere nicht angegebene Einstellungen kommen weiterhin aus der globalen Konfiguration.
+
+Der Basislevel ist ein Ausgangswert, kein fixer Endlevel: Distanz, Tiefe sowie vorhandene Entity-, Biom- und Strukturregeln können das berechnete Ergebnis beeinflussen. Native Regeln können Boni ausdrücklich an der Obergrenze vorbeiführen. Boss-Ausschlüsse und das Elsebase-Profil bleiben erhalten. Bereits gespeicherte Mobs werden nicht auf die neuen Werte umgestellt; zum Aktivieren für neue Spawns neu starten. Für einen externen Server beide JSON-Dateien mit übernehmen.
+
+Der isolierte, stumme Clientlauf vom 06.10.2026 bestand: Die nativen Einstellungen und die Basisrechnung bestätigten 30/80 sowie die erhaltenen Obergrenzen und Zufallsboni. Frische Testzombies erhielten Level 30 im Nether und Level 84 im End; im End kam der bestehende Zufallsbonus hinzu. Die Ergebnisdatei enthält `dimensionBases: "passed"`, das Log `DIMENSION_BASES_TESTS_COMPLETE`. Auch Elsebase, Spielerlogin, JEI und die vorhandenen Kampf-/Fortschrittsprüfungen bestanden. Ein eigener dedizierter Mehrspieler-Test wurde nicht durchgeführt.
+
 ## Bonuschance und Itemmenge
 
 Die Chance je regulärem Entity-Loot-Wurf beträgt `min(1, Mob-Level / chanceDivisor)`. `chanceDivisor` steht in `kubejs/config/trialforged_leveling.json` und ist zunächst `1000`.

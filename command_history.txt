@@ -1,0 +1,9 @@
+/kubejs reload
+/kubejs reload server-scripts
+/reload
+/back
+/spark profiler start
+/spark profiler stop
+/spark profiler start
+/spark profiler stop
+/reload

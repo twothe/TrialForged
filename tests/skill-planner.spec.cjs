@@ -45,6 +45,16 @@ test('5 percent sprint is exported as the native 0.05 total modifier', () => {
     assert.equal(M.reward({ attribute: 'minecraft:generic.max_health', operation: 'add_value', amount: 2 }).data.value, 2);
     assert.equal(M.reward({ attribute: 'puffish_attributes:sprinting_speed', operation: 'add_multiplied_base', amount: -5 }).data.value, -0.05);
 });
+
+test('player descriptions are optional in checks and handoff while missing technical effects still warn', () => {
+    const { plan, start, next } = fixture();
+    start.description = ''; next.description = '   '; next.name = '10% more experience';
+    next.effects = [{ attribute: 'puffish_attributes:experience', operation: 'add_multiplied_total', amount: 10 }];
+    assert.deepEqual(M.issues(plan), []);
+    assert.doesNotMatch(M.document(plan), /description is missing/i);
+    next.effects = []; next.implementation = '';
+    assert.ok(M.issues(plan).some(message => message.includes('technical effect is missing')));
+});
 test('hex snapping preserves axial cells and mod positions remain deterministic', () => {
     for (let q = -15; q <= 15; q++) for (let r = -15; r <= 15; r++) {
         const p = M.position(q, r); assert.deepEqual(M.hexAt(p.x, p.y), { q, r });

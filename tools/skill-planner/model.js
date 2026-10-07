@@ -173,7 +173,6 @@
             for (const s of t.skills) {
                 const label = `${t.name} / ${s.name || s.id}`;
                 if (!s.name.trim()) messages.push(label + ': name is missing.');
-                if (!s.description.trim()) messages.push(label + ': player description is missing.');
                 if (!s.effects.length && !s.implementation.trim()) messages.push(label + ': technical effect is missing (or explicitly specify no effect).');
                 if (!reached.has(s.id)) messages.push(label + ': not reachable from a root through normal/directed connections.');
                 const incoming = t.connections.filter(c => c.type === 'normal' && (c.from === s.id || c.to === s.id) || c.type === 'directed' && c.to === s.id).length;

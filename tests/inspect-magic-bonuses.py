@@ -25,7 +25,7 @@ def collect_references(value, path=""):
     """Keep operations, values and JSON locations for nested multi-attribute bonuses."""
     references = []
     if isinstance(value, dict):
-        for key in ("attribute", "mob_effect"):
+        for key in ("attribute", "mob_effect", "enchantment"):
             identifier = value.get(key)
             if isinstance(identifier, str) and identifier.startswith(MAGIC_PREFIXES):
                 references.append({
@@ -103,7 +103,7 @@ def create_snapshot(root):
                                        "definition": json.loads(archive.read(name))})
                     source_jars.add(jar)
                 parts = name.split("/")
-                if (len(parts) < 4 or parts[0] != "data" or parts[2] not in ("affixes", "gems")
+                if (len(parts) < 4 or parts[0] != "data" or parts[2] not in ("affixes", "gems", "extra_gem_bonuses")
                         or not name.endswith(".json")):
                     continue
                 data = json.loads(archive.read(name))
@@ -123,7 +123,7 @@ def create_snapshot(root):
                 else:
                     definitions.append({**header, "condition_state": "unknown" if state is None else "eligible",
                                         "references": references, "definition": data})
-    attributes = collections.defaultdict(lambda: {"gems": set(), "affixes": set()})
+    attributes = collections.defaultdict(lambda: {"gems": set(), "affixes": set(), "extra_gem_bonuses": set()})
     for definition in definitions:
         for reference in definition["references"]:
             if reference["kind"] == "attribute":

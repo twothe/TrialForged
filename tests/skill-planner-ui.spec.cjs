@@ -167,3 +167,31 @@ test('icon filtering matches mixed-case substrings and grid images follow the se
     ui.input('icon', 'custom:missing_preview'); assert.equal(image.getAttribute('display'), 'none');
     assert.equal(node.querySelector('.node-symbol').getAttribute('display'), 'inline');
 });
+
+test('hex colors accept pasted codes and synchronize picker, graph, persistence and undo', () => {
+    const ui = setup(); ui.elements.get('firstSkill').click();
+    assert.equal(ui.elements.get('colorHex').value, '#6ac9b7');
+    ui.input('colorHex', 'AABBCC');
+    assert.equal(ui.plan().trees[0].skills[0].color, '#aabbcc');
+    assert.equal(ui.elements.get('color').value, '#aabbcc');
+    assert.equal(ui.elements.get('colorHex').value, '#aabbcc');
+    assert.equal(ui.elements.get('nodes').children[0].querySelector('polygon').getAttribute('stroke'), '#aabbcc');
+    const reopened = setup(ui.savedValues); assert.equal(reopened.elements.get('colorHex').value, '#aabbcc');
+    ui.input('color', '#123456'); assert.equal(ui.elements.get('colorHex').value, '#123456');
+    ui.elements.get('undo').click(); assert.equal(ui.elements.get('colorHex').value, '#aabbcc');
+});
+
+test('unfinished or invalid hex input survives reopening and either control can repair it', () => {
+    const ui = setup(); ui.elements.get('firstSkill').click(); ui.input('colorHex', '#12');
+    assert.equal(ui.plan().trees[0].skills[0].color, '#6ac9b7');
+    const reopened = setup(ui.savedValues);
+    assert.equal(reopened.elements.get('colorHex').value, '#12');
+    assert.equal(reopened.elements.get('colorHex').getAttribute('aria-invalid'), 'true');
+    reopened.input('colorHex', '#gg1234'); assert.equal(reopened.plan().trees[0].skills[0].color, '#6ac9b7');
+    reopened.elements.get('copySkill').click(); reopened.elements.get('canvas').fire('click', { clientX: 490 });
+    assert.equal(reopened.plan().trees[0].skills.length, 1);
+    reopened.input('color', '#fedcba');
+    assert.equal(reopened.elements.get('colorHex').value, '#fedcba');
+    assert.equal(reopened.elements.get('colorHex').getAttribute('aria-invalid'), null);
+    reopened.input('colorHex', ' #ABCDEF '); assert.equal(reopened.plan().trees[0].skills[0].color, '#abcdef');
+});

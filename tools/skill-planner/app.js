@@ -6,7 +6,7 @@
     // Defer access so blocked browser storage reports a recoverable error instead of preventing startup.
     const cache = SkillDraftCache.create({ getItem: key => localStorage.getItem(key), setItem: (key, value) => localStorage.setItem(key, value) });
     const globalFields = ['planName', 'planNotes', 'progression', 'treeName', 'category', 'treeNotes'];
-    const skillFields = ['skillName', 'description', 'icon', 'color', 'cost', 'requiredSkills', 'requiredPoints', 'requiredSpentPoints', 'q', 'r', 'implementation', 'acceptance'];
+    const skillFields = ['skillName', 'description', 'icon', 'color', 'colorHex', 'cost', 'requiredSkills', 'requiredPoints', 'requiredSpentPoints', 'q', 'r', 'implementation', 'acceptance'];
     const iconItems = new Map(SkillIcons.map(item => [item.id, item]));
     let plan = M.createPlan(), treeId = plan.trees[0].id, selection = null, mode = 'select', pending = null;
     let undo = [], redo = [], view = { x: 0, y: 0, zoom: 1 }, drag = null, suppressClick = false;
@@ -112,7 +112,7 @@
     function select(id) { if (!flush()) return; selection = id; renderList(); renderGraph(); renderInspector(); persist(); }
     function renderInspector() {
         const s = currentSkill(); $('skillEditor').hidden = !s; $('noSelection').hidden = !!s; if (!s) return;
-        const fields = { skillName: 'name', description: 'description', icon: 'icon', color: 'color', cost: 'cost', requiredSkills: 'requiredSkills', requiredPoints: 'requiredPoints', requiredSpentPoints: 'requiredSpentPoints', q: 'q', r: 'r', implementation: 'implementation', acceptance: 'acceptance' };
+        const fields = { skillName: 'name', description: 'description', icon: 'icon', color: 'color', colorHex: 'color', cost: 'cost', requiredSkills: 'requiredSkills', requiredPoints: 'requiredPoints', requiredSpentPoints: 'requiredSpentPoints', q: 'q', r: 'r', implementation: 'implementation', acceptance: 'acceptance' };
         for (const [field, key] of Object.entries(fields)) $(field).value = s[key];
         renderIconPicker(); updateIconPreview();
         $('root').checked = s.root; $('skillId').textContent = 'Stable ID: ' + s.id;
@@ -297,12 +297,21 @@
         const rect = svg.getBoundingClientRect(), factor = Math.max(.35, Math.min(1.4, rect.width / (maxX - minX + 200), rect.height / (maxY - minY + 200)));
         view = { x: -(minX + maxX) / 2 * factor, y: -(minY + maxY) / 2 * factor, zoom: factor }; renderGraph(); persist();
     }
-    const fields = { skillName: 'name', description: 'description', icon: 'icon', color: 'color', cost: 'cost', requiredSkills: 'requiredSkills', requiredPoints: 'requiredPoints', requiredSpentPoints: 'requiredSpentPoints', implementation: 'implementation', acceptance: 'acceptance' };
+    const fields = { skillName: 'name', description: 'description', icon: 'icon', cost: 'cost', requiredSkills: 'requiredSkills', requiredPoints: 'requiredPoints', requiredSpentPoints: 'requiredSpentPoints', implementation: 'implementation', acceptance: 'acceptance' };
     for (const [field, key] of Object.entries(fields)) $(field).addEventListener('input', () => edit($(field), () => {
         const input = $(field);
         if (currentSkill()) currentSkill()[key] = input.type === 'number' ? Number(input.value) : input.value;
     }));
     $('icon').addEventListener('input', updateIconPreview);
+    /** Keep both color controls on one model value while retaining unfinished text in the draft. */
+    for (const field of ['color', 'colorHex']) $(field).oninput = () => edit($(field), () => {
+        const text = $(field).value.trim();
+        if (!/^#?[0-9a-f]{6}$/i.test(text)) throw new Error('Enter six hexadecimal digits, optionally preceded by #.');
+        const color = '#' + text.replace(/^#/, '').toLowerCase();
+        currentSkill().color = color;
+        $('color').value = color; $('colorHex').value = color;
+        $('color').removeAttribute('aria-invalid'); $('colorHex').removeAttribute('aria-invalid');
+    });
     $('iconFilter').oninput = renderIconPicker;
     $('iconPicker').onchange = () => { if (!$('iconPicker').value) return; $('icon').value = $('iconPicker').value; edit($('icon'), () => currentSkill().icon = $('icon').value); updateIconPreview(); };
     for (const field of ['q', 'r']) $(field).oninput = () => edit($(field), () => {

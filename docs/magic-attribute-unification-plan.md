@@ -1,6 +1,6 @@
 # Implementationsplan: gemeinsame Magieboni auf Apotheosis-Gems und -Affixen
 
-Stand: 06.10.2026. Status: geprüfter technischer Entwurf; keine Spieländerung und keine Freigabe einer tiefen Modintegration. Dieser Auftrag umfasst Analyse und Planung. Die Umsetzung ist ein späterer Auftrag.
+Stand: 06.10.2026. Status: native Umsetzung beauftragt und umgesetzt; technische Analyse und ursprüngliche Empfehlungen folgen unten. Maßgeblicher aktueller Stand: [Implementierung und Prüfung](magic-attribute-unification.md). Der Nutzer hat die bisherigen IDs samt Wirkung auf vorhandene Items ausdrücklich bestätigt. Eigene Modinstallation, Attributspiegelung und tiefe Kampfeingriffe bleiben ausgeschlossen.
 
 ## Ziel und Umfang
 
@@ -22,7 +22,7 @@ Balanceprüfung bedeutet einen groben Vergleich repräsentativer Builds und Mech
 - [Prüfwerkzeug](../tests/inspect-magic-bonuses.py): liest installierte JARs ohne Änderungen an Spielressourcen. Benötigt Python 3.11 oder neuer, keine zusätzlichen Pakete.
 - Geprüfte Kernversionen: Apotheosis 8.9.0, Pufferfish's Attributes 0.8.3, Ars Nouveau 5.13.3, Iron's Spells 'n Spellbooks 3.16.3, Lodestone 1.8.2, Malum 1.8.2.
 - Bonusquellen: Apothic Compats 0.2.5.5, Iron's Apothic 2.2.6, Kaelos Gems 1.2.0, Kaelos Curios 1.0.1 und Ace's Spell Utils 1.2.7.3.
-- Snapshot: 140 nach den geprüften Bedingungen zulässige Magiedefinitionen, davon 27 Gems und 113 Affixe, mit 48 unterschiedlichen Magieattributen. 179 weitere Definitionen sind durch geprüfte Bedingungen ausgeschlossen. Es gibt keine unbekannte Bedingung im erfassten zulässigen Bestand.
+- Erweiterter Snapshot: 228 nach den geprüften Bedingungen zulässige Magiedefinitionen, davon 27 Gems, 113 Affixe und 88 native `extra_gem_bonuses`, mit 49 unterschiedlichen Magieattributen. 180 weitere Definitionen sind durch geprüfte Bedingungen ausgeschlossen. Es gibt keine unbekannte Bedingung im erfassten zulässigen Bestand. Die ursprüngliche Analyse mit 140 Definitionen übersah die separate Zusatzbonus-Registry; diese ist nun erfasst und umgesetzt.
 - Kaelos-Konfiguration: Häufigkeit `RARE`, Mindestqualität `COMMON`, Resonanz aktiv, Schwellen 3/5. Es zählt daher je Familie die Variante `_rare_common`, nicht jede der neun gelieferten Varianten.
 - Die Bedingungen werden statisch ausgewertet. Der Snapshot belegt weder das erfolgreiche Laden aller Ressourcen noch die tatsächlich aktiven Weltdatapacks. Weltlokale Packs, externe Ressourcenpriorität, eingebettete Mods und im Java-Code erzeugte Boni sind keine vollständigen Bestandteile dieses Inventars.
 
@@ -110,7 +110,7 @@ Die gemeinsame Schadensanzeige sollte `Magic Damage` heißen: Der Pufferfish-Bon
 
 ### Konkrete Ausgangswerte und Kandidaten
 
-Die Reihenfolge der Gemwerte lautet cracked/chipped/flawed/normal/flawless/perfect. Die Übernahme der vorhandenen Ars-Prozentkurven ist als Planentscheidung bestätigt. Für übrige Boni bleiben vorhandene Zahlen ebenfalls der Ausgangspunkt; technische Umrechnung unterschiedlicher Einheiten und Ausnahmen werden separat ausgewiesen. Die Spielumsetzung selbst ist noch nicht beauftragt.
+Die Reihenfolge der Gemwerte lautet cracked/chipped/flawed/normal/flawless/perfect. Die Übernahme der vorhandenen Ars-Prozentkurven ist als Planentscheidung bestätigt. Für übrige Boni bleiben vorhandene Zahlen ebenfalls der Ausgangspunkt; technische Umrechnung unterschiedlicher Einheiten und Ausnahmen werden separat ausgewiesen. Die Umsetzung wurde anschließend beauftragt; aktuelle Entscheidungen und Ergebnisse stehen in der verlinkten Implementationsdokumentation.
 
 | Familie/Bonus | Belegter Bestand | Vorschlag |
 |---|---|---|
@@ -198,9 +198,9 @@ Kurze Spezialtexte: `Fire Spell Power (Iron's)`, `Warding (Ars)`, `Charge Capaci
 
 Ein Override unter derselben Gem-/Affix-ID kann vorhandene Items bei erneuter Auflösung der Definition verändern. Kein eigener Migrationscode bedeutet nicht, dass die Wirkung alter Items erhalten bleibt. Sockelmods, temporäre Resonanzmodifikatoren, Definitionsreferenzen und gespeicherte Affix-Level müssen getrennt geprüft werden.
 
-Projektkonforme Empfehlung: neue `trialforged`-IDs für neue gemeinsame Bonusdefinitionen, alte Definitionen für bestehende Items erhalten und deren neue Generierung kontrolliert ausschließen. Native Affix-Blacklist für alte Affixe prüfen; bei Gems einen nachweislich gültigen Ausschluss aus den Lootgewichten/Quellen verwenden, ohne die alte Definition zu löschen. Nullgewicht oder leere Gewichte erst nach Codec- und Laufzeitbeleg verwenden. Neue IDs benötigen passende Gemmodelle, Übersetzungen und ggf. Kaelos-Familienzuordnung; die Resonanz zählt IDs/Familien und folgt einer Umbenennung nicht automatisch.
+Ursprüngliche Empfehlung vor der Bestandsfreigabe: neue `trialforged`-IDs für neue gemeinsame Bonusdefinitionen, alte Definitionen für bestehende Items erhalten und deren neue Generierung kontrolliert ausschließen. Native Affix-Blacklist für alte Affixe prüfen; bei Gems einen nachweislich gültigen Ausschluss aus den Lootgewichten/Quellen verwenden, ohne die alte Definition zu löschen. Nullgewicht oder leere Gewichte erst nach Codec- und Laufzeitbeleg verwenden. Neue IDs benötigen passende Gemmodelle, Übersetzungen und ggf. Kaelos-Familienzuordnung; die Resonanz zählt IDs/Familien und folgt einer Umbenennung nicht automatisch.
 
-Neue Kaelos-IDs sind deshalb nicht blind als Ersatz einzuplanen: entweder ihre native Familienzuordnung nachweisen oder die betroffenen Familien bis zur gesonderten Entscheidung unangetastet lassen. Alternative, einfachere In-place-Overrides ändern potenziell bestehende Items und benötigen einen ausdrücklich geklärten Umfang. Keine weltweite Inventarbereinigung für diese normale Balanceänderung.
+Neue Kaelos-IDs sind deshalb nicht blind als Ersatz einzuplanen: entweder ihre native Familienzuordnung nachweisen oder die betroffenen Familien bis zur gesonderten Entscheidung unangetastet lassen. Gewählte Umsetzung: Der Nutzer hat die einfacheren In-place-Overrides samt möglicher Änderung bestehender Items ausdrücklich bestätigt. Die IDs und die native Kaelos-Familienzuordnung bleiben erhalten. Keine weltweite Inventarbereinigung für diese normale Balanceänderung.
 
 ## Umsetzung in überprüfbaren Schritten
 
@@ -208,7 +208,7 @@ Neue Kaelos-IDs sind deshalb nicht blind als Ersatz einzuplanen: entweder ihre n
 2. **Kleine native Machbarkeitsprobe nur unter `local`.** Ein fester Pufferfish-Gem, ein Prozentgem, ein Mana-Multi-Gem und ein Mana-/Regen-Multi-Affix. Codecs nativ laden, reale Modifier-IDs, Purity/Rarity-Werte, Slots und Tooltippfade prüfen. Keine produktiven Ressourcen vor erfolgreicher Probe ändern.
 3. **Tooltipprobe vor Breitenumstellung.** Lose Gems, gesockelte Vanilla- und Moditems, Affixausrüstung, Curios, Multi-Boni, Shift/erweiterte Tooltips und Resonanz. Akzeptanz: Wirkungsbereich erkennbar, +Punkte und +Prozent eindeutig, normale Grunditemanzeigen nicht global umbenannt, keine abgeschnittenen/fehlenden Werte.
 4. **Vorhandene Werttabellen übernehmen.** Ars-Prozentkurven unverändert verwenden; übrige Tabellen und notwendige Einheitenumrechnungen pro Slot/Purity/Rarity dokumentieren. Grobe Vergleichsläufe genügen. Vor der Datenumstellung abgleichen, ob gleiche universelle Affixe doppelt rollen können; gewolltes Stapeln zulassen, technische Doppelanwendung verhindern. Keine Ersatzkurven für zuvor wirkungslose Ars-Prozentboni berechnen.
-5. **Datenumstellung.** Native JSONs unter `kubejs/data/<namespace>/gems` und `affixes` sowie eigene Beschreibungsschlüssel unter `kubejs/assets/trialforged/lang` verwenden. Nur ausgewählte Boni ersetzen; Nebeneffekte, Bedingungen, Slots, Seltenheit und Lootconstraints bewusst erhalten. Verifizierte neue IDs/Ausschlüsse anwenden. Kein zusätzlicher Kampfhandler für die bereits native Pufferfish-Mechanik.
+5. **Datenumstellung.** Umgesetzt als dynamische native JSON-Overrides über `ServerEvents.generateData` und eigene Beschreibungsschlüssel über `ClientEvents.generateAssets`, damit Modupdates ihre Werte weiter liefern. Nur ausgewählte Boni ersetzen; Nebeneffekte, Bedingungen, Slots, Seltenheit und Lootconstraints bewusst erhalten. Bisherige IDs gemäß bestätigter Bestandsfreigabe beibehalten. Kein zusätzlicher Kampfhandler für die bereits native Pufferfish-Mechanik.
 6. **Resonanz und schwer trennbare Tooltips separat abschließen.** Dokumentierte, gekennzeichnete native Ausnahmen sind die einfache Ausgangsvariante. Wird vollständige Vereinheitlichung verlangt, erst nach Erklärung der notwendigen Eingriffstiefe und gesondertem Nutzerauftrag weitergehen. Kein spontanes Deaktivieren aller Resonanzen.
 7. **Integration und Regression.** Isolierter stummer Client ohne Mausübernahme nach [Laufzeitworkflow](runtime-validation.md), danach dedizierter Server mit zwei verbundenen Spielern für Netzwerk-/Ausrüstungszustand. Prüfskripte unter `tests`, Testwelten unter `local`. Nur tatsächlich getestete Punkte als erledigt markieren.
 8. **Dokumentation und Abschluss.** Finalen Bestand/Werttabellen, Ausnahmen, Scope und Testergebnisse dokumentieren; Plan auf tatsächlich gewählten Weg aktualisieren. Diff auf fremde Änderungen und temporäre Artefakte prüfen.
@@ -238,7 +238,7 @@ Reine Rechenfakes sind kein Laufzeitbeleg. Für die Formelbeispiele zunächst ei
 - **Bestätigte Wertentscheidung:** Ars-Prozentschaden mit vorhandenen Zahlen übernehmen; Mitverstärkung des Grundschadens und kleine Balanceunterschiede sind akzeptiert. Hohe bis absurde Charakterwerte entsprechen dem Packziel.
 - **Grobe Prüfung statt Feinregulation:** feste Ars-Regeneration benötigt ggf. eine Einheitenumrechnung; universelle Nutzbarkeit, Doppelrollen und Schaden statt allgemeiner Iron's-Zauberkraft auf technische Fehler und deutliche einseitige Eskalation prüfen. Keine mathematisch exakte Angleichung verlangen.
 - **Native Ausnahme empfohlen:** Kaelos-Resonanz mit kurzem Wirkungslabel; feste Ars-Regeneration darf zunächst `Ars` bleiben. Keine vollständige Erfüllung behaupten, wenn diese Ausnahmen bestehen.
-- **Vor Produktionsumsetzung zu klären:** Bestandswirkung/neue IDs, belastbare native Ausschlüsse, Kaelos-Familienzuordnung und tatsächliche Möglichkeiten einer ausschließlich Apotheosis betreffenden Tooltipanpassung.
+- **Abgeschlossen:** Bestandswirkung ist ausdrücklich freigegeben; bisherige IDs bleiben erhalten. Daher keine Ausschluss-/Migrationsschicht und keine neue Kaelos-Familienzuordnung. Native Gem-Beschreibungen und zusätzliche Affix-Herkunftszeilen begrenzen die Tooltipänderung auf Apotheosis-Boni.
 - **Nicht Gegenstand des aktuellen Auftrags:** Modinstallation, Modupdate, globale Umbenennung normaler Moditems, eigener Manapool, Spiegelung aller nativen Attribute oder zusätzliche Spieler-/Gegnerskalierung.
 
 ## Technische Quellen

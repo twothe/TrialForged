@@ -10,6 +10,8 @@ if (!$VerifySavedRun) {
     if (!(Test-Path -LiteralPath $JavaPath)) { throw "Java executable not found: $JavaPath" }
     & node (Join-Path $PSScriptRoot 'check-pack-scripts.cjs')
     if ($LASTEXITCODE -ne 0) { throw 'Pack contract checks failed.' }
+    & node (Join-Path $PSScriptRoot 'check-magic-bonuses.cjs')
+    if ($LASTEXITCODE -ne 0) { throw 'Magic bonus contracts failed.' }
     & (Join-Path $PSScriptRoot 'check-ars-chest-assets.ps1')
     $rhinoJar = (Get-ChildItem (Join-Path $instanceRoot 'mods') -Filter 'rhino-*.jar').FullName
     & $JavaPath '-Dtrialforged.test.entry=runArsChestTests' --class-path $rhinoJar (Join-Path $PSScriptRoot 'RhinoProgressionCheck.java') (Join-Path $PSScriptRoot 'ars-chest-loot.spec.js') (Join-Path $instanceRoot 'kubejs/server_scripts/ars_chest_loot.js')
@@ -27,11 +29,15 @@ try {
     if ($result.status -ne 'passed') { throw 'Native gameplay probes failed.' }
     $arsResult = Get-Content -LiteralPath 'runtime-ars-chest-result.json' -Raw | ConvertFrom-Json
     if ($arsResult.status -ne 'passed') { throw 'Native Ars chest probes failed.' }
+    foreach ($name in @('runtime-magic-result.json', 'runtime-magic-client-result.json')) {
+        $magicResult = Get-Content -LiteralPath $name -Raw | ConvertFrom-Json
+        if ($magicResult.status -ne 'passed') { throw "Native magic probe failed: $name" }
+    }
     $log = Get-Content -LiteralPath 'logs/latest.log' -Raw
     if ($log -match 'Skipping invalid leveling settings (elsebase:backdoor|minecraft:the_nether|minecraft:the_end)') {
         throw 'Native Dynamic Difficulty rejected a configured dimension profile.'
     }
-    foreach ($marker in @('CLIENT_JOIN_READY', 'CLIENT_TEST_COMPLETE: passed', 'SERVER_TESTS_COMPLETE', 'ARS_CHEST_TESTS_COMPLETE', 'ELSEBASE_TESTS_COMPLETE', 'DIMENSION_BASES_TESTS_COMPLETE', 'Starting JEI took')) {
+    foreach ($marker in @('CLIENT_JOIN_READY', 'CLIENT_TEST_COMPLETE: passed', 'SERVER_TESTS_COMPLETE', 'ARS_CHEST_TESTS_COMPLETE', 'ELSEBASE_TESTS_COMPLETE', 'DIMENSION_BASES_TESTS_COMPLETE', 'Starting JEI took', 'MAGIC_TESTS_COMPLETE', 'MAGIC_CLIENT_TESTS_COMPLETE')) {
         if (!$log.Contains($marker)) { throw "Missing runtime evidence: $marker" }
     }
     $scriptErrors = [regex]::Matches($log, '(?m)^.*\[(?:[^\r\n]*/ERROR|[^\r\n]*/FATAL)\].*\[KubeJS[^\r\n]*')
@@ -44,7 +50,8 @@ try {
         }
     }
     if ($log.Contains('Encountered an unexpected exception')) { throw 'Runtime log contains a server failure.' }
-    Write-Output 'PASS: real client login, JEI startup, terrain loading, Infernal bosses, progression, native Ars chest loot and Elsebase without scaling.'
+    if ($log -match '\[Trialforged magic(?: UI)?\].*(?:failed|unavailable|skipped [1-9])') { throw 'Magic integration reported incompatible resources or a failed generation.' }
+    Write-Output 'PASS: real client login, JEI startup, terrain loading, Infernal bosses, progression, native Ars chest loot, shared magic bonuses/tooltips and Elsebase without scaling.'
 } finally {
     Pop-Location
 }

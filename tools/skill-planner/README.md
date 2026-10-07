@@ -12,6 +12,10 @@ The alphabetic skill list has a name/description filter. The item picker has van
 
 Native attributes are sorted together A–Z. Item searches match anywhere in the name or ID, ignoring case. Selected local icons also appear inside the hex nodes; unavailable previews retain a symbolic marker.
 
+The attribute catalogue includes all 42 Pufferfish attributes and 8 selected vanilla attributes, not every attribute in the modpack. Describe other mods' bonuses in **Technical implementation request**.
+
+The color picker has a synchronized **#RRGGBB** text field for normal copy/paste. Six hex digits with or without **#** are accepted. Unfinished text is autosaved without replacing the last valid node color.
+
 Shortcuts outside input fields: `+` / `N` add, `Ctrl+D` copy, `Delete` remove selected skill, `Esc` select, `Ctrl+Z` / `Ctrl+Y` undo/redo, `Ctrl+S` export JSON.
 
 **Tree design notes** guide implementation of the whole tree: theme, playstyle, balance limits and interactions. They are separate from player descriptions and do not create automatic requirements.

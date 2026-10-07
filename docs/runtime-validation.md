@@ -1,5 +1,7 @@
 # Eigener Minecraft-Laufzeittest
 
+Der Prüflauf umfasst zusätzlich die [gemeinsamen Magieboni](magic-attribute-unification.md): native Schadensquellen mit festen Punkten und Prozenten, tatsächlich geladene Gem-/Affix-/Zusatzbonusdefinitionen, Sockelmodifier, beide Mana-/Regenattribute bei Anlegen und Ablegen sowie echte normale/erweiterte Clienttooltips. Die Ergebnisse stehen in `runtime-magic-result.json` und `runtime-magic-client-result.json` der isolierten Instanz. Der Runner verlangt beide erfolgreichen Ergebnisse. Diese Proben ersetzen weder sämtliche Einzelzauber noch einen dedizierten Test mit zwei Netzwerkspielern.
+
 Der Weltbeitritt und die Packskripte werden nach relevanten Änderungen mit einem vollständigen Minecraft-Client geprüft. Schnittstellenfakes in Node und Rhino bleiben schnelle Vorprüfungen; sie können KubeJS-Umbenennungen und Java-Überladungen allein nicht zuverlässig abbilden.
 
 ## Ausführung

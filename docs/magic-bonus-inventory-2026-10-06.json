@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-06T19:20:12.532088+00:00",
+  "generated_at_utc": "2026-10-06T20:08:30.699953+00:00",
   "limitations": [
     "Static top-level JAR inventory; eligible does not mean runtime-loaded.",
     "World datapacks, resource-pack priority, embedded mods and code-generated bonuses are not enumerated.",
@@ -136,7 +136,8 @@
       "gems": [
         "irons_apothic:external/sirens_aquamarine"
       ],
-      "affixes": []
+      "affixes": [],
+      "extra_gem_bonuses": []
     },
     "aces_spell_utils:hydro_spell_power": {
       "gems": [
@@ -144,19 +145,22 @@
       ],
       "affixes": [
         "irons_apothic:elemental/school_hydro/attribute"
-      ]
+      ],
+      "extra_gem_bonuses": []
     },
     "aces_spell_utils:mana_steal": {
       "gems": [
         "irons_apothic:external/lithographic_moissanite"
       ],
-      "affixes": []
+      "affixes": [],
+      "extra_gem_bonuses": []
     },
     "aces_spell_utils:technomancy_magic_resist": {
       "gems": [
         "irons_apothic:external/lithographic_moissanite"
       ],
-      "affixes": []
+      "affixes": [],
+      "extra_gem_bonuses": []
     },
     "aces_spell_utils:technomancy_spell_power": {
       "gems": [
@@ -164,7 +168,8 @@
       ],
       "affixes": [
         "irons_apothic:elemental/school_technomancy/attribute"
-      ]
+      ],
+      "extra_gem_bonuses": []
     },
     "ars_nouveau:ars_nouveau.perk.mana_regen": {
       "gems": [
@@ -173,7 +178,8 @@
       ],
       "affixes": [
         "apothic_compats:curios/attribute/regenerative"
-      ]
+      ],
+      "extra_gem_bonuses": []
     },
     "ars_nouveau:ars_nouveau.perk.max_mana": {
       "gems": [
@@ -184,6 +190,9 @@
       "affixes": [
         "apothic_compats:armor/attribute/mana",
         "apothic_compats:curios/attribute/mana"
+      ],
+      "extra_gem_bonuses": [
+        "apothic_compats:curios/ars_nouveau/mana"
       ]
     },
     "ars_nouveau:ars_nouveau.perk.spell_damage": {
@@ -193,21 +202,24 @@
       ],
       "affixes": [
         "apothic_compats:curios/attribute/spell_damaged"
-      ]
+      ],
+      "extra_gem_bonuses": []
     },
     "ars_nouveau:ars_nouveau.perk.warding": {
       "gems": [
         "apothic_compats:ars_nouveau/mana",
         "kaelos_gems:kaelos/ward_seal_rare_common"
       ],
-      "affixes": []
+      "affixes": [],
+      "extra_gem_bonuses": []
     },
     "irons_spellbooks:blood_magic_resist": {
       "gems": [
         "irons_apothic:core/bloody_pearl",
         "kaelos_gems:kaelos/grave_sigil_rare_common"
       ],
-      "affixes": []
+      "affixes": [],
+      "extra_gem_bonuses": []
     },
     "irons_spellbooks:blood_spell_power": {
       "gems": [
@@ -216,6 +228,18 @@
       ],
       "affixes": [
         "irons_apothic:elemental/school_blood/attribute"
+      ],
+      "extra_gem_bonuses": [
+        "irons_apothic:the_nether/blood_lord",
+        "kaelos_curios:kaelos_gems/grave_sigil_common_common",
+        "kaelos_curios:kaelos_gems/grave_sigil_common_epic",
+        "kaelos_curios:kaelos_gems/grave_sigil_common_rare",
+        "kaelos_curios:kaelos_gems/grave_sigil_normal_common",
+        "kaelos_curios:kaelos_gems/grave_sigil_normal_epic",
+        "kaelos_curios:kaelos_gems/grave_sigil_normal_rare",
+        "kaelos_curios:kaelos_gems/grave_sigil_rare_common",
+        "kaelos_curios:kaelos_gems/grave_sigil_rare_epic",
+        "kaelos_curios:kaelos_gems/grave_sigil_rare_rare"
       ]
     },
     "irons_spellbooks:cast_time_reduction": {
@@ -226,13 +250,20 @@
       "affixes": [
         "irons_apothic:magic_weapons/attribute/intricate",
         "kaelos_curios:jewelry/attribute/swiftspoken"
+      ],
+      "extra_gem_bonuses": [
+        "irons_apothic:core/lightning"
       ]
     },
     "irons_spellbooks:casting_movespeed": {
       "gems": [
         "kaelos_gems:kaelos/manaheart_rare_common"
       ],
-      "affixes": []
+      "affixes": [],
+      "extra_gem_bonuses": [
+        "irons_apothic:core/lightning",
+        "irons_apothic:core/slipstream"
+      ]
     },
     "irons_spellbooks:cooldown_reduction": {
       "gems": [
@@ -242,6 +273,10 @@
       "affixes": [
         "irons_apothic:magic_weapons/attribute/vigorous",
         "kaelos_curios:jewelry/attribute/unburdened"
+      ],
+      "extra_gem_bonuses": [
+        "irons_apothic:core/brawlers",
+        "irons_apothic:core/samurai"
       ]
     },
     "irons_spellbooks:eldritch_magic_resist": {
@@ -250,7 +285,8 @@
         "kaelos_gems:kaelos/grave_sigil_rare_common",
         "kaelos_gems:kaelos/runeward_rare_common"
       ],
-      "affixes": []
+      "affixes": [],
+      "extra_gem_bonuses": []
     },
     "irons_spellbooks:eldritch_spell_power": {
       "gems": [
@@ -259,14 +295,16 @@
       ],
       "affixes": [
         "irons_apothic:elemental/school_eldritch/attribute"
-      ]
+      ],
+      "extra_gem_bonuses": []
     },
     "irons_spellbooks:ender_magic_resist": {
       "gems": [
         "irons_apothic:core/void_umbalite",
         "kaelos_gems:kaelos/rime_sigil_rare_common"
       ],
-      "affixes": []
+      "affixes": [],
+      "extra_gem_bonuses": []
     },
     "irons_spellbooks:ender_spell_power": {
       "gems": [
@@ -275,13 +313,15 @@
       ],
       "affixes": [
         "irons_apothic:elemental/school_ender/attribute"
-      ]
+      ],
+      "extra_gem_bonuses": []
     },
     "irons_spellbooks:evocation_magic_resist": {
       "gems": [
         "irons_apothic:core/charged_lodestone"
       ],
-      "affixes": []
+      "affixes": [],
+      "extra_gem_bonuses": []
     },
     "irons_spellbooks:evocation_spell_power": {
       "gems": [
@@ -290,14 +330,16 @@
       ],
       "affixes": [
         "irons_apothic:elemental/school_evocation/attribute"
-      ]
+      ],
+      "extra_gem_bonuses": []
     },
     "irons_spellbooks:fire_magic_resist": {
       "gems": [
         "irons_apothic:core/dragonfire_spessartite",
         "kaelos_gems:kaelos/pyre_sigil_rare_common"
       ],
-      "affixes": []
+      "affixes": [],
+      "extra_gem_bonuses": []
     },
     "irons_spellbooks:fire_spell_power": {
       "gems": [
@@ -306,6 +348,18 @@
       ],
       "affixes": [
         "irons_apothic:elemental/school_fire/attribute"
+      ],
+      "extra_gem_bonuses": [
+        "irons_apothic:the_nether/inferno",
+        "kaelos_curios:kaelos_gems/pyre_sigil_common_common",
+        "kaelos_curios:kaelos_gems/pyre_sigil_common_epic",
+        "kaelos_curios:kaelos_gems/pyre_sigil_common_rare",
+        "kaelos_curios:kaelos_gems/pyre_sigil_normal_common",
+        "kaelos_curios:kaelos_gems/pyre_sigil_normal_epic",
+        "kaelos_curios:kaelos_gems/pyre_sigil_normal_rare",
+        "kaelos_curios:kaelos_gems/pyre_sigil_rare_common",
+        "kaelos_curios:kaelos_gems/pyre_sigil_rare_epic",
+        "kaelos_curios:kaelos_gems/pyre_sigil_rare_rare"
       ]
     },
     "irons_spellbooks:holy_magic_resist": {
@@ -313,7 +367,8 @@
         "irons_apothic:core/luminous_opal",
         "kaelos_gems:kaelos/dawn_sigil_rare_common"
       ],
-      "affixes": []
+      "affixes": [],
+      "extra_gem_bonuses": []
     },
     "irons_spellbooks:holy_spell_power": {
       "gems": [
@@ -322,6 +377,18 @@
       ],
       "affixes": [
         "irons_apothic:elemental/school_holy/attribute"
+      ],
+      "extra_gem_bonuses": [
+        "irons_apothic:core/guardian",
+        "kaelos_curios:kaelos_gems/dawn_sigil_common_common",
+        "kaelos_curios:kaelos_gems/dawn_sigil_common_epic",
+        "kaelos_curios:kaelos_gems/dawn_sigil_common_rare",
+        "kaelos_curios:kaelos_gems/dawn_sigil_normal_common",
+        "kaelos_curios:kaelos_gems/dawn_sigil_normal_epic",
+        "kaelos_curios:kaelos_gems/dawn_sigil_normal_rare",
+        "kaelos_curios:kaelos_gems/dawn_sigil_rare_common",
+        "kaelos_curios:kaelos_gems/dawn_sigil_rare_epic",
+        "kaelos_curios:kaelos_gems/dawn_sigil_rare_rare"
       ]
     },
     "irons_spellbooks:ice_magic_resist": {
@@ -329,7 +396,8 @@
         "irons_apothic:core/celsius_tear",
         "kaelos_gems:kaelos/rime_sigil_rare_common"
       ],
-      "affixes": []
+      "affixes": [],
+      "extra_gem_bonuses": []
     },
     "irons_spellbooks:ice_spell_power": {
       "gems": [
@@ -338,6 +406,18 @@
       ],
       "affixes": [
         "irons_apothic:elemental/school_ice/attribute"
+      ],
+      "extra_gem_bonuses": [
+        "irons_apothic:twilight/queen",
+        "kaelos_curios:kaelos_gems/rime_sigil_common_common",
+        "kaelos_curios:kaelos_gems/rime_sigil_common_epic",
+        "kaelos_curios:kaelos_gems/rime_sigil_common_rare",
+        "kaelos_curios:kaelos_gems/rime_sigil_normal_common",
+        "kaelos_curios:kaelos_gems/rime_sigil_normal_epic",
+        "kaelos_curios:kaelos_gems/rime_sigil_normal_rare",
+        "kaelos_curios:kaelos_gems/rime_sigil_rare_common",
+        "kaelos_curios:kaelos_gems/rime_sigil_rare_epic",
+        "kaelos_curios:kaelos_gems/rime_sigil_rare_rare"
       ]
     },
     "irons_spellbooks:lightning_magic_resist": {
@@ -345,7 +425,8 @@
         "irons_apothic:core/effervescent_brimstone",
         "kaelos_gems:kaelos/pyre_sigil_rare_common"
       ],
-      "affixes": []
+      "affixes": [],
+      "extra_gem_bonuses": []
     },
     "irons_spellbooks:lightning_spell_power": {
       "gems": [
@@ -354,7 +435,8 @@
       ],
       "affixes": [
         "irons_apothic:elemental/school_lightning/attribute"
-      ]
+      ],
+      "extra_gem_bonuses": []
     },
     "irons_spellbooks:mana_regen": {
       "gems": [
@@ -364,6 +446,9 @@
       "affixes": [
         "irons_apothic:magic_weapons/attribute/restorative",
         "kaelos_curios:jewelry/attribute/flowing"
+      ],
+      "extra_gem_bonuses": [
+        "irons_apothic:core/solar"
       ]
     },
     "irons_spellbooks:max_mana": {
@@ -375,6 +460,21 @@
       "affixes": [
         "irons_apothic:magic_weapons/attribute/capacity",
         "kaelos_curios:jewelry/attribute/wellspring"
+      ],
+      "extra_gem_bonuses": [
+        "irons_apothic:core/ballast",
+        "irons_apothic:core/lunar",
+        "irons_apothic:the_nether/blood_lord",
+        "irons_apothic:twilight/queen",
+        "kaelos_curios:kaelos_gems/manaheart_common_common",
+        "kaelos_curios:kaelos_gems/manaheart_common_epic",
+        "kaelos_curios:kaelos_gems/manaheart_common_rare",
+        "kaelos_curios:kaelos_gems/manaheart_normal_common",
+        "kaelos_curios:kaelos_gems/manaheart_normal_epic",
+        "kaelos_curios:kaelos_gems/manaheart_normal_rare",
+        "kaelos_curios:kaelos_gems/manaheart_rare_common",
+        "kaelos_curios:kaelos_gems/manaheart_rare_epic",
+        "kaelos_curios:kaelos_gems/manaheart_rare_rare"
       ]
     },
     "irons_spellbooks:nature_magic_resist": {
@@ -382,7 +482,8 @@
         "irons_apothic:core/mossy_agate",
         "kaelos_gems:kaelos/dawn_sigil_rare_common"
       ],
-      "affixes": []
+      "affixes": [],
+      "extra_gem_bonuses": []
     },
     "irons_spellbooks:nature_spell_power": {
       "gems": [
@@ -391,6 +492,9 @@
       ],
       "affixes": [
         "irons_apothic:elemental/school_nature/attribute"
+      ],
+      "extra_gem_bonuses": [
+        "irons_apothic:overworld/verdant_ruin"
       ]
     },
     "irons_spellbooks:spell_power": {
@@ -401,6 +505,19 @@
       "affixes": [
         "irons_apothic:elemental/school_none/attribute",
         "kaelos_curios:jewelry/attribute/attuned"
+      ],
+      "extra_gem_bonuses": [
+        "irons_apothic:core/ballast",
+        "irons_apothic:core/warlord",
+        "kaelos_curios:kaelos_gems/archon_focus_common_common",
+        "kaelos_curios:kaelos_gems/archon_focus_common_epic",
+        "kaelos_curios:kaelos_gems/archon_focus_common_rare",
+        "kaelos_curios:kaelos_gems/archon_focus_normal_common",
+        "kaelos_curios:kaelos_gems/archon_focus_normal_epic",
+        "kaelos_curios:kaelos_gems/archon_focus_normal_rare",
+        "kaelos_curios:kaelos_gems/archon_focus_rare_common",
+        "kaelos_curios:kaelos_gems/archon_focus_rare_epic",
+        "kaelos_curios:kaelos_gems/archon_focus_rare_rare"
       ]
     },
     "irons_spellbooks:spell_resist": {
@@ -412,6 +529,18 @@
       ],
       "affixes": [
         "kaelos_curios:jewelry/attribute/clearminded"
+      ],
+      "extra_gem_bonuses": [
+        "irons_apothic:core/guardian",
+        "kaelos_curios:kaelos_gems/runeward_common_common",
+        "kaelos_curios:kaelos_gems/runeward_common_epic",
+        "kaelos_curios:kaelos_gems/runeward_common_rare",
+        "kaelos_curios:kaelos_gems/runeward_normal_common",
+        "kaelos_curios:kaelos_gems/runeward_normal_epic",
+        "kaelos_curios:kaelos_gems/runeward_normal_rare",
+        "kaelos_curios:kaelos_gems/runeward_rare_common",
+        "kaelos_curios:kaelos_gems/runeward_rare_epic",
+        "kaelos_curios:kaelos_gems/runeward_rare_rare"
       ]
     },
     "irons_spellbooks:summon_damage": {
@@ -420,6 +549,9 @@
       ],
       "affixes": [
         "kaelos_curios:jewelry/attribute/summoners"
+      ],
+      "extra_gem_bonuses": [
+        "irons_apothic:core/tyrannical"
       ]
     },
     "lodestone:magic_damage": {
@@ -432,6 +564,9 @@
         "apothic_compats:staff/melee/attribute/mystic",
         "apothic_compats:staff/melee/attribute/vandalous",
         "apothic_compats:staff/melee/attribute/wizarding"
+      ],
+      "extra_gem_bonuses": [
+        "apothic_compats:malum/apotheosis/core/ballast"
       ]
     },
     "lodestone:magic_proficiency": {
@@ -439,6 +574,9 @@
       "affixes": [
         "apothic_compats:armor/attribute/adept",
         "apothic_compats:curios/attribute/adept"
+      ],
+      "extra_gem_bonuses": [
+        "apothic_compats:malum/apotheosis/core/lunar"
       ]
     },
     "lodestone:magic_resistance": {
@@ -446,13 +584,15 @@
       "affixes": [
         "apothic_compats:armor/attribute/abjured",
         "apothic_compats:curios/attribute/abjured"
-      ]
+      ],
+      "extra_gem_bonuses": []
     },
     "malum:arcane_resonance": {
       "gems": [
         "apothic_compats:malum/etheric"
       ],
-      "affixes": []
+      "affixes": [],
+      "extra_gem_bonuses": []
     },
     "malum:charge_capacity": {
       "gems": [
@@ -461,24 +601,42 @@
       "affixes": [
         "apothic_compats:staff/ranged/attribute/ample",
         "apothic_compats:staff/ranged/attribute/capacious"
+      ],
+      "extra_gem_bonuses": [
+        "apothic_compats:curios/malum/soul_stained"
       ]
     },
     "malum:charge_duration": {
       "gems": [],
       "affixes": [
         "apothic_compats:staff/ranged/attribute/agile"
+      ],
+      "extra_gem_bonuses": [
+        "apothic_compats:malum/apotheosis/core/slipstream",
+        "apothic_compats:malum/apotheosis/the_end/mageslayer"
+      ]
+    },
+    "malum:charge_recovery_rate": {
+      "gems": [],
+      "affixes": [],
+      "extra_gem_bonuses": [
+        "apothic_compats:malum/apotheosis/the_end/mageslayer"
       ]
     },
     "malum:geas_limit": {
       "gems": [
         "apothic_compats:malum/soul_stained"
       ],
-      "affixes": []
+      "affixes": [],
+      "extra_gem_bonuses": []
     },
     "malum:malignant_conversion": {
       "gems": [],
       "affixes": [
         "apothic_compats:armor/attribute/malevolent"
+      ],
+      "extra_gem_bonuses": [
+        "apothic_compats:curios/malum/thief"
       ]
     },
     "malum:scythe_proficiency": {
@@ -488,7 +646,8 @@
       "affixes": [
         "apothic_compats:armor/attribute/scythe_proficiency",
         "apothic_compats:curios/attribute/scythe_proficiency"
-      ]
+      ],
+      "extra_gem_bonuses": []
     },
     "malum:soul_ward_capacity": {
       "gems": [
@@ -496,25 +655,33 @@
       ],
       "affixes": [
         "apothic_compats:armor/attribute/ward_capacity"
+      ],
+      "extra_gem_bonuses": [
+        "apothic_compats:curios/malum/etheric"
       ]
     },
     "malum:soul_ward_integrity": {
       "gems": [],
       "affixes": [
         "apothic_compats:armor/attribute/ward_integrity"
-      ]
+      ],
+      "extra_gem_bonuses": []
     },
     "malum:soul_ward_recovery_rate": {
       "gems": [
         "apothic_compats:malum/thief"
       ],
-      "affixes": []
+      "affixes": [],
+      "extra_gem_bonuses": []
     },
     "malum:spirit_spoils": {
       "gems": [
         "apothic_compats:malum/soul_stained"
       ],
-      "affixes": []
+      "affixes": [],
+      "extra_gem_bonuses": [
+        "apothic_compats:malum/apotheosis/core/splendor"
+      ]
     }
   },
   "definitions": [
@@ -3123,6 +3290,701 @@
             "max": 0.4
           }
         }
+      }
+    },
+    {
+      "id": "apothic_compats:curios/ars_nouveau/mana",
+      "kind": "extra_gem_bonuses",
+      "jar": "apothic_compats-0.2.5.5.jar",
+      "resource": "data/apothic_compats/extra_gem_bonuses/curios/ars_nouveau/mana.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "ars_nouveau:ars_nouveau.perk.max_mana",
+          "json_path": "/bonuses/0",
+          "operation": "add_value",
+          "values": {
+            "cracked": 2.0,
+            "chipped": 5.0,
+            "flawed": 8.0,
+            "normal": 12.0,
+            "flawless": 16.0,
+            "perfect": 25.0
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "curios"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "ars_nouveau"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "apothic_compats:ars_nouveau/mana",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "attribute": "ars_nouveau:ars_nouveau.perk.max_mana",
+            "gem_class": {
+              "key": "curios",
+              "types": [
+                "apothic_compats:back",
+                "apothic_compats:belt",
+                "apothic_compats:body",
+                "apothic_compats:bracelet",
+                "apothic_compats:charm",
+                "apothic_compats:curio",
+                "apothic_compats:feet",
+                "apothic_compats:hands",
+                "apothic_compats:head",
+                "apothic_compats:necklace",
+                "apothic_compats:ring",
+                "apothic_compats:brooch",
+                "apothic_compats:rune",
+                "apothic_compats:an_focus"
+              ]
+            },
+            "operation": "add_value",
+            "values": {
+              "cracked": 2.0,
+              "chipped": 5.0,
+              "flawed": 8.0,
+              "normal": 12.0,
+              "flawless": 16.0,
+              "perfect": 25.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "apothic_compats:curios/malum/etheric",
+      "kind": "extra_gem_bonuses",
+      "jar": "apothic_compats-0.2.5.5.jar",
+      "resource": "data/apothic_compats/extra_gem_bonuses/curios/malum/etheric.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "malum:soul_ward_capacity",
+          "json_path": "/bonuses/0",
+          "operation": "add_value",
+          "values": {
+            "normal": 3.0,
+            "flawless": 6.0,
+            "perfect": 9.0
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "curios"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "malum"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "apothic_compats:malum/etheric",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "attribute": "malum:soul_ward_capacity",
+            "gem_class": {
+              "key": "curios",
+              "types": [
+                "apothic_compats:back",
+                "apothic_compats:belt",
+                "apothic_compats:body",
+                "apothic_compats:bracelet",
+                "apothic_compats:charm",
+                "apothic_compats:curio",
+                "apothic_compats:feet",
+                "apothic_compats:hands",
+                "apothic_compats:head",
+                "apothic_compats:necklace",
+                "apothic_compats:ring",
+                "apothic_compats:brooch",
+                "apothic_compats:rune",
+                "apothic_compats:an_focus"
+              ]
+            },
+            "operation": "add_value",
+            "values": {
+              "normal": 3.0,
+              "flawless": 6.0,
+              "perfect": 9.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "apothic_compats:curios/malum/soul_stained",
+      "kind": "extra_gem_bonuses",
+      "jar": "apothic_compats-0.2.5.5.jar",
+      "resource": "data/apothic_compats/extra_gem_bonuses/curios/malum/soul_stained.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "malum:charge_capacity",
+          "json_path": "/bonuses/0",
+          "operation": "add_value",
+          "values": {
+            "flawed": 1.0,
+            "normal": 2.0,
+            "flawless": 3.0,
+            "perfect": 4.0
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "curios"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "malum"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "apothic_compats:malum/soul_stained",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "attribute": "malum:charge_capacity",
+            "gem_class": {
+              "key": "curios",
+              "types": [
+                "apothic_compats:back",
+                "apothic_compats:belt",
+                "apothic_compats:body",
+                "apothic_compats:bracelet",
+                "apothic_compats:charm",
+                "apothic_compats:curio",
+                "apothic_compats:feet",
+                "apothic_compats:hands",
+                "apothic_compats:head",
+                "apothic_compats:necklace",
+                "apothic_compats:ring",
+                "apothic_compats:brooch",
+                "apothic_compats:rune",
+                "apothic_compats:an_focus"
+              ]
+            },
+            "operation": "add_value",
+            "values": {
+              "flawed": 1.0,
+              "normal": 2.0,
+              "flawless": 3.0,
+              "perfect": 4.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "apothic_compats:curios/malum/thief",
+      "kind": "extra_gem_bonuses",
+      "jar": "apothic_compats-0.2.5.5.jar",
+      "resource": "data/apothic_compats/extra_gem_bonuses/curios/malum/thief.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "malum:malignant_conversion",
+          "json_path": "/bonuses/0",
+          "operation": "add_value",
+          "values": {
+            "cracked": 0.05,
+            "chipped": 0.075,
+            "flawed": 0.1,
+            "normal": 0.125,
+            "flawless": 0.15,
+            "perfect": 0.2
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "curios"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "malum"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "apothic_compats:malum/thief",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "attribute": "malum:malignant_conversion",
+            "gem_class": {
+              "key": "curios",
+              "types": [
+                "apothic_compats:back",
+                "apothic_compats:belt",
+                "apothic_compats:body",
+                "apothic_compats:bracelet",
+                "apothic_compats:charm",
+                "apothic_compats:curio",
+                "apothic_compats:feet",
+                "apothic_compats:hands",
+                "apothic_compats:head",
+                "apothic_compats:necklace",
+                "apothic_compats:ring",
+                "apothic_compats:brooch",
+                "apothic_compats:rune",
+                "apothic_compats:an_focus"
+              ]
+            },
+            "operation": "add_value",
+            "values": {
+              "cracked": 0.05,
+              "chipped": 0.075,
+              "flawed": 0.1,
+              "normal": 0.125,
+              "flawless": 0.15,
+              "perfect": 0.2
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "apothic_compats:malum/apotheosis/core/ballast",
+      "kind": "extra_gem_bonuses",
+      "jar": "apothic_compats-0.2.5.5.jar",
+      "resource": "data/apothic_compats/extra_gem_bonuses/malum/apotheosis/core/ballast.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "lodestone:magic_damage",
+          "json_path": "/bonuses/0",
+          "operation": "add_value",
+          "values": {
+            "cracked": 1.0,
+            "chipped": 2.0,
+            "flawed": 3.5,
+            "normal": 5.0,
+            "flawless": 7.0,
+            "perfect": 10.0
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "malum"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "apotheosis:core/ballast",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "attribute": "lodestone:magic_damage",
+            "gem_class": {
+              "key": "malum_weapon",
+              "types": [
+                "apothic_compats:scythe",
+                "apothic_compats:staff"
+              ]
+            },
+            "operation": "add_value",
+            "values": {
+              "cracked": 1.0,
+              "chipped": 2.0,
+              "flawed": 3.5,
+              "normal": 5.0,
+              "flawless": 7.0,
+              "perfect": 10.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "apothic_compats:malum/apotheosis/core/lunar",
+      "kind": "extra_gem_bonuses",
+      "jar": "apothic_compats-0.2.5.5.jar",
+      "resource": "data/apothic_compats/extra_gem_bonuses/malum/apotheosis/core/lunar.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "lodestone:magic_proficiency",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.15,
+            "chipped": 0.2,
+            "flawed": 0.25,
+            "normal": 0.3,
+            "flawless": 0.4,
+            "perfect": 0.5
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "malum"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "apotheosis:core/lunar",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "attribute": "lodestone:magic_proficiency",
+            "gem_class": {
+              "key": "malum_weapon",
+              "types": [
+                "apothic_compats:scythe",
+                "apothic_compats:staff"
+              ]
+            },
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.15,
+              "chipped": 0.2,
+              "flawed": 0.25,
+              "normal": 0.3,
+              "flawless": 0.4,
+              "perfect": 0.5
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "apothic_compats:malum/apotheosis/core/slipstream",
+      "kind": "extra_gem_bonuses",
+      "jar": "apothic_compats-0.2.5.5.jar",
+      "resource": "data/apothic_compats/extra_gem_bonuses/malum/apotheosis/core/slipstream.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "malum:charge_duration",
+          "json_path": "/bonuses/0",
+          "operation": "add_value",
+          "values": {
+            "cracked": -1.0,
+            "chipped": -2.0,
+            "flawed": -3.0,
+            "normal": -4.0,
+            "flawless": -5.0,
+            "perfect": -6.0
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "malum"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "apotheosis:core/slipstream",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "attribute": "malum:charge_duration",
+            "gem_class": "apothic_compats:staff",
+            "operation": "add_value",
+            "values": {
+              "cracked": -1.0,
+              "chipped": -2.0,
+              "flawed": -3.0,
+              "normal": -4.0,
+              "flawless": -5.0,
+              "perfect": -6.0
+            }
+          },
+          {
+            "type": "apotheosis:attribute",
+            "attribute": "minecraft:generic.attack_speed",
+            "gem_class": "apothic_compats:scythe",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.1,
+              "chipped": 0.15,
+              "flawed": 0.25,
+              "normal": 0.35,
+              "flawless": 0.45,
+              "perfect": 0.6
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "apothic_compats:malum/apotheosis/core/splendor",
+      "kind": "extra_gem_bonuses",
+      "jar": "apothic_compats-0.2.5.5.jar",
+      "resource": "data/apothic_compats/extra_gem_bonuses/malum/apotheosis/core/splendor.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "malum:spirit_spoils",
+          "json_path": "/bonuses/0",
+          "operation": "add_value",
+          "values": {
+            "cracked": 1.0,
+            "chipped": 2.0,
+            "flawed": 3.0,
+            "normal": 4.0,
+            "flawless": 5.0,
+            "perfect": 6.0
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "malum"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "apotheosis:core/splendor",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "attribute": "malum:spirit_spoils",
+            "gem_class": {
+              "key": "malum_weapon",
+              "types": [
+                "apothic_compats:scythe",
+                "apothic_compats:staff"
+              ]
+            },
+            "operation": "add_value",
+            "values": {
+              "cracked": 1.0,
+              "chipped": 2.0,
+              "flawed": 3.0,
+              "normal": 4.0,
+              "flawless": 5.0,
+              "perfect": 6.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "apothic_compats:malum/apotheosis/overworld/earth",
+      "kind": "extra_gem_bonuses",
+      "jar": "apothic_compats-0.2.5.5.jar",
+      "resource": "data/apothic_compats/extra_gem_bonuses/malum/apotheosis/overworld/earth.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "enchantment",
+          "id": "malum:rebound",
+          "json_path": "/bonuses/0",
+          "operation": null,
+          "values": {
+            "flawed": 1,
+            "normal": 2,
+            "flawless": 3,
+            "perfect": 4
+          }
+        },
+        {
+          "kind": "enchantment",
+          "id": "malum:capacitor",
+          "json_path": "/bonuses/1",
+          "operation": null,
+          "values": {
+            "flawed": 1,
+            "normal": 2,
+            "flawless": 3,
+            "perfect": 4
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "malum"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "apotheosis:overworld/earth",
+        "bonuses": [
+          {
+            "type": "apotheosis:enchantment",
+            "enchantment": "malum:rebound",
+            "gem_class": "apothic_compats:scythe",
+            "mode": "existing",
+            "values": {
+              "flawed": 1,
+              "normal": 2,
+              "flawless": 3,
+              "perfect": 4
+            }
+          },
+          {
+            "type": "apotheosis:enchantment",
+            "enchantment": "malum:capacitor",
+            "gem_class": "apothic_compats:staff",
+            "mode": "existing",
+            "values": {
+              "flawed": 1,
+              "normal": 2,
+              "flawless": 3,
+              "perfect": 4
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "apothic_compats:malum/apotheosis/the_end/mageslayer",
+      "kind": "extra_gem_bonuses",
+      "jar": "apothic_compats-0.2.5.5.jar",
+      "resource": "data/apothic_compats/extra_gem_bonuses/malum/apotheosis/the_end/mageslayer.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "malum:charge_duration",
+          "json_path": "/bonuses/0/modifiers/0",
+          "operation": "add_value",
+          "values": {
+            "normal": -3.0,
+            "flawless": -5.0,
+            "perfect": -7.0
+          }
+        },
+        {
+          "kind": "attribute",
+          "id": "malum:charge_recovery_rate",
+          "json_path": "/bonuses/0/modifiers/1",
+          "operation": "add_multiplied_base",
+          "values": {
+            "normal": -0.3,
+            "flawless": -0.4,
+            "perfect": -0.5
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "malum"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "apotheosis:the_end/mageslayer",
+        "bonuses": [
+          {
+            "type": "apotheosis:multi_attribute",
+            "desc": "bonus.apotheosis:multi_attr.desc.and",
+            "gem_class": {
+              "key": "malum_weapon",
+              "types": [
+                "apothic_compats:scythe",
+                "apothic_compats:staff"
+              ]
+            },
+            "modifiers": [
+              {
+                "attribute": "malum:charge_duration",
+                "operation": "add_value",
+                "values": {
+                  "normal": -3.0,
+                  "flawless": -5.0,
+                  "perfect": -7.0
+                }
+              },
+              {
+                "attribute": "malum:charge_recovery_rate",
+                "operation": "add_multiplied_base",
+                "values": {
+                  "normal": -0.3,
+                  "flawless": -0.4,
+                  "perfect": -0.5
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "apothic_compats:malum/apotheosis/the_nether/inferno",
+      "kind": "extra_gem_bonuses",
+      "jar": "apothic_compats-0.2.5.5.jar",
+      "resource": "data/apothic_compats/extra_gem_bonuses/malum/apotheosis/the_nether/inferno.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "enchantment",
+          "id": "malum:spirit_plunder",
+          "json_path": "/bonuses/0",
+          "operation": null,
+          "values": {
+            "flawed": 1,
+            "normal": 2,
+            "flawless": 3,
+            "perfect": 4
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "malum"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "apotheosis:the_nether/inferno",
+        "bonuses": [
+          {
+            "type": "apotheosis:enchantment",
+            "enchantment": "malum:spirit_plunder",
+            "gem_class": {
+              "key": "malum_weapon",
+              "types": [
+                "apothic_compats:scythe",
+                "apothic_compats:staff"
+              ]
+            },
+            "values": {
+              "flawed": 1,
+              "normal": 2,
+              "flawless": 3,
+              "perfect": 4
+            }
+          }
+        ]
       }
     },
     {
@@ -8258,6 +9120,812 @@
       }
     },
     {
+      "id": "irons_apothic:core/ballast",
+      "kind": "extra_gem_bonuses",
+      "jar": "irons_apothic-2.2.6.jar",
+      "resource": "data/irons_apothic/extra_gem_bonuses/core/ballast.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:max_mana",
+          "json_path": "/bonuses/0",
+          "operation": "add_value",
+          "values": {
+            "cracked": 25.0,
+            "chipped": 50.0,
+            "flawed": 75.0,
+            "normal": 100.0,
+            "flawless": 125.0,
+            "perfect": 150.0
+          }
+        },
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:spell_power",
+          "json_path": "/bonuses/1",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.03,
+            "chipped": 0.05,
+            "flawed": 0.08,
+            "normal": 0.12,
+            "flawless": 0.15,
+            "perfect": 0.2
+          }
+        }
+      ],
+      "definition": {
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "apotheosis:core/ballast",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "attribute": "irons_spellbooks:max_mana",
+            "gem_class": {
+              "key": "staff",
+              "types": [
+                "irons_apothic:staff"
+              ]
+            },
+            "operation": "add_value",
+            "values": {
+              "cracked": 25.0,
+              "chipped": 50.0,
+              "flawed": 75.0,
+              "normal": 100.0,
+              "flawless": 125.0,
+              "perfect": 150.0
+            }
+          },
+          {
+            "type": "apotheosis:attribute",
+            "attribute": "irons_spellbooks:spell_power",
+            "gem_class": {
+              "key": "spellbook",
+              "types": [
+                "irons_apothic:spellbook"
+              ]
+            },
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.03,
+              "chipped": 0.05,
+              "flawed": 0.08,
+              "normal": 0.12,
+              "flawless": 0.15,
+              "perfect": 0.2
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "irons_apothic:core/brawlers",
+      "kind": "extra_gem_bonuses",
+      "jar": "irons_apothic-2.2.6.jar",
+      "resource": "data/irons_apothic/extra_gem_bonuses/core/brawlers.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:cooldown_reduction",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.01,
+            "chipped": 0.02,
+            "flawed": 0.03,
+            "normal": 0.04,
+            "flawless": 0.06,
+            "perfect": 0.08
+          }
+        }
+      ],
+      "definition": {
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "apotheosis:core/brawlers",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "attribute": "irons_spellbooks:cooldown_reduction",
+            "gem_class": {
+              "key": "magic_gear",
+              "types": [
+                "irons_apothic:staff",
+                "irons_apothic:spellbook"
+              ]
+            },
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.01,
+              "chipped": 0.02,
+              "flawed": 0.03,
+              "normal": 0.04,
+              "flawless": 0.06,
+              "perfect": 0.08
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "irons_apothic:core/guardian",
+      "kind": "extra_gem_bonuses",
+      "jar": "irons_apothic-2.2.6.jar",
+      "resource": "data/irons_apothic/extra_gem_bonuses/core/guardian.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:holy_spell_power",
+          "json_path": "/bonuses/0/modifiers/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "flawed": 0.05,
+            "normal": 0.1,
+            "flawless": 0.15,
+            "perfect": 0.2
+          }
+        },
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:spell_resist",
+          "json_path": "/bonuses/0/modifiers/1",
+          "operation": "add_multiplied_base",
+          "values": {
+            "flawed": 0.01,
+            "normal": 0.02,
+            "flawless": 0.03,
+            "perfect": 0.05
+          }
+        }
+      ],
+      "definition": {
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "apotheosis:core/guardian",
+        "bonuses": [
+          {
+            "type": "apotheosis:multi_attribute",
+            "desc": "bonus.apotheosis:multi_attr.desc.and",
+            "gem_class": {
+              "key": "staff",
+              "types": [
+                "irons_apothic:staff"
+              ]
+            },
+            "modifiers": [
+              {
+                "attribute": "irons_spellbooks:holy_spell_power",
+                "operation": "add_multiplied_base",
+                "values": {
+                  "flawed": 0.05,
+                  "normal": 0.1,
+                  "flawless": 0.15,
+                  "perfect": 0.2
+                }
+              },
+              {
+                "attribute": "irons_spellbooks:spell_resist",
+                "operation": "add_multiplied_base",
+                "values": {
+                  "flawed": 0.01,
+                  "normal": 0.02,
+                  "flawless": 0.03,
+                  "perfect": 0.05
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "irons_apothic:core/lightning",
+      "kind": "extra_gem_bonuses",
+      "jar": "irons_apothic-2.2.6.jar",
+      "resource": "data/irons_apothic/extra_gem_bonuses/core/lightning.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:casting_movespeed",
+          "json_path": "/bonuses/0/modifiers/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.02,
+            "chipped": 0.04,
+            "flawed": 0.07,
+            "normal": 0.09,
+            "flawless": 0.12,
+            "perfect": 0.15
+          }
+        },
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:cast_time_reduction",
+          "json_path": "/bonuses/0/modifiers/1",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.01,
+            "chipped": 0.02,
+            "flawed": 0.03,
+            "normal": 0.04,
+            "flawless": 0.06,
+            "perfect": 0.08
+          }
+        }
+      ],
+      "definition": {
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "apotheosis:core/lightning",
+        "bonuses": [
+          {
+            "type": "apotheosis:multi_attribute",
+            "desc": "bonus.apotheosis:multi_attr.desc.and",
+            "gem_class": {
+              "key": "staff",
+              "types": [
+                "irons_apothic:staff"
+              ]
+            },
+            "modifiers": [
+              {
+                "attribute": "irons_spellbooks:casting_movespeed",
+                "operation": "add_multiplied_base",
+                "values": {
+                  "cracked": 0.02,
+                  "chipped": 0.04,
+                  "flawed": 0.07,
+                  "normal": 0.09,
+                  "flawless": 0.12,
+                  "perfect": 0.15
+                }
+              },
+              {
+                "attribute": "irons_spellbooks:cast_time_reduction",
+                "operation": "add_multiplied_base",
+                "values": {
+                  "cracked": 0.01,
+                  "chipped": 0.02,
+                  "flawed": 0.03,
+                  "normal": 0.04,
+                  "flawless": 0.06,
+                  "perfect": 0.08
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "irons_apothic:core/lunar",
+      "kind": "extra_gem_bonuses",
+      "jar": "irons_apothic-2.2.6.jar",
+      "resource": "data/irons_apothic/extra_gem_bonuses/core/lunar.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:max_mana",
+          "json_path": "/bonuses/0",
+          "operation": "add_value",
+          "values": {
+            "cracked": 30.0,
+            "chipped": 60.0,
+            "flawed": 90.0,
+            "normal": 120.0,
+            "flawless": 150.0,
+            "perfect": 180.0
+          }
+        }
+      ],
+      "definition": {
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "apotheosis:core/lunar",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "attribute": "irons_spellbooks:max_mana",
+            "gem_class": {
+              "key": "magic_gear",
+              "types": [
+                "irons_apothic:staff",
+                "irons_apothic:spellbook"
+              ]
+            },
+            "operation": "add_value",
+            "values": {
+              "cracked": 30.0,
+              "chipped": 60.0,
+              "flawed": 90.0,
+              "normal": 120.0,
+              "flawless": 150.0,
+              "perfect": 180.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "irons_apothic:core/samurai",
+      "kind": "extra_gem_bonuses",
+      "jar": "irons_apothic-2.2.6.jar",
+      "resource": "data/irons_apothic/extra_gem_bonuses/core/samurai.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:cooldown_reduction",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.02,
+            "chipped": 0.03,
+            "flawed": 0.05,
+            "normal": 0.07,
+            "flawless": 0.09,
+            "perfect": 0.12
+          }
+        }
+      ],
+      "definition": {
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "apotheosis:core/samurai",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "attribute": "irons_spellbooks:cooldown_reduction",
+            "gem_class": {
+              "key": "staff",
+              "types": [
+                "irons_apothic:staff"
+              ]
+            },
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.02,
+              "chipped": 0.03,
+              "flawed": 0.05,
+              "normal": 0.07,
+              "flawless": 0.09,
+              "perfect": 0.12
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "irons_apothic:core/slipstream",
+      "kind": "extra_gem_bonuses",
+      "jar": "irons_apothic-2.2.6.jar",
+      "resource": "data/irons_apothic/extra_gem_bonuses/core/slipstream.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:casting_movespeed",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.05,
+            "chipped": 0.1,
+            "flawed": 0.15,
+            "normal": 0.2,
+            "flawless": 0.25,
+            "perfect": 0.3
+          }
+        }
+      ],
+      "definition": {
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "apotheosis:core/slipstream",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "attribute": "irons_spellbooks:casting_movespeed",
+            "gem_class": {
+              "key": "staff",
+              "types": [
+                "irons_apothic:staff"
+              ]
+            },
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.05,
+              "chipped": 0.1,
+              "flawed": 0.15,
+              "normal": 0.2,
+              "flawless": 0.25,
+              "perfect": 0.3
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "irons_apothic:core/solar",
+      "kind": "extra_gem_bonuses",
+      "jar": "irons_apothic-2.2.6.jar",
+      "resource": "data/irons_apothic/extra_gem_bonuses/core/solar.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:mana_regen",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.05,
+            "chipped": 0.1,
+            "flawed": 0.15,
+            "normal": 0.2,
+            "flawless": 0.25,
+            "perfect": 0.3
+          }
+        }
+      ],
+      "definition": {
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "apotheosis:core/solar",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "attribute": "irons_spellbooks:mana_regen",
+            "gem_class": {
+              "key": "staff",
+              "types": [
+                "irons_apothic:staff"
+              ]
+            },
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.05,
+              "chipped": 0.1,
+              "flawed": 0.15,
+              "normal": 0.2,
+              "flawless": 0.25,
+              "perfect": 0.3
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "irons_apothic:core/tyrannical",
+      "kind": "extra_gem_bonuses",
+      "jar": "irons_apothic-2.2.6.jar",
+      "resource": "data/irons_apothic/extra_gem_bonuses/core/tyrannical.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:summon_damage",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.1,
+            "chipped": 0.15,
+            "flawed": 0.2,
+            "normal": 0.25,
+            "flawless": 0.3,
+            "perfect": 0.35
+          }
+        }
+      ],
+      "definition": {
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "apotheosis:core/tyrannical",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "attribute": "irons_spellbooks:summon_damage",
+            "gem_class": {
+              "key": "staff",
+              "types": [
+                "irons_apothic:staff"
+              ]
+            },
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.1,
+              "chipped": 0.15,
+              "flawed": 0.2,
+              "normal": 0.25,
+              "flawless": 0.3,
+              "perfect": 0.35
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "irons_apothic:core/warlord",
+      "kind": "extra_gem_bonuses",
+      "jar": "irons_apothic-2.2.6.jar",
+      "resource": "data/irons_apothic/extra_gem_bonuses/core/warlord.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.025,
+            "chipped": 0.05,
+            "flawed": 0.075,
+            "normal": 0.125,
+            "flawless": 0.175,
+            "perfect": 0.225
+          }
+        }
+      ],
+      "definition": {
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "apotheosis:core/warlord",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "attribute": "irons_spellbooks:spell_power",
+            "gem_class": {
+              "key": "staff",
+              "types": [
+                "irons_apothic:staff"
+              ]
+            },
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.025,
+              "chipped": 0.05,
+              "flawed": 0.075,
+              "normal": 0.125,
+              "flawless": 0.175,
+              "perfect": 0.225
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "irons_apothic:overworld/verdant_ruin",
+      "kind": "extra_gem_bonuses",
+      "jar": "irons_apothic-2.2.6.jar",
+      "resource": "data/irons_apothic/extra_gem_bonuses/overworld/verdant_ruin.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:nature_spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "flawed": 0.15,
+            "normal": 0.2,
+            "flawless": 0.275,
+            "perfect": 0.35
+          }
+        }
+      ],
+      "definition": {
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "apotheosis:overworld/verdant_ruin",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "attribute": "irons_spellbooks:nature_spell_power",
+            "gem_class": {
+              "key": "staff",
+              "types": [
+                "irons_apothic:staff"
+              ]
+            },
+            "operation": "add_multiplied_base",
+            "values": {
+              "flawed": 0.15,
+              "normal": 0.2,
+              "flawless": 0.275,
+              "perfect": 0.35
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "irons_apothic:the_nether/blood_lord",
+      "kind": "extra_gem_bonuses",
+      "jar": "irons_apothic-2.2.6.jar",
+      "resource": "data/irons_apothic/extra_gem_bonuses/the_nether/blood_lord.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:blood_spell_power",
+          "json_path": "/bonuses/0/modifiers/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "flawed": 0.15,
+            "normal": 0.2,
+            "flawless": 0.25,
+            "perfect": 0.3
+          }
+        },
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:max_mana",
+          "json_path": "/bonuses/0/modifiers/1",
+          "operation": "add_value",
+          "values": {
+            "flawed": 60.0,
+            "normal": 80.0,
+            "flawless": 100.0,
+            "perfect": 125.0
+          }
+        }
+      ],
+      "definition": {
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "apotheosis:the_nether/blood_lord",
+        "bonuses": [
+          {
+            "type": "apotheosis:multi_attribute",
+            "desc": "bonus.apotheosis:multi_attr.desc.and",
+            "gem_class": {
+              "key": "magic_gear",
+              "types": [
+                "irons_apothic:staff",
+                "irons_apothic:spellbook"
+              ]
+            },
+            "modifiers": [
+              {
+                "attribute": "irons_spellbooks:blood_spell_power",
+                "operation": "add_multiplied_base",
+                "values": {
+                  "flawed": 0.15,
+                  "normal": 0.2,
+                  "flawless": 0.25,
+                  "perfect": 0.3
+                }
+              },
+              {
+                "attribute": "irons_spellbooks:max_mana",
+                "operation": "add_value",
+                "values": {
+                  "flawed": 60.0,
+                  "normal": 80.0,
+                  "flawless": 100.0,
+                  "perfect": 125.0
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "irons_apothic:the_nether/inferno",
+      "kind": "extra_gem_bonuses",
+      "jar": "irons_apothic-2.2.6.jar",
+      "resource": "data/irons_apothic/extra_gem_bonuses/the_nether/inferno.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:fire_spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "flawed": 0.1,
+            "normal": 0.2,
+            "flawless": 0.35,
+            "perfect": 0.5
+          }
+        }
+      ],
+      "definition": {
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "apotheosis:the_nether/inferno",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "attribute": "irons_spellbooks:fire_spell_power",
+            "gem_class": {
+              "key": "staff",
+              "types": [
+                "irons_apothic:staff"
+              ]
+            },
+            "operation": "add_multiplied_base",
+            "values": {
+              "flawed": 0.1,
+              "normal": 0.2,
+              "flawless": 0.35,
+              "perfect": 0.5
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "irons_apothic:twilight/queen",
+      "kind": "extra_gem_bonuses",
+      "jar": "irons_apothic-2.2.6.jar",
+      "resource": "data/irons_apothic/extra_gem_bonuses/twilight/queen.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:ice_spell_power",
+          "json_path": "/bonuses/0/modifiers/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "flawed": 0.1,
+            "normal": 0.2,
+            "flawless": 0.3,
+            "perfect": 0.4
+          }
+        },
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:max_mana",
+          "json_path": "/bonuses/0/modifiers/1",
+          "operation": "add_value",
+          "values": {
+            "flawed": 100.0,
+            "normal": 150.0,
+            "flawless": 200.0,
+            "perfect": 250.0
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "twilightforest"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "apotheosis:twilight/queen",
+        "bonuses": [
+          {
+            "type": "apotheosis:multi_attribute",
+            "desc": "bonus.apotheosis:multi_attr.desc.and",
+            "gem_class": {
+              "key": "staff",
+              "types": [
+                "irons_apothic:staff"
+              ]
+            },
+            "modifiers": [
+              {
+                "attribute": "irons_spellbooks:ice_spell_power",
+                "operation": "add_multiplied_base",
+                "values": {
+                  "flawed": 0.1,
+                  "normal": 0.2,
+                  "flawless": 0.3,
+                  "perfect": 0.4
+                }
+              },
+              {
+                "attribute": "irons_spellbooks:max_mana",
+                "operation": "add_value",
+                "values": {
+                  "flawed": 100.0,
+                  "normal": 150.0,
+                  "flawless": 200.0,
+                  "perfect": 250.0
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
       "id": "irons_apothic:core/bloody_pearl",
       "kind": "gems",
       "jar": "irons_apothic-2.2.6.jar",
@@ -10786,6 +12454,4164 @@
       }
     },
     {
+      "id": "kaelos_curios:kaelos_gems/archon_focus_common_common",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/archon_focus_common_common.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/archon_focus_common_common",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:spell_power",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/archon_focus_common_epic",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/archon_focus_common_epic.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/archon_focus_common_epic",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:spell_power",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/archon_focus_common_rare",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/archon_focus_common_rare.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/archon_focus_common_rare",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:spell_power",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/archon_focus_normal_common",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/archon_focus_normal_common.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/archon_focus_normal_common",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:spell_power",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/archon_focus_normal_epic",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/archon_focus_normal_epic.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/archon_focus_normal_epic",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:spell_power",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/archon_focus_normal_rare",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/archon_focus_normal_rare.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/archon_focus_normal_rare",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:spell_power",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/archon_focus_rare_common",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/archon_focus_rare_common.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/archon_focus_rare_common",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:spell_power",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/archon_focus_rare_epic",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/archon_focus_rare_epic.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/archon_focus_rare_epic",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:spell_power",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/archon_focus_rare_rare",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/archon_focus_rare_rare.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/archon_focus_rare_rare",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:spell_power",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/dawn_sigil_common_common",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/dawn_sigil_common_common.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:holy_spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/dawn_sigil_common_common",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:holy_spell_power",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/dawn_sigil_common_epic",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/dawn_sigil_common_epic.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:holy_spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/dawn_sigil_common_epic",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:holy_spell_power",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/dawn_sigil_common_rare",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/dawn_sigil_common_rare.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:holy_spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/dawn_sigil_common_rare",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:holy_spell_power",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/dawn_sigil_normal_common",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/dawn_sigil_normal_common.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:holy_spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/dawn_sigil_normal_common",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:holy_spell_power",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/dawn_sigil_normal_epic",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/dawn_sigil_normal_epic.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:holy_spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/dawn_sigil_normal_epic",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:holy_spell_power",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/dawn_sigil_normal_rare",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/dawn_sigil_normal_rare.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:holy_spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/dawn_sigil_normal_rare",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:holy_spell_power",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/dawn_sigil_rare_common",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/dawn_sigil_rare_common.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:holy_spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/dawn_sigil_rare_common",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:holy_spell_power",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/dawn_sigil_rare_epic",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/dawn_sigil_rare_epic.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:holy_spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/dawn_sigil_rare_epic",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:holy_spell_power",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/dawn_sigil_rare_rare",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/dawn_sigil_rare_rare.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:holy_spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/dawn_sigil_rare_rare",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:holy_spell_power",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/grave_sigil_common_common",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/grave_sigil_common_common.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:blood_spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/grave_sigil_common_common",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:blood_spell_power",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/grave_sigil_common_epic",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/grave_sigil_common_epic.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:blood_spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/grave_sigil_common_epic",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:blood_spell_power",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/grave_sigil_common_rare",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/grave_sigil_common_rare.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:blood_spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/grave_sigil_common_rare",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:blood_spell_power",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/grave_sigil_normal_common",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/grave_sigil_normal_common.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:blood_spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/grave_sigil_normal_common",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:blood_spell_power",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/grave_sigil_normal_epic",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/grave_sigil_normal_epic.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:blood_spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/grave_sigil_normal_epic",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:blood_spell_power",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/grave_sigil_normal_rare",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/grave_sigil_normal_rare.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:blood_spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/grave_sigil_normal_rare",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:blood_spell_power",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/grave_sigil_rare_common",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/grave_sigil_rare_common.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:blood_spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/grave_sigil_rare_common",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:blood_spell_power",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/grave_sigil_rare_epic",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/grave_sigil_rare_epic.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:blood_spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/grave_sigil_rare_epic",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:blood_spell_power",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/grave_sigil_rare_rare",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/grave_sigil_rare_rare.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:blood_spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/grave_sigil_rare_rare",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:blood_spell_power",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/manaheart_common_common",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/manaheart_common_common.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:max_mana",
+          "json_path": "/bonuses/0",
+          "operation": "add_value",
+          "values": {
+            "cracked": 6,
+            "chipped": 12,
+            "flawed": 18,
+            "normal": 24,
+            "flawless": 36,
+            "perfect": 48
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/manaheart_common_common",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:max_mana",
+            "operation": "add_value",
+            "values": {
+              "cracked": 6,
+              "chipped": 12,
+              "flawed": 18,
+              "normal": 24,
+              "flawless": 36,
+              "perfect": 48
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/manaheart_common_epic",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/manaheart_common_epic.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:max_mana",
+          "json_path": "/bonuses/0",
+          "operation": "add_value",
+          "values": {
+            "cracked": 6,
+            "chipped": 12,
+            "flawed": 18,
+            "normal": 24,
+            "flawless": 36,
+            "perfect": 48
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/manaheart_common_epic",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:max_mana",
+            "operation": "add_value",
+            "values": {
+              "cracked": 6,
+              "chipped": 12,
+              "flawed": 18,
+              "normal": 24,
+              "flawless": 36,
+              "perfect": 48
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/manaheart_common_rare",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/manaheart_common_rare.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:max_mana",
+          "json_path": "/bonuses/0",
+          "operation": "add_value",
+          "values": {
+            "cracked": 6,
+            "chipped": 12,
+            "flawed": 18,
+            "normal": 24,
+            "flawless": 36,
+            "perfect": 48
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/manaheart_common_rare",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:max_mana",
+            "operation": "add_value",
+            "values": {
+              "cracked": 6,
+              "chipped": 12,
+              "flawed": 18,
+              "normal": 24,
+              "flawless": 36,
+              "perfect": 48
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/manaheart_normal_common",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/manaheart_normal_common.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:max_mana",
+          "json_path": "/bonuses/0",
+          "operation": "add_value",
+          "values": {
+            "cracked": 6,
+            "chipped": 12,
+            "flawed": 18,
+            "normal": 24,
+            "flawless": 36,
+            "perfect": 48
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/manaheart_normal_common",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:max_mana",
+            "operation": "add_value",
+            "values": {
+              "cracked": 6,
+              "chipped": 12,
+              "flawed": 18,
+              "normal": 24,
+              "flawless": 36,
+              "perfect": 48
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/manaheart_normal_epic",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/manaheart_normal_epic.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:max_mana",
+          "json_path": "/bonuses/0",
+          "operation": "add_value",
+          "values": {
+            "cracked": 6,
+            "chipped": 12,
+            "flawed": 18,
+            "normal": 24,
+            "flawless": 36,
+            "perfect": 48
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/manaheart_normal_epic",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:max_mana",
+            "operation": "add_value",
+            "values": {
+              "cracked": 6,
+              "chipped": 12,
+              "flawed": 18,
+              "normal": 24,
+              "flawless": 36,
+              "perfect": 48
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/manaheart_normal_rare",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/manaheart_normal_rare.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:max_mana",
+          "json_path": "/bonuses/0",
+          "operation": "add_value",
+          "values": {
+            "cracked": 6,
+            "chipped": 12,
+            "flawed": 18,
+            "normal": 24,
+            "flawless": 36,
+            "perfect": 48
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/manaheart_normal_rare",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:max_mana",
+            "operation": "add_value",
+            "values": {
+              "cracked": 6,
+              "chipped": 12,
+              "flawed": 18,
+              "normal": 24,
+              "flawless": 36,
+              "perfect": 48
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/manaheart_rare_common",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/manaheart_rare_common.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:max_mana",
+          "json_path": "/bonuses/0",
+          "operation": "add_value",
+          "values": {
+            "cracked": 6,
+            "chipped": 12,
+            "flawed": 18,
+            "normal": 24,
+            "flawless": 36,
+            "perfect": 48
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/manaheart_rare_common",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:max_mana",
+            "operation": "add_value",
+            "values": {
+              "cracked": 6,
+              "chipped": 12,
+              "flawed": 18,
+              "normal": 24,
+              "flawless": 36,
+              "perfect": 48
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/manaheart_rare_epic",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/manaheart_rare_epic.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:max_mana",
+          "json_path": "/bonuses/0",
+          "operation": "add_value",
+          "values": {
+            "cracked": 6,
+            "chipped": 12,
+            "flawed": 18,
+            "normal": 24,
+            "flawless": 36,
+            "perfect": 48
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/manaheart_rare_epic",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:max_mana",
+            "operation": "add_value",
+            "values": {
+              "cracked": 6,
+              "chipped": 12,
+              "flawed": 18,
+              "normal": 24,
+              "flawless": 36,
+              "perfect": 48
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/manaheart_rare_rare",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/manaheart_rare_rare.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:max_mana",
+          "json_path": "/bonuses/0",
+          "operation": "add_value",
+          "values": {
+            "cracked": 6,
+            "chipped": 12,
+            "flawed": 18,
+            "normal": 24,
+            "flawless": 36,
+            "perfect": 48
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/manaheart_rare_rare",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:max_mana",
+            "operation": "add_value",
+            "values": {
+              "cracked": 6,
+              "chipped": 12,
+              "flawed": 18,
+              "normal": 24,
+              "flawless": 36,
+              "perfect": 48
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/pyre_sigil_common_common",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/pyre_sigil_common_common.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:fire_spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/pyre_sigil_common_common",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:fire_spell_power",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/pyre_sigil_common_epic",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/pyre_sigil_common_epic.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:fire_spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/pyre_sigil_common_epic",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:fire_spell_power",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/pyre_sigil_common_rare",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/pyre_sigil_common_rare.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:fire_spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/pyre_sigil_common_rare",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:fire_spell_power",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/pyre_sigil_normal_common",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/pyre_sigil_normal_common.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:fire_spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/pyre_sigil_normal_common",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:fire_spell_power",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/pyre_sigil_normal_epic",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/pyre_sigil_normal_epic.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:fire_spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/pyre_sigil_normal_epic",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:fire_spell_power",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/pyre_sigil_normal_rare",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/pyre_sigil_normal_rare.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:fire_spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/pyre_sigil_normal_rare",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:fire_spell_power",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/pyre_sigil_rare_common",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/pyre_sigil_rare_common.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:fire_spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/pyre_sigil_rare_common",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:fire_spell_power",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/pyre_sigil_rare_epic",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/pyre_sigil_rare_epic.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:fire_spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/pyre_sigil_rare_epic",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:fire_spell_power",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/pyre_sigil_rare_rare",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/pyre_sigil_rare_rare.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:fire_spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/pyre_sigil_rare_rare",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:fire_spell_power",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/rime_sigil_common_common",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/rime_sigil_common_common.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:ice_spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/rime_sigil_common_common",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:ice_spell_power",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/rime_sigil_common_epic",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/rime_sigil_common_epic.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:ice_spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/rime_sigil_common_epic",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:ice_spell_power",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/rime_sigil_common_rare",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/rime_sigil_common_rare.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:ice_spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/rime_sigil_common_rare",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:ice_spell_power",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/rime_sigil_normal_common",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/rime_sigil_normal_common.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:ice_spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/rime_sigil_normal_common",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:ice_spell_power",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/rime_sigil_normal_epic",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/rime_sigil_normal_epic.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:ice_spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/rime_sigil_normal_epic",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:ice_spell_power",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/rime_sigil_normal_rare",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/rime_sigil_normal_rare.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:ice_spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/rime_sigil_normal_rare",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:ice_spell_power",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/rime_sigil_rare_common",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/rime_sigil_rare_common.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:ice_spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/rime_sigil_rare_common",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:ice_spell_power",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/rime_sigil_rare_epic",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/rime_sigil_rare_epic.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:ice_spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/rime_sigil_rare_epic",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:ice_spell_power",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/rime_sigil_rare_rare",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/rime_sigil_rare_rare.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:ice_spell_power",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/rime_sigil_rare_rare",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:ice_spell_power",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/runeward_common_common",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/runeward_common_common.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:spell_resist",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/runeward_common_common",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:spell_resist",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/runeward_common_epic",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/runeward_common_epic.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:spell_resist",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/runeward_common_epic",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:spell_resist",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/runeward_common_rare",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/runeward_common_rare.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:spell_resist",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/runeward_common_rare",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:spell_resist",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/runeward_normal_common",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/runeward_normal_common.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:spell_resist",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/runeward_normal_common",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:spell_resist",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/runeward_normal_epic",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/runeward_normal_epic.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:spell_resist",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/runeward_normal_epic",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:spell_resist",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/runeward_normal_rare",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/runeward_normal_rare.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:spell_resist",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/runeward_normal_rare",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:spell_resist",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/runeward_rare_common",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/runeward_rare_common.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:spell_resist",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/runeward_rare_common",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:spell_resist",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/runeward_rare_epic",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/runeward_rare_epic.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:spell_resist",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/runeward_rare_epic",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:spell_resist",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kaelos_curios:kaelos_gems/runeward_rare_rare",
+      "kind": "extra_gem_bonuses",
+      "jar": "kaelos_curios-1.21.1-1.0.1.jar",
+      "resource": "data/kaelos_curios/extra_gem_bonuses/kaelos_gems/runeward_rare_rare.json",
+      "condition_state": "eligible",
+      "references": [
+        {
+          "kind": "attribute",
+          "id": "irons_spellbooks:spell_resist",
+          "json_path": "/bonuses/0",
+          "operation": "add_multiplied_base",
+          "values": {
+            "cracked": 0.0075,
+            "chipped": 0.015,
+            "flawed": 0.0225,
+            "normal": 0.03,
+            "flawless": 0.0375,
+            "perfect": 0.045
+          }
+        }
+      ],
+      "definition": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "kaelos_gems"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "irons_spellbooks"
+          }
+        ],
+        "type": "apotheosis:extra_gem_bonus",
+        "gem": "kaelos_gems:kaelos/runeward_rare_rare",
+        "bonuses": [
+          {
+            "type": "apotheosis:attribute",
+            "gem_class": {
+              "key": "jewelry",
+              "types": [
+                "kaelos_curios:back",
+                "kaelos_curios:belt",
+                "kaelos_curios:body",
+                "kaelos_curios:bracelet",
+                "kaelos_curios:charm",
+                "kaelos_curios:hands",
+                "kaelos_curios:head",
+                "kaelos_curios:necklace",
+                "kaelos_curios:ring"
+              ]
+            },
+            "attribute": "irons_spellbooks:spell_resist",
+            "operation": "add_multiplied_base",
+            "values": {
+              "cracked": 0.0075,
+              "chipped": 0.015,
+              "flawed": 0.0225,
+              "normal": 0.03,
+              "flawless": 0.0375,
+              "perfect": 0.045
+            }
+          }
+        ]
+      }
+    },
+    {
       "id": "kaelos_gems:kaelos/archon_focus_rare_common",
       "kind": "gems",
       "jar": "kaelos_gems-1.21.1-1.2.0.jar",
@@ -13229,6 +19055,12 @@
       "kind": "affixes",
       "jar": "apothic_compats-0.2.5.5.jar",
       "resource": "data/apothic_compats/affixes/staff/ranged/attribute/ancient/capacious.json"
+    },
+    {
+      "id": "apothic_compats:irons_artifice/malum/soul_stained",
+      "kind": "extra_gem_bonuses",
+      "jar": "apothic_compats-0.2.5.5.jar",
+      "resource": "data/apothic_compats/extra_gem_bonuses/irons_artifice/malum/soul_stained.json"
     },
     {
       "id": "irons_apothic:armor/spell/energy_burst",

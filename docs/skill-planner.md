@@ -12,6 +12,7 @@ Oberfläche, Systemmeldungen, Attributnamen und Exporttexte sind Englisch. Beste
 - **Technical implementation request** beschreibt Sondermechaniken: Auslöser, Bedingungen, Werte, Dauer, Cooldown, Zurücksetzen. Kann native Boni ergänzen. **Acceptance criteria / edge cases** beschreibt gewünschte Prüfkriterien.
 - **Connect**: zuerst Ausgangsskill, dann Zielskill anklicken. **Normal** gilt in beide Richtungen, **Directed** vom ersten zum zweiten, **Exclusive** verhindert gleichzeitige Freischaltung und öffnet keinen Pfad. Für gegenseitig ausschließende Gruppen jedes Paar verbinden. Verbindungen dürfen Felder überspringen.
 - **Check plan** zeigt grundlegende Lücken. Das ersetzt keine vollständige Simulation von Freischaltbedingungen und Ausschlüssen.
+- Spielerbeschreibungen sind optional und lösen keine Warnung aus. Bei selbsterklärenden Skills wie „10% more experience“ genügt der Name; Beschreibungen erläutern besondere Mechaniken. Fehlende technische Wirkungen werden weiterhin geprüft.
 - **Save JSON copy** exportiert eine zusätzliche Sicherung. **Implementation brief** erzeugt das vollständige Umsetzungsdokument. Beide Formate mit **Open plan** wieder öffnen.
 
 ## Notizen, Listen und Icons
@@ -21,6 +22,10 @@ Oberfläche, Systemmeldungen, Attributnamen und Exporttexte sind Englisch. Beste
 Die Skillliste ist immer alphabetisch nach englischer Sortierung angeordnet. Der Filter durchsucht Namen und Spielerbeschreibungen im aktuellen Baum. Trefferzahl und ausdrücklicher Hinweis bei leerem Ergebnis zeigen die Wirkung. Ein Listeneintrag wählt den Skill und zentriert ihn.
 
 **Native bonuses** sortiert sämtliche Attributnamen gemeinsam alphabetisch, unabhängig von ihrer Herkunft.
+
+Der Katalog enthält 50 Einträge: alle 42 Attribute der installierten Pufferfish's Attributes 0.8.3 und acht ausgewählte Vanilla-Attribute. Das ist kein vollständiges Attributinventar des Modpacks. Ars Nouveau, Iron's Spellbooks, Apothic Attributes und weitere Mods besitzen zusätzliche Attribute, die hier noch nicht auswählbar sind. Solche Boni unter **Technical implementation request** beschreiben; vor Umsetzung müssen Registrierung, Spielerzuordnung und Wirkung geprüft werden. Pufferfishs 42 Attribut-IDs wurden am 06.10.2026 erneut gegen die API-Klasse und die englischen Namen der installierten JAR geprüft.
+
+**Color** hat zusätzlich ein Textfeld für **#RRGGBB**. Kopieren und Einfügen funktionieren mit den normalen Tastenkürzeln. Sechs Hexziffern mit oder ohne `#` werden angenommen und vereinheitlicht; Textfeld, Farbwähler und Knotenfarbe bleiben synchron. Unvollständige oder ungültige Texteingaben bleiben im Cache erhalten, während der letzte gültige Farbwert den Knoten färbt. Beide Farbsteuerungen können die Eingabe korrigieren.
 
 **Item icon** bietet 1.333 Vanilla-Items mit englischen Namen; das Filterfeld durchsucht beliebige Teiltexte in Namen und IDs ohne Beachtung der Großschreibung. Beispielsweise findet „SWor“ Iron Sword und Golden Sword. Nicht passende ausgewählte Icons bleiben im Skill erhalten, erscheinen aber nicht als Suchtreffer. Mod-Item-IDs können direkt eingegeben werden. Vorschau und Hexknoten zeigen eine lokale Textur; ohne verfügbare Vorschau bleibt ein Symbol im Knoten. 3D-Blöcke, animierte oder mehrschichtige Items können im Spiel anders aussehen.
 

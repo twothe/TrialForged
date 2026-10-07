@@ -161,7 +161,7 @@
 </div>
 <label>Skill name<input id="skillName" maxlength="150">
 </label>
-<label>Player description<textarea id="description" rows="4" placeholder="What should the player know about this skill?">
+<label>Player description (optional)<textarea id="description" rows="4" placeholder="For special skills: what should the player know?">
 </textarea>
 </label>
 <div class="row">
@@ -171,6 +171,7 @@
 <input id="icon" placeholder="minecraft:book" aria-label="Item icon resource ID">
 </label>
 <label class="color-label">Color<input id="color" type="color">
+<input id="colorHex" type="text" placeholder="#6ac9b7" aria-label="Color hex code" spellcheck="false" autocomplete="off">
 </label>
 </div>
 <div class="icon-preview"><img id="iconPreview" alt="Selected item texture" width="40" height="40" hidden><span id="iconPreviewLabel"></span></div>
@@ -202,7 +203,7 @@
 </details>
 <section class="effects-section">
 <div class="eyebrow">NATIVE BONUSES</div>
-<p class="muted">Native Pufferfish attribute rewards. A skill can have multiple bonuses.</p>
+<p class="muted">50 attribute choices: all 42 Pufferfish attributes plus 8 selected vanilla attributes. Other mods' attributes are not yet listed; describe them in Technical implementation request. A skill can have multiple bonuses.</p>
 <div id="effects">
 </div>
 <button id="addEffect">+ Attribute bonus</button>

@@ -7,3 +7,6 @@
 /spark profiler start
 /spark profiler stop
 /reload
+/time set 0
+/ars-light on
+/ars-light off

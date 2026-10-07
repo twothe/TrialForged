@@ -498,3 +498,6 @@ input[aria-invalid="true"],textarea[aria-invalid="true"] { border-color: #efa58e
 /* Skill content actions and crisp local item textures inside hex nodes. */
 .skill-actions { display: flex; gap: 6px; }
 .node-icon { image-rendering: pixelated; pointer-events: none; }
+/* Keep the entire copyable hex code visible beside the item selector. */
+.color-label { flex: 0 0 100px; max-width: 100px; }
+#colorHex { font-family: monospace; }

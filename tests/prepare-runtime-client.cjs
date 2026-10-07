@@ -14,6 +14,10 @@ fs.writeFileSync(path.join(destination, 'runtime-expected-tier.json'), JSON.stri
 if (fs.existsSync(resultPath)) fs.unlinkSync(resultPath)
 const arsResultPath = path.join(destination, 'runtime-ars-chest-result.json')
 if (fs.existsSync(arsResultPath)) fs.unlinkSync(arsResultPath)
+for (const name of ['runtime-magic-result.json', 'runtime-magic-client-result.json']) {
+  const result = path.join(destination, name)
+  if (fs.existsSync(result)) fs.unlinkSync(result)
+}
 for (const directory of ['mods', 'config', 'defaultconfigs', 'kubejs', 'datapacks', 'moonlight-global-datapacks', 'resourcepacks', 'patchouli_books', 'elsebase']) {
   if (fs.existsSync(path.join(root, directory))) fs.cpSync(path.join(root, directory), path.join(destination, directory), { recursive: true })
 }
@@ -39,7 +43,8 @@ for (const directory of ['datapacks', 'serverconfig']) {
 }
 fs.mkdirSync(path.join(destination, 'natives'), { recursive: true })
 for (const [source, target] of [['runtime-server-probe.js', 'server_scripts'],
-  ['runtime-ars-chest-probe.js', 'server_scripts'], ['runtime-client-probe.js', 'client_scripts']]) {
+  ['runtime-ars-chest-probe.js', 'server_scripts'], ['runtime-client-probe.js', 'client_scripts'],
+  ['runtime-magic-probe.js', 'server_scripts'], ['runtime-magic-client-probe.js', 'client_scripts']]) {
   fs.copyFileSync(path.join(__dirname, source), path.join(destination, 'kubejs', target, source))
 }
 const options = fs.readFileSync(path.join(root, 'options.txt'), 'utf8')

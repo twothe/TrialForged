@@ -1,237 +1,93 @@
 <!doctype html>
-<!-- Offline skill authoring surface. All assets are local; no server or build is required. -->
+<!-- Offline skill authoring: a shared skill library, hex instances and a focused inspector. -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Trialforged · Skill Studio</title>
 <link rel="stylesheet" href="style.css">
-<script defer src="model.js">
-</script>
+<script defer src="model.js"></script>
 <script defer src="cache.js"></script>
 <script defer src="icons.js"></script>
-<script defer src="app.js">
-</script>
+<script defer src="app.js"></script>
 </head>
 <body>
 <header>
-<div class="brand">
-<span class="brand-mark">⬡</span>
-<div>
-<strong>SKILL STUDIO</strong>
-<small>TRIALFORGED / PUFFERFISH</small>
-</div>
-</div>
-<div class="file-actions">
-<button id="newPlan">New plan</button>
-<button id="importPlan">Open plan</button>
-<button id="savePlan">Save JSON copy</button>
-<button id="exportPlan" class="primary">Implementation brief ↓</button>
-</div>
+<div class="brand"><span class="brand-mark">⬡</span><div><strong>SKILL STUDIO</strong><small>TRIALFORGED / PUFFERFISH</small></div></div>
+<div class="file-actions"><button id="newPlan">New</button><button id="importPlan">Open</button><button id="savePlan">Save JSON</button><button id="exportPlan" class="primary">Implementation brief ↓</button></div>
 <input id="fileInput" type="file" accept=".json,.md,application/json,text/markdown" hidden>
 </header>
 <main>
 <aside class="library">
-<div class="eyebrow">YOUR PLAN</div>
-<label>Plan name<input id="planName" maxlength="150">
-</label>
-<label>Skill tree<select id="treeSelect">
-</select>
-</label>
-<div class="row">
-<button id="addTree">+ Tree</button>
-<button id="removeTree" class="danger">Delete tree</button>
-</div>
-<label>Tree name<input id="treeName" maxlength="150">
-</label>
-<details>
-<summary>Tree & progression</summary>
-<label>Category ID<input id="category" placeholder="trialforged:adventure">
-</label>
-<label class="check">
-<input id="exclusiveRoot" type="checkbox"> Lock other roots after the first choice</label>
-<p class="muted">Other roots can still be reached through connections later.</p>
-<label>Tree design notes<textarea id="treeNotes" rows="3" aria-describedby="treeNotesHelp" placeholder="Example: a defensive path with shields and armor; no magic bonuses.">
-</textarea>
-</label>
-<p id="treeNotesHelp" class="muted">Design guidance for this whole tree: theme, intended playstyle, balance limits and interactions. These are instructions for implementation, not player text or automatic skill requirements.</p>
-<label>Points / progression<textarea id="progression" rows="4" placeholder="How are points earned? Level curve, limits, respec rules …">
-</textarea>
-</label>
-<label>Overall design notes<textarea id="planNotes" rows="3" placeholder="Classes, balance, interactions …">
-</textarea>
-</label>
+<div class="plan-controls">
+<div class="eyebrow">PLAN</div>
+<label>Plan name<input id="planName" maxlength="150"></label>
+<div class="row tree-controls"><select id="treeSelect" aria-label="Skill tree"></select><button id="addTree" title="Add tree">+</button><button id="removeTree" class="danger" title="Delete tree">×</button></div>
+<details><summary>Plan & tree settings</summary>
+<label>Tree name<input id="treeName" maxlength="150"></label>
+<label>Category ID<input id="category" placeholder="trialforged:adventure"></label>
+<label class="check"><input id="exclusiveRoot" type="checkbox"> Exclusive roots</label>
+<label>Tree design notes<textarea id="treeNotes" rows="2" placeholder="Theme and balance goals for this tree"></textarea></label>
+<label>Overall design notes<textarea id="planNotes" rows="2"></textarea></label>
+<label>Points / progression<textarea id="progression" rows="2" placeholder="Point awards and respec rules"></textarea></label>
 </details>
-<div class="section-head">
-<span class="eyebrow">SKILLS</span>
-<span id="skillCount" class="badge">0</span>
 </div>
-<input id="search" type="search" placeholder="Filter skill list …" aria-label="Filter skill list">
+<div class="section-head"><span class="eyebrow">SKILLS</span><span id="skillCount" class="badge">0</span></div>
+<input id="search" type="search" placeholder="Filter skills…" aria-label="Filter skill library">
 <p id="filterStatus" class="muted" role="status"></p>
-<div id="skillList" class="skill-list">
-</div>
-<p id="skillListEmpty" class="muted"></p>
-<div class="library-bottom">
-<button id="checkPlan">Check plan</button>
-<p class="muted">Shortcuts: + / N add mode · Ctrl+D copy · Delete removes selected skill · Esc selects · Ctrl+Z / Y undo / redo · Ctrl+S export</p>
-<p id="saveStatus" role="status">
-</p>
-<p class="muted">Autosave is always on. File exports are optional backups.</p>
-</div>
+<div id="skillList" class="skill-list" aria-label="Alphabetic skill library"></div>
+<p id="skillListEmpty" class="muted">No skills yet.</p>
+<div class="library-bottom"><button id="checkPlan">Check plan</button><p id="saveStatus" role="status"></p>
+<details class="help"><summary>Quick help</summary><p>+ / N add · Ctrl+D instance · Delete remove · Esc select · Ctrl+Z / Y undo / redo · Ctrl+S export</p><p>Copy skill shares content. Click a library entry again to cycle through its instances. Tree notes guide implementation.</p></details></div>
 </aside>
-<section class="workspace" aria-label="Skill graph">
-<div class="toolbar">
-<div class="tool-group">
-<button data-mode="select" class="active">Select / move</button>
-<button data-mode="add">+ Add skill</button>
-<button data-mode="connect">Connect</button>
-</div>
-<select id="connectionType" aria-label="Connection type">
-<option value="normal">Normal ↔</option>
-<option value="directed">Directed →</option>
-<option value="exclusive">Exclusive ×</option>
-</select>
-<div class="tool-group history">
-<button id="undo" title="Ctrl+Z" aria-label="Undo">↶</button>
-<button id="redo" title="Ctrl+Y" aria-label="Redo">↷</button>
-</div>
-</div>
+<section class="workspace">
+<div class="toolbar"><div class="tool-group">
+<button data-mode="select" class="active">Select / move</button><button data-mode="add">+ Add skill</button><button data-mode="connect">Connect</button>
+</div><select id="connectionType" aria-label="Connection type"><option value="normal">Normal ↔</option><option value="directed">Directed →</option><option value="exclusive">Exclusive ×</option></select>
+<div class="tool-group history"><button id="undo" title="Undo (Ctrl+Z)">↶</button><button id="redo" title="Redo (Ctrl+Y)">↷</button><button id="fit">Fit tree</button></div></div>
 <div class="canvas-wrap">
-<svg id="canvas" role="application" aria-label="Hex grid: use Add skill to click an empty cell; drag skills; in Connect mode click two skills." tabindex="0">
-<defs>
-<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-<path d="M 0 0 L 10 5 L 0 10 z" fill="#85b8e1"/>
-</marker>
-</defs>
-<g id="scene">
-<g id="grid">
-</g>
-<g id="edges">
-</g>
-<g id="nodes">
-</g>
-</g>
-</svg>
-<div class="canvas-caption">
-<span id="modeHint">Select or drag skills · Drag empty space to pan · Mouse wheel to zoom</span>
+<svg id="canvas" xmlns="http://www.w3.org/2000/svg" aria-label="Hex skill tree">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#85b8e1"/></marker></defs>
+<g id="scene"><g id="grid"></g><g id="edges"></g><g id="nodes"></g></g></svg>
+<div id="emptyCanvas"><span>⬡</span><h1>Build your skill tree</h1><p>Place skills. Connect a path.</p><button id="firstSkill" class="primary">Add first skill</button></div>
+<div class="canvas-caption" id="modeHint">Select or move skills · Drag to pan · Scroll to zoom</div>
+<div class="zoom"><button id="zoomOut" aria-label="Zoom out">−</button><span id="zoomLabel">100 %</span><button id="zoomIn" aria-label="Zoom in">+</button></div>
 </div>
-<div class="zoom">
-<button id="zoomOut" aria-label="Zoom out">−</button>
-<span id="zoomLabel">100 %</span>
-<button id="zoomIn" aria-label="Zoom in">+</button>
-<button id="fit">Fit tree</button>
-</div>
-<div id="emptyCanvas">
-<span>⬡</span>
-<h1>Your skill tree starts here.</h1>
-<p>Place a root skill on the hex grid.<br>Then build the paths around it.</p>
-<button id="firstSkill" class="primary">Add first skill</button>
-</div>
-</div>
-<footer>
-<span>
-<i class="legend-dot">
-</i> Native bonus</span>
-<span>
-<i class="legend-dot custom">
-</i> Implementation request</span>
-<span>◎ Root skill</span>
-<span id="stats">
-</span>
-</footer>
+<footer><span>◎ Root</span><span>✧ Custom</span><span id="stats"></span></footer>
 </section>
 <aside class="inspector">
-<div id="noSelection">
-<div class="eyebrow">SKILL DETAILS</div>
-<h2>One idea. One node.</h2>
-<p>Select a skill to edit its description and effects.</p>
-<ol>
-<li>Add a skill</li>
-<li>Write the player description</li>
-<li>Choose a bonus or describe a mechanic</li>
-<li>Connect skills</li>
-<li>Export the implementation brief</li>
-</ol>
-<p class="muted">Connections may span multiple hex cells. Exclusive links do not unlock skills.</p>
-</div>
+<div id="noSelection"><div class="eyebrow">INSPECTOR</div><h2>Select a skill</h2><p>Edit shared content here.<br>Position and links belong to each instance.</p></div>
 <div id="skillEditor" hidden>
-<div class="section-head">
-<span class="eyebrow">SKILL DETAILS</span>
-<div class="skill-actions"><button id="copySkill" title="Copy content, then click a free hex cell (Ctrl+D)">Copy skill</button><button id="deleteSkill" class="danger">Delete</button></div>
+<div class="section-head"><span class="eyebrow">SHARED SKILL</span><div class="skill-actions"><button id="copySkill" title="Place another instance (Ctrl+D)">Copy skill</button><button id="deleteSkill" class="danger" title="Delete this instance only">Delete</button></div></div>
+<label>Name<input id="skillName" maxlength="150" aria-describedby="nameError instanceStatus"></label>
+<p id="nameError" class="field-error" role="alert"></p><p id="instanceStatus" class="muted"></p>
+<div class="appearance">
+<div class="icon-combo" data-icon-combo>
+<label for="iconFilter">Item icon</label>
+<div class="combo-control"><img id="iconPreview" alt="" width="28" height="28" hidden><input id="iconFilter" type="text" role="combobox" aria-label="Search item icons" aria-autocomplete="list" aria-expanded="false" aria-controls="iconPicker" autocomplete="off" placeholder="Search items…"><button id="iconToggle" aria-label="Show item icons" aria-expanded="false">▾</button></div>
+<div class="combo-popup" id="iconPopup" hidden><div id="iconPicker" role="listbox" aria-label="Item icons"></div><p id="iconFilterStatus" class="muted" role="status"></p></div>
+<span id="iconPreviewLabel" hidden></span>
 </div>
-<label>Skill name<input id="skillName" maxlength="150">
-</label>
-<label>Player description (optional)<textarea id="description" rows="4" placeholder="For special skills: what should the player know?">
-</textarea>
-</label>
-<div class="row">
-<label>Item icon<select id="iconPicker" aria-label="Choose item icon"></select>
-<input id="iconFilter" type="search" placeholder="Filter items by name or ID …" aria-label="Filter item icons">
-<span id="iconFilterStatus" class="muted" role="status"></span>
-<input id="icon" placeholder="minecraft:book" aria-label="Item icon resource ID">
-</label>
-<label class="color-label">Color<input id="color" type="color">
-<input id="colorHex" type="text" placeholder="#6ac9b7" aria-label="Color hex code" spellcheck="false" autocomplete="off">
-</label>
+<label class="color-label">Color<input id="color" type="color"><input id="colorHex" type="text" placeholder="#6ac9b7" aria-label="Color hex code" spellcheck="false" autocomplete="off"></label>
 </div>
-<div class="icon-preview"><img id="iconPreview" alt="Selected item texture" width="40" height="40" hidden><span id="iconPreviewLabel"></span></div>
-<p class="muted">Vanilla item catalog with flat texture previews. Blocks and layered items may differ from their in-game render. Mod item IDs can be entered manually.</p>
-<p class="muted">Choose an item or enter a custom item ID. Color is an editor aid.</p>
-<div class="row">
-<label>Cost<input id="cost" type="number" min="0" max="100000" step="1">
-</label>
-<label class="check">
-<input id="root" type="checkbox"> Root skill</label>
-</div>
-<details>
-<summary>Requirements & position</summary>
-<label>Required unlocked neighbors<input id="requiredSkills" type="number" min="0" max="100000">
-</label>
-<label>Required available points<input id="requiredPoints" type="number" min="0" max="100000">
-</label>
-<label>Required spent points<input id="requiredSpentPoints" type="number" min="0" max="100000">
-</label>
-<div class="row">
-<label>Hex q<input id="q" type="number" min="-10000" max="10000">
-</label>
-<label>Hex r<input id="r" type="number" min="-10000" max="10000">
-</label>
-</div>
-<p class="muted">A root skill is available immediately; its cost still applies.</p>
-<code id="skillId">
-</code>
+<details class="compact"><summary>Custom item ID</summary><label>Resource ID<input id="icon" placeholder="minecraft:book" aria-label="Item icon resource ID"></label></details>
+<section class="effects-section"><div class="section-head"><span class="eyebrow">BONUSES</span><button id="addEffect">+ Bonus</button></div><div id="effects"></div>
+<details class="compact"><summary>About bonuses</summary><p id="effectHelp" class="muted">50 choices: 42 Pufferfish and 8 vanilla attributes. Other mods: use a technical request. Percent of total · 5 = +5%.</p></details></section>
+<details><summary>Description & custom behavior</summary>
+<label>Player description (optional)<textarea id="description" rows="3" placeholder="Explain special mechanics"></textarea></label>
+<label>Technical implementation request<textarea id="implementation" rows="4" placeholder="Triggers, conditions, values and respec behavior"></textarea></label>
+<label>Acceptance criteria<textarea id="acceptance" rows="3" placeholder="How to verify it works"></textarea></label>
 </details>
-<section class="effects-section">
-<div class="eyebrow">NATIVE BONUSES</div>
-<p class="muted">50 attribute choices: all 42 Pufferfish attributes plus 8 selected vanilla attributes. Other mods' attributes are not yet listed; describe them in Technical implementation request. A skill can have multiple bonuses.</p>
-<div id="effects">
-</div>
-<button id="addEffect">+ Attribute bonus</button>
-<p id="effectHelp" class="muted">Example: Sprinting Speed · Percent of total · 5 gives +5% sprinting speed.</p>
-</section>
-<label>Technical implementation request<textarea id="implementation" rows="5" placeholder="For custom mechanics: describe triggers, conditions, exact effects, duration, cooldown and respec behavior …">
-</textarea>
-</label>
-<p class="muted">Can supplement native bonuses. Exported as a pending request for Codex.</p>
-<label>Acceptance criteria / edge cases<textarea id="acceptance" rows="3" placeholder="How can we verify the skill works? Consider multiplayer and other mods.">
-</textarea>
-</label>
-<div class="eyebrow">CONNECTIONS</div>
-<div id="connections">
-</div>
+<details><summary>Cost & requirements · shared</summary>
+<div class="row"><label>Cost<input id="cost" type="number" min="0" max="100000" step="1"></label><label>Required skills<input id="requiredSkills" type="number" min="0" max="100000" step="1"></label></div>
+<div class="row"><label>Required points<input id="requiredPoints" type="number" min="0" max="100000" step="1"></label><label>Spent points<input id="requiredSpentPoints" type="number" min="0" max="100000" step="1"></label></div>
+</details>
+<details><summary>Selected instance</summary><div class="row"><label>Hex q<input id="q" type="number" min="-10000" max="10000" step="1"></label><label>Hex r<input id="r" type="number" min="-10000" max="10000" step="1"></label></div>
+<label class="check"><input id="root" type="checkbox"> Root skill</label><code id="skillId"></code><div id="connections"></div></details>
 </div>
 </aside>
 </main>
-<div id="toast" role="status" hidden>
-</div>
-<dialog id="report">
-<div class="section-head">
-<h2>Plan check</h2>
-<button id="closeReport">Close</button>
-</div>
-<p>Warnings do not block export. An incomplete plan can remain a draft.</p>
-<ul id="reportList">
-</ul>
-</dialog>
+<div id="toast" role="status" hidden></div>
+<dialog id="report"><h2>Plan checks</h2><ul id="reportList"></ul><button id="closeReport">Close</button></dialog>
 </body>
 </html>

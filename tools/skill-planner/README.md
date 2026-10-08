@@ -8,9 +8,15 @@ Input is autosaved immediately, including unfinished values. Reopening restores 
 
 The alphabetic skill list has a name/description filter. The item picker has vanilla names and local texture previews. Mod item IDs can be entered manually.
 
-**Copy skill** copies the selected skill's content. Click free hex cells to place independent copies; press **Esc** to finish. Connections and root status are not copied. Untouched, disconnected **New skill** placeholders are deleted without confirmation; authored content still requires confirmation.
+**Copy skill** places more instances of the same shared skill. Changing its name, bonuses, icon, color, cost or other content updates every instance across the plan. Positions, IDs, connections and root status remain local. Click free cells, then press **Esc** to finish. Delete removes only the selected instance. Untouched, disconnected **New skill** placeholders are deleted without confirmation.
 
-Native attributes are sorted together A–Z. Item searches match anywhere in the name or ID, ignoring case. Selected local icons also appear inside the hex nodes; unavailable previews retain a symbolic marker.
+Names are unique across the plan, case-sensitive and trimmed. An existing name blocks leaving the name field and exporting until corrected. Use **Copy skill** to share existing content. The compact A–Z library shows each skill once with an instance count; click again to cycle placements.
+
+Exception: **New skill** and its numbered/case variants are independent drafts. Copying a draft creates separate content. Entering this reserved name is always allowed and assigns an available number; for a shared named skill it detaches only the selected instance. Previously shared placeholder drafts separate automatically when loaded.
+
+Version-1 drafts and files upgrade automatically. Identical content with the same name shares one definition; conflicting content gets variant names without losing node IDs or values. Original legacy cache copies are retained before replacement. Version-2 exports require the updated editor.
+
+Native attributes are sorted together A–Z. The item combo integrates search and texture previews. It matches anywhere in the name or ID, ignoring case; arrows and Enter choose, Esc closes. Mod IDs are under **Custom item ID**. Selected local icons also appear inside hex nodes.
 
 The attribute catalogue includes all 42 Pufferfish attributes and 8 selected vanilla attributes, not every attribute in the modpack. Describe other mods' bonuses in **Technical implementation request**.
 

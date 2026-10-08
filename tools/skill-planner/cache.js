@@ -5,6 +5,17 @@
 })(globalThis, function (model) {
     'use strict';
     const KEY = 'trialforged.skill-plan.v1';
+    /** Migrate the valid model without replacing raw unfinished edits or selection IDs. */
+    function upgradeSnapshot(input) {
+        const snapshot = model.clone(input), previous = snapshot.plan;
+        snapshot.plan = model.upgrade(previous);
+        if (snapshot.selection && snapshot.raw?.skillName && !snapshot.raw.skillName.invalid) {
+            const oldNode = previous.trees.flatMap(t => t.skills).find(s => s.id === snapshot.selection);
+            const node = snapshot.plan.trees.flatMap(t => t.skills).find(s => s.id === snapshot.selection);
+            if (oldNode && node && snapshot.raw.skillName.value.trim() === oldNode.name.trim()) snapshot.raw.skillName.value = node.name;
+        }
+        return validate(snapshot);
+    }
     function validate(snapshot) {
         model.validate(snapshot.plan);
         if (snapshot.version !== 1 || !snapshot.raw || typeof snapshot.raw !== 'object' || Array.isArray(snapshot.raw)) throw new Error('Invalid draft snapshot.');
@@ -25,20 +36,28 @@
             validate(snapshot);
             const current = storage.getItem(KEY + '.draft');
             if (current) {
-                try { validate(JSON.parse(current)); storage.setItem(KEY + '.backup', current); }
+                try {
+                    const previous = JSON.parse(current); upgradeSnapshot(previous);
+                    if (previous.plan.version === 1) storage.setItem(KEY + '.v1-backup', current);
+                    storage.setItem(KEY + '.backup', current);
+                }
                 catch (error) { if (!(error instanceof SyntaxError) && !error.message.startsWith('Invalid')) throw error; }
             }
             storage.setItem(KEY + '.draft', JSON.stringify(snapshot));
-            // Keep the original storage key readable by earlier editor versions.
+            const legacy = storage.getItem(KEY);
+            let legacyPlan;
+            if (legacy) { try { legacyPlan = JSON.parse(legacy); } catch (error) { console.error('Legacy plan backup unavailable', error); } }
+            if (legacyPlan?.version === 1) storage.setItem(KEY + '.v1-plan-backup', legacy);
+            // Keep the established key so current users retain their browser draft.
             storage.setItem(KEY, JSON.stringify(snapshot.plan));
         }
         function read() {
             const failures = [];
-            for (const key of [KEY + '.draft', KEY, KEY + '.backup']) {
+            for (const key of [KEY + '.draft', KEY, KEY + '.backup', KEY + '.v1-backup', KEY + '.v1-plan-backup']) {
                 try {
                     const saved = storage.getItem(key); if (!saved) continue;
-                    if (key === KEY) return { plan: model.parse(saved), recovered: failures.length > 0, failures };
-                    return { snapshot: model.clone(validate(JSON.parse(saved))), recovered: failures.length > 0, failures };
+                    if (key === KEY || key === KEY + '.v1-plan-backup') return { plan: model.parse(saved), recovered: failures.length > 0, failures };
+                    return { snapshot: upgradeSnapshot(JSON.parse(saved)), recovered: failures.length > 0, failures };
                 } catch (error) { failures.push({ key, message: error.message }); }
             }
             return { failures };

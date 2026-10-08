@@ -1,0 +1,1382 @@
+{
+  "definition_eaf0fe0a362b58490e9d73c9": {
+    "title": "Warrior",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:iron_sword"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "size": 26,
+    "description": "+10 % Melee Damage (Percent of total)\n+10 % Ranged Damage (Percent of total)",
+    "cost": 1,
+    "required_skills": 1,
+    "required_points": 0,
+    "required_spent_points": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:melee_damage",
+          "value": 0.1,
+          "operation": "add_multiplied_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:ranged_damage",
+          "value": 0.1,
+          "operation": "add_multiplied_total"
+        }
+      }
+    ]
+  },
+  "definition_e181bc015be0fe01de62a0e9": {
+    "title": "Mage",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:book"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "size": 26,
+    "description": "+20 % Magic Damage (Percent of total)",
+    "cost": 1,
+    "required_skills": 1,
+    "required_points": 0,
+    "required_spent_points": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:magic_damage",
+          "value": 0.2,
+          "operation": "add_multiplied_total"
+        }
+      }
+    ]
+  },
+  "definition_adedc646019442f15514e4bd": {
+    "title": "Crafter",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:crafter"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "size": 26,
+    "description": "+10 % Mining Speed (Percent of total)",
+    "cost": 1,
+    "required_skills": 1,
+    "required_points": 0,
+    "required_spent_points": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:mining_speed",
+          "value": 0.1,
+          "operation": "add_multiplied_total"
+        }
+      }
+    ]
+  },
+  "definition_b919e17acb83badd40911d7b": {
+    "title": "Blacksmith",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:anvil"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "size": 26,
+    "description": "-20 % Repair Cost (Percent of total)",
+    "cost": 1,
+    "required_skills": 1,
+    "required_points": 0,
+    "required_spent_points": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:repair_cost",
+          "value": -0.2,
+          "operation": "add_multiplied_total"
+        }
+      }
+    ]
+  },
+  "definition_ac51d69a13a83903c10d9cd5": {
+    "title": "Artificer",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:ender_eye"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "size": 26,
+    "description": "+20 % Vanilla luck (Percent of total)\n+5 points Vanilla luck (Flat bonus)",
+    "cost": 1,
+    "required_skills": 1,
+    "required_points": 0,
+    "required_spent_points": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.luck",
+          "value": 0.2,
+          "operation": "add_multiplied_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.luck",
+          "value": 5,
+          "operation": "add_value"
+        }
+      }
+    ]
+  },
+  "definition_8a1db462be7537747b0f0b48": {
+    "title": "Scout",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:compass"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "size": 26,
+    "description": "+20 % Movement speed (Percent of total)",
+    "cost": 1,
+    "required_skills": 1,
+    "required_points": 0,
+    "required_spent_points": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.movement_speed",
+          "value": 0.2,
+          "operation": "add_multiplied_total"
+        }
+      }
+    ]
+  },
+  "definition_fe82df2e80a8ba79af291ba9": {
+    "title": "Infantrist",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:iron_sword"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "size": 26,
+    "description": "+5 % Melee Damage (Percent of total)",
+    "cost": 1,
+    "required_skills": 1,
+    "required_points": 0,
+    "required_spent_points": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:melee_damage",
+          "value": 0.05,
+          "operation": "add_multiplied_total"
+        }
+      }
+    ]
+  },
+  "definition_71f2149b5982e467908f4dd9": {
+    "title": "Archer",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:bow"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "size": 26,
+    "description": "+5 % Ranged Damage (Percent of total)",
+    "cost": 1,
+    "required_skills": 1,
+    "required_points": 0,
+    "required_spent_points": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:ranged_damage",
+          "value": 0.05,
+          "operation": "add_multiplied_total"
+        }
+      }
+    ]
+  },
+  "definition_e1a21b9f25b46032d9ed2774": {
+    "title": "Devastation",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:stick"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "size": 26,
+    "description": "+5 % Magic Damage (Percent of total)",
+    "cost": 1,
+    "required_skills": 1,
+    "required_points": 0,
+    "required_spent_points": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:magic_damage",
+          "value": 0.05,
+          "operation": "add_multiplied_total"
+        }
+      }
+    ]
+  },
+  "definition_35de2da495048b4f43abec79": {
+    "title": "Regeneration",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:water_bucket"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "size": 26,
+    "description": "+10% Mana Regeneration (Ars + Iron's)",
+    "cost": 1,
+    "required_skills": 1,
+    "required_points": 0,
+    "required_spent_points": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "ars_nouveau:ars_nouveau.perk.mana_regen",
+          "value": 0.1,
+          "operation": "add_multiplied_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:mana_regen",
+          "value": 0.1,
+          "operation": "add_multiplied_total"
+        }
+      }
+    ]
+  },
+  "definition_c82588de4efda488954993de": {
+    "title": "Finetuned Repairs",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:iron_ingot"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "size": 26,
+    "description": "-10 % Repair Cost (Percent of total)",
+    "cost": 1,
+    "required_skills": 1,
+    "required_points": 0,
+    "required_spent_points": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:repair_cost",
+          "value": -0.1,
+          "operation": "add_multiplied_total"
+        }
+      }
+    ]
+  },
+  "definition_b4475a9904098fd26c6ef56c": {
+    "title": "Armored",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:iron_chestplate"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "size": 26,
+    "description": "+5 % Armor (Percent of total)",
+    "cost": 1,
+    "required_skills": 1,
+    "required_points": 0,
+    "required_spent_points": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.armor",
+          "value": 0.05,
+          "operation": "add_multiplied_total"
+        }
+      }
+    ]
+  },
+  "definition_eb8f0e1b1dc2951660d3c3ca": {
+    "title": "Magic Resilience",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:cyan_candle"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "size": 26,
+    "description": "+5 % Magic Resistance (Percent of total)",
+    "cost": 1,
+    "required_skills": 1,
+    "required_points": 0,
+    "required_spent_points": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:magic_resistance",
+          "value": 0.05,
+          "operation": "add_multiplied_total"
+        }
+      }
+    ]
+  },
+  "definition_d0dcf17e95ead8edfc2da95b": {
+    "title": "Fast Learner",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:experience_bottle"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "size": 26,
+    "description": "+15 % Experience (Percent of total)",
+    "cost": 1,
+    "required_skills": 1,
+    "required_points": 0,
+    "required_spent_points": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:experience",
+          "value": 0.15,
+          "operation": "add_multiplied_total"
+        }
+      }
+    ]
+  },
+  "definition_e17d5f05f9d9c30dd1113dcd": {
+    "title": "Accelerated",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:rabbit_foot"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "size": 26,
+    "description": "+10 % Sprinting Speed (Percent of total)",
+    "cost": 1,
+    "required_skills": 1,
+    "required_points": 0,
+    "required_spent_points": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:sprinting_speed",
+          "value": 0.1,
+          "operation": "add_multiplied_total"
+        }
+      }
+    ]
+  },
+  "definition_771139a20b8180dd5219e8cf": {
+    "title": "Sneaky",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:leather_boots"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "size": 26,
+    "description": "+5 % Stealth (Percent of total)",
+    "cost": 1,
+    "required_skills": 1,
+    "required_points": 0,
+    "required_spent_points": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:stealth",
+          "value": 0.05,
+          "operation": "add_multiplied_total"
+        }
+      }
+    ]
+  },
+  "definition_2903c3cb68c44acd43d5469d": {
+    "title": "Digger",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:iron_pickaxe"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "size": 26,
+    "description": "+5 % Mining Speed (Percent of total)",
+    "cost": 1,
+    "required_skills": 1,
+    "required_points": 0,
+    "required_spent_points": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:mining_speed",
+          "value": 0.05,
+          "operation": "add_multiplied_total"
+        }
+      }
+    ]
+  },
+  "definition_7f1e323b6272c6209a590fe8": {
+    "title": "Healthy",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:glistering_melon_slice"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "size": 26,
+    "description": "+10 % Natural Regeneration (Percent of total)",
+    "cost": 1,
+    "required_skills": 1,
+    "required_points": 0,
+    "required_spent_points": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:natural_regeneration",
+          "value": 0.1,
+          "operation": "add_multiplied_total"
+        }
+      }
+    ]
+  },
+  "definition_2666a3a38dbeffb78d39e959": {
+    "title": "Hardened Skin",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:shield"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "size": 26,
+    "description": "You take less damage than others.\n+20 % Melee Resistance (Percent of total)\n+20 % Ranged Resistance (Percent of total)",
+    "cost": 1,
+    "required_skills": 1,
+    "required_points": 0,
+    "required_spent_points": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:melee_resistance",
+          "value": 0.2,
+          "operation": "add_multiplied_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:ranged_resistance",
+          "value": 0.2,
+          "operation": "add_multiplied_total"
+        }
+      }
+    ]
+  },
+  "definition_dedb9017a414dce68c28e1b0": {
+    "title": "Needful Taste",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:rotten_flesh"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "size": 26,
+    "description": "You have a much lower chance to get food poisoning.\n50% chance to avoid each harmful effect from consumed food and drinks.",
+    "cost": 1,
+    "required_skills": 1,
+    "required_points": 0,
+    "required_spent_points": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:tag",
+        "data": {
+          "tag": "trialforged_needful_taste"
+        }
+      }
+    ]
+  },
+  "definition_4cf92935c62ffa8219001e1d": {
+    "title": "Relentless",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:tuff_brick_wall"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "size": 26,
+    "description": "You are difficult to exhaust.\n+6 points Stamina (Flat bonus)",
+    "cost": 1,
+    "required_skills": 1,
+    "required_points": 0,
+    "required_spent_points": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:stamina",
+          "value": 6,
+          "operation": "add_value"
+        }
+      }
+    ]
+  },
+  "definition_1fe98f0f49381655ae05424a": {
+    "title": "Prospector",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:spyglass"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "size": 26,
+    "description": "You know how to find ores.\n+1 points Fortune (Flat bonus)",
+    "cost": 1,
+    "required_skills": 1,
+    "required_points": 0,
+    "required_spent_points": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:fortune",
+          "value": 1,
+          "operation": "add_value"
+        }
+      }
+    ]
+  },
+  "definition_2506204d5d098d80e8426605": {
+    "title": "Experienced",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:explorer_pottery_sherd"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "size": 26,
+    "description": "You learn at a much faster rate.\n+50 % Experience (Percent of total)",
+    "cost": 1,
+    "required_skills": 1,
+    "required_points": 0,
+    "required_spent_points": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:experience",
+          "value": 0.5,
+          "operation": "add_multiplied_total"
+        }
+      }
+    ]
+  },
+  "definition_947704ee27b7356135c63586": {
+    "title": "Abrasive",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:basalt"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "size": 26,
+    "description": "You know how to resist magic.\n+10 % Magic Resistance (Percent of total)",
+    "cost": 1,
+    "required_skills": 1,
+    "required_points": 0,
+    "required_spent_points": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:magic_resistance",
+          "value": 0.1,
+          "operation": "add_multiplied_total"
+        }
+      }
+    ]
+  },
+  "definition_dba03ffd2fe1c735fd8c3928": {
+    "title": "Precise Repairs",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:copper_ingot"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "size": 26,
+    "description": "-5 % Repair Cost (Percent of total)",
+    "cost": 1,
+    "required_skills": 1,
+    "required_points": 0,
+    "required_spent_points": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:repair_cost",
+          "value": -0.05,
+          "operation": "add_multiplied_total"
+        }
+      }
+    ]
+  },
+  "definition_a57da6677cdb9bb5c4f32e44": {
+    "title": "Thick Skin",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:leather_chestplate"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "size": 26,
+    "description": "+2 points Armor (Flat bonus)",
+    "cost": 1,
+    "required_skills": 1,
+    "required_points": 0,
+    "required_spent_points": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.armor",
+          "value": 2,
+          "operation": "add_value"
+        }
+      }
+    ]
+  },
+  "definition_5c67d892aa6e1f14ca18de97": {
+    "title": "Adept Fighter",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:diamond_sword"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "size": 26,
+    "description": "+1 points Melee Damage (Flat bonus)\n+1 points Ranged Damage (Flat bonus)",
+    "cost": 1,
+    "required_skills": 1,
+    "required_points": 0,
+    "required_spent_points": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:melee_damage",
+          "value": 1,
+          "operation": "add_value"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:ranged_damage",
+          "value": 1,
+          "operation": "add_value"
+        }
+      }
+    ]
+  },
+  "definition_0b93951805c46db567aa3f3c": {
+    "title": "Precision Attacks",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:target"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "size": 26,
+    "description": "+2 points Armor Shred (Flat bonus)",
+    "cost": 1,
+    "required_skills": 1,
+    "required_points": 0,
+    "required_spent_points": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:armor_shred",
+          "value": 2,
+          "operation": "add_value"
+        }
+      }
+    ]
+  },
+  "definition_f88bc661435716a6ec49cce1": {
+    "title": "Disruptive Attacks",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:amethyst_shard"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "size": 26,
+    "description": "+2 points Protection Shred (Flat bonus)",
+    "cost": 1,
+    "required_skills": 1,
+    "required_points": 0,
+    "required_spent_points": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:protection_shred",
+          "value": 2,
+          "operation": "add_value"
+        }
+      }
+    ]
+  },
+  "definition_77d45118614b9b06eb0fe6c8": {
+    "title": "Healthy Body",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:apple"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "size": 26,
+    "description": "+5 % Healing (Percent of total)",
+    "cost": 1,
+    "required_skills": 1,
+    "required_points": 0,
+    "required_spent_points": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:healing",
+          "value": 0.05,
+          "operation": "add_multiplied_total"
+        }
+      }
+    ]
+  },
+  "definition_2ffdfceb9b444c418e683f3c": {
+    "title": "Magic Energy",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:red_candle"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "size": 26,
+    "description": "+5 % Magic Damage (Percent of total)",
+    "cost": 1,
+    "required_skills": 1,
+    "required_points": 0,
+    "required_spent_points": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:magic_damage",
+          "value": 0.05,
+          "operation": "add_multiplied_total"
+        }
+      }
+    ]
+  },
+  "definition_324357bed9a3e0fe1c354ff6": {
+    "title": "Attuned Magic",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:creeper_banner_pattern"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "size": 26,
+    "description": "+1 points Magic Damage (Flat bonus)",
+    "cost": 1,
+    "required_skills": 1,
+    "required_points": 0,
+    "required_spent_points": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:magic_damage",
+          "value": 1,
+          "operation": "add_value"
+        }
+      }
+    ]
+  },
+  "definition_e1b9c6539d07ccb0b327b985": {
+    "title": "Penetrating Spells",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:arrow"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "size": 26,
+    "description": "+2 points Magic Resistance Shred (Flat bonus)",
+    "cost": 1,
+    "required_skills": 1,
+    "required_points": 0,
+    "required_spent_points": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:magic_resistance_shred",
+          "value": 2,
+          "operation": "add_value"
+        }
+      }
+    ]
+  },
+  "definition_488e5271a3fbba51513e39d7": {
+    "title": "Resilient Soul",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:beacon"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "size": 26,
+    "description": "+1 points Magic Resistance (Flat bonus)",
+    "cost": 1,
+    "required_skills": 1,
+    "required_points": 0,
+    "required_spent_points": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:magic_resistance",
+          "value": 1,
+          "operation": "add_value"
+        }
+      }
+    ]
+  },
+  "definition_e5f4bc2764c8e7097e477b4b": {
+    "title": "Vivid Lifeforce",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:heart_of_the_sea"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "size": 26,
+    "description": "+20 % Maximum health (2 points = 1 heart) (Percent of total)\n+20 % Natural Regeneration (Percent of total)",
+    "cost": 1,
+    "required_skills": 1,
+    "required_points": 0,
+    "required_spent_points": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.max_health",
+          "value": 0.2,
+          "operation": "add_multiplied_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:natural_regeneration",
+          "value": 0.2,
+          "operation": "add_multiplied_total"
+        }
+      }
+    ]
+  },
+  "definition_ed73e24d692d0a610f4f2bbc": {
+    "title": "Hasty Actions",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:beetroot_soup"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "size": 26,
+    "description": "Who got the time for lengthy breakfast?\n+30 % Consuming Speed (Percent of total)",
+    "cost": 1,
+    "required_skills": 1,
+    "required_points": 0,
+    "required_spent_points": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:consuming_speed",
+          "value": 0.3,
+          "operation": "add_multiplied_total"
+        }
+      }
+    ]
+  },
+  "definition_87fb7cd039b64150d49d3bfd": {
+    "title": "Resilient Body",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:diamond_chestplate"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "size": 26,
+    "description": "You take less damage from all attacks.\n+10 % Resistance (Percent of total)\n+10 % Armor toughness (Percent of total)",
+    "cost": 1,
+    "required_skills": 1,
+    "required_points": 0,
+    "required_spent_points": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:resistance",
+          "value": 0.1,
+          "operation": "add_multiplied_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.armor_toughness",
+          "value": 0.1,
+          "operation": "add_multiplied_total"
+        }
+      }
+    ]
+  },
+  "definition_3f8c140a30e5083f7ad3c95a": {
+    "title": "Far Shot",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:crossbow"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "size": 26,
+    "description": "Your arrows fly faster and further.\n+20 % Bow Projectile Speed (Percent of total)\n+20 % Crossbow Projectile Speed (Percent of total)",
+    "cost": 1,
+    "required_skills": 1,
+    "required_points": 0,
+    "required_spent_points": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:bow_projectile_speed",
+          "value": 0.2,
+          "operation": "add_multiplied_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:crossbow_projectile_speed",
+          "value": 0.2,
+          "operation": "add_multiplied_total"
+        }
+      }
+    ]
+  },
+  "definition_41f492a850475a19c5341e39": {
+    "title": "Overwhelming Power",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:armor_stand"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "size": 26,
+    "description": "You know how to get your spells to hit.\n+10 % Magic Resistance Shred (Percent of total)\n+10 % Protection Shred (Percent of total)",
+    "cost": 1,
+    "required_skills": 1,
+    "required_points": 0,
+    "required_spent_points": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:magic_resistance_shred",
+          "value": 0.1,
+          "operation": "add_multiplied_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:protection_shred",
+          "value": 0.1,
+          "operation": "add_multiplied_total"
+        }
+      }
+    ]
+  },
+  "definition_071c8a54033d1eba9add22b4": {
+    "title": "Battle-hardened",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:golden_leggings"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "size": 26,
+    "description": "+1 points Melee Resistance (Flat bonus)\n+1 points Ranged Resistance (Flat bonus)",
+    "cost": 1,
+    "required_skills": 1,
+    "required_points": 0,
+    "required_spent_points": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:melee_resistance",
+          "value": 1,
+          "operation": "add_value"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:ranged_resistance",
+          "value": 1,
+          "operation": "add_value"
+        }
+      }
+    ]
+  },
+  "definition_8231c08a7c64324eddabf313": {
+    "title": "Strong Hands",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:cracked_stone_bricks"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "size": 26,
+    "description": "+10 % Breaking Speed (Percent of total)",
+    "cost": 1,
+    "required_skills": 1,
+    "required_points": 0,
+    "required_spent_points": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:breaking_speed",
+          "value": 0.1,
+          "operation": "add_multiplied_total"
+        }
+      }
+    ]
+  },
+  "definition_40c89981ac058a09d85a1414": {
+    "title": "Strong Soul",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:allium"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "size": 26,
+    "description": "+2 points Maximum health (2 points = 1 heart) (Flat bonus)",
+    "cost": 1,
+    "required_skills": 1,
+    "required_points": 0,
+    "required_spent_points": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.max_health",
+          "value": 2,
+          "operation": "add_value"
+        }
+      }
+    ]
+  }
+}

@@ -14,7 +14,10 @@ fs.writeFileSync(path.join(destination, 'runtime-expected-tier.json'), JSON.stri
 if (fs.existsSync(resultPath)) fs.unlinkSync(resultPath)
 const arsResultPath = path.join(destination, 'runtime-ars-chest-result.json')
 if (fs.existsSync(arsResultPath)) fs.unlinkSync(arsResultPath)
-for (const name of ['runtime-magic-result.json', 'runtime-magic-client-result.json']) {
+const skillsResultPath = path.join(destination, 'runtime-skills-result.json')
+const previousSkills = fs.existsSync(skillsResultPath) ? readJson(skillsResultPath) : null
+fs.writeFileSync(path.join(destination, 'runtime-expected-skills.json'), JSON.stringify({ persisted: previousSkills?.status === 'passed' }))
+for (const name of ['runtime-magic-result.json', 'runtime-magic-client-result.json', 'runtime-skills-result.json', 'runtime-skills-client-result.json', 'runtime-skill-food-use.json']) {
   const result = path.join(destination, name)
   if (fs.existsSync(result)) fs.unlinkSync(result)
 }
@@ -42,10 +45,14 @@ for (const directory of ['datapacks', 'serverconfig']) {
   if (fs.existsSync(source)) fs.cpSync(source, path.join(world, directory), { recursive: true })
 }
 fs.mkdirSync(path.join(destination, 'natives'), { recursive: true })
+fs.copyFileSync(path.join(root, 'tools/skill-plan/plan.json'), path.join(destination, 'kubejs/config/runtime_skill_plan.json'))
 for (const [source, target] of [['runtime-server-probe.js', 'server_scripts'],
   ['runtime-ars-chest-probe.js', 'server_scripts'], ['runtime-client-probe.js', 'client_scripts'],
-  ['runtime-magic-probe.js', 'server_scripts'], ['runtime-magic-client-probe.js', 'client_scripts']]) {
-  fs.copyFileSync(path.join(__dirname, source), path.join(destination, 'kubejs', target, source))
+  ['runtime-magic-probe.js', 'server_scripts'], ['runtime-magic-client-probe.js', 'client_scripts'],
+  ['runtime-skills-probe.js', 'server_scripts']]) {
+  // LootJS modifiers run in registration order; the skill observer must see the final bucket.
+  const targetName = source === 'runtime-skills-probe.js' ? 'zz-runtime-skills-probe.js' : source
+  fs.copyFileSync(path.join(__dirname, source), path.join(destination, 'kubejs', target, targetName))
 }
 const options = fs.readFileSync(path.join(root, 'options.txt'), 'utf8')
   .replace(/^pauseOnLostFocus:.*$/m, 'pauseOnLostFocus:false').replace(/^fullscreen:.*$/m, 'fullscreen:false')

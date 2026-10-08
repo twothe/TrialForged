@@ -1,6 +1,9 @@
 # Behaviour
 
 - Skill Studio unter `tools/skill-planner` besitzt eine englische Oberfläche und englische generierte Exporttexte. Benutzertexte und bestehende Browserpläne erhalten; Eingaben einschließlich unvollständiger Werte sofort im Browsercache speichern. Dateiexporte sind zusätzliche Sicherungen.
+- Produktiven Skillbaum aus `tools/skill-plan/plan.json` mit `tools/skill-plan/build.cjs` erzeugen; generierte Moddaten nicht separat pflegen. Bestehende Kategorie und Knoten-IDs bei Erweiterungen erhalten, damit native Spielerfreischaltungen bestehen bleiben.
+- Skill Studio: Skillnamen identifizieren planweit gemeinsame Definitionen. Knoten-IDs, Positionen, Einstiegspunkte und Verbindungen gehören zu einzelnen Instanzen. Version-1-Pläne ohne Inhaltsverlust migrieren; abweichende gleichnamige Altinhalte als Varianten erhalten.
+- Skill Studio: „New skill“ einschließlich nummerierter Platzhalter und Groß-/Kleinschreibvarianten ist ein unabhängiger Entwurf. Platzhalter beim Kopieren und Laden nicht gruppieren; erst eigene Skillnamen bilden gemeinsame Instanzen.
 - Nutzerkommunikation und Projektdokumentation auf Deutsch; Code und technische Bezeichner auf Englisch.
 - Starke Charakterprogression bis in absurde Wertebereiche ist gewollt. Balance nur grob auf einseitige Eskalation prüfen; kleine Ungleichheiten akzeptieren, technische Fehler weiterhin verhindern. Bei der Magievereinheitlichung vorhandene Ars-Prozentkurven übernehmen und den Grundschaden mit verstärken; keine Ersatzkurven zur exakten Gleichwertigkeit berechnen.
 - Rezept-Balancing zentral in `kubejs/server_scripts/balancing-recipes.js` pflegen. Zum Einschränken von Blöcken ausschließlich Herstellungsrezepte entfernen; Blöcke und Items für eine Freigabe durch Admins registriert und nutzbar lassen.
@@ -25,10 +28,12 @@ Trialforged ist eine lokale Minecraft-1.21.1-Instanz mit NeoForge. Ziel ist ein 
 
 # Documentation Index
 
+- [Skillbaum und Skillpunkte](docs/skill-plan-implementation.md): nativer Planner-Import, stabile Knoten-IDs für Erweiterungen, Needful Taste, Manaregeneration, Dungeon-Punktitems und Laufzeitprüfung.
 - [Gemeinsame Apotheosis-Magieboni](docs/magic-attribute-unification.md): dynamische native Overrides, unveränderte Werte, gekoppelte Manaattribute, Herkunftshinweise, Update-Diagnose und Prüfgrenzen.
 
 - [Gemeinsame Magieboni – Implementationsplan](docs/magic-attribute-unification-plan.md): geprüfte Pufferfish-Schadensformel, native Mana-Attributpaare, kurze Apotheosis-Tooltips, Kaelos-Resonanz und Abnahmematrix; Umsetzung separat dokumentiert.
 - [Lokales Skillatelier](docs/skill-planner.md): Offline-Hexeditor unter `tools/skill-planner`, native Attributboni, technische Freitextaufträge, verlustfreier Planexport und Prüfgrenzen.
+- [Skill-Studio-Design](docs/skill-planner-design.md): kompakte Bibliothek, gemeinsame Skills und getrennte Instanzdaten, integrierter Iconfilter und visuelle Prüfgrenzen.
 - [Majrusz-Rechtsklick-Ernte](docs/majrusz-accessories-compatibility.md): genaue installierte JAR, nativer Drop-Pfad, Prüfung mit leerer Hand und Unterscheidung zwischen Pflanzen und Kartoffel-Items.
 - [Rezept-Balancing](docs/recipe-balancing.md): zentrale Rezeptänderungen, Easy Villagers, Heart Canisters, Elsebase-Bore und Erzverdopplung im Embers-Melter.
 - [Startabbruch und Desktop-Ausfall vom 06.10.2026](docs/startup-crash-2026-10-06.md): Unfocused-Initialisierungsfehler, neuer Windows-GPU-Timeout-Bericht und Grenzen der Ursachenbestimmung.

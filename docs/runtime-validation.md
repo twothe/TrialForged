@@ -18,7 +18,7 @@ Die isolierte Instanz startet mit `soundCategory_master:0.0`. Ihr Clientprüfskr
 
 Der Offline-Spieler `RuntimeTester` betritt automatisch die separate Welt `Runtime Validation`. Bei deren erster Anlage werden `level.dat`, Datapacks und Serverkonfiguration aus `Run #1` übernommen, jedoch keine Chunks oder externen Spielerdateien. `level.dat` kann eingebettete Spielerdaten enthalten; der Test setzt ausschließlich den Fortschritt der isolierten Testidentität zurück. Die Originalwelt wird nicht beschrieben. Weitere Läufe verwenden die gespeicherte Testwelt.
 
-Die drei Prüfskripte werden ausschließlich in die Testinstanz kopiert. Sie prüfen:
+Die Prüfskripte werden ausschließlich in die Testinstanz kopiert. Sie prüfen:
 
 - echten Spielerlogin und das Ende des Terrain-Ladebildschirms; die normale NeoOrigins-Herkunftsauswahl ist für den neuen Offline-Spieler zulässig;
 - vollständigen JEI-Start und mindestens 200 Clientticks nach Erreichen des normalen Bildschirms;
@@ -30,10 +30,15 @@ Die drei Prüfskripte werden ausschließlich in die Testinstanz kopiert. Sie pr�
 - [Ars-Kistenloot](ars-chest-loot.md): installierte Kistentabellen, 20.000 native Bonuswürfe, Mengen und Essenzverteilung, echte Modkisten, unveränderte Ars-Spezialkisten sowie Lootr-Inventare zweier serverseitiger Testidentitäten.
 - Elsebase: native Dimensionsregel, Gegenprobe der bisherigen globalen Distanzrechnung sowie frische Zombies, Skelette und Creeper bei weit entfernten Koordinaten ohne Levelwachstum oder Level-Attributboni. Keine Bereinigung gespeicherter Elsebase-Mobs.
 - Nether/End: native Dimensionsprofile mit Basislevel 30/80, erhaltenen Obergrenzen und Zufallsboni, Basisrechnung ohne Distanz-/Tiefenbonus sowie frische Zombies über den normalen Spawnpfad.
+- [Skillbaum und Skillpunkte](skill-plan-implementation.md): geladene Knoten, native Itemeinlösung und Belohnungen, Ars-/Iron's-Manaregeneration, Needful Taste mit gemischten Tränken und echtem Nahrungsverbrauch, Erhalt vorheriger Effekte einschließlich versteckter schwächerer Effekte, 20.000 Dungeon-Bonuswürfe und Ausschluss anderer Tabellen. Ein weiterer vollständiger Start prüft die gespeicherten Skillpunkte und Freischaltungen. Das native Skillmenü muss anschließend im Client geöffnet und mindestens 40 Ticks dargestellt werden.
 
 Die Ergebnisdatei liegt unter `local/runtime-validation/runtime-result.json`, Details unter `logs/latest.log` und `launcher-output.log` derselben Testinstanz. Nach Änderungen am Modbestand dürfen in der wiederverwendeten Kopie keine alten JARs verbleiben; vor dem Lauf den Bestand mit dem Original abgleichen. Produktionsskripte während eines laufenden Tests nicht verändern.
 
 Die Ars-Prüfung schreibt zusätzlich `runtime-ars-chest-result.json`. Die zweite Lootr-Identität ist ein nativer NeoForge-FakePlayer im integrierten Server, kein zweiter verbundener Netzwerkclient. Diese Prüfung belegt den persönlichen Inventarpfad, keinen vollständigen dedizierten Mehrspielertest.
+
+Die Skillprüfung schreibt `runtime-skills-result.json` und `runtime-skills-client-result.json`. Die Testvorbereitung merkt sich einen erfolgreichen vorherigen Lauf; nach einem fehlgeschlagenen Lauf wird nur die isolierte Skill-Testidentität zurückgesetzt. Der Runner prüft neue Skillskripte vor dem Start zusätzlich mit dem Parser der tatsächlich installierten Rhino-Version. Erfolgreiche Node-Syntaxprüfung allein genügt dafür nicht.
+
+Die umfangreichen Skill-Resets und sofortigen API-Freischaltungen laufen auf einem nativen FakePlayer. Die installierte Pufferfish-Version liest beim vollständigen Kategorieversand noch veränderliche Zustände auf dem Netzwerkthread; gleichzeitige erzwungene Änderungen konnten den Testclient trennen. Ursache und Prüfgrenze stehen in der [Skillumsetzung](skill-plan-implementation.md#bekannte-grenze-der-installierten-modversion). Der verbundene Client prüft die normalen Item-, Verbrauchs- und Menüpfade. Der Skill-Lootbeobachter wird zuletzt geladen, damit er den tatsächlich nach allen Produktionsmodifiern entstandenen Lootbucket zählt.
 
 ## Native Infernal-Bosse: Prüfung vom 05.10.2026
 

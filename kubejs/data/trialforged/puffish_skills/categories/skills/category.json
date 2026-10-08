@@ -1,0 +1,14 @@
+{
+  "title": "Trialforged",
+  "icon": {
+    "type": "item",
+    "data": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "background": "minecraft:textures/block/deepslate.png",
+  "unlocked_by_default": true,
+  "exclusive_root": true,
+  "starting_points": 0,
+  "erase_on_death": false
+}

@@ -1,0 +1,1970 @@
+{
+  "format": "trialforged-skill-plan",
+  "version": 2,
+  "target": {
+    "minecraft": "1.21.1",
+    "loader": "NeoForge",
+    "skills": "0.19.1",
+    "attributes": "0.8.3"
+  },
+  "name": "Trialforged - Skillplan",
+  "notes": "",
+  "progression": "Points are earned through quests, milestones, and can be rarely looted from chests.",
+  "trees": [
+    {
+      "id": "tree_fd654069-0a9f-4b60-bb89-5f6308c794d8",
+      "name": "Trialforged",
+      "category": "trialforged:skills",
+      "exclusiveRoot": true,
+      "notes": "Generic tree for all players of Trialforged",
+      "skills": [
+        {
+          "id": "skill_383f5841-6b53-4325-a1ca-0cdddc79eb24",
+          "name": "Warrior",
+          "q": 1,
+          "r": -2,
+          "root": true
+        },
+        {
+          "id": "skill_46100feb-17d3-49e4-b8fe-d0803f7bd1fc",
+          "name": "Mage",
+          "q": 1,
+          "r": 4,
+          "root": true
+        },
+        {
+          "id": "skill_ff748702-313f-416e-bef8-6654d8fbf60d",
+          "name": "Crafter",
+          "q": -5,
+          "r": 4,
+          "root": true
+        },
+        {
+          "id": "skill_e5e42f14-fa5f-4ae2-92da-c9c7e0610c5e",
+          "name": "Blacksmith",
+          "q": -3,
+          "r": 0,
+          "root": true
+        },
+        {
+          "id": "skill_46199796-a5de-445d-94f3-a7dfdbbf9ba8",
+          "name": "Artificer",
+          "q": -3,
+          "r": 6,
+          "root": true
+        },
+        {
+          "id": "skill_efcd0ba1-fe31-4db2-9458-e730fdf357e4",
+          "name": "Scout",
+          "q": 3,
+          "r": 0,
+          "root": true
+        },
+        {
+          "id": "skill_df0c5f45-25d8-4952-a718-f2ac012a53de",
+          "name": "Infantrist",
+          "q": 1,
+          "r": -3,
+          "root": false
+        },
+        {
+          "id": "skill_0820315d-2ab9-4348-aa91-8ec77c5e1172",
+          "name": "Archer",
+          "q": 2,
+          "r": -3,
+          "root": false
+        },
+        {
+          "id": "skill_fa9bf462-cfbc-41e8-a06d-14f5d9a5608c",
+          "name": "Devastation",
+          "q": 2,
+          "r": 4,
+          "root": false
+        },
+        {
+          "id": "skill_36c144d6-f598-4812-808f-3b8ece96f570",
+          "name": "Regeneration",
+          "q": 1,
+          "r": 5,
+          "root": false
+        },
+        {
+          "id": "skill_5280b183-0853-45c8-a865-1c83478f77eb",
+          "name": "Archer",
+          "q": 3,
+          "r": -4,
+          "root": false
+        },
+        {
+          "id": "skill_dfb0f1b1-afc6-499c-9f65-7d85de1d0b59",
+          "name": "Archer",
+          "q": 3,
+          "r": -5,
+          "root": false
+        },
+        {
+          "id": "skill_229a8264-b4ed-4610-9136-2ae3aef69499",
+          "name": "Infantrist",
+          "q": 1,
+          "r": -4,
+          "root": false
+        },
+        {
+          "id": "skill_4c9d0c20-e1b1-4ff4-b432-1317bde855d8",
+          "name": "Infantrist",
+          "q": 2,
+          "r": -5,
+          "root": false
+        },
+        {
+          "id": "skill_a9e56919-9324-4d47-b660-6cf9092670f5",
+          "name": "Devastation",
+          "q": 3,
+          "r": 4,
+          "root": false
+        },
+        {
+          "id": "skill_79a37504-b145-4c83-a93b-d9bcb42bf7bb",
+          "name": "Devastation",
+          "q": 3,
+          "r": 5,
+          "root": false
+        },
+        {
+          "id": "skill_c97a8457-943e-452a-ba31-b13b79a166d1",
+          "name": "Regeneration",
+          "q": 1,
+          "r": 6,
+          "root": false
+        },
+        {
+          "id": "skill_36f843de-47e1-4752-b42a-ddac54342acc",
+          "name": "Regeneration",
+          "q": 2,
+          "r": 6,
+          "root": false
+        },
+        {
+          "id": "skill_cf116bb5-9f62-4f25-ac1d-b941aa49005b",
+          "name": "Finetuned Repairs",
+          "q": -4,
+          "r": 0,
+          "root": false
+        },
+        {
+          "id": "skill_c92876ad-fdb4-4a25-8652-2ed55d95eba1",
+          "name": "Armored",
+          "q": -3,
+          "r": -1,
+          "root": false
+        },
+        {
+          "id": "skill_47bb2c9d-7f25-49d9-8234-17a4c899c735",
+          "name": "Armored",
+          "q": -3,
+          "r": -2,
+          "root": false
+        },
+        {
+          "id": "skill_43ed6d68-eaaa-43e7-ae77-4c93be6efd66",
+          "name": "Armored",
+          "q": -4,
+          "r": -2,
+          "root": false
+        },
+        {
+          "id": "skill_7f45811b-0695-4d1b-83b2-515b3ad55244",
+          "name": "Finetuned Repairs",
+          "q": -5,
+          "r": 0,
+          "root": false
+        },
+        {
+          "id": "skill_84ea24f4-3427-41c6-9c11-08147530c4c7",
+          "name": "Finetuned Repairs",
+          "q": -5,
+          "r": -1,
+          "root": false
+        },
+        {
+          "id": "skill_728fde67-75bc-4395-8796-46948ad846e3",
+          "name": "Magic Resilience",
+          "q": -3,
+          "r": 7,
+          "root": false
+        },
+        {
+          "id": "skill_8635fa3d-fcf8-48a2-85a5-a6e8f1dde613",
+          "name": "Fast Learner",
+          "q": -4,
+          "r": 7,
+          "root": false
+        },
+        {
+          "id": "skill_17b7a1c4-c2e6-4e81-9c47-89ebe70cf322",
+          "name": "Magic Resilience",
+          "q": -3,
+          "r": 8,
+          "root": false
+        },
+        {
+          "id": "skill_5537fd91-4a72-4471-9e72-6643162ba8dd",
+          "name": "Magic Resilience",
+          "q": -4,
+          "r": 9,
+          "root": false
+        },
+        {
+          "id": "skill_92703f35-4412-461b-8633-cba21f3f17af",
+          "name": "Fast Learner",
+          "q": -5,
+          "r": 8,
+          "root": false
+        },
+        {
+          "id": "skill_a6044d95-bbf9-4d75-ad72-859f7eb45c19",
+          "name": "Fast Learner",
+          "q": -5,
+          "r": 9,
+          "root": false
+        },
+        {
+          "id": "skill_214c7279-634a-4918-829a-e6b51e1c2450",
+          "name": "Accelerated",
+          "q": 4,
+          "r": -1,
+          "root": false
+        },
+        {
+          "id": "skill_bb8b4d85-3821-4839-b1cd-b56603909b82",
+          "name": "Sneaky",
+          "q": 4,
+          "r": 0,
+          "root": false
+        },
+        {
+          "id": "skill_43156aa9-8e5e-4793-81a5-e5292d7a879e",
+          "name": "Accelerated",
+          "q": 5,
+          "r": -2,
+          "root": false
+        },
+        {
+          "id": "skill_8a4204bc-1bfd-42b9-a2b8-aa1d54526c8a",
+          "name": "Accelerated",
+          "q": 6,
+          "r": -2,
+          "root": false
+        },
+        {
+          "id": "skill_04c73a2f-4971-4706-af2b-0b2f71daf5c8",
+          "name": "Sneaky",
+          "q": 5,
+          "r": 0,
+          "root": false
+        },
+        {
+          "id": "skill_0b06d9f0-e1cd-499d-a44e-b439b2bca172",
+          "name": "Sneaky",
+          "q": 6,
+          "r": -1,
+          "root": false
+        },
+        {
+          "id": "skill_88fccf19-22e6-415f-b09c-4ffa482a65c8",
+          "name": "Digger",
+          "q": -9,
+          "r": 3,
+          "root": false
+        },
+        {
+          "id": "skill_7856ef05-2119-4302-a2f7-f795749aa7a9",
+          "name": "Healthy",
+          "q": -6,
+          "r": 5,
+          "root": false
+        },
+        {
+          "id": "skill_7e5874ed-53ff-43bd-aa11-325a23fb7776",
+          "name": "Digger",
+          "q": -9,
+          "r": 4,
+          "root": false
+        },
+        {
+          "id": "skill_c0f570cb-85d3-49a4-8f61-52d2b7f6fa3c",
+          "name": "Digger",
+          "q": -9,
+          "r": 5,
+          "root": false
+        },
+        {
+          "id": "skill_3590661c-2fd9-4ea3-8e7d-d2265ffdfd7f",
+          "name": "Healthy",
+          "q": -7,
+          "r": 6,
+          "root": false
+        },
+        {
+          "id": "skill_1e691179-2a98-46d6-a768-23c5b7a9d3fa",
+          "name": "Healthy",
+          "q": -8,
+          "r": 6,
+          "root": false
+        },
+        {
+          "id": "skill_0122acab-4d3e-4311-8e24-64cb51880502",
+          "name": "Hardened Skin",
+          "q": 3,
+          "r": -6,
+          "root": false
+        },
+        {
+          "id": "skill_a8cc60a3-3f5f-47ef-9358-3fcb07afd52b",
+          "name": "Needful Taste",
+          "q": 7,
+          "r": -2,
+          "root": false
+        },
+        {
+          "id": "skill_96635201-77d1-4315-a5bd-90765e43f5c7",
+          "name": "Relentless",
+          "q": -5,
+          "r": -2,
+          "root": false
+        },
+        {
+          "id": "skill_88c88eba-05c7-46af-8364-9bdd30ca492a",
+          "name": "Prospector",
+          "q": -9,
+          "r": 6,
+          "root": false
+        },
+        {
+          "id": "skill_bc5c2a7f-1816-4f80-994f-35874ab03256",
+          "name": "Experienced",
+          "q": -5,
+          "r": 10,
+          "root": false
+        },
+        {
+          "id": "skill_e4cc7419-19a9-4411-b7ce-dd66ab634387",
+          "name": "Abrasive",
+          "q": 3,
+          "r": 6,
+          "root": false
+        },
+        {
+          "id": "skill_c4382506-e354-4862-af7e-454fa3799999",
+          "name": "Precise Repairs",
+          "q": -6,
+          "r": -1,
+          "root": false
+        },
+        {
+          "id": "skill_a2c756d2-05be-484c-bc7f-a500a4257f52",
+          "name": "Thick Skin",
+          "q": -4,
+          "r": -3,
+          "root": false
+        },
+        {
+          "id": "skill_957d09c8-2376-4643-b113-797e5b2f2273",
+          "name": "Adept Fighter",
+          "q": 4,
+          "r": -6,
+          "root": false
+        },
+        {
+          "id": "skill_5e96ec58-e138-449e-acbf-736166b6abe6",
+          "name": "Precision Attacks",
+          "q": 7,
+          "r": -3,
+          "root": false
+        },
+        {
+          "id": "skill_d8d39ce0-5321-4a6a-a789-4d8c3e64fb7a",
+          "name": "Disruptive Attacks",
+          "q": 7,
+          "r": -1,
+          "root": false
+        },
+        {
+          "id": "skill_dc0b19d8-1fda-42dc-bbd2-4623a75d3218",
+          "name": "Healthy Body",
+          "q": -6,
+          "r": 10,
+          "root": false
+        },
+        {
+          "id": "skill_10d17f9b-3609-4796-ad6f-ee4db2dcfda6",
+          "name": "Magic Energy",
+          "q": -4,
+          "r": 10,
+          "root": false
+        },
+        {
+          "id": "skill_b326e8a3-bd1e-4a29-8e42-014a43524c4f",
+          "name": "Attuned Magic",
+          "q": 2,
+          "r": 7,
+          "root": false
+        },
+        {
+          "id": "skill_ed869e4d-742c-4488-9c9e-799fd31497ff",
+          "name": "Penetrating Spells",
+          "q": 4,
+          "r": 5,
+          "root": false
+        },
+        {
+          "id": "skill_ddd837f5-440f-4590-b402-b1d50becf7b8",
+          "name": "Resilient Soul",
+          "q": -1,
+          "r": 10,
+          "root": false
+        },
+        {
+          "id": "skill_2e8a2b24-d3dc-4ce4-9cf3-a02f29c02102",
+          "name": "Vivid Lifeforce",
+          "q": -9,
+          "r": 10,
+          "root": false
+        },
+        {
+          "id": "skill_eb764ff6-f59b-4c25-8218-4335c47a6132",
+          "name": "Hasty Actions",
+          "q": -9,
+          "r": 2,
+          "root": false
+        },
+        {
+          "id": "skill_b57941ec-6e76-41df-97f4-4e6ed2b22a2d",
+          "name": "Resilient Body",
+          "q": -1,
+          "r": -6,
+          "root": false
+        },
+        {
+          "id": "skill_6d61e82e-2d61-4b48-8140-87f064243fde",
+          "name": "Far Shot",
+          "q": 7,
+          "r": -6,
+          "root": false
+        },
+        {
+          "id": "skill_8200e8f1-8846-403e-b451-64c4957b66f2",
+          "name": "Overwhelming Power",
+          "q": 7,
+          "r": 2,
+          "root": false
+        },
+        {
+          "name": "Adept Fighter",
+          "id": "skill_fcb969f9-228e-4ad5-8653-903a78975fa2",
+          "q": 5,
+          "r": -6,
+          "root": false
+        },
+        {
+          "name": "Adept Fighter",
+          "id": "skill_e1180721-d6b7-4dfc-a104-6d67824c0f23",
+          "q": 6,
+          "r": -6,
+          "root": false
+        },
+        {
+          "name": "Precision Attacks",
+          "id": "skill_c3ce615e-5b29-486e-af88-57260ffaf93f",
+          "q": 7,
+          "r": -4,
+          "root": false
+        },
+        {
+          "name": "Precision Attacks",
+          "id": "skill_7dd2b39a-b2aa-4050-8e52-92a9bf4fdc62",
+          "q": 7,
+          "r": -5,
+          "root": false
+        },
+        {
+          "name": "Disruptive Attacks",
+          "id": "skill_1e16c93a-18ab-48e1-82b6-0c181d8d3779",
+          "q": 7,
+          "r": 0,
+          "root": false
+        },
+        {
+          "name": "Disruptive Attacks",
+          "id": "skill_ebaa3db6-5ebe-4131-af33-9015d23f2da9",
+          "q": 7,
+          "r": 1,
+          "root": false
+        },
+        {
+          "name": "Penetrating Spells",
+          "id": "skill_dbd535c8-59f7-422f-87b5-7007ba323442",
+          "q": 5,
+          "r": 4,
+          "root": false
+        },
+        {
+          "name": "Penetrating Spells",
+          "id": "skill_03395077-6362-46d0-9cea-5c372f1640a4",
+          "q": 6,
+          "r": 3,
+          "root": false
+        },
+        {
+          "name": "Thick Skin",
+          "id": "skill_2335344f-789b-4d8b-a527-f4bf0d62376c",
+          "q": -3,
+          "r": -4,
+          "root": false
+        },
+        {
+          "name": "Thick Skin",
+          "id": "skill_316df622-031d-4aec-ba48-5c2016d96746",
+          "q": -2,
+          "r": -5,
+          "root": false
+        },
+        {
+          "id": "skill_29196bf2-21aa-45d4-9130-28b5b96913fa",
+          "name": "Battle-hardened",
+          "q": 2,
+          "r": -6,
+          "root": false
+        },
+        {
+          "name": "Battle-hardened",
+          "id": "skill_5f6430af-f6c1-4919-aa9d-b927b29fdb2c",
+          "q": 1,
+          "r": -6,
+          "root": false
+        },
+        {
+          "name": "Battle-hardened",
+          "id": "skill_e8bebb04-8150-44f6-b890-3ce222e38bb9",
+          "q": 0,
+          "r": -6,
+          "root": false
+        },
+        {
+          "name": "Precise Repairs",
+          "id": "skill_c9495b4d-2933-495c-9248-1f26f4df5aff",
+          "q": -7,
+          "r": 0,
+          "root": false
+        },
+        {
+          "name": "Precise Repairs",
+          "id": "skill_1fc1b93b-dcb1-444b-8ca5-b3ab08ecb27f",
+          "q": -8,
+          "r": 1,
+          "root": false
+        },
+        {
+          "name": "Healthy Body",
+          "id": "skill_64eb2815-534a-455d-8746-fc8e6f2c80d3",
+          "q": -7,
+          "r": 10,
+          "root": false
+        },
+        {
+          "name": "Healthy Body",
+          "id": "skill_b4dd96ce-ff68-488b-8e92-116d29942cdd",
+          "q": -8,
+          "r": 10,
+          "root": false
+        },
+        {
+          "name": "Strong Hands",
+          "id": "skill_bb47935c-e52a-4532-8688-0d0c73912cdc",
+          "q": -6,
+          "r": 4,
+          "root": false
+        },
+        {
+          "name": "Strong Hands",
+          "id": "skill_b71fb2e7-a549-4417-af40-0d56e11629e8",
+          "q": -7,
+          "r": 4,
+          "root": false
+        },
+        {
+          "name": "Strong Hands",
+          "id": "skill_17ce2415-a1e4-4e7a-a1dd-5bff57e7aa9d",
+          "q": -8,
+          "r": 5,
+          "root": false
+        },
+        {
+          "id": "skill_e225503b-a87e-4b88-9ae1-ddb8d79845e5",
+          "name": "Strong Soul",
+          "q": -9,
+          "r": 7,
+          "root": false
+        },
+        {
+          "name": "Strong Soul",
+          "id": "skill_a01663c3-1d40-478e-a1d9-bd936e4e2178",
+          "q": -9,
+          "r": 8,
+          "root": false
+        },
+        {
+          "name": "Strong Soul",
+          "id": "skill_67dab10f-7ddc-48a3-9162-9f8e497eb544",
+          "q": -9,
+          "r": 9,
+          "root": false
+        },
+        {
+          "name": "Attuned Magic",
+          "id": "skill_d6184f7b-3e4f-4385-b28f-a67d490ed970",
+          "q": 1,
+          "r": 8,
+          "root": false
+        },
+        {
+          "name": "Attuned Magic",
+          "id": "skill_b114020b-e356-4980-ae8a-36c46560e442",
+          "q": 0,
+          "r": 9,
+          "root": false
+        },
+        {
+          "name": "Magic Energy",
+          "id": "skill_baf96c99-2ea9-405e-9e4d-a7debae3e304",
+          "q": -3,
+          "r": 10,
+          "root": false
+        },
+        {
+          "name": "Magic Energy",
+          "id": "skill_59596f80-d6c9-40f7-8fcc-1b36d1c4a3ad",
+          "q": -2,
+          "r": 10,
+          "root": false
+        }
+      ],
+      "connections": [
+        {
+          "from": "skill_383f5841-6b53-4325-a1ca-0cdddc79eb24",
+          "to": "skill_0820315d-2ab9-4348-aa91-8ec77c5e1172",
+          "type": "normal"
+        },
+        {
+          "from": "skill_0820315d-2ab9-4348-aa91-8ec77c5e1172",
+          "to": "skill_5280b183-0853-45c8-a865-1c83478f77eb",
+          "type": "normal"
+        },
+        {
+          "from": "skill_5280b183-0853-45c8-a865-1c83478f77eb",
+          "to": "skill_dfb0f1b1-afc6-499c-9f65-7d85de1d0b59",
+          "type": "normal"
+        },
+        {
+          "from": "skill_383f5841-6b53-4325-a1ca-0cdddc79eb24",
+          "to": "skill_df0c5f45-25d8-4952-a718-f2ac012a53de",
+          "type": "normal"
+        },
+        {
+          "from": "skill_df0c5f45-25d8-4952-a718-f2ac012a53de",
+          "to": "skill_229a8264-b4ed-4610-9136-2ae3aef69499",
+          "type": "normal"
+        },
+        {
+          "from": "skill_229a8264-b4ed-4610-9136-2ae3aef69499",
+          "to": "skill_4c9d0c20-e1b1-4ff4-b432-1317bde855d8",
+          "type": "normal"
+        },
+        {
+          "from": "skill_46100feb-17d3-49e4-b8fe-d0803f7bd1fc",
+          "to": "skill_fa9bf462-cfbc-41e8-a06d-14f5d9a5608c",
+          "type": "normal"
+        },
+        {
+          "from": "skill_fa9bf462-cfbc-41e8-a06d-14f5d9a5608c",
+          "to": "skill_a9e56919-9324-4d47-b660-6cf9092670f5",
+          "type": "normal"
+        },
+        {
+          "from": "skill_a9e56919-9324-4d47-b660-6cf9092670f5",
+          "to": "skill_79a37504-b145-4c83-a93b-d9bcb42bf7bb",
+          "type": "normal"
+        },
+        {
+          "from": "skill_46100feb-17d3-49e4-b8fe-d0803f7bd1fc",
+          "to": "skill_36c144d6-f598-4812-808f-3b8ece96f570",
+          "type": "normal"
+        },
+        {
+          "from": "skill_36c144d6-f598-4812-808f-3b8ece96f570",
+          "to": "skill_c97a8457-943e-452a-ba31-b13b79a166d1",
+          "type": "normal"
+        },
+        {
+          "from": "skill_c97a8457-943e-452a-ba31-b13b79a166d1",
+          "to": "skill_36f843de-47e1-4752-b42a-ddac54342acc",
+          "type": "normal"
+        },
+        {
+          "from": "skill_e5e42f14-fa5f-4ae2-92da-c9c7e0610c5e",
+          "to": "skill_cf116bb5-9f62-4f25-ac1d-b941aa49005b",
+          "type": "normal"
+        },
+        {
+          "from": "skill_cf116bb5-9f62-4f25-ac1d-b941aa49005b",
+          "to": "skill_7f45811b-0695-4d1b-83b2-515b3ad55244",
+          "type": "normal"
+        },
+        {
+          "from": "skill_7f45811b-0695-4d1b-83b2-515b3ad55244",
+          "to": "skill_84ea24f4-3427-41c6-9c11-08147530c4c7",
+          "type": "normal"
+        },
+        {
+          "from": "skill_e5e42f14-fa5f-4ae2-92da-c9c7e0610c5e",
+          "to": "skill_c92876ad-fdb4-4a25-8652-2ed55d95eba1",
+          "type": "normal"
+        },
+        {
+          "from": "skill_c92876ad-fdb4-4a25-8652-2ed55d95eba1",
+          "to": "skill_47bb2c9d-7f25-49d9-8234-17a4c899c735",
+          "type": "normal"
+        },
+        {
+          "from": "skill_47bb2c9d-7f25-49d9-8234-17a4c899c735",
+          "to": "skill_43ed6d68-eaaa-43e7-ae77-4c93be6efd66",
+          "type": "normal"
+        },
+        {
+          "from": "skill_46199796-a5de-445d-94f3-a7dfdbbf9ba8",
+          "to": "skill_8635fa3d-fcf8-48a2-85a5-a6e8f1dde613",
+          "type": "normal"
+        },
+        {
+          "from": "skill_8635fa3d-fcf8-48a2-85a5-a6e8f1dde613",
+          "to": "skill_92703f35-4412-461b-8633-cba21f3f17af",
+          "type": "normal"
+        },
+        {
+          "from": "skill_92703f35-4412-461b-8633-cba21f3f17af",
+          "to": "skill_a6044d95-bbf9-4d75-ad72-859f7eb45c19",
+          "type": "normal"
+        },
+        {
+          "from": "skill_46199796-a5de-445d-94f3-a7dfdbbf9ba8",
+          "to": "skill_728fde67-75bc-4395-8796-46948ad846e3",
+          "type": "normal"
+        },
+        {
+          "from": "skill_728fde67-75bc-4395-8796-46948ad846e3",
+          "to": "skill_17b7a1c4-c2e6-4e81-9c47-89ebe70cf322",
+          "type": "normal"
+        },
+        {
+          "from": "skill_17b7a1c4-c2e6-4e81-9c47-89ebe70cf322",
+          "to": "skill_5537fd91-4a72-4471-9e72-6643162ba8dd",
+          "type": "normal"
+        },
+        {
+          "from": "skill_efcd0ba1-fe31-4db2-9458-e730fdf357e4",
+          "to": "skill_214c7279-634a-4918-829a-e6b51e1c2450",
+          "type": "normal"
+        },
+        {
+          "from": "skill_214c7279-634a-4918-829a-e6b51e1c2450",
+          "to": "skill_43156aa9-8e5e-4793-81a5-e5292d7a879e",
+          "type": "normal"
+        },
+        {
+          "from": "skill_43156aa9-8e5e-4793-81a5-e5292d7a879e",
+          "to": "skill_8a4204bc-1bfd-42b9-a2b8-aa1d54526c8a",
+          "type": "normal"
+        },
+        {
+          "from": "skill_efcd0ba1-fe31-4db2-9458-e730fdf357e4",
+          "to": "skill_bb8b4d85-3821-4839-b1cd-b56603909b82",
+          "type": "normal"
+        },
+        {
+          "from": "skill_bb8b4d85-3821-4839-b1cd-b56603909b82",
+          "to": "skill_04c73a2f-4971-4706-af2b-0b2f71daf5c8",
+          "type": "normal"
+        },
+        {
+          "from": "skill_04c73a2f-4971-4706-af2b-0b2f71daf5c8",
+          "to": "skill_0b06d9f0-e1cd-499d-a44e-b439b2bca172",
+          "type": "normal"
+        },
+        {
+          "from": "skill_7856ef05-2119-4302-a2f7-f795749aa7a9",
+          "to": "skill_3590661c-2fd9-4ea3-8e7d-d2265ffdfd7f",
+          "type": "normal"
+        },
+        {
+          "from": "skill_3590661c-2fd9-4ea3-8e7d-d2265ffdfd7f",
+          "to": "skill_1e691179-2a98-46d6-a768-23c5b7a9d3fa",
+          "type": "normal"
+        },
+        {
+          "from": "skill_88fccf19-22e6-415f-b09c-4ffa482a65c8",
+          "to": "skill_7e5874ed-53ff-43bd-aa11-325a23fb7776",
+          "type": "normal"
+        },
+        {
+          "from": "skill_7e5874ed-53ff-43bd-aa11-325a23fb7776",
+          "to": "skill_c0f570cb-85d3-49a4-8f61-52d2b7f6fa3c",
+          "type": "normal"
+        },
+        {
+          "from": "skill_8a4204bc-1bfd-42b9-a2b8-aa1d54526c8a",
+          "to": "skill_a8cc60a3-3f5f-47ef-9358-3fcb07afd52b",
+          "type": "normal"
+        },
+        {
+          "from": "skill_0b06d9f0-e1cd-499d-a44e-b439b2bca172",
+          "to": "skill_a8cc60a3-3f5f-47ef-9358-3fcb07afd52b",
+          "type": "normal"
+        },
+        {
+          "from": "skill_43ed6d68-eaaa-43e7-ae77-4c93be6efd66",
+          "to": "skill_96635201-77d1-4315-a5bd-90765e43f5c7",
+          "type": "normal"
+        },
+        {
+          "from": "skill_84ea24f4-3427-41c6-9c11-08147530c4c7",
+          "to": "skill_96635201-77d1-4315-a5bd-90765e43f5c7",
+          "type": "normal"
+        },
+        {
+          "from": "skill_4c9d0c20-e1b1-4ff4-b432-1317bde855d8",
+          "to": "skill_0122acab-4d3e-4311-8e24-64cb51880502",
+          "type": "normal"
+        },
+        {
+          "from": "skill_dfb0f1b1-afc6-499c-9f65-7d85de1d0b59",
+          "to": "skill_0122acab-4d3e-4311-8e24-64cb51880502",
+          "type": "normal"
+        },
+        {
+          "from": "skill_c0f570cb-85d3-49a4-8f61-52d2b7f6fa3c",
+          "to": "skill_88c88eba-05c7-46af-8364-9bdd30ca492a",
+          "type": "normal"
+        },
+        {
+          "from": "skill_1e691179-2a98-46d6-a768-23c5b7a9d3fa",
+          "to": "skill_88c88eba-05c7-46af-8364-9bdd30ca492a",
+          "type": "normal"
+        },
+        {
+          "from": "skill_36f843de-47e1-4752-b42a-ddac54342acc",
+          "to": "skill_e4cc7419-19a9-4411-b7ce-dd66ab634387",
+          "type": "normal"
+        },
+        {
+          "from": "skill_79a37504-b145-4c83-a93b-d9bcb42bf7bb",
+          "to": "skill_e4cc7419-19a9-4411-b7ce-dd66ab634387",
+          "type": "normal"
+        },
+        {
+          "from": "skill_a6044d95-bbf9-4d75-ad72-859f7eb45c19",
+          "to": "skill_bc5c2a7f-1816-4f80-994f-35874ab03256",
+          "type": "normal"
+        },
+        {
+          "from": "skill_5537fd91-4a72-4471-9e72-6643162ba8dd",
+          "to": "skill_bc5c2a7f-1816-4f80-994f-35874ab03256",
+          "type": "normal"
+        },
+        {
+          "from": "skill_0122acab-4d3e-4311-8e24-64cb51880502",
+          "to": "skill_957d09c8-2376-4643-b113-797e5b2f2273",
+          "type": "normal"
+        },
+        {
+          "from": "skill_957d09c8-2376-4643-b113-797e5b2f2273",
+          "to": "skill_fcb969f9-228e-4ad5-8653-903a78975fa2",
+          "type": "normal"
+        },
+        {
+          "from": "skill_fcb969f9-228e-4ad5-8653-903a78975fa2",
+          "to": "skill_e1180721-d6b7-4dfc-a104-6d67824c0f23",
+          "type": "normal"
+        },
+        {
+          "from": "skill_e1180721-d6b7-4dfc-a104-6d67824c0f23",
+          "to": "skill_6d61e82e-2d61-4b48-8140-87f064243fde",
+          "type": "normal"
+        },
+        {
+          "from": "skill_a8cc60a3-3f5f-47ef-9358-3fcb07afd52b",
+          "to": "skill_5e96ec58-e138-449e-acbf-736166b6abe6",
+          "type": "normal"
+        },
+        {
+          "from": "skill_ed869e4d-742c-4488-9c9e-799fd31497ff",
+          "to": "skill_e4cc7419-19a9-4411-b7ce-dd66ab634387",
+          "type": "normal"
+        },
+        {
+          "from": "skill_96635201-77d1-4315-a5bd-90765e43f5c7",
+          "to": "skill_c4382506-e354-4862-af7e-454fa3799999",
+          "type": "normal"
+        },
+        {
+          "from": "skill_bc5c2a7f-1816-4f80-994f-35874ab03256",
+          "to": "skill_10d17f9b-3609-4796-ad6f-ee4db2dcfda6",
+          "type": "normal"
+        },
+        {
+          "from": "skill_e4cc7419-19a9-4411-b7ce-dd66ab634387",
+          "to": "skill_b326e8a3-bd1e-4a29-8e42-014a43524c4f",
+          "type": "normal"
+        },
+        {
+          "from": "skill_a8cc60a3-3f5f-47ef-9358-3fcb07afd52b",
+          "to": "skill_d8d39ce0-5321-4a6a-a789-4d8c3e64fb7a",
+          "type": "normal"
+        },
+        {
+          "from": "skill_5e96ec58-e138-449e-acbf-736166b6abe6",
+          "to": "skill_c3ce615e-5b29-486e-af88-57260ffaf93f",
+          "type": "normal"
+        },
+        {
+          "from": "skill_c3ce615e-5b29-486e-af88-57260ffaf93f",
+          "to": "skill_7dd2b39a-b2aa-4050-8e52-92a9bf4fdc62",
+          "type": "normal"
+        },
+        {
+          "from": "skill_7dd2b39a-b2aa-4050-8e52-92a9bf4fdc62",
+          "to": "skill_6d61e82e-2d61-4b48-8140-87f064243fde",
+          "type": "normal"
+        },
+        {
+          "from": "skill_d8d39ce0-5321-4a6a-a789-4d8c3e64fb7a",
+          "to": "skill_1e16c93a-18ab-48e1-82b6-0c181d8d3779",
+          "type": "normal"
+        },
+        {
+          "from": "skill_1e16c93a-18ab-48e1-82b6-0c181d8d3779",
+          "to": "skill_ebaa3db6-5ebe-4131-af33-9015d23f2da9",
+          "type": "normal"
+        },
+        {
+          "from": "skill_ebaa3db6-5ebe-4131-af33-9015d23f2da9",
+          "to": "skill_8200e8f1-8846-403e-b451-64c4957b66f2",
+          "type": "normal"
+        },
+        {
+          "from": "skill_ed869e4d-742c-4488-9c9e-799fd31497ff",
+          "to": "skill_dbd535c8-59f7-422f-87b5-7007ba323442",
+          "type": "normal"
+        },
+        {
+          "from": "skill_dbd535c8-59f7-422f-87b5-7007ba323442",
+          "to": "skill_03395077-6362-46d0-9cea-5c372f1640a4",
+          "type": "normal"
+        },
+        {
+          "from": "skill_03395077-6362-46d0-9cea-5c372f1640a4",
+          "to": "skill_8200e8f1-8846-403e-b451-64c4957b66f2",
+          "type": "normal"
+        },
+        {
+          "from": "skill_a2c756d2-05be-484c-bc7f-a500a4257f52",
+          "to": "skill_2335344f-789b-4d8b-a527-f4bf0d62376c",
+          "type": "normal"
+        },
+        {
+          "from": "skill_2335344f-789b-4d8b-a527-f4bf0d62376c",
+          "to": "skill_316df622-031d-4aec-ba48-5c2016d96746",
+          "type": "normal"
+        },
+        {
+          "from": "skill_316df622-031d-4aec-ba48-5c2016d96746",
+          "to": "skill_b57941ec-6e76-41df-97f4-4e6ed2b22a2d",
+          "type": "normal"
+        },
+        {
+          "from": "skill_96635201-77d1-4315-a5bd-90765e43f5c7",
+          "to": "skill_a2c756d2-05be-484c-bc7f-a500a4257f52",
+          "type": "normal"
+        },
+        {
+          "from": "skill_0122acab-4d3e-4311-8e24-64cb51880502",
+          "to": "skill_29196bf2-21aa-45d4-9130-28b5b96913fa",
+          "type": "normal"
+        },
+        {
+          "from": "skill_29196bf2-21aa-45d4-9130-28b5b96913fa",
+          "to": "skill_5f6430af-f6c1-4919-aa9d-b927b29fdb2c",
+          "type": "normal"
+        },
+        {
+          "from": "skill_5f6430af-f6c1-4919-aa9d-b927b29fdb2c",
+          "to": "skill_e8bebb04-8150-44f6-b890-3ce222e38bb9",
+          "type": "normal"
+        },
+        {
+          "from": "skill_e8bebb04-8150-44f6-b890-3ce222e38bb9",
+          "to": "skill_b57941ec-6e76-41df-97f4-4e6ed2b22a2d",
+          "type": "normal"
+        },
+        {
+          "from": "skill_c4382506-e354-4862-af7e-454fa3799999",
+          "to": "skill_c9495b4d-2933-495c-9248-1f26f4df5aff",
+          "type": "normal"
+        },
+        {
+          "from": "skill_c9495b4d-2933-495c-9248-1f26f4df5aff",
+          "to": "skill_1fc1b93b-dcb1-444b-8ca5-b3ab08ecb27f",
+          "type": "normal"
+        },
+        {
+          "from": "skill_1fc1b93b-dcb1-444b-8ca5-b3ab08ecb27f",
+          "to": "skill_eb764ff6-f59b-4c25-8218-4335c47a6132",
+          "type": "normal"
+        },
+        {
+          "from": "skill_dc0b19d8-1fda-42dc-bbd2-4623a75d3218",
+          "to": "skill_64eb2815-534a-455d-8746-fc8e6f2c80d3",
+          "type": "normal"
+        },
+        {
+          "from": "skill_64eb2815-534a-455d-8746-fc8e6f2c80d3",
+          "to": "skill_b4dd96ce-ff68-488b-8e92-116d29942cdd",
+          "type": "normal"
+        },
+        {
+          "from": "skill_88fccf19-22e6-415f-b09c-4ffa482a65c8",
+          "to": "skill_eb764ff6-f59b-4c25-8218-4335c47a6132",
+          "type": "normal"
+        },
+        {
+          "from": "skill_ff748702-313f-416e-bef8-6654d8fbf60d",
+          "to": "skill_bb47935c-e52a-4532-8688-0d0c73912cdc",
+          "type": "normal"
+        },
+        {
+          "from": "skill_ff748702-313f-416e-bef8-6654d8fbf60d",
+          "to": "skill_7856ef05-2119-4302-a2f7-f795749aa7a9",
+          "type": "normal"
+        },
+        {
+          "from": "skill_bb47935c-e52a-4532-8688-0d0c73912cdc",
+          "to": "skill_b71fb2e7-a549-4417-af40-0d56e11629e8",
+          "type": "normal"
+        },
+        {
+          "from": "skill_b71fb2e7-a549-4417-af40-0d56e11629e8",
+          "to": "skill_17ce2415-a1e4-4e7a-a1dd-5bff57e7aa9d",
+          "type": "normal"
+        },
+        {
+          "from": "skill_17ce2415-a1e4-4e7a-a1dd-5bff57e7aa9d",
+          "to": "skill_88c88eba-05c7-46af-8364-9bdd30ca492a",
+          "type": "normal"
+        },
+        {
+          "from": "skill_b4dd96ce-ff68-488b-8e92-116d29942cdd",
+          "to": "skill_2e8a2b24-d3dc-4ce4-9cf3-a02f29c02102",
+          "type": "normal"
+        },
+        {
+          "from": "skill_bc5c2a7f-1816-4f80-994f-35874ab03256",
+          "to": "skill_dc0b19d8-1fda-42dc-bbd2-4623a75d3218",
+          "type": "normal"
+        },
+        {
+          "from": "skill_88c88eba-05c7-46af-8364-9bdd30ca492a",
+          "to": "skill_e225503b-a87e-4b88-9ae1-ddb8d79845e5",
+          "type": "normal"
+        },
+        {
+          "from": "skill_e225503b-a87e-4b88-9ae1-ddb8d79845e5",
+          "to": "skill_a01663c3-1d40-478e-a1d9-bd936e4e2178",
+          "type": "normal"
+        },
+        {
+          "from": "skill_a01663c3-1d40-478e-a1d9-bd936e4e2178",
+          "to": "skill_67dab10f-7ddc-48a3-9162-9f8e497eb544",
+          "type": "normal"
+        },
+        {
+          "from": "skill_67dab10f-7ddc-48a3-9162-9f8e497eb544",
+          "to": "skill_2e8a2b24-d3dc-4ce4-9cf3-a02f29c02102",
+          "type": "normal"
+        },
+        {
+          "from": "skill_b326e8a3-bd1e-4a29-8e42-014a43524c4f",
+          "to": "skill_d6184f7b-3e4f-4385-b28f-a67d490ed970",
+          "type": "normal"
+        },
+        {
+          "from": "skill_d6184f7b-3e4f-4385-b28f-a67d490ed970",
+          "to": "skill_b114020b-e356-4980-ae8a-36c46560e442",
+          "type": "normal"
+        },
+        {
+          "from": "skill_b114020b-e356-4980-ae8a-36c46560e442",
+          "to": "skill_ddd837f5-440f-4590-b402-b1d50becf7b8",
+          "type": "normal"
+        },
+        {
+          "from": "skill_10d17f9b-3609-4796-ad6f-ee4db2dcfda6",
+          "to": "skill_baf96c99-2ea9-405e-9e4d-a7debae3e304",
+          "type": "normal"
+        },
+        {
+          "from": "skill_baf96c99-2ea9-405e-9e4d-a7debae3e304",
+          "to": "skill_59596f80-d6c9-40f7-8fcc-1b36d1c4a3ad",
+          "type": "normal"
+        },
+        {
+          "from": "skill_59596f80-d6c9-40f7-8fcc-1b36d1c4a3ad",
+          "to": "skill_ddd837f5-440f-4590-b402-b1d50becf7b8",
+          "type": "normal"
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "name": "Warrior",
+      "description": "",
+      "icon": "minecraft:iron_sword",
+      "color": "#efbf04",
+      "cost": 1,
+      "requiredSkills": 1,
+      "requiredPoints": 0,
+      "requiredSpentPoints": 0,
+      "effects": [
+        {
+          "attribute": "puffish_attributes:melee_damage",
+          "operation": "add_multiplied_total",
+          "amount": 10
+        },
+        {
+          "attribute": "puffish_attributes:ranged_damage",
+          "operation": "add_multiplied_total",
+          "amount": 10
+        }
+      ],
+      "implementation": "",
+      "acceptance": ""
+    },
+    {
+      "name": "Mage",
+      "description": "",
+      "icon": "minecraft:book",
+      "color": "#efbf04",
+      "cost": 1,
+      "requiredSkills": 1,
+      "requiredPoints": 0,
+      "requiredSpentPoints": 0,
+      "effects": [
+        {
+          "attribute": "puffish_attributes:magic_damage",
+          "operation": "add_multiplied_total",
+          "amount": 20
+        }
+      ],
+      "implementation": "Magic damage bonus for all possible spells",
+      "acceptance": ""
+    },
+    {
+      "name": "Crafter",
+      "description": "",
+      "icon": "minecraft:crafter",
+      "color": "#efbf04",
+      "cost": 1,
+      "requiredSkills": 1,
+      "requiredPoints": 0,
+      "requiredSpentPoints": 0,
+      "effects": [
+        {
+          "attribute": "puffish_attributes:mining_speed",
+          "operation": "add_multiplied_total",
+          "amount": 10
+        }
+      ],
+      "implementation": "",
+      "acceptance": ""
+    },
+    {
+      "name": "Blacksmith",
+      "description": "",
+      "icon": "minecraft:anvil",
+      "color": "#efbf04",
+      "cost": 1,
+      "requiredSkills": 1,
+      "requiredPoints": 0,
+      "requiredSpentPoints": 0,
+      "effects": [
+        {
+          "attribute": "puffish_attributes:repair_cost",
+          "operation": "add_multiplied_total",
+          "amount": -20
+        }
+      ],
+      "implementation": "",
+      "acceptance": ""
+    },
+    {
+      "name": "Artificer",
+      "description": "",
+      "icon": "minecraft:ender_eye",
+      "color": "#efbf04",
+      "cost": 1,
+      "requiredSkills": 1,
+      "requiredPoints": 0,
+      "requiredSpentPoints": 0,
+      "effects": [
+        {
+          "attribute": "minecraft:generic.luck",
+          "operation": "add_multiplied_total",
+          "amount": 20
+        },
+        {
+          "attribute": "minecraft:generic.luck",
+          "operation": "add_value",
+          "amount": 5
+        }
+      ],
+      "implementation": "",
+      "acceptance": ""
+    },
+    {
+      "name": "Scout",
+      "description": "",
+      "icon": "minecraft:compass",
+      "color": "#efbf04",
+      "cost": 1,
+      "requiredSkills": 1,
+      "requiredPoints": 0,
+      "requiredSpentPoints": 0,
+      "effects": [
+        {
+          "attribute": "minecraft:generic.movement_speed",
+          "operation": "add_multiplied_total",
+          "amount": 20
+        }
+      ],
+      "implementation": "",
+      "acceptance": ""
+    },
+    {
+      "name": "Infantrist",
+      "description": "",
+      "icon": "minecraft:iron_sword",
+      "color": "#6ac9b7",
+      "cost": 1,
+      "requiredSkills": 1,
+      "requiredPoints": 0,
+      "requiredSpentPoints": 0,
+      "effects": [
+        {
+          "attribute": "puffish_attributes:melee_damage",
+          "operation": "add_multiplied_total",
+          "amount": 5
+        }
+      ],
+      "implementation": "",
+      "acceptance": ""
+    },
+    {
+      "name": "Archer",
+      "description": "",
+      "icon": "minecraft:bow",
+      "color": "#6ac9b7",
+      "cost": 1,
+      "requiredSkills": 1,
+      "requiredPoints": 0,
+      "requiredSpentPoints": 0,
+      "effects": [
+        {
+          "attribute": "puffish_attributes:ranged_damage",
+          "operation": "add_multiplied_total",
+          "amount": 5
+        }
+      ],
+      "implementation": "",
+      "acceptance": ""
+    },
+    {
+      "name": "Devastation",
+      "description": "",
+      "icon": "minecraft:stick",
+      "color": "#6ac9b7",
+      "cost": 1,
+      "requiredSkills": 1,
+      "requiredPoints": 0,
+      "requiredSpentPoints": 0,
+      "effects": [
+        {
+          "attribute": "puffish_attributes:magic_damage",
+          "operation": "add_multiplied_total",
+          "amount": 5
+        }
+      ],
+      "implementation": "",
+      "acceptance": ""
+    },
+    {
+      "name": "Regeneration",
+      "description": "",
+      "icon": "minecraft:water_bucket",
+      "color": "#6ac9b7",
+      "cost": 1,
+      "requiredSkills": 1,
+      "requiredPoints": 0,
+      "requiredSpentPoints": 0,
+      "effects": [],
+      "implementation": "10% more mana regeneration (all possible mods)",
+      "acceptance": ""
+    },
+    {
+      "name": "Finetuned Repairs",
+      "description": "",
+      "icon": "minecraft:iron_ingot",
+      "color": "#6ac9b7",
+      "cost": 1,
+      "requiredSkills": 1,
+      "requiredPoints": 0,
+      "requiredSpentPoints": 0,
+      "effects": [
+        {
+          "attribute": "puffish_attributes:repair_cost",
+          "operation": "add_multiplied_total",
+          "amount": -10
+        }
+      ],
+      "implementation": "",
+      "acceptance": ""
+    },
+    {
+      "name": "Armored",
+      "description": "",
+      "icon": "minecraft:iron_chestplate",
+      "color": "#6ac9b7",
+      "cost": 1,
+      "requiredSkills": 1,
+      "requiredPoints": 0,
+      "requiredSpentPoints": 0,
+      "effects": [
+        {
+          "attribute": "minecraft:generic.armor",
+          "operation": "add_multiplied_total",
+          "amount": 5
+        }
+      ],
+      "implementation": "",
+      "acceptance": ""
+    },
+    {
+      "name": "Magic Resilience",
+      "description": "",
+      "icon": "minecraft:cyan_candle",
+      "color": "#6ac9b7",
+      "cost": 1,
+      "requiredSkills": 1,
+      "requiredPoints": 0,
+      "requiredSpentPoints": 0,
+      "effects": [
+        {
+          "attribute": "puffish_attributes:magic_resistance",
+          "operation": "add_multiplied_total",
+          "amount": 5
+        }
+      ],
+      "implementation": "",
+      "acceptance": ""
+    },
+    {
+      "name": "Fast Learner",
+      "description": "",
+      "icon": "minecraft:experience_bottle",
+      "color": "#6ac9b7",
+      "cost": 1,
+      "requiredSkills": 1,
+      "requiredPoints": 0,
+      "requiredSpentPoints": 0,
+      "effects": [
+        {
+          "attribute": "puffish_attributes:experience",
+          "operation": "add_multiplied_total",
+          "amount": 15
+        }
+      ],
+      "implementation": "",
+      "acceptance": ""
+    },
+    {
+      "name": "Accelerated",
+      "description": "",
+      "icon": "minecraft:rabbit_foot",
+      "color": "#6ac9b7",
+      "cost": 1,
+      "requiredSkills": 1,
+      "requiredPoints": 0,
+      "requiredSpentPoints": 0,
+      "effects": [
+        {
+          "attribute": "puffish_attributes:sprinting_speed",
+          "operation": "add_multiplied_total",
+          "amount": 10
+        }
+      ],
+      "implementation": "",
+      "acceptance": ""
+    },
+    {
+      "name": "Sneaky",
+      "description": "",
+      "icon": "minecraft:leather_boots",
+      "color": "#6ac9b7",
+      "cost": 1,
+      "requiredSkills": 1,
+      "requiredPoints": 0,
+      "requiredSpentPoints": 0,
+      "effects": [
+        {
+          "attribute": "puffish_attributes:stealth",
+          "operation": "add_multiplied_total",
+          "amount": 5
+        }
+      ],
+      "implementation": "",
+      "acceptance": ""
+    },
+    {
+      "name": "Digger",
+      "description": "",
+      "icon": "minecraft:iron_pickaxe",
+      "color": "#6ac9b7",
+      "cost": 1,
+      "requiredSkills": 1,
+      "requiredPoints": 0,
+      "requiredSpentPoints": 0,
+      "effects": [
+        {
+          "attribute": "puffish_attributes:mining_speed",
+          "operation": "add_multiplied_total",
+          "amount": 5
+        }
+      ],
+      "implementation": "",
+      "acceptance": ""
+    },
+    {
+      "name": "Healthy",
+      "description": "",
+      "icon": "minecraft:glistering_melon_slice",
+      "color": "#6ac9b7",
+      "cost": 1,
+      "requiredSkills": 1,
+      "requiredPoints": 0,
+      "requiredSpentPoints": 0,
+      "effects": [
+        {
+          "attribute": "puffish_attributes:natural_regeneration",
+          "operation": "add_multiplied_total",
+          "amount": 10
+        }
+      ],
+      "implementation": "",
+      "acceptance": ""
+    },
+    {
+      "name": "Hardened Skin",
+      "description": "You take less damage than others.",
+      "icon": "minecraft:shield",
+      "color": "#6d89ca",
+      "cost": 1,
+      "requiredSkills": 1,
+      "requiredPoints": 0,
+      "requiredSpentPoints": 0,
+      "effects": [
+        {
+          "attribute": "puffish_attributes:melee_resistance",
+          "operation": "add_multiplied_total",
+          "amount": 20
+        },
+        {
+          "attribute": "puffish_attributes:ranged_resistance",
+          "operation": "add_multiplied_total",
+          "amount": 20
+        }
+      ],
+      "implementation": "",
+      "acceptance": ""
+    },
+    {
+      "name": "Needful Taste",
+      "description": "You have a much lower chance to get food poisoning.",
+      "icon": "minecraft:rotten_flesh",
+      "color": "#6d89ca",
+      "cost": 1,
+      "requiredSkills": 1,
+      "requiredPoints": 0,
+      "requiredSpentPoints": 0,
+      "effects": [],
+      "implementation": "Anything consumed (food, potions) that give the player poison, hunger or other debuffs has a 50% chance not to do so.",
+      "acceptance": "Test with common food items from Vanilla and mods to verify that \na) food items like rotten flesh, spider eyes, raw chicken and so on have a 50% change not to give the debuff, \nb) that items like combined potions always give the positive effect but only 50% of the time the negative effect (for each negative effect).\nc) Other effects (like spells) that apply negative effects are not altered."
+    },
+    {
+      "name": "Relentless",
+      "description": "You are difficult to exhaust.",
+      "icon": "minecraft:tuff_brick_wall",
+      "color": "#6d89ca",
+      "cost": 1,
+      "requiredSkills": 1,
+      "requiredPoints": 0,
+      "requiredSpentPoints": 0,
+      "effects": [
+        {
+          "attribute": "puffish_attributes:stamina",
+          "operation": "add_value",
+          "amount": 6
+        }
+      ],
+      "implementation": "",
+      "acceptance": ""
+    },
+    {
+      "name": "Prospector",
+      "description": "You know how to find ores.",
+      "icon": "minecraft:spyglass",
+      "color": "#6d89ca",
+      "cost": 1,
+      "requiredSkills": 1,
+      "requiredPoints": 0,
+      "requiredSpentPoints": 0,
+      "effects": [
+        {
+          "attribute": "puffish_attributes:fortune",
+          "operation": "add_value",
+          "amount": 1
+        }
+      ],
+      "implementation": "",
+      "acceptance": ""
+    },
+    {
+      "name": "Experienced",
+      "description": "You learn at a much faster rate.",
+      "icon": "minecraft:explorer_pottery_sherd",
+      "color": "#6d89ca",
+      "cost": 1,
+      "requiredSkills": 1,
+      "requiredPoints": 0,
+      "requiredSpentPoints": 0,
+      "effects": [
+        {
+          "attribute": "puffish_attributes:experience",
+          "operation": "add_multiplied_total",
+          "amount": 50
+        }
+      ],
+      "implementation": "",
+      "acceptance": ""
+    },
+    {
+      "name": "Abrasive",
+      "description": "You know how to resist magic.",
+      "icon": "minecraft:basalt",
+      "color": "#6d89ca",
+      "cost": 1,
+      "requiredSkills": 1,
+      "requiredPoints": 0,
+      "requiredSpentPoints": 0,
+      "effects": [
+        {
+          "attribute": "puffish_attributes:magic_resistance",
+          "operation": "add_multiplied_total",
+          "amount": 10
+        }
+      ],
+      "implementation": "",
+      "acceptance": ""
+    },
+    {
+      "name": "Precise Repairs",
+      "description": "",
+      "icon": "minecraft:copper_ingot",
+      "color": "#6ac9b7",
+      "cost": 1,
+      "requiredSkills": 1,
+      "requiredPoints": 0,
+      "requiredSpentPoints": 0,
+      "effects": [
+        {
+          "attribute": "puffish_attributes:repair_cost",
+          "operation": "add_multiplied_total",
+          "amount": -5
+        }
+      ],
+      "implementation": "",
+      "acceptance": ""
+    },
+    {
+      "name": "Thick Skin",
+      "description": "",
+      "icon": "minecraft:leather_chestplate",
+      "color": "#6ac9b7",
+      "cost": 1,
+      "requiredSkills": 1,
+      "requiredPoints": 0,
+      "requiredSpentPoints": 0,
+      "effects": [
+        {
+          "attribute": "minecraft:generic.armor",
+          "operation": "add_value",
+          "amount": 2
+        }
+      ],
+      "implementation": "",
+      "acceptance": ""
+    },
+    {
+      "name": "Adept Fighter",
+      "description": "",
+      "icon": "minecraft:diamond_sword",
+      "color": "#6ac9b7",
+      "cost": 1,
+      "requiredSkills": 1,
+      "requiredPoints": 0,
+      "requiredSpentPoints": 0,
+      "effects": [
+        {
+          "attribute": "puffish_attributes:melee_damage",
+          "operation": "add_value",
+          "amount": 1
+        },
+        {
+          "attribute": "puffish_attributes:ranged_damage",
+          "operation": "add_value",
+          "amount": 1
+        }
+      ],
+      "implementation": "",
+      "acceptance": ""
+    },
+    {
+      "name": "Precision Attacks",
+      "description": "",
+      "icon": "minecraft:target",
+      "color": "#6ac9b7",
+      "cost": 1,
+      "requiredSkills": 1,
+      "requiredPoints": 0,
+      "requiredSpentPoints": 0,
+      "effects": [
+        {
+          "attribute": "puffish_attributes:armor_shred",
+          "operation": "add_value",
+          "amount": 2
+        }
+      ],
+      "implementation": "",
+      "acceptance": ""
+    },
+    {
+      "name": "Disruptive Attacks",
+      "description": "",
+      "icon": "minecraft:amethyst_shard",
+      "color": "#6ac9b7",
+      "cost": 1,
+      "requiredSkills": 1,
+      "requiredPoints": 0,
+      "requiredSpentPoints": 0,
+      "effects": [
+        {
+          "attribute": "puffish_attributes:protection_shred",
+          "operation": "add_value",
+          "amount": 2
+        }
+      ],
+      "implementation": "",
+      "acceptance": ""
+    },
+    {
+      "name": "Healthy Body",
+      "description": "",
+      "icon": "minecraft:apple",
+      "color": "#6ac9b7",
+      "cost": 1,
+      "requiredSkills": 1,
+      "requiredPoints": 0,
+      "requiredSpentPoints": 0,
+      "effects": [
+        {
+          "attribute": "puffish_attributes:healing",
+          "operation": "add_multiplied_total",
+          "amount": 5
+        }
+      ],
+      "implementation": "",
+      "acceptance": ""
+    },
+    {
+      "name": "Magic Energy",
+      "description": "",
+      "icon": "minecraft:red_candle",
+      "color": "#6ac9b7",
+      "cost": 1,
+      "requiredSkills": 1,
+      "requiredPoints": 0,
+      "requiredSpentPoints": 0,
+      "effects": [
+        {
+          "attribute": "puffish_attributes:magic_damage",
+          "operation": "add_multiplied_total",
+          "amount": 5
+        }
+      ],
+      "implementation": "",
+      "acceptance": ""
+    },
+    {
+      "name": "Attuned Magic",
+      "description": "",
+      "icon": "minecraft:creeper_banner_pattern",
+      "color": "#6ac9b7",
+      "cost": 1,
+      "requiredSkills": 1,
+      "requiredPoints": 0,
+      "requiredSpentPoints": 0,
+      "effects": [
+        {
+          "attribute": "puffish_attributes:magic_damage",
+          "operation": "add_value",
+          "amount": 1
+        }
+      ],
+      "implementation": "",
+      "acceptance": ""
+    },
+    {
+      "name": "Penetrating Spells",
+      "description": "",
+      "icon": "minecraft:arrow",
+      "color": "#6ac9b7",
+      "cost": 1,
+      "requiredSkills": 1,
+      "requiredPoints": 0,
+      "requiredSpentPoints": 0,
+      "effects": [
+        {
+          "attribute": "puffish_attributes:magic_resistance_shred",
+          "operation": "add_value",
+          "amount": 2
+        }
+      ],
+      "implementation": "",
+      "acceptance": ""
+    },
+    {
+      "name": "Resilient Soul",
+      "description": "",
+      "icon": "minecraft:beacon",
+      "color": "#6d89ca",
+      "cost": 1,
+      "requiredSkills": 1,
+      "requiredPoints": 0,
+      "requiredSpentPoints": 0,
+      "effects": [
+        {
+          "attribute": "puffish_attributes:magic_resistance",
+          "operation": "add_value",
+          "amount": 1
+        }
+      ],
+      "implementation": "",
+      "acceptance": ""
+    },
+    {
+      "name": "Vivid Lifeforce",
+      "description": "",
+      "icon": "minecraft:heart_of_the_sea",
+      "color": "#6d89ca",
+      "cost": 1,
+      "requiredSkills": 1,
+      "requiredPoints": 0,
+      "requiredSpentPoints": 0,
+      "effects": [
+        {
+          "attribute": "minecraft:generic.max_health",
+          "operation": "add_multiplied_total",
+          "amount": 20
+        },
+        {
+          "attribute": "puffish_attributes:natural_regeneration",
+          "operation": "add_multiplied_total",
+          "amount": 20
+        }
+      ],
+      "implementation": "",
+      "acceptance": ""
+    },
+    {
+      "name": "Hasty Actions",
+      "description": "Who got the time for lengthy breakfast?",
+      "icon": "minecraft:beetroot_soup",
+      "color": "#6d89ca",
+      "cost": 1,
+      "requiredSkills": 1,
+      "requiredPoints": 0,
+      "requiredSpentPoints": 0,
+      "effects": [
+        {
+          "attribute": "puffish_attributes:consuming_speed",
+          "operation": "add_multiplied_total",
+          "amount": 30
+        }
+      ],
+      "implementation": "",
+      "acceptance": ""
+    },
+    {
+      "name": "Resilient Body",
+      "description": "You take less damage from all attacks.",
+      "icon": "minecraft:diamond_chestplate",
+      "color": "#6d89ca",
+      "cost": 1,
+      "requiredSkills": 1,
+      "requiredPoints": 0,
+      "requiredSpentPoints": 0,
+      "effects": [
+        {
+          "attribute": "puffish_attributes:resistance",
+          "operation": "add_multiplied_total",
+          "amount": 10
+        },
+        {
+          "attribute": "minecraft:generic.armor_toughness",
+          "operation": "add_multiplied_total",
+          "amount": 10
+        }
+      ],
+      "implementation": "",
+      "acceptance": ""
+    },
+    {
+      "name": "Far Shot",
+      "description": "Your arrows fly faster and further.",
+      "icon": "minecraft:crossbow",
+      "color": "#6d89ca",
+      "cost": 1,
+      "requiredSkills": 1,
+      "requiredPoints": 0,
+      "requiredSpentPoints": 0,
+      "effects": [
+        {
+          "attribute": "puffish_attributes:bow_projectile_speed",
+          "operation": "add_multiplied_total",
+          "amount": 20
+        },
+        {
+          "attribute": "puffish_attributes:crossbow_projectile_speed",
+          "operation": "add_multiplied_total",
+          "amount": 20
+        }
+      ],
+      "implementation": "",
+      "acceptance": ""
+    },
+    {
+      "name": "Overwhelming Power",
+      "description": "You know how to get your spells to hit.",
+      "icon": "minecraft:armor_stand",
+      "color": "#6d89ca",
+      "cost": 1,
+      "requiredSkills": 1,
+      "requiredPoints": 0,
+      "requiredSpentPoints": 0,
+      "effects": [
+        {
+          "attribute": "puffish_attributes:magic_resistance_shred",
+          "operation": "add_multiplied_total",
+          "amount": 10
+        },
+        {
+          "attribute": "puffish_attributes:protection_shred",
+          "operation": "add_multiplied_total",
+          "amount": 10
+        }
+      ],
+      "implementation": "",
+      "acceptance": ""
+    },
+    {
+      "name": "Battle-hardened",
+      "description": "",
+      "icon": "minecraft:golden_leggings",
+      "color": "#6ac9b7",
+      "cost": 1,
+      "requiredSkills": 1,
+      "requiredPoints": 0,
+      "requiredSpentPoints": 0,
+      "effects": [
+        {
+          "attribute": "puffish_attributes:melee_resistance",
+          "operation": "add_value",
+          "amount": 1
+        },
+        {
+          "attribute": "puffish_attributes:ranged_resistance",
+          "operation": "add_value",
+          "amount": 1
+        }
+      ],
+      "implementation": "",
+      "acceptance": ""
+    },
+    {
+      "name": "Strong Hands",
+      "description": "",
+      "icon": "minecraft:cracked_stone_bricks",
+      "color": "#6ac9b7",
+      "cost": 1,
+      "requiredSkills": 1,
+      "requiredPoints": 0,
+      "requiredSpentPoints": 0,
+      "effects": [
+        {
+          "attribute": "puffish_attributes:breaking_speed",
+          "operation": "add_multiplied_total",
+          "amount": 10
+        }
+      ],
+      "implementation": "",
+      "acceptance": ""
+    },
+    {
+      "name": "Strong Soul",
+      "description": "",
+      "icon": "minecraft:allium",
+      "color": "#6ac9b7",
+      "cost": 1,
+      "requiredSkills": 1,
+      "requiredPoints": 0,
+      "requiredSpentPoints": 0,
+      "effects": [
+        {
+          "attribute": "minecraft:generic.max_health",
+          "operation": "add_value",
+          "amount": 2
+        }
+      ],
+      "implementation": "",
+      "acceptance": ""
+    }
+  ],
+  "migrationNotes": []
+}

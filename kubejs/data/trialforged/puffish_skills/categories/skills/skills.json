@@ -1,0 +1,542 @@
+{
+  "skill_383f5841-6b53-4325-a1ca-0cdddc79eb24": {
+    "x": 0,
+    "y": -156,
+    "definition": "definition_eaf0fe0a362b58490e9d73c9",
+    "root": true
+  },
+  "skill_46100feb-17d3-49e4-b8fe-d0803f7bd1fc": {
+    "x": 270,
+    "y": 312,
+    "definition": "definition_e181bc015be0fe01de62a0e9",
+    "root": true
+  },
+  "skill_ff748702-313f-416e-bef8-6654d8fbf60d": {
+    "x": -270,
+    "y": 312,
+    "definition": "definition_adedc646019442f15514e4bd",
+    "root": true
+  },
+  "skill_e5e42f14-fa5f-4ae2-92da-c9c7e0610c5e": {
+    "x": -270,
+    "y": 0,
+    "definition": "definition_b919e17acb83badd40911d7b",
+    "root": true
+  },
+  "skill_46199796-a5de-445d-94f3-a7dfdbbf9ba8": {
+    "x": 0,
+    "y": 468,
+    "definition": "definition_ac51d69a13a83903c10d9cd5",
+    "root": true
+  },
+  "skill_efcd0ba1-fe31-4db2-9458-e730fdf357e4": {
+    "x": 270,
+    "y": 0,
+    "definition": "definition_8a1db462be7537747b0f0b48",
+    "root": true
+  },
+  "skill_df0c5f45-25d8-4952-a718-f2ac012a53de": {
+    "x": -45,
+    "y": -234,
+    "definition": "definition_fe82df2e80a8ba79af291ba9",
+    "root": false
+  },
+  "skill_0820315d-2ab9-4348-aa91-8ec77c5e1172": {
+    "x": 45,
+    "y": -234,
+    "definition": "definition_71f2149b5982e467908f4dd9",
+    "root": false
+  },
+  "skill_fa9bf462-cfbc-41e8-a06d-14f5d9a5608c": {
+    "x": 360,
+    "y": 312,
+    "definition": "definition_e1a21b9f25b46032d9ed2774",
+    "root": false
+  },
+  "skill_36c144d6-f598-4812-808f-3b8ece96f570": {
+    "x": 315,
+    "y": 390,
+    "definition": "definition_35de2da495048b4f43abec79",
+    "root": false
+  },
+  "skill_5280b183-0853-45c8-a865-1c83478f77eb": {
+    "x": 90,
+    "y": -312,
+    "definition": "definition_71f2149b5982e467908f4dd9",
+    "root": false
+  },
+  "skill_dfb0f1b1-afc6-499c-9f65-7d85de1d0b59": {
+    "x": 45,
+    "y": -390,
+    "definition": "definition_71f2149b5982e467908f4dd9",
+    "root": false
+  },
+  "skill_229a8264-b4ed-4610-9136-2ae3aef69499": {
+    "x": -90,
+    "y": -312,
+    "definition": "definition_fe82df2e80a8ba79af291ba9",
+    "root": false
+  },
+  "skill_4c9d0c20-e1b1-4ff4-b432-1317bde855d8": {
+    "x": -45,
+    "y": -390,
+    "definition": "definition_fe82df2e80a8ba79af291ba9",
+    "root": false
+  },
+  "skill_a9e56919-9324-4d47-b660-6cf9092670f5": {
+    "x": 450,
+    "y": 312,
+    "definition": "definition_e1a21b9f25b46032d9ed2774",
+    "root": false
+  },
+  "skill_79a37504-b145-4c83-a93b-d9bcb42bf7bb": {
+    "x": 495,
+    "y": 390,
+    "definition": "definition_e1a21b9f25b46032d9ed2774",
+    "root": false
+  },
+  "skill_c97a8457-943e-452a-ba31-b13b79a166d1": {
+    "x": 360,
+    "y": 468,
+    "definition": "definition_35de2da495048b4f43abec79",
+    "root": false
+  },
+  "skill_36f843de-47e1-4752-b42a-ddac54342acc": {
+    "x": 450,
+    "y": 468,
+    "definition": "definition_35de2da495048b4f43abec79",
+    "root": false
+  },
+  "skill_cf116bb5-9f62-4f25-ac1d-b941aa49005b": {
+    "x": -360,
+    "y": 0,
+    "definition": "definition_c82588de4efda488954993de",
+    "root": false
+  },
+  "skill_c92876ad-fdb4-4a25-8652-2ed55d95eba1": {
+    "x": -315,
+    "y": -78,
+    "definition": "definition_b4475a9904098fd26c6ef56c",
+    "root": false
+  },
+  "skill_47bb2c9d-7f25-49d9-8234-17a4c899c735": {
+    "x": -360,
+    "y": -156,
+    "definition": "definition_b4475a9904098fd26c6ef56c",
+    "root": false
+  },
+  "skill_43ed6d68-eaaa-43e7-ae77-4c93be6efd66": {
+    "x": -450,
+    "y": -156,
+    "definition": "definition_b4475a9904098fd26c6ef56c",
+    "root": false
+  },
+  "skill_7f45811b-0695-4d1b-83b2-515b3ad55244": {
+    "x": -450,
+    "y": 0,
+    "definition": "definition_c82588de4efda488954993de",
+    "root": false
+  },
+  "skill_84ea24f4-3427-41c6-9c11-08147530c4c7": {
+    "x": -495,
+    "y": -78,
+    "definition": "definition_c82588de4efda488954993de",
+    "root": false
+  },
+  "skill_728fde67-75bc-4395-8796-46948ad846e3": {
+    "x": 45,
+    "y": 546,
+    "definition": "definition_eb8f0e1b1dc2951660d3c3ca",
+    "root": false
+  },
+  "skill_8635fa3d-fcf8-48a2-85a5-a6e8f1dde613": {
+    "x": -45,
+    "y": 546,
+    "definition": "definition_d0dcf17e95ead8edfc2da95b",
+    "root": false
+  },
+  "skill_17b7a1c4-c2e6-4e81-9c47-89ebe70cf322": {
+    "x": 90,
+    "y": 624,
+    "definition": "definition_eb8f0e1b1dc2951660d3c3ca",
+    "root": false
+  },
+  "skill_5537fd91-4a72-4471-9e72-6643162ba8dd": {
+    "x": 45,
+    "y": 702,
+    "definition": "definition_eb8f0e1b1dc2951660d3c3ca",
+    "root": false
+  },
+  "skill_92703f35-4412-461b-8633-cba21f3f17af": {
+    "x": -90,
+    "y": 624,
+    "definition": "definition_d0dcf17e95ead8edfc2da95b",
+    "root": false
+  },
+  "skill_a6044d95-bbf9-4d75-ad72-859f7eb45c19": {
+    "x": -45,
+    "y": 702,
+    "definition": "definition_d0dcf17e95ead8edfc2da95b",
+    "root": false
+  },
+  "skill_214c7279-634a-4918-829a-e6b51e1c2450": {
+    "x": 315,
+    "y": -78,
+    "definition": "definition_e17d5f05f9d9c30dd1113dcd",
+    "root": false
+  },
+  "skill_bb8b4d85-3821-4839-b1cd-b56603909b82": {
+    "x": 360,
+    "y": 0,
+    "definition": "definition_771139a20b8180dd5219e8cf",
+    "root": false
+  },
+  "skill_43156aa9-8e5e-4793-81a5-e5292d7a879e": {
+    "x": 360,
+    "y": -156,
+    "definition": "definition_e17d5f05f9d9c30dd1113dcd",
+    "root": false
+  },
+  "skill_8a4204bc-1bfd-42b9-a2b8-aa1d54526c8a": {
+    "x": 450,
+    "y": -156,
+    "definition": "definition_e17d5f05f9d9c30dd1113dcd",
+    "root": false
+  },
+  "skill_04c73a2f-4971-4706-af2b-0b2f71daf5c8": {
+    "x": 450,
+    "y": 0,
+    "definition": "definition_771139a20b8180dd5219e8cf",
+    "root": false
+  },
+  "skill_0b06d9f0-e1cd-499d-a44e-b439b2bca172": {
+    "x": 495,
+    "y": -78,
+    "definition": "definition_771139a20b8180dd5219e8cf",
+    "root": false
+  },
+  "skill_88fccf19-22e6-415f-b09c-4ffa482a65c8": {
+    "x": -675,
+    "y": 234,
+    "definition": "definition_2903c3cb68c44acd43d5469d",
+    "root": false
+  },
+  "skill_7856ef05-2119-4302-a2f7-f795749aa7a9": {
+    "x": -315,
+    "y": 390,
+    "definition": "definition_7f1e323b6272c6209a590fe8",
+    "root": false
+  },
+  "skill_7e5874ed-53ff-43bd-aa11-325a23fb7776": {
+    "x": -630,
+    "y": 312,
+    "definition": "definition_2903c3cb68c44acd43d5469d",
+    "root": false
+  },
+  "skill_c0f570cb-85d3-49a4-8f61-52d2b7f6fa3c": {
+    "x": -585,
+    "y": 390,
+    "definition": "definition_2903c3cb68c44acd43d5469d",
+    "root": false
+  },
+  "skill_3590661c-2fd9-4ea3-8e7d-d2265ffdfd7f": {
+    "x": -360,
+    "y": 468,
+    "definition": "definition_7f1e323b6272c6209a590fe8",
+    "root": false
+  },
+  "skill_1e691179-2a98-46d6-a768-23c5b7a9d3fa": {
+    "x": -450,
+    "y": 468,
+    "definition": "definition_7f1e323b6272c6209a590fe8",
+    "root": false
+  },
+  "skill_0122acab-4d3e-4311-8e24-64cb51880502": {
+    "x": 0,
+    "y": -468,
+    "definition": "definition_2666a3a38dbeffb78d39e959",
+    "root": false
+  },
+  "skill_a8cc60a3-3f5f-47ef-9358-3fcb07afd52b": {
+    "x": 540,
+    "y": -156,
+    "definition": "definition_dedb9017a414dce68c28e1b0",
+    "root": false
+  },
+  "skill_96635201-77d1-4315-a5bd-90765e43f5c7": {
+    "x": -540,
+    "y": -156,
+    "definition": "definition_4cf92935c62ffa8219001e1d",
+    "root": false
+  },
+  "skill_88c88eba-05c7-46af-8364-9bdd30ca492a": {
+    "x": -540,
+    "y": 468,
+    "definition": "definition_1fe98f0f49381655ae05424a",
+    "root": false
+  },
+  "skill_bc5c2a7f-1816-4f80-994f-35874ab03256": {
+    "x": 0,
+    "y": 780,
+    "definition": "definition_2506204d5d098d80e8426605",
+    "root": false
+  },
+  "skill_e4cc7419-19a9-4411-b7ce-dd66ab634387": {
+    "x": 540,
+    "y": 468,
+    "definition": "definition_947704ee27b7356135c63586",
+    "root": false
+  },
+  "skill_c4382506-e354-4862-af7e-454fa3799999": {
+    "x": -585,
+    "y": -78,
+    "definition": "definition_dba03ffd2fe1c735fd8c3928",
+    "root": false
+  },
+  "skill_a2c756d2-05be-484c-bc7f-a500a4257f52": {
+    "x": -495,
+    "y": -234,
+    "definition": "definition_a57da6677cdb9bb5c4f32e44",
+    "root": false
+  },
+  "skill_957d09c8-2376-4643-b113-797e5b2f2273": {
+    "x": 90,
+    "y": -468,
+    "definition": "definition_5c67d892aa6e1f14ca18de97",
+    "root": false
+  },
+  "skill_5e96ec58-e138-449e-acbf-736166b6abe6": {
+    "x": 495,
+    "y": -234,
+    "definition": "definition_0b93951805c46db567aa3f3c",
+    "root": false
+  },
+  "skill_d8d39ce0-5321-4a6a-a789-4d8c3e64fb7a": {
+    "x": 585,
+    "y": -78,
+    "definition": "definition_f88bc661435716a6ec49cce1",
+    "root": false
+  },
+  "skill_dc0b19d8-1fda-42dc-bbd2-4623a75d3218": {
+    "x": -90,
+    "y": 780,
+    "definition": "definition_77d45118614b9b06eb0fe6c8",
+    "root": false
+  },
+  "skill_10d17f9b-3609-4796-ad6f-ee4db2dcfda6": {
+    "x": 90,
+    "y": 780,
+    "definition": "definition_2ffdfceb9b444c418e683f3c",
+    "root": false
+  },
+  "skill_b326e8a3-bd1e-4a29-8e42-014a43524c4f": {
+    "x": 495,
+    "y": 546,
+    "definition": "definition_324357bed9a3e0fe1c354ff6",
+    "root": false
+  },
+  "skill_ed869e4d-742c-4488-9c9e-799fd31497ff": {
+    "x": 585,
+    "y": 390,
+    "definition": "definition_e1b9c6539d07ccb0b327b985",
+    "root": false
+  },
+  "skill_ddd837f5-440f-4590-b402-b1d50becf7b8": {
+    "x": 360,
+    "y": 780,
+    "definition": "definition_488e5271a3fbba51513e39d7",
+    "root": false
+  },
+  "skill_2e8a2b24-d3dc-4ce4-9cf3-a02f29c02102": {
+    "x": -360,
+    "y": 780,
+    "definition": "definition_e5f4bc2764c8e7097e477b4b",
+    "root": false
+  },
+  "skill_eb764ff6-f59b-4c25-8218-4335c47a6132": {
+    "x": -721,
+    "y": 156,
+    "definition": "definition_ed73e24d692d0a610f4f2bbc",
+    "root": false
+  },
+  "skill_b57941ec-6e76-41df-97f4-4e6ed2b22a2d": {
+    "x": -360,
+    "y": -468,
+    "definition": "definition_87fb7cd039b64150d49d3bfd",
+    "root": false
+  },
+  "skill_6d61e82e-2d61-4b48-8140-87f064243fde": {
+    "x": 360,
+    "y": -468,
+    "definition": "definition_3f8c140a30e5083f7ad3c95a",
+    "root": false
+  },
+  "skill_8200e8f1-8846-403e-b451-64c4957b66f2": {
+    "x": 721,
+    "y": 156,
+    "definition": "definition_41f492a850475a19c5341e39",
+    "root": false
+  },
+  "skill_fcb969f9-228e-4ad5-8653-903a78975fa2": {
+    "x": 180,
+    "y": -468,
+    "definition": "definition_5c67d892aa6e1f14ca18de97",
+    "root": false
+  },
+  "skill_e1180721-d6b7-4dfc-a104-6d67824c0f23": {
+    "x": 270,
+    "y": -468,
+    "definition": "definition_5c67d892aa6e1f14ca18de97",
+    "root": false
+  },
+  "skill_c3ce615e-5b29-486e-af88-57260ffaf93f": {
+    "x": 450,
+    "y": -312,
+    "definition": "definition_0b93951805c46db567aa3f3c",
+    "root": false
+  },
+  "skill_7dd2b39a-b2aa-4050-8e52-92a9bf4fdc62": {
+    "x": 405,
+    "y": -390,
+    "definition": "definition_0b93951805c46db567aa3f3c",
+    "root": false
+  },
+  "skill_1e16c93a-18ab-48e1-82b6-0c181d8d3779": {
+    "x": 630,
+    "y": 0,
+    "definition": "definition_f88bc661435716a6ec49cce1",
+    "root": false
+  },
+  "skill_ebaa3db6-5ebe-4131-af33-9015d23f2da9": {
+    "x": 675,
+    "y": 78,
+    "definition": "definition_f88bc661435716a6ec49cce1",
+    "root": false
+  },
+  "skill_dbd535c8-59f7-422f-87b5-7007ba323442": {
+    "x": 630,
+    "y": 312,
+    "definition": "definition_e1b9c6539d07ccb0b327b985",
+    "root": false
+  },
+  "skill_03395077-6362-46d0-9cea-5c372f1640a4": {
+    "x": 675,
+    "y": 234,
+    "definition": "definition_e1b9c6539d07ccb0b327b985",
+    "root": false
+  },
+  "skill_2335344f-789b-4d8b-a527-f4bf0d62376c": {
+    "x": -450,
+    "y": -312,
+    "definition": "definition_a57da6677cdb9bb5c4f32e44",
+    "root": false
+  },
+  "skill_316df622-031d-4aec-ba48-5c2016d96746": {
+    "x": -405,
+    "y": -390,
+    "definition": "definition_a57da6677cdb9bb5c4f32e44",
+    "root": false
+  },
+  "skill_29196bf2-21aa-45d4-9130-28b5b96913fa": {
+    "x": -90,
+    "y": -468,
+    "definition": "definition_071c8a54033d1eba9add22b4",
+    "root": false
+  },
+  "skill_5f6430af-f6c1-4919-aa9d-b927b29fdb2c": {
+    "x": -180,
+    "y": -468,
+    "definition": "definition_071c8a54033d1eba9add22b4",
+    "root": false
+  },
+  "skill_e8bebb04-8150-44f6-b890-3ce222e38bb9": {
+    "x": -270,
+    "y": -468,
+    "definition": "definition_071c8a54033d1eba9add22b4",
+    "root": false
+  },
+  "skill_c9495b4d-2933-495c-9248-1f26f4df5aff": {
+    "x": -630,
+    "y": 0,
+    "definition": "definition_dba03ffd2fe1c735fd8c3928",
+    "root": false
+  },
+  "skill_1fc1b93b-dcb1-444b-8ca5-b3ab08ecb27f": {
+    "x": -675,
+    "y": 78,
+    "definition": "definition_dba03ffd2fe1c735fd8c3928",
+    "root": false
+  },
+  "skill_64eb2815-534a-455d-8746-fc8e6f2c80d3": {
+    "x": -180,
+    "y": 780,
+    "definition": "definition_77d45118614b9b06eb0fe6c8",
+    "root": false
+  },
+  "skill_b4dd96ce-ff68-488b-8e92-116d29942cdd": {
+    "x": -270,
+    "y": 780,
+    "definition": "definition_77d45118614b9b06eb0fe6c8",
+    "root": false
+  },
+  "skill_bb47935c-e52a-4532-8688-0d0c73912cdc": {
+    "x": -360,
+    "y": 312,
+    "definition": "definition_8231c08a7c64324eddabf313",
+    "root": false
+  },
+  "skill_b71fb2e7-a549-4417-af40-0d56e11629e8": {
+    "x": -450,
+    "y": 312,
+    "definition": "definition_8231c08a7c64324eddabf313",
+    "root": false
+  },
+  "skill_17ce2415-a1e4-4e7a-a1dd-5bff57e7aa9d": {
+    "x": -495,
+    "y": 390,
+    "definition": "definition_8231c08a7c64324eddabf313",
+    "root": false
+  },
+  "skill_e225503b-a87e-4b88-9ae1-ddb8d79845e5": {
+    "x": -495,
+    "y": 546,
+    "definition": "definition_40c89981ac058a09d85a1414",
+    "root": false
+  },
+  "skill_a01663c3-1d40-478e-a1d9-bd936e4e2178": {
+    "x": -450,
+    "y": 624,
+    "definition": "definition_40c89981ac058a09d85a1414",
+    "root": false
+  },
+  "skill_67dab10f-7ddc-48a3-9162-9f8e497eb544": {
+    "x": -405,
+    "y": 702,
+    "definition": "definition_40c89981ac058a09d85a1414",
+    "root": false
+  },
+  "skill_d6184f7b-3e4f-4385-b28f-a67d490ed970": {
+    "x": 450,
+    "y": 624,
+    "definition": "definition_324357bed9a3e0fe1c354ff6",
+    "root": false
+  },
+  "skill_b114020b-e356-4980-ae8a-36c46560e442": {
+    "x": 405,
+    "y": 702,
+    "definition": "definition_324357bed9a3e0fe1c354ff6",
+    "root": false
+  },
+  "skill_baf96c99-2ea9-405e-9e4d-a7debae3e304": {
+    "x": 180,
+    "y": 780,
+    "definition": "definition_2ffdfceb9b444c418e683f3c",
+    "root": false
+  },
+  "skill_59596f80-d6c9-40f7-8fcc-1b36d1c4a3ad": {
+    "x": 270,
+    "y": 780,
+    "definition": "definition_2ffdfceb9b444c418e683f3c",
+    "root": false
+  }
+}

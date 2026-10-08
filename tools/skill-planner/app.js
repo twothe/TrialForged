@@ -14,7 +14,7 @@
     let toastTimer, lastSnapshot = JSON.stringify(plan), storageFailed = false, formDirty = false, lastEditKey = null, lastEditTime = 0;
     const svg = $('canvas'), scene = $('scene');
     const currentTree = () => plan.trees.find(t => t.id === treeId);
-    const currentSkill = () => currentTree().skills.find(s => s.id === selection);
+    const currentSkill = () => M.resolveSkill(plan, currentTree().skills.find(s => s.id === selection));
     const el = (tag, text, className) => { const e = document.createElement(tag); if (text !== undefined) e.textContent = text; if (className) e.className = className; return e; };
     function svgEl(tag, attrs, text) {
         const e = document.createElementNS('http://www.w3.org/2000/svg', tag);
@@ -55,9 +55,11 @@
         try {
             if (!input.checkValidity() || input.type === 'number' && !input.value) throw new Error('Incomplete input.');
             action(); M.validate(plan); input.removeAttribute('aria-invalid');
+            if (input.id === 'skillName') $('nameError').textContent = '';
             commit((input.id || input.getAttribute('aria-label')) + ':' + selection);
         } catch (error) {
             plan = before; input.setAttribute('aria-invalid', 'true');
+            if (input.id === 'skillName') $('nameError').textContent = error.message;
             if (!(error instanceof Error)) console.error('Unexpected input failure', error);
         }
         formDirty = !!document.querySelector('[aria-invalid="true"]'); persist();
@@ -85,36 +87,43 @@
         renderList(); renderGraph(); renderInspector(); renderHistory();
     }
     function renderList() {
-        const t = currentTree(), query = $('search').value.trim().toLocaleLowerCase('en');
-        $('skillCount').textContent = t.skills.length;
+        const t = M.resolveTree(plan, currentTree()), query = $('search').value.trim().toLocaleLowerCase('en');
+        $('skillCount').textContent = new Set(t.skills.map(s => s.name)).size;
         const buttons = new Map(Array.from($('skillList').children).map(button => [button.dataset.id, button]));
         const visible = M.listSkills(t, query);
-        $('filterStatus').textContent = `${visible.length} of ${t.skills.length} skills · A–Z · Filter by name or description`;
+        $('filterStatus').textContent = query ? `${visible.length} matches` : '';
         for (const [index, s] of visible.entries()) {
             let button = buttons.get(s.id);
             if (!button) {
                 button = el('button'); button.dataset.id = s.id;
                 const label = el('div'); label.append(el('span', '', 'skill-title'), el('small', '', 'skill-meta'));
-                button.append(el('span', '', 'skill-dot'), label); button.onclick = () => { select(s.id); centerOn(s); };
+                button.append(el('span', '', 'skill-dot'), label);
             }
-            button.classList.toggle('selected', s.id === selection);
+            button.onclick = () => {
+                if (!flush()) return;
+                const nodes = currentTree().skills.filter(node => node.name === s.name), index = nodes.findIndex(node => node.id === selection);
+                const node = nodes[(index + 1) % nodes.length]; select(node.id); centerOn(node);
+            };
+            button.classList.toggle('selected', s.name === currentSkill()?.name);
             button.querySelector('.skill-dot').style.background = s.color;
             button.querySelector('.skill-title').textContent = s.name || '(unnamed)';
-            button.querySelector('.skill-meta').textContent = `${s.root ? '◎ Root · ' : ''}${s.cost} points${s.implementation.trim() ? ' · Custom' : ''}`;
+            button.querySelector('.skill-meta').textContent = `${t.skills.filter(node => node.name === s.name).length} instances · ${s.cost} points`;
             if ($('skillList').children[index] !== button) $('skillList').insertBefore(button, $('skillList').children[index] || null);
             buttons.delete(s.id);
         }
         for (const obsolete of buttons.values()) obsolete.remove();
         $('skillListEmpty').hidden = visible.length > 0;
         $('skillListEmpty').textContent = t.skills.length ? 'No skills match this filter.' : 'No skills yet. Use + Add skill to create one.';
-        $('stats').textContent = `${t.skills.length} Skills · ${t.connections.length} connections`;
+        $('stats').textContent = `${new Set(t.skills.map(s => s.name)).size} skills · ${t.skills.length} instances · ${t.connections.length} links`;
     }
     function select(id) { if (!flush()) return; selection = id; renderList(); renderGraph(); renderInspector(); persist(); }
     function renderInspector() {
         const s = currentSkill(); $('skillEditor').hidden = !s; $('noSelection').hidden = !!s; if (!s) return;
+        $('nameError').textContent = '';
+        $('instanceStatus').textContent = M.isPlaceholderName(s.name) ? 'Independent draft · Give it a name before sharing' : `Shared skill · ${M.instances(plan, s.name).length} instances in this plan`;
         const fields = { skillName: 'name', description: 'description', icon: 'icon', color: 'color', colorHex: 'color', cost: 'cost', requiredSkills: 'requiredSkills', requiredPoints: 'requiredPoints', requiredSpentPoints: 'requiredSpentPoints', q: 'q', r: 'r', implementation: 'implementation', acceptance: 'acceptance' };
         for (const [field, key] of Object.entries(fields)) $(field).value = s[key];
-        renderIconPicker(); updateIconPreview();
+        closeIconPicker(); updateIconPreview();
         $('root').checked = s.root; $('skillId').textContent = 'Stable ID: ' + s.id;
         $('effects').replaceChildren(...s.effects.map((effect, index) => {
             const block = el('div', undefined, 'effect'), attribute = el('select'); attribute.setAttribute('aria-label', `Attribute for bonus ${index + 1}`);
@@ -139,27 +148,44 @@
         }));
         if (!$('connections').children.length) $('connections').append(el('p', 'No connections yet.', 'muted'));
     }
+    let activeIcon = -1;
     function renderIconPicker() {
-        const query = $('iconFilter').value.trim().toLocaleLowerCase('en'), selected = currentSkill()?.icon;
-        const items = SkillIcons.filter(item => (item.label + ' ' + item.id).toLocaleLowerCase('en').includes(query));
-        const options = items.map(item => { const option = el('option', item.label + ' · ' + item.id); option.value = item.id; return option; });
-        const selectedMatches = items.some(item => item.id === selected);
-        if (selected && !selectedMatches) {
-            const option = el('option', query ? (items.length ? 'Choose a matching item…' : 'No matching items') : 'Custom item · ' + selected);
-            option.value = query ? '' : selected; option.disabled = !!query; options.unshift(option);
-        }
-        $('iconPicker').replaceChildren(...options); if (selected) $('iconPicker').value = query && !selectedMatches ? '' : selected;
-        $('iconFilterStatus').textContent = items.length ? `${items.length} matching items · Matches anywhere in name or ID, ignoring case` : 'No items match. Try another part of the name or ID.';
+        const query = $('iconFilter').value.trim().toLocaleLowerCase('en');
+        const items = SkillIcons.filter(item => (item.label + ' ' + item.id).toLocaleLowerCase('en').includes(query))
+            .sort((a, b) => a.label.localeCompare(b.label, 'en'));
+        activeIcon = -1; $('iconFilter').removeAttribute('aria-activedescendant');
+        $('iconPicker').replaceChildren(...items.slice(0, 80).map(item => {
+            const option = el('button'); option.id = 'item-' + item.id.replace(/[^a-z0-9_-]/g, '-');
+            option.setAttribute('role', 'option'); option.setAttribute('aria-selected', String(currentSkill()?.icon === item.id));
+            option.dataset.icon = item.id; option.title = item.id; option.tabIndex = -1;
+            if (item.preview) { const image = el('img'); image.src = item.preview; image.alt = ''; option.append(image); }
+            option.append(el('span', item.label)); option.onclick = () => chooseIcon(item.id); return option;
+        }));
+        $('iconFilterStatus').textContent = !items.length ? 'No matching items.' : items.length > 80 ? `${items.length} items · Type to narrow the list` : `${items.length} items`;
+    }
+    function openIconPicker() {
+        if (!currentSkill() || formDirty) return;
+        $('iconPopup').hidden = false; $('iconFilter').value = '';
+        $('iconFilter').setAttribute('aria-expanded', 'true'); $('iconToggle').setAttribute('aria-expanded', 'true'); renderIconPicker();
+    }
+    function closeIconPicker() {
+        $('iconPopup').hidden = true; $('iconFilter').setAttribute('aria-expanded', 'false'); $('iconToggle').setAttribute('aria-expanded', 'false');
+        $('iconFilter').removeAttribute('aria-activedescendant');
+        const s = currentSkill(); $('iconFilter').value = s ? iconItems.get(s.icon)?.label || s.icon : '';
+    }
+    function chooseIcon(id) {
+        $('icon').value = id; edit($('icon'), () => currentSkill().icon = id); updateIconPreview(); $('iconFilter').focus(); closeIconPicker();
     }
     function updateIconPreview() {
         const item = iconItems.get($('icon').value), image = $('iconPreview');
         image.hidden = !item?.preview;
         if (item?.preview) image.src = item.preview; else image.removeAttribute('src');
         $('iconPreviewLabel').textContent = item ? item.label + ' · Flat texture preview' : 'No local preview for this item ID.';
+        if ($('iconPopup').hidden) $('iconFilter').value = item?.label || $('icon').value;
     }
     const hexPoints = size => Array.from({ length: 6 }, (_, i) => { const angle = (60 * i - 30) * Math.PI / 180; return `${size * Math.cos(angle)},${size * Math.sin(angle)}`; }).join(' ');
     function renderGraph() {
-        const t = currentTree(), rect = svg.getBoundingClientRect();
+        const t = M.resolveTree(plan, currentTree()), rect = svg.getBoundingClientRect();
         if (!rect.width) return;
         scene.setAttribute('transform', `translate(${rect.width / 2 + view.x} ${rect.height / 2 + view.y}) scale(${view.zoom})`);
         const cells = [], bounds = [];
@@ -225,8 +251,8 @@
         if (mode !== 'copy') copyTemplate = null;
         $('copySkill').classList.toggle('active', mode === 'copy');
         document.querySelectorAll('[data-mode]').forEach(button => button.classList.toggle('active', button.dataset.mode === mode));
-        $('modeHint').textContent = mode === 'add' ? 'Click an empty hex cell · Esc leaves Add mode' : mode === 'connect' ? 'Click the source, then the target · Direction: first → second · Esc cancels' : 'Select or drag skills · Drag empty space to pan · Mouse wheel to zoom';
-        if (mode === 'copy') $('modeHint').textContent = 'Click free hex cells to place copies · Content copied; roots and connections are separate · Esc finishes';
+        $('modeHint').textContent = mode === 'add' ? 'Click a free cell · Esc finishes' : mode === 'connect' ? 'Source → target · Esc cancels' : 'Select / drag · Drag to pan · Scroll to zoom';
+        if (mode === 'copy') $('modeHint').textContent = 'Place shared instances · Click free cells · Esc finishes';
         renderGraph();
     }
     function nodeClick(id) {
@@ -239,7 +265,7 @@
     function addAt(q, r) {
         change(() => {
             const t = currentTree(); if (t.skills.some(s => s.q === q && s.r === r)) throw new Error('This hex cell is already occupied.');
-            const s = M.skill(q, r); s.root = !t.skills.length; t.skills.push(s); selection = s.id;
+            const s = M.addSkill(plan, t, q, r); selection = s.id;
         }, true);
     }
     svg.addEventListener('click', event => {
@@ -250,7 +276,11 @@
             if (confirm('Remove this connection?')) change(() => currentTree().connections.splice(Number(edge.dataset.edge), 1), true);
         } else if (mode === 'add' || mode === 'copy') {
             const p = point(event), hex = M.hexAt(p.x, p.y);
-            if (mode === 'copy') change(() => { selection = M.copySkill(currentTree(), copyTemplate, hex.q, hex.r).id; }, true);
+            if (mode === 'copy') change(() => {
+                const source = plan.trees.flatMap(t => t.skills).find(s => s.id === copyTemplate);
+                if (!source) throw new Error('The source instance was removed. Select a skill and use Copy skill again.');
+                selection = M.copySkill(plan, currentTree(), source.name, hex.q, hex.r).id;
+            }, true);
             else addAt(hex.q, hex.r);
         }
         else if (mode === 'select') select(null);
@@ -312,8 +342,28 @@
         $('color').value = color; $('colorHex').value = color;
         $('color').removeAttribute('aria-invalid'); $('colorHex').removeAttribute('aria-invalid');
     });
-    $('iconFilter').oninput = renderIconPicker;
-    $('iconPicker').onchange = () => { if (!$('iconPicker').value) return; $('icon').value = $('iconPicker').value; edit($('icon'), () => currentSkill().icon = $('icon').value); updateIconPreview(); };
+    $('iconFilter').onfocus = openIconPicker;
+    $('iconFilter').oninput = () => { $('iconPopup').hidden = false; $('iconFilter').setAttribute('aria-expanded', 'true'); renderIconPicker(); };
+    $('iconToggle').onclick = () => { if ($('iconPopup').hidden) { $('iconFilter').focus(); if ($('iconPopup').hidden) openIconPicker(); } else closeIconPicker(); };
+    $('iconFilter').onkeydown = event => {
+        if (event.key === 'Escape' || event.key === 'Tab') { closeIconPicker(); return; }
+        if (['ArrowDown', 'ArrowUp'].includes(event.key)) {
+            event.preventDefault(); if ($('iconPopup').hidden) openIconPicker();
+            const options = Array.from($('iconPicker').children); if (!options.length) return;
+            activeIcon = activeIcon < 0 ? (event.key === 'ArrowDown' ? 0 : options.length - 1)
+                : (activeIcon + (event.key === 'ArrowDown' ? 1 : -1) + options.length) % options.length;
+            options.forEach((option, index) => option.classList.toggle('active', index === activeIcon));
+            $('iconFilter').setAttribute('aria-activedescendant', options[activeIcon].id); options[activeIcon].scrollIntoView?.({ block: 'nearest' });
+        }
+        if (event.key === 'Enter' && activeIcon >= 0 && !$('iconPopup').hidden) { event.preventDefault(); chooseIcon($('iconPicker').children[activeIcon].dataset.icon); }
+    };
+    $('skillName').onblur = () => {
+        if ($('skillName').getAttribute('aria-invalid') === 'true') queueMicrotask(() => $('skillName').focus());
+    };
+    document.addEventListener('pointerdown', event => {
+        if ($('skillName').getAttribute('aria-invalid') === 'true' && event.target !== $('skillName')) { event.preventDefault(); $('skillName').focus(); return; }
+        if (!event.target.closest('[data-icon-combo]')) closeIconPicker();
+    }, true);
     for (const field of ['q', 'r']) $(field).oninput = () => edit($(field), () => {
         if (!$('q').value || !$('r').value) throw new Error('Enter both hex coordinates.');
         M.moveSkill(currentTree(), selection, Number($('q').value), Number($('r').value));
@@ -339,19 +389,19 @@
     $('removeTree').onclick = () => {
         if (!flush()) return;
         if (plan.trees.length > 1 && confirm('Delete the entire skill tree “' + currentTree().name + '”?')) {
-            change(() => { plan.trees = plan.trees.filter(t => t.id !== treeId); treeId = plan.trees[0].id; selection = null; }); renderAll(); fit();
+            change(() => { plan.trees = plan.trees.filter(t => t.id !== treeId); M.pruneDefinitions(plan); treeId = plan.trees[0].id; selection = null; }); renderAll(); fit();
         }
     };
     $('addEffect').onclick = () => change(() => currentSkill().effects.push({ attribute: 'puffish_attributes:sprinting_speed', operation: 'add_multiplied_total', amount: 5 }), true);
     $('copySkill').onclick = () => {
         if (!flush() || !currentSkill()) return;
-        const template = M.clone(currentSkill()); setMode('copy'); copyTemplate = template;
+        const sourceId = selection; setMode('copy'); copyTemplate = sourceId;
     };
     $('deleteSkill').onclick = () => {
         if (!flush()) return;
         const s = currentSkill();
-        if (s && (M.isUneditedSkill(currentTree(), s) || confirm('Delete this skill and its connections?')))
-            change(() => { M.removeSkill(currentTree(), selection); selection = null; }, true);
+        if (s && (M.isUneditedSkill(currentTree(), s) || confirm('Delete this instance and its connections? Other instances stay.')))
+            change(() => { M.deleteInstance(plan, currentTree(), selection); selection = null; }, true);
     };
     document.querySelectorAll('[data-mode]').forEach(button => button.onclick = () => setMode(button.dataset.mode));
     $('connectionType').onchange = () => { pending = null; renderGraph(); };
@@ -363,6 +413,10 @@
         if (document.activeElement instanceof HTMLElement) document.activeElement.blur();
         if (formDirty) { toast('Unfinished input is autosaved. Complete the highlighted fields before exporting or switching context.'); return false; }
         return true;
+    }
+    function revealField(input) {
+        let section = input.closest('details');
+        while (section) { section.open = true; section = section.parentElement?.closest('details'); }
     }
     function download(contents, extension, mime) {
         const name = (plan.name || 'skillplan').replace(/[^a-zA-Z0-9äöüÄÖÜß_-]+/g, '-').slice(0, 80);
@@ -394,6 +448,7 @@
     };
     $('closeReport').onclick = () => $('report').close();
     document.addEventListener('keydown', event => {
+        if (event.target === $('skillName') && event.key === 'Tab' && $('skillName').getAttribute('aria-invalid') === 'true') { event.preventDefault(); return; }
         if (event.key === 'Escape') { pending = null; setMode('select'); }
         if (event.target.closest('input,textarea,select,[contenteditable]') || $('report').open) return;
         if (event.key === 'Delete' && currentSkill()) { event.preventDefault(); $('deleteSkill').click(); }
@@ -419,15 +474,19 @@
             if (snapshot) {
                 for (const [id, raw] of Object.entries(snapshot.raw)) {
                     const input = $(id); if (!input || ![...globalFields, ...(currentSkill() ? skillFields : [])].includes(id)) continue;
-                    input.value = raw.value; if (raw.invalid) input.setAttribute('aria-invalid', 'true');
+                    input.value = raw.value; if (raw.invalid) { input.setAttribute('aria-invalid', 'true'); revealField(input); }
                 }
                 Array.from($('effects').querySelectorAll('input')).forEach((input, index) => {
                     const raw = snapshot.effects[index]; if (raw) { input.value = raw.amount; if (raw.invalid) input.setAttribute('aria-invalid', 'true'); }
                 });
                 formDirty = !!document.querySelector('[aria-invalid="true"]'); updateIconPreview();
+                if ($('skillName').getAttribute('aria-invalid') === 'true') {
+                    $('nameError').textContent = 'This name is invalid or already exists. Choose a unique name.'; $('skillName').focus();
+                }
             }
             $('saveStatus').textContent = saved.recovered ? 'Recovered your plan from an alternate cached copy.' : 'Restored your autosaved plan, including unfinished input.';
             if (saved.failures.length) console.error('Draft recovery diagnostics', saved.failures);
+            if (plan.migrationNotes?.length) toast('Old plan upgraded. Conflicting names were preserved as separate variants; see the implementation brief.');
             return;
         }
         if (saved.failures.length) { storageFailed = true; console.error('Draft recovery failed', saved.failures); $('saveStatus').textContent = 'Cached plan could not be read. Open a backup file or start a new plan.'; }
